@@ -1,0 +1,13 @@
+data;
+
+param num_jobs := 2;
+param num_mach := 2;
+
+# botar indices
+param T :=
+  1 1 1
+  1 2 1
+  2 1 1
+  2 2 1;
+
+end;
