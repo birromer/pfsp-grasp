@@ -1,10 +1,7 @@
-using DelimitedFiles
-
-
 
 function read_instances(filename::String)
     sch = Array{Int32,1}
-    
+
     stream = open(filename,"r")
 
     # splits first line by space and removes empy strings for better usage
@@ -27,13 +24,40 @@ function read_instances(filename::String)
     return sch, t
 end
 
-# function makespan(schedule, t)
-#     time::Int32 = t[machine_order[1]][1]
-#     for i in 2:length(schedule)
-#         if 
-#             time = time + 
-#     end
-# end
+
+function makespan(schedule, t)
+    time_used::Int32 = t[schedule[1],1]
+    number_machines, number_jobs = size(t)
+
+    finish_time = zeros(Int32, number_machines, number_jobs)
+
+    for j in 1:number_jobs
+        finish_time[1,j] = t[1,j]
+    end
+
+    for i in 2:number_machines
+        finish_time[i,1] = finish_time[i-1,1] + t[i,1]
+    end
+
+    for i in 2:number_machines
+        for j in 2:number_jobs
+            top  = finish_time[i-1,j-1] + finish_time[i,j-1]
+            side = finish_time[i-1,j-1] + finish_time[i-1,j]
+            finish_time[i,j] = max(top,side)
+        end
+    end
+
+    # for i = 1:number_machines
+    #     for j = 1:number_jobs
+    #         print(finish_time[i,j])
+    #         print(' ')
+    #     end
+    #     print('\n')
+    # end
+
+    return finish_time[number_machines,number_jobs]
+end
+
 
 
 # function construct(g::Function, alpha::Float32)
@@ -58,7 +82,9 @@ end
 function main()
     filename::String = ARGS[1]
     sch, t = read_instances(filename)
+    total_time = makespan(sch, t)
 
+    println(total_time)
 
 end
 
