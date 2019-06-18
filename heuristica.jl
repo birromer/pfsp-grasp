@@ -1,23 +1,23 @@
 
 function read_instances(filename::String)
-    sch = Array{Int32,1}
+    sch = Array{UInt64,1}
 
     stream = open(filename,"r")
 
     # splits first line by space and removes empy strings for better usage
     first_line = filter((x) -> x != "", split(readline(stream, keep=false), ' '))
-    number_machines::Int32 = parse(Int32,first_line[1])
-    number_jobs::Int32 = parse(Int32,first_line[2]) 
+    number_machines::UInt64 = parse(UInt64,first_line[1])
+    number_jobs::UInt64 = parse(UInt64,first_line[2]) 
 
-    t = zeros(Int32, number_machines, number_jobs)
+    t = zeros(UInt64, number_machines, number_jobs)
 
-    sch = 1:number_machines  # sets base schedule array with machine numbers in order
+    sch = [x for x in 1:number_machines]#1:number_machines  # sets base schedule array with machine numbers in order
 
     for i in 1:number_machines
         machine_values = filter((x) -> x != "", split(readline(stream, keep=false), ' '))
         for j = 2:2:length(machine_values) # iterates jumping the index items
             k = Int(j/2)
-            t[i,k] = parse(Int32,machine_values[j])
+            t[i,k] = parse(UInt64,machine_values[j])
         end
     end
 
@@ -25,18 +25,25 @@ function read_instances(filename::String)
 end
 
 
-function makespan(schedule, t)
-    time_used::Int32 = t[schedule[1],1]
+function makespan(sch, t) # computes the makespan of a certain solution
+    time_used::UInt64 = t[sch[1],1]
     number_machines, number_jobs = size(t)
 
-    finish_time = zeros(Int32, number_machines, number_jobs)
+    t_line = zeros(UInt64, number_machines, number_jobs)
+    for i in 1:number_machines
+        for j in 1:number_jobs
+            t_line[i,j] = t[sch[i],j]
+        end 
+    end
+
+    finish_time = zeros(UInt64, number_machines, number_jobs)
 
     for j in 1:number_jobs
-        finish_time[1,j] = t[1,j]
+        finish_time[1,j] = t_line[1,j]
     end
 
     for i in 2:number_machines
-        finish_time[i,1] = finish_time[i-1,1] + t[i,1]
+        finish_time[i,1] = finish_time[i-1,1] + t_line[i,1]
     end
 
     for i in 2:number_machines
@@ -65,7 +72,7 @@ end
 # end
 
 
-# function GRASP(alpha::Float32, stop::Int32)
+# function GRASP(alpha::Float32, stop::UInt64)
 #     s_star::Float64 = 0
 #     s::Float64 = 0
 #     s_line::Float64 = 0
@@ -84,7 +91,7 @@ function main()
     sch, t = read_instances(filename)
     total_time = makespan(sch, t)
 
-    println(total_time)
+    println("total time = ", total_time)
 
 end
 
