@@ -1,4 +1,4 @@
-# sei la ta errado
+# use --tmlim nnn
 param P := 32800;
 param num_jobs;
 param num_mach;
