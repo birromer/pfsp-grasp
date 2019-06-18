@@ -24,11 +24,10 @@ function read_instances(filename::String)
 end
 
 
-function makespan(sch, t) # computes the makespan of a certain solution
-    time_used::Int64 = t[sch[1],1]
-    number_jobs, number_machines = size(t)
+function makespan(sch::Array{Int64}, t_trans, makespan_table::Array{Int64}) # computes the makespan of a certain solution
+    number_machines, number_jobs = size(t_trans)
 
-    t = t' # armazenar resultados da transposta
+    # t = t' # armazenar resultados da transposta
 
     t_line = zeros(Int64, number_machines, number_jobs)
     for i in 1:number_machines
@@ -56,22 +55,17 @@ function makespan(sch, t) # computes the makespan of a certain solution
         end
     end
 
-    for i = 1:number_machines
-        for j = 1:number_jobs
-            print(finish_time[i,j])
-            print(' ')
-        end
-        print('\n')
-    end
+    makespan = finish_time[number_machines,number_jobs]
 
+    makespan_table[sch] = makespan_table 
 
-
-    return finish_time[number_machines,number_jobs]
+    return makespan
 end
 
 
 
-function construct(g::Function, alpha::Float32)
+
+function construct(g::Function, makespan_table, number_candidates::Int32, alpha::Float32)
 
 end
 
@@ -93,10 +87,12 @@ end
 function main()
     filename::String = ARGS[1]
     
-    # timespans = {}
+    timespans = Dict{Array{Int64},Int64}()
 
     sch, t = read_instances(filename)
-    total_time = makespan(sch, t)
+    
+    t_trans = t'
+    total_time = makespan(sch, t_trans, timespans)
 
 
 
