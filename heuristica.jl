@@ -24,7 +24,7 @@ function read_instances(filename::String)
 end
 
 
-function makespan(sch::Array{Int64}, t_trans, makespan_table::Array{Int64}) # computes the makespan of a certain solution
+function makespan(sch::Array{Int64}, t_trans, makespan_table::Dict{Array{Int64},Int64}, alpha::Float32) # computes the makespan of a certain solution
     number_machines, number_jobs = size(t_trans)
 
     # t = t' # armazenar resultados da transposta
@@ -32,7 +32,7 @@ function makespan(sch::Array{Int64}, t_trans, makespan_table::Array{Int64}) # co
     t_line = zeros(Int64, number_machines, number_jobs)
     for i in 1:number_machines
         for j in 1:number_jobs
-            t_line[i,j] = t[sch[i],j]
+            t_line[i,j] = t_trans[sch[i],j]
         end 
     end
 
@@ -57,7 +57,7 @@ function makespan(sch::Array{Int64}, t_trans, makespan_table::Array{Int64}) # co
 
     makespan = finish_time[number_machines,number_jobs]
 
-    makespan_table[sch] = makespan_table 
+    makespan_table[sch] = makespan 
 
     return makespan
 end
@@ -65,7 +65,7 @@ end
 
 
 
-function construct(g::Function, makespan_table, number_candidates::Int32, alpha::Float32)
+function construct(g::Function, makespan_table::Dict{Array{Int64},Int64}, number_candidates::Int32, alpha::Float32)
 
 end
 
@@ -86,13 +86,14 @@ end
 
 function main()
     filename::String = ARGS[1]
+    alpha::Float32 = parse(Float32, ARGS[2])
     
-    timespans = Dict{Array{Int64},Int64}()
+    makespan_table = Dict{Array{Int64},Int64}()
 
     sch, t = read_instances(filename)
     
     t_trans = t'
-    total_time = makespan(sch, t_trans, timespans)
+    total_time = makespan(sch, t_trans, makespan_table, alpha)
 
 
 
