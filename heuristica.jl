@@ -63,7 +63,7 @@ function makespan(sch::Array{Int64}, t_trans, makespan_table::Dict{Array{Int64},
 end
 
 
-function hill_climbing(g::Function, solution, makespan_table::Dict{Array{Int64},Int64})
+function hill_climbing(g::Function, solution, makespan_table)
 
 end
 
@@ -71,8 +71,9 @@ end
 function initialize_candidate_set(number_solutions::Int32, number_jobs::Int64)
     candidates = Array{Array{Int64}}
 
-    for i in 1:number_solutions:
+    for i in 1:number_solutions
         new_candidate = randperm(number_jobs)
+        println(new_candidate)
         append(candidates, new_candidate)
     end
 
@@ -80,22 +81,24 @@ function initialize_candidate_set(number_solutions::Int32, number_jobs::Int64)
 end
 
 
-function randomized_greedy_construct(g::Function, makespan_table::Dict{Array{Int64},Int64}, alpha::Float32, number_candidates::int32, number_jobs::Int64)
+function randomized_greedy_construct(g::Function, alpha::Float32, makespan_table, number_candidates::Int32, number_jobs::Int64)
     solutions = initialize_candidate_set(number_candidates, number_jobs)
-
+    # for solution in solutions
+    println(solutions)
+    # end
 
 
 
 end
 
 
-function GRASP(alpha::Float32, stop::Int64)
-    s_star::Intt64 = 0
+function GRASP(alpha::Float32, stop::Int64, makespan_table)
+    s_star::Int64 = 0
     # s::Int64 = 0
     s_line::Int64 = 0
 
     for k in 1:stop
-        s_line = construct(makespan, alpha, makespan_table)
+        s_line = randomized_greedy_construct(makespan, alpha, makespan_table, 100, 14)
         s_line = hill_climbing(makespan, s_line, makespan_table)
         if f(s_line) <= f(s_star)
             s_star = s_line
@@ -114,7 +117,7 @@ function main()
     t_trans = t'
     total_time = makespan(sch, t_trans, makespan_table, alpha)
 
-
+    s_star = GRASP(alpha, 100, makespan_table)
 
     println("total time = ", total_time)
 
