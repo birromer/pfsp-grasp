@@ -63,21 +63,40 @@ function makespan(sch::Array{Int64}, t_trans, makespan_table::Dict{Array{Int64},
 end
 
 
+function hill_climbing(g::Function, solution, makespan_table::Dict{Array{Int64},Int64})
+
+end
 
 
-function construct(g::Function, makespan_table::Dict{Array{Int64},Int64}, number_candidates::Int32, alpha::Float32)
+function initialize_candidate_set(number_solutions::Int32, number_jobs::Int64)
+    candidates = Array{Array{Int64}}
+
+    for i in 1:number_solutions:
+        new_candidate = randperm(number_jobs)
+        append(candidates, new_candidate)
+    end
+
+    return candidates
+end
+
+
+function randomized_greedy_construct(g::Function, makespan_table::Dict{Array{Int64},Int64}, alpha::Float32, number_candidates::int32, number_jobs::Int64)
+    solutions = initialize_candidate_set(number_candidates, number_jobs)
+
+
+
 
 end
 
 
 function GRASP(alpha::Float32, stop::Int64)
     s_star::Intt64 = 0
-    s::Int64 = 0
+    # s::Int64 = 0
     s_line::Int64 = 0
 
     for k in 1:stop
-        s = construct(makespan, alpha)
-        s_line = local_search(f,s)
+        s_line = construct(makespan, alpha, makespan_table)
+        s_line = hill_climbing(makespan, s_line, makespan_table)
         if f(s_line) <= f(s_star)
             s_star = s_line
         end
