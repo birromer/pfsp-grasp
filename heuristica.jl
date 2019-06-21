@@ -107,7 +107,7 @@ end
 
 function hill_climbing(solution::Array{Int64,1}, t) # hill climbing will be the local search used to improve the solution
     no_improvement_rounds::Int32 = 0 # counter for steps without improvement, will be used as stopping condition
-    current_solution::Array{Int64,1} = deepcopy(solution) 
+    current_solution::Array{Int64,1} = copy(solution) 
     current_makespan = makespan(solution,t) # precomputes the makespan for reuse 
 
     while no_improvement_rounds <= STOP_HILL_CLIMBING
@@ -116,8 +116,8 @@ function hill_climbing(solution::Array{Int64,1}, t) # hill climbing will be the 
     
         
         if neighbour_makespan < current_makespan # replaces the best current solution when has a shorter makespan
-            current_makespan = neighbour_makespan
-            current_solution = neighbour_solution
+            current_makespan = copy(neighbour_makespan)
+            current_solution = copy(neighbour_solution)
         else
             no_improvement_rounds += 1 # increment of the no improvement counter
         end
