@@ -2,8 +2,8 @@ using Random
 
 makespan_table = Dict{Array{Int64},Int64}()
 NUMBER_CANDIDATES = 100
-STOP_GRASP = 100
-STOP_HILL_CLIMBING = 10
+STOP_GRASP = 10000
+STOP_HILL_CLIMBING = 100
 
 
 function read_instances(filename::String)
@@ -75,21 +75,21 @@ function makespan(sch::Array{Int64}, t) # computes the makespan of a certain sol
 end
 
 function qsort!(array, lo, hi, t) # simple quicksort implementation to order candidate solutions in the randomized greedy construct
-    i, j = copy(lo), copy(hi)
+    i, j = lo, hi
     while i < hi
-        pivot = copy(array[(lo+hi)>>>1])
+        pivot = array[(lo+hi)>>>1]
         while i <= j
             while makespan(array[i],t) < makespan(pivot,t); i = i+1; end
             while makespan(array[j],t) > makespan(pivot,t); j = j-1; end
             if i <= j
-                array[i], array[j] = copy(array[j]), copy(array[i])
+                array[i], array[j] = array[j], array[i]
                 i, j = i+1, j-1
             end
         end
         if lo < j; qsort!(array,lo,j,t); end
         lo, j = i, hi
     end
-    return copy(array)
+    return array
 end
 
 function generate_neighbour(solution::Array{Int64,1}) 
@@ -111,7 +111,7 @@ function hill_climbing(solution::Array{Int64,1}, t) # hill climbing will be the 
     current_makespan = makespan(solution,t) # precomputes the makespan for reuse 
 
     while no_improvement_rounds <= STOP_HILL_CLIMBING
-        neighbour_solution = generate_neighbour(current_solution) # generates a new neighbour
+        neighbour_solution = generate_neighbour(copy(current_solution)) # generates a new neighbour
         neighbour_makespan = makespan(neighbour_solution,t)       # and computes its makespan for reuse in case of a good one
     
         
@@ -155,34 +155,14 @@ function GRASP(alpha::Float32, number_jobs::Int64, t::Array{Int64,2})
     s_line = Array{Int64,1}
 
     for k in 1:STOP_GRASP
-        
-        #
-        pre = makespan(s_star,t)
-        #
-        
         s_line = randomized_greedy_construct(alpha, number_jobs, t) # gets the best solution given by the greedy construct
-
-        #
-        pos = makespan(s_star,t)
-        if (pre < pos)
-            print("deu ruim")
-        end
-        println(makespan(s_star,t))
-        #   
 
         s_line = hill_climbing(s_line,t) # tries to improve it with a local search
 
-
-
         if makespan(s_line,t) <= makespan(s_star,t) # if the new solution is better swaps it 
-            println("troquei")
             s_star = copy(s_line)
         end
-
- 
-
     end
-
     return s_star
 end
 
