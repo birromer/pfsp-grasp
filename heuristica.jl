@@ -34,24 +34,28 @@ function read_instances(filename::String)
 end
 
 function makespan(sch::Array{Int64}, t, save_to_dict::Bool=true, use_last_line::Bool=false, previous_solution=nothing) # computes the makespan of a certain solution
-
     if haskey(makespan_table, sch) # if the dictionary already has the computed makespan
         return makespan_table[sch] # returns it and avoid computing it again
-    elseif use_last_line == true && haskey(last_line_table, previous_solution)
-        previous_last_line = last_line_table[previous_solution]
-        current_last_line::Array{Int64} = [previous_last_line[1] + t[sch[length(sch)]],1]
+    
+    # =========================================================================================== #    
+    # este condicional não é mais utilizado pois adotamos um método alternativo apra construção da solução inicial
+    # preservado para demonstração da implementação da otimização pensada
+    elseif use_last_line == true && haskey(last_line_table, previous_solution) # when it intended to reuse the last line of the previous solution and that is already stored
+        previous_last_line = last_line_table[previous_solution]                # retrieves the array corresponding to the last line of the previous solution
+        current_last_line::Array{Int64} = [previous_last_line[1] + t[sch[length(sch)]],1] # current last line equivalent initialized as usual
+                                                                                          # being the last job started on the first machine as soon as it finished on the previous (previous last line)
         number_machines = length(current_last_line)
 
-
-        for m in 2:number_machines
-            top = previous_last_line[m-1]
-            side = current_last_line[m-1]
-            current_last_line[m] = max(top,side) + current_last_line[m]
+        for m in 2:number_machines          # the last job at the current machine starts when both 
+            top = previous_last_line[m-1]   # the same job has finished on the previous machine
+            side = current_last_line[m-1]   # and the previous job has finished on the same machine
+            current_last_line[m] = max(top,side) + current_last_line[m] the previous has
         end
 
-        last_line_table[sch] = current_last_line
+        last_line_table[sch] = current_last_line # stores the value for reuse
 
         return current_last_line[number_machines]
+    # =========================================================================================== #
 
     else 
         number_jobs, number_machines = size(t)
@@ -161,6 +165,9 @@ function initialize_candidate_set(number_jobs::Int64) # simple start for the can
     return p_solutions
 end
 
+# ============================================================================================ #
+#      Método orignal para a construção da colução inicial, não é mais utilizado
+#                   código preservado para demonstração da implementação
 
 function compute_c_max(candidate::Array{Int64,1}, job_position::Int64, t::Array{Int64,2})
     number_jobs, number_machines = size(t)
@@ -181,7 +188,6 @@ function randomized_greedy_construct(alpha::Float32, number_jobs::Int64, t::Arra
     candidate::Array{Int64,1} = []
 
     while length(jobs_not_filled) > 0
-        println(length(jobs_not_filled))
         execution_times = [(compute_c_max(candidate,i,t),i) for i in jobs_not_filled] # computes the makesan time for each job added to the current colution        
         execution_times = sort(execution_times)                     # orders those aditions by makespan
         next_job = ceil(Int,rand(1:(length(execution_times)*alpha+1))) # chooses a random job to be added among the best alpha%
@@ -193,6 +199,7 @@ function randomized_greedy_construct(alpha::Float32, number_jobs::Int64, t::Arra
     return candidate
 end
 
+# ============================================================================================ #
 
 function modified_randomized_greedy_construct(alpha::Float32, number_jobs::Int64, t::Array{Int64,2})
     solutions = initialize_candidate_set(number_jobs) # initializes candidate set
@@ -244,7 +251,7 @@ function main()
 
     number_jobs, number_machines = size(t)
     
-    for i in 1:1
+    for i in 1:10
         Random.seed!(parse(Int64,ARGS[3])*i)
         execution_time  = @elapsed initial_solution, s_star  = GRASP(alpha, number_jobs, t)
         
