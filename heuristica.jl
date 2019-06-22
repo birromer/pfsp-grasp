@@ -1,10 +1,10 @@
 using Random
+using Statistics
 
 makespan_table = Dict{Array{Int64},Int64}()
 NUMBER_CANDIDATES = 100
-STOP_GRASP = 10000
-STOP_HILL_CLIMBING = 100
-
+STOP_GRASP = 400
+STOP_HILL_CLIMBING = 55
 
 function read_instances(filename::String)
     sch = Array{Int64,1}
@@ -108,12 +108,11 @@ end
 function hill_climbing(solution::Array{Int64,1}, t) # hill climbing will be the local search used to improve the solution
     no_improvement_rounds::Int32 = 0 # counter for steps without improvement, will be used as stopping condition
     current_solution::Array{Int64,1} = copy(solution) 
-    current_makespan = makespan(solution,t) # precomputes the makespan for reuse 
+    current_makespan = makespan(copy(solution),t) # precomputes the makespan for reuse 
 
     while no_improvement_rounds <= STOP_HILL_CLIMBING
         neighbour_solution = generate_neighbour(copy(current_solution)) # generates a new neighbour
-        neighbour_makespan = makespan(neighbour_solution,t)       # and computes its makespan for reuse in case of a good one
-    
+        neighbour_makespan = makespan(copy(neighbour_solution),t)       # and computes its makespan for reuse in case of a good one
         
         if neighbour_makespan < current_makespan # replaces the best current solution when has a shorter makespan
             current_makespan = copy(neighbour_makespan)
@@ -127,20 +126,20 @@ function hill_climbing(solution::Array{Int64,1}, t) # hill climbing will be the 
 end
 
 function initialize_candidate_set(number_jobs::Int64) # simple start for the candidate set
-    candidates = Array{Int64}[]
+    p_solutions = Array{Int64}[]
 
     for i in 1:NUMBER_CANDIDATES
         new_candidate = randperm(number_jobs) # each candidate is a random permutation of the jobs
-        push!(candidates, new_candidate)
+        push!(p_solutions, new_candidate)
     end
 
-    return candidates
+    return p_solutions
 end
 
 
 function randomized_greedy_construct(alpha::Float32, number_jobs::Int64, t::Array{Int64,2})
     solutions = initialize_candidate_set(number_jobs) # initializes candidate set
-    solutions = qsort!(solutions, 1, length(solutions), t) # orders set by makespan
+    solutions = qsort!(copy(solutions), 1, length(solutions), t) # orders set by makespan
 
     top_alpha = solutions[1:trunc(Int,alpha*length(solutions))] # takes the top alpha percentage of the results
 
@@ -151,19 +150,42 @@ end
 
 
 function GRASP(alpha::Float32, number_jobs::Int64, t::Array{Int64,2})
-    s_star::Array{Int64,1} = randperm(number_jobs) # initialized optimal solution with random solution
+    initial_solution::Array{Int64,1} = randperm(number_jobs) # random solution for initial one
+    s_star::Array{Int64,1} = copy(initial_solution)          # initialized optimal solution with random solution
     s_line = Array{Int64,1}
+    pre = 0
+    pre_1 = randperm(number_jobs)
 
     for k in 1:STOP_GRASP
-        s_line = randomized_greedy_construct(alpha, number_jobs, t) # gets the best solution given by the greedy construct
+        # println("1-makespan s_line - em cima = ", makespan(s_line,t))
+        # println("2-makespan s_star - em cima = ", makespan(s_star,t))
 
-        s_line = hill_climbing(s_line,t) # tries to improve it with a local search
+        pos = makespan(s_star,t)
+
+        if (pos > pre)
+            println("deu ruim ------------------------------------------------------------------------------")
+        end
+
+        s_line = randomized_greedy_construct(alpha, number_jobs, t) # gets the best solution given by the greedy construct
+        # println("1-makespan s_line - meiuca = ", makespan(s_line,t))
+        # println("2-makespan s_star - meiuca = ", makespan(s_star,t))
+
+        s_line = hill_climbing(copy(s_line),t) # tries to improve it with a local search
+        # println("1-makespan s_line - meio fim = ", makespan(s_line,t))
+        # println("2-makespan s_star - meio fim = ", makespan(s_star,t))
 
         if makespan(s_line,t) <= makespan(s_star,t) # if the new solution is better swaps it 
+            # println("  1-makespan s_line - trocando = ", makespan(s_line,t))
+            # println("  2-makespan s_star - trocando = ", makespan(s_star,t))
             s_star = copy(s_line)
+            println(makespan(s_star,t))
         end
+        pre = makespan(s_star,t)
+        # println("1-makespan s_line - finalera = ", makespan(s_line,t))
+        # println("2-makespan s_star - finalera = ", makespan(s_star,t))
     end
-    return s_star
+
+    return initial_solution, s_star
 end
 
 
@@ -172,14 +194,37 @@ function main()
     alpha::Float32 = parse(Float32, ARGS[2]) # second parameter is the alpha to be used in the construct
     Random.seed!(parse(Int64,ARGS[3]))       # third parameter is the randomness seed
     
+    s_stars           = Array{Int64}[]
+    initial_solutions = Array{Int64}[]
+
+    time_elapsed              ::Array{Float64} = [] 
+    initial_solutions_makespan::Array{Float64} = []
+    s_stars_makespan          ::Array{Float64} = []
+    
     sch::Array{Int64,1}, t::Array{Int64,2} = read_instances(filename) # reads the instance from the file and loads initial schedule solution and t matrix
 
     number_jobs, number_machines = size(t)
     
-    s_star = GRASP(alpha, number_jobs, t)
+    for i in 1:10
+        Random.seed!(parse(Int64,ARGS[3])*i)
+        execution_time  = @elapsed initial_solution, s_star  = GRASP(alpha, number_jobs, t)
+        
+        push!(time_elapsed              , execution_time)
+        push!(s_stars                   , s_star)
+        push!(s_stars_makespan          , makespan(s_star,t))
+        push!(initial_solutions         , initial_solution)
+        push!(initial_solutions_makespan, makespan(initial_solution,t))
+    end
 
-    println(s_star)
-    println(makespan(s_star,t))
+    mean_initial_solution = mean(initial_solutions_makespan)
+    mean_s_star           = mean(s_stars_makespan)
+    std_dev_s_star        = std(s_stars_makespan)
+    mean_execution_time   = mean(time_elapsed)
+
+    println("mean initial solution = ", mean_initial_solution)
+    println("mean best solution = ", mean_s_star)
+    println("std dev best solution = ", std_dev_s_star)
+    println("mean execution time = ", mean_execution_time, "\n")
 end
 
 main()
