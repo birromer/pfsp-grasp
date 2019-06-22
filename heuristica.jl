@@ -2,9 +2,11 @@ using Random
 using Statistics
 
 makespan_table = Dict{Array{Int64},Int64}()
+last_line_table = Dict{Array{Int64},Array{Int64}}()
+
 NUMBER_CANDIDATES = 300
 STOP_GRASP = 1500
-STOP_HILL_CLIMBING = 100
+STOP_HILL_CLIMBING = 50
 
 function read_instances(filename::String)
     sch = Array{Int64,1}
@@ -31,26 +33,44 @@ function read_instances(filename::String)
     return sch, t
 end
 
-function makespan(sch::Array{Int64}, t) # computes the makespan of a certain solution
+function makespan(sch::Array{Int64}, t, save_to_dict::Bool=true, use_last_line::Bool=false, previous_solution=nothing) # computes the makespan of a certain solution
 
     if haskey(makespan_table, sch) # if the dictionary already has the computed makespan
         return makespan_table[sch] # returns it and avoid computing it again
-    else
+    elseif use_last_line == true && haskey(last_line_table, previous_solution)
+        previous_last_line = last_line_table[previous_solution]
+        current_last_line::Array{Int64} = [previous_last_line[1] + t[sch[length(sch)]],1]
+        number_machines = length(current_last_line)
+
+
+        for m in 2:number_machines
+            top = previous_last_line[m-1]
+            side = current_last_line[m-1]
+            current_last_line[m] = max(top,side) + current_last_line[m]
+        end
+
+        last_line_table[sch] = current_last_line
+
+        return current_last_line[number_machines]
+
+    else 
         number_jobs, number_machines = size(t)
+
+        jobs_in_solution = length(sch)
 
         # t_line is the original t matrix with the order of the jobs alteres to represent the proposed schedule (sch)
         t_line = zeros(Int64, number_jobs, number_machines) 
-        for i in 1:number_jobs
+        for i in 1:jobs_in_solution
             for j in 1:number_machines
                 t_line[i,j] = t[sch[i],j] # puts the values in the positions referenced by the schedule
             end 
         end
 
         # finish_time is a matrix with the acumulated times of each job, showing exactly when job i in mahine j with finish, respecting the constrains
-        finish_time = zeros(Int64, number_jobs, number_machines)
+        finish_time = zeros(Int64, jobs_in_solution, number_machines)
         finish_time[1,1] = t_line[1,1] # only the job 1 at machine 1 never changes
 
-        for i in 2:number_jobs # fills each item of the first column with the sum of the values before in the t matrix
+        for i in 2:jobs_in_solution # fills each item of the first column with the sum of the values before in the t matrix
             finish_time[i,1] = t_line[i,1] + finish_time[i-1,1] # that is the computation of the finish times in the first machine, that will always execute in order
         end                                                     # starting a new job as soon as the previous finishes
 
@@ -58,7 +78,7 @@ function makespan(sch::Array{Int64}, t) # computes the makespan of a certain sol
             finish_time[1,j] = finish_time[1,j-1] + t_line[1,j] # that is the computation of the finish time of the first job of each machine
         end                                                     # always starting as soon as the first job of the previous machine finishes
 
-        for i in 2:number_jobs
+        for i in 2:jobs_in_solution
             for j in 2:number_machines     
                 side = finish_time[i,j-1] # each in between job depends on both the previous job in the same machine finishing and the same job in the previous machine finishg 
                 top  = finish_time[i-1,j] # so its finish time will be the max value between those two
@@ -66,9 +86,15 @@ function makespan(sch::Array{Int64}, t) # computes the makespan of a certain sol
             end
         end
 
-        makespan = finish_time[number_jobs,number_machines] # the total makespan will be the finish time of the last job in the last machine
+        makespan = finish_time[jobs_in_solution,number_machines] # the total makespan will be the finish time of the last job in the last machine
 
-        makespan_table[sch] = makespan # updates the makespan disctionary so that the recomputation can be avoided
+        if save_to_dict == true
+            makespan_table[sch] = makespan # updates the makespan disctionary so that the recomputation can be avoided
+        end
+
+        if use_last_line == true
+            last_line_table[sch] = finish_time[jobs_in_solution, :] # saves the last line of finish_time to be reused
+        end
 
         return makespan
     end
@@ -112,7 +138,7 @@ function hill_climbing(solution::Array{Int64,1}, t) # hill climbing will be the 
     while no_improvement_rounds <= STOP_HILL_CLIMBING
         neighbour_solution = generate_neighbour(copy(current_solution)) # generates a new neighbour
         neighbour_makespan = makespan(copy(neighbour_solution),t)       # and computes its makespan for reuse in case of a good one
-        
+
         if neighbour_makespan < current_makespan # replaces the best current solution when has a shorter makespan
             current_makespan = copy(neighbour_makespan)
             current_solution = copy(neighbour_solution)
@@ -136,7 +162,39 @@ function initialize_candidate_set(number_jobs::Int64) # simple start for the can
 end
 
 
+function compute_c_max(candidate::Array{Int64,1}, job_position::Int64, t::Array{Int64,2})
+    number_jobs, number_machines = size(t)
+    c_max::Int64 = 999999999
+
+    if candidate == []           # if the candidate solution has no jobs yet
+        return t[job_position,1] # returns its time in the first machine
+    else
+        temp_candidate = push!(copy(candidate),job_position) 
+
+        return makespan(temp_candidate, t, false, true, candidate) # return the makespan of the jobs in the candidate + the job being tested as the schedule
+    end
+
+end
+
 function randomized_greedy_construct(alpha::Float32, number_jobs::Int64, t::Array{Int64,2})
+    jobs_not_filled::Array{Int64,1} = [x for x in 1:number_jobs]
+    candidate::Array{Int64,1} = []
+
+    while length(jobs_not_filled) > 0
+        println(length(jobs_not_filled))
+        execution_times = [(compute_c_max(candidate,i,t),i) for i in jobs_not_filled] # computes the makesan time for each job added to the current colution        
+        execution_times = sort(execution_times)                     # orders those aditions by makespan
+        next_job = ceil(Int,rand(1:(length(execution_times)*alpha+1))) # chooses a random job to be added among the best alpha%
+        push!(candidate, execution_times[next_job][2])              # adds the job to the candidate being made
+        jobs_not_filled = filter(x -> x != execution_times[next_job][2], jobs_not_filled) # removes job from the to be filled list 
+    
+    end
+
+    return candidate
+end
+
+
+function modified_randomized_greedy_construct(alpha::Float32, number_jobs::Int64, t::Array{Int64,2})
     solutions = initialize_candidate_set(number_jobs) # initializes candidate set
     solutions = qsort!(copy(solutions), 1, length(solutions), t) # orders set by makespan
 
@@ -186,7 +244,7 @@ function main()
 
     number_jobs, number_machines = size(t)
     
-    for i in 1:10
+    for i in 1:1
         Random.seed!(parse(Int64,ARGS[3])*i)
         execution_time  = @elapsed initial_solution, s_star  = GRASP(alpha, number_jobs, t)
         
@@ -196,9 +254,10 @@ function main()
         push!(initial_solutions         , initial_solution)
         push!(initial_solutions_makespan, makespan(initial_solution,t))
 
-        # println("execution time = ", execution_time)
-        # println("initial solution makespan = ", makespan(initial_solution,t))
-        # println("s star makespan = ", makespan(s_star,t))
+        println("execution time = ", execution_time)
+        println("initial solution makespan = ", makespan(initial_solution,t))
+        println(s_star)
+        println("s star makespan = ", makespan(s_star,t))
     end
 
     mean_initial_solution = mean(initial_solutions_makespan)
@@ -209,7 +268,7 @@ function main()
     println("mean initial solution = ", mean_initial_solution)
     println("mean best solution = ", mean_s_star)
     println("std dev best solution = ", std_dev_s_star)
-    println("mean execution time = ", mean_execution_time, "\n")
+    println("mean execution time = ", mean_execution_time)
 end
 
 main()
