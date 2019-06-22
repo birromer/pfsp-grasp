@@ -18,8 +18,8 @@ minimize PFSP: Cmax;
 
 s.t. executarTodas{ i in N }: C[1,i] >= T[1,i];
 s.t. executarAteOFimEmOrdem{ r in M, i in N: r > 1 }: C[r,i] - C[r-1,i] >= T[r,i];
-s.t. fixaOrdem1{ r in M, i in N, k in N: k > i and k > 1 }: C[r,i] - C[r,k] - P*D[i,k] >= T[r,i];
+s.t. fixaOrdem1{ r in M, i in N, k in N: k > i and k > 1 }: C[r,i] - C[r,k] + P*D[i,k] >= T[r,i];
 s.t. fixaOrdem2{ r in M, i in N, k in N: k > i and k > 1 }: C[r,i] - C[r,k] + P*D[i,k] <= P - T[r,k];
-s.t. makespan{ r in M, i in N }: Cmax >= C[num_mach,i];
+s.t. makespan{ r in M, i in N }: Cmax >= C[r,i];
 
 end;
