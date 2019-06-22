@@ -2,9 +2,9 @@ using Random
 using Statistics
 
 makespan_table = Dict{Array{Int64},Int64}()
-NUMBER_CANDIDATES = 100
-STOP_GRASP = 400
-STOP_HILL_CLIMBING = 55
+NUMBER_CANDIDATES = 1000
+STOP_GRASP = 1000
+STOP_HILL_CLIMBING = 100
 
 function read_instances(filename::String)
     sch = Array{Int64,1}
@@ -108,7 +108,7 @@ end
 function hill_climbing(solution::Array{Int64,1}, t) # hill climbing will be the local search used to improve the solution
     no_improvement_rounds::Int32 = 0 # counter for steps without improvement, will be used as stopping condition
     current_solution::Array{Int64,1} = copy(solution) 
-    current_makespan = makespan(copy(solution),t) # precomputes the makespan for reuse 
+    current_makespan = makespan(solution,t) # precomputes the makespan for reuse 
 
     while no_improvement_rounds <= STOP_HILL_CLIMBING
         neighbour_solution = generate_neighbour(copy(current_solution)) # generates a new neighbour
@@ -157,32 +157,13 @@ function GRASP(alpha::Float32, number_jobs::Int64, t::Array{Int64,2})
     pre_1 = randperm(number_jobs)
 
     for k in 1:STOP_GRASP
-        # println("1-makespan s_line - em cima = ", makespan(s_line,t))
-        # println("2-makespan s_star - em cima = ", makespan(s_star,t))
-
-        pos = makespan(s_star,t)
-
-        if (pos > pre)
-            println("deu ruim ------------------------------------------------------------------------------")
-        end
-
         s_line = randomized_greedy_construct(alpha, number_jobs, t) # gets the best solution given by the greedy construct
-        # println("1-makespan s_line - meiuca = ", makespan(s_line,t))
-        # println("2-makespan s_star - meiuca = ", makespan(s_star,t))
 
         s_line = hill_climbing(copy(s_line),t) # tries to improve it with a local search
-        # println("1-makespan s_line - meio fim = ", makespan(s_line,t))
-        # println("2-makespan s_star - meio fim = ", makespan(s_star,t))
 
-        if makespan(s_line,t) <= makespan(s_star,t) # if the new solution is better swaps it 
-            # println("  1-makespan s_line - trocando = ", makespan(s_line,t))
-            # println("  2-makespan s_star - trocando = ", makespan(s_star,t))
+        if makespan(s_line,t) < makespan(s_star,t) # if the new solution is better swaps it 
             s_star = copy(s_line)
-            println(makespan(s_star,t))
         end
-        pre = makespan(s_star,t)
-        # println("1-makespan s_line - finalera = ", makespan(s_line,t))
-        # println("2-makespan s_star - finalera = ", makespan(s_star,t))
     end
 
     return initial_solution, s_star
@@ -205,7 +186,7 @@ function main()
 
     number_jobs, number_machines = size(t)
     
-    for i in 1:10
+    for i in 1:1
         Random.seed!(parse(Int64,ARGS[3])*i)
         execution_time  = @elapsed initial_solution, s_star  = GRASP(alpha, number_jobs, t)
         
