@@ -215,7 +215,7 @@ function GRASP(alpha::Float32, number_jobs::Int64, t::Array{Int64,2})
         if k % 100 == 0
             println(k)
         end
-        s_line = randomized_greedy_construct(alpha, number_jobs, t) # gets the best solution given by the greedy construct
+        s_line = modified_randomized_greedy_construct(alpha, number_jobs, t) # gets the best solution given by the greedy construct
 
         s_line = hill_climbing(copy(s_line),t) # tries to improve it with a local search
 
