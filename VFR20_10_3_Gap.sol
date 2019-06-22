@@ -1,8617 +1,8237 @@
 Problem:    PFSP
-Rows:       4201
+Rows:       4021
 Columns:    391 (190 integer, 190 binary)
-Non-zeros:  12181
+Non-zeros:  11821
 Status:     INTEGER NON-OPTIMAL
-Objective:  PFSP = 1806 (MINimum)
+Objective:  PFSP = 1850 (MINimum)
 
    No.   Row name        Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 PFSP                     1806                             
-     2 executarTodas[1]
-                                 699            88               
-     3 executarTodas[2]
-                                 735            33               
-     4 executarTodas[3]
-                                  20             5               
-     5 executarTodas[4]
-                                 487             7               
-     6 executarTodas[5]
-                                 702             3               
-     7 executarTodas[6]
-                                 611            27               
-     8 executarTodas[7]
-                                 584            97               
-     9 executarTodas[8]
-                                  15            15               
-    10 executarTodas[9]
-                                 480            54               
-    11 executarTodas[10]
-                                 426            49               
-    12 executarTodas[11]
-                                 901             2               
-    13 executarTodas[12]
-                                 377             3               
-    14 executarTodas[13]
-                                 374            60               
-    15 executarTodas[14]
-                                  40            20               
-    16 executarTodas[15]
-                                 314            89               
-    17 executarTodas[16]
-                                 899            66               
-    18 executarTodas[17]
-                                 225            75               
-    19 executarTodas[18]
-                                 150            72               
-    20 executarTodas[19]
-                                 833            98               
-    21 executarTodas[20]
-                                  78            38               
-    22 executarAteOFimEmOrdem[2,1]
-                                 113            49               
-    23 executarAteOFimEmOrdem[2,2]
-                                 132            39               
-    24 executarAteOFimEmOrdem[2,3]
-                                 107            68               
-    25 executarAteOFimEmOrdem[2,4]
-                                 112            97               
-    26 executarAteOFimEmOrdem[2,5]
-                                 126            16               
-    27 executarAteOFimEmOrdem[2,6]
-                                 100            92               
-    28 executarAteOFimEmOrdem[2,7]
-                                  35            20               
-    29 executarAteOFimEmOrdem[2,8]
-                                  24            24               
-    30 executarAteOFimEmOrdem[2,9]
-                                  22            22               
-    31 executarAteOFimEmOrdem[2,10]
-                                  43            14               
-    32 executarAteOFimEmOrdem[2,11]
-                                 148            90               
-    33 executarAteOFimEmOrdem[2,12]
-                                  78            59               
-    34 executarAteOFimEmOrdem[2,13]
-                                  22            12               
-    35 executarAteOFimEmOrdem[2,14]
-                                 136            43               
-    36 executarAteOFimEmOrdem[2,15]
-                                  70            64               
-    37 executarAteOFimEmOrdem[2,16]
-                                  60            60               
-    38 executarAteOFimEmOrdem[2,17]
+     1 PFSP                     1850                             
+     2 comecarExecucao[1]
+                                 800            88               
+     3 comecarExecucao[2]
+                                 712            33               
+     4 comecarExecucao[3]
+                                  25             5               
+     5 comecarExecucao[4]
+                                 582             7               
+     6 comecarExecucao[5]
+                                 803             3               
+     7 comecarExecucao[6]
+                                 575            27               
+     8 comecarExecucao[7]
+                                 679            97               
+     9 comecarExecucao[8]
+                                 548            15               
+    10 comecarExecucao[9]
+                                 533            54               
+    11 comecarExecucao[10]
+                                 479            49               
+    12 comecarExecucao[11]
+                                 427             2               
+    13 comecarExecucao[12]
+                                 430             3               
+    14 comecarExecucao[13]
+                                 425            60               
+    15 comecarExecucao[14]
+                                  20            20               
+    16 comecarExecucao[15]
+                                 365            89               
+    17 comecarExecucao[16]
+                                 276            66               
+    18 comecarExecucao[17]
+                                 210            75               
+    19 comecarExecucao[18]
+                                 135            72               
+    20 comecarExecucao[19]
+                                 901            98               
+    21 comecarExecucao[20]
+                                  63            38               
+    22 naoComecarAntesDaAnterior[2,1]
+                                 147            49               
+    23 naoComecarAntesDaAnterior[2,2]
+                                 186            39               
+    24 naoComecarAntesDaAnterior[2,3]
+                                 106            68               
+    25 naoComecarAntesDaAnterior[2,4]
+                                 257            97               
+    26 naoComecarAntesDaAnterior[2,5]
+                                 160            16               
+    27 naoComecarAntesDaAnterior[2,6]
+                                 167            92               
+    28 naoComecarAntesDaAnterior[2,7]
+                                 180            20               
+    29 naoComecarAntesDaAnterior[2,8]
+                                 102            24               
+    30 naoComecarAntesDaAnterior[2,9]
+                                  93            22               
+    31 naoComecarAntesDaAnterior[2,10]
+                                 125            14               
+    32 naoComecarAntesDaAnterior[2,11]
+                                 104            90               
+    33 naoComecarAntesDaAnterior[2,12]
+                                 160            59               
+    34 naoComecarAntesDaAnterior[2,13]
+                                  16            12               
+    35 naoComecarAntesDaAnterior[2,14]
+                                  43            43               
+    36 naoComecarAntesDaAnterior[2,15]
+                                  64            64               
+    37 naoComecarAntesDaAnterior[2,16]
+                                  89            60               
+    38 naoComecarAntesDaAnterior[2,17]
                                   95            95               
-    39 executarAteOFimEmOrdem[2,18]
+    39 naoComecarAntesDaAnterior[2,18]
                                   75            32               
-    40 executarAteOFimEmOrdem[2,19]
-                                  66            32               
-    41 executarAteOFimEmOrdem[2,20]
+    40 naoComecarAntesDaAnterior[2,19]
+                                  94            32               
+    41 naoComecarAntesDaAnterior[2,20]
                                  115            17               
-    42 executarAteOFimEmOrdem[3,1]
-                                 126            50               
-    43 executarAteOFimEmOrdem[3,2]
-                                 185            58               
-    44 executarAteOFimEmOrdem[3,3]
+    42 naoComecarAntesDaAnterior[3,1]
+                                 179            50               
+    43 naoComecarAntesDaAnterior[3,2]
+                                 178            58               
+    44 naoComecarAntesDaAnterior[3,3]
                                   92            92               
-    45 executarAteOFimEmOrdem[3,4]
-                                 187            89               
-    46 executarAteOFimEmOrdem[3,5]
-                                 166            56               
-    47 executarAteOFimEmOrdem[3,6]
-                                 177            12               
-    48 executarAteOFimEmOrdem[3,7]
-                                 257            90               
-    49 executarAteOFimEmOrdem[3,8]
-                                  88            88               
-    50 executarAteOFimEmOrdem[3,9]
-                                 195            65               
-    51 executarAteOFimEmOrdem[3,10]
-                                 163             9               
-    52 executarAteOFimEmOrdem[3,11]
-                                 231            28               
-    53 executarAteOFimEmOrdem[3,12]
-                                 168            42               
-    54 executarAteOFimEmOrdem[3,13]
-                                 153            91               
-    55 executarAteOFimEmOrdem[3,14]
-                                 111            68               
-    56 executarAteOFimEmOrdem[3,15]
-                                  74            34               
-    57 executarAteOFimEmOrdem[3,16]
-                                 244            65               
-    58 executarAteOFimEmOrdem[3,17]
-                                 104            80               
-    59 executarAteOFimEmOrdem[3,18]
-                                 119            53               
-    60 executarAteOFimEmOrdem[3,19]
-                                 239            86               
-    61 executarAteOFimEmOrdem[3,20]
-                                  98             4               
-    62 executarAteOFimEmOrdem[4,1]
-                                 123            61               
-    63 executarAteOFimEmOrdem[4,2]
-                                 115            44               
-    64 executarAteOFimEmOrdem[4,3]
-                                 102            97               
-    65 executarAteOFimEmOrdem[4,4]
-                                  40             5               
-    66 executarAteOFimEmOrdem[4,5]
-                                  85            18               
-    67 executarAteOFimEmOrdem[4,6]
-                                  94            77               
-    68 executarAteOFimEmOrdem[4,7]
-                                  29            14               
-    69 executarAteOFimEmOrdem[4,8]
-                                  97            97               
-    70 executarAteOFimEmOrdem[4,9]
-                                 124            82               
-    71 executarAteOFimEmOrdem[4,10]
-                                 107            17               
-    72 executarAteOFimEmOrdem[4,11]
-                                  79            79               
-    73 executarAteOFimEmOrdem[4,12]
-                                  99            99               
-    74 executarAteOFimEmOrdem[4,13]
-                                  74            74               
-    75 executarAteOFimEmOrdem[4,14]
-                                  61            27               
-    76 executarAteOFimEmOrdem[4,15]
-                                  91            22               
-    77 executarAteOFimEmOrdem[4,16]
-                                  77            77               
-    78 executarAteOFimEmOrdem[4,17]
-                                 103            83               
-    79 executarAteOFimEmOrdem[4,18]
-                                  85            71               
-    80 executarAteOFimEmOrdem[4,19]
-                                  65            36               
-    81 executarAteOFimEmOrdem[4,20]
-                                  67            10               
-    82 executarAteOFimEmOrdem[5,1]
-                                  60            60               
-    83 executarAteOFimEmOrdem[5,2]
-                                  96            58               
-    84 executarAteOFimEmOrdem[5,3]
-                                  92            92               
-    85 executarAteOFimEmOrdem[5,4]
-                                  80             2               
-    86 executarAteOFimEmOrdem[5,5]
-                                 111            69               
-    87 executarAteOFimEmOrdem[5,6]
-                                  48            48               
-    88 executarAteOFimEmOrdem[5,7]
-                                  77            76               
-    89 executarAteOFimEmOrdem[5,8]
-                                  84            84               
-    90 executarAteOFimEmOrdem[5,9]
-                                  83            83               
-    91 executarAteOFimEmOrdem[5,10]
-                                  82            52               
-    92 executarAteOFimEmOrdem[5,11]
-                                  94            53               
-    93 executarAteOFimEmOrdem[5,12]
-                                  47            42               
-    94 executarAteOFimEmOrdem[5,13]
-                                  23             8               
-    95 executarAteOFimEmOrdem[5,14]
-                                  99            34               
-    96 executarAteOFimEmOrdem[5,15]
-                                  88            54               
-    97 executarAteOFimEmOrdem[5,16]
-                                  17            17               
-    98 executarAteOFimEmOrdem[5,17]
-                                  56            46               
-    99 executarAteOFimEmOrdem[5,18]
-                                  88            45               
-   100 executarAteOFimEmOrdem[5,19]
-                                  77            17               
-   101 executarAteOFimEmOrdem[5,20]
-                                 114            25               
-   102 executarAteOFimEmOrdem[6,1]
-                                  69            19               
-   103 executarAteOFimEmOrdem[6,2]
-                                 118            67               
-   104 executarAteOFimEmOrdem[6,3]
-                                  77            77               
-   105 executarAteOFimEmOrdem[6,4]
-                                  76            25               
-   106 executarAteOFimEmOrdem[6,5]
-                                  21            21               
-   107 executarAteOFimEmOrdem[6,6]
-                                 141            22               
-   108 executarAteOFimEmOrdem[6,7]
-                                  98            98               
-   109 executarAteOFimEmOrdem[6,8]
-                                  29            29               
-   110 executarAteOFimEmOrdem[6,9]
-                                   4             4               
-   111 executarAteOFimEmOrdem[6,10]
-                                  83            29               
-   112 executarAteOFimEmOrdem[6,11]
-                                  83            83               
-   113 executarAteOFimEmOrdem[6,12]
-                                  99            95               
-   114 executarAteOFimEmOrdem[6,13]
-                                  94            94               
-   115 executarAteOFimEmOrdem[6,14]
-                                 123            80               
-   116 executarAteOFimEmOrdem[6,15]
-                                   9             9               
-   117 executarAteOFimEmOrdem[6,16]
-                                 156             2               
-   118 executarAteOFimEmOrdem[6,17]
-                                  54            12               
-   119 executarAteOFimEmOrdem[6,18]
-                                 108            32               
-   120 executarAteOFimEmOrdem[6,19]
-                                 171            70               
-   121 executarAteOFimEmOrdem[6,20]
-                                 121            23               
-   122 executarAteOFimEmOrdem[7,1]
-                                 114            82               
-   123 executarAteOFimEmOrdem[7,2]
-                                  26            24               
-   124 executarAteOFimEmOrdem[7,3]
-                                  41            41               
-   125 executarAteOFimEmOrdem[7,4]
+    45 naoComecarAntesDaAnterior[3,4]
                                   89            89               
-   126 executarAteOFimEmOrdem[7,5]
-                                 172            79               
-   127 executarAteOFimEmOrdem[7,6]
-                                  51            51               
-   128 executarAteOFimEmOrdem[7,7]
-                                  91            91               
-   129 executarAteOFimEmOrdem[7,8]
-                                  95            95               
-   130 executarAteOFimEmOrdem[7,9]
-                                  74            64               
-   131 executarAteOFimEmOrdem[7,10]
-                                  14            14               
-   132 executarAteOFimEmOrdem[7,11]
-                                  81            67               
-   133 executarAteOFimEmOrdem[7,12]
-                                  36            36               
-   134 executarAteOFimEmOrdem[7,13]
-                                 128            31               
-   135 executarAteOFimEmOrdem[7,14]
-                                  51            51               
-   136 executarAteOFimEmOrdem[7,15]
-                                 168            92               
-   137 executarAteOFimEmOrdem[7,16]
-                                  97            17               
-   138 executarAteOFimEmOrdem[7,17]
-                                  85            26               
-   139 executarAteOFimEmOrdem[7,18]
-                                  71            71               
-   140 executarAteOFimEmOrdem[7,19]
-                                  82            82               
-   141 executarAteOFimEmOrdem[7,20]
-                                  31             3               
-   142 executarAteOFimEmOrdem[8,1]
-                                  83            83               
-   143 executarAteOFimEmOrdem[8,2]
-                                  61            40               
-   144 executarAteOFimEmOrdem[8,3]
-                                  90            90               
-   145 executarAteOFimEmOrdem[8,4]
-                                 100            30               
-   146 executarAteOFimEmOrdem[8,5]
-                                  45            41               
-   147 executarAteOFimEmOrdem[8,6]
-                                  82            36               
-   148 executarAteOFimEmOrdem[8,7]
-                                   9             9               
-   149 executarAteOFimEmOrdem[8,8]
-                                  66            66               
-   150 executarAteOFimEmOrdem[8,9]
-                                 152            30               
-   151 executarAteOFimEmOrdem[8,10]
-                                 186            91               
-   152 executarAteOFimEmOrdem[8,11]
-                                  97            67               
-   153 executarAteOFimEmOrdem[8,12]
-                                 109            66               
-   154 executarAteOFimEmOrdem[8,13]
-                                  79            79               
-   155 executarAteOFimEmOrdem[8,14]
-                                  74            74               
-   156 executarAteOFimEmOrdem[8,15]
-                                  54            51               
-   157 executarAteOFimEmOrdem[8,16]
-                                  90             7               
-   158 executarAteOFimEmOrdem[8,17]
-                                  95            28               
-   159 executarAteOFimEmOrdem[8,18]
-                                  93            76               
-   160 executarAteOFimEmOrdem[8,19]
-                                  27            27               
-   161 executarAteOFimEmOrdem[8,20]
-                                  89            18               
-   162 executarAteOFimEmOrdem[9,1]
-                                  90            90               
-   163 executarAteOFimEmOrdem[9,2]
-                                  92            72               
-   164 executarAteOFimEmOrdem[9,3]
-                                  72            72               
-   165 executarAteOFimEmOrdem[9,4]
-                                 102            58               
-   166 executarAteOFimEmOrdem[9,5]
-                                  60            11               
-   167 executarAteOFimEmOrdem[9,6]
-                                  83            63               
-   168 executarAteOFimEmOrdem[9,7]
-                                 144            51               
-   169 executarAteOFimEmOrdem[9,8]
-                                  74            74               
-   170 executarAteOFimEmOrdem[9,9]
-                                   6             6               
-   171 executarAteOFimEmOrdem[9,10]
-                                  30             8               
-   172 executarAteOFimEmOrdem[9,11]
-                                   7             7               
-   173 executarAteOFimEmOrdem[9,12]
-                                  84            25               
-   174 executarAteOFimEmOrdem[9,13]
-                                 125            62               
-   175 executarAteOFimEmOrdem[9,14]
-                                  91            91               
-   176 executarAteOFimEmOrdem[9,15]
-                                 142            55               
-   177 executarAteOFimEmOrdem[9,16]
-                                  74            74               
-   178 executarAteOFimEmOrdem[9,17]
-                                 138            78               
-   179 executarAteOFimEmOrdem[9,18]
-                                  88            37               
-   180 executarAteOFimEmOrdem[9,19]
-                                  80            80               
-   181 executarAteOFimEmOrdem[9,20]
-                                 127            54               
-   182 executarAteOFimEmOrdem[10,1]
-                                 159            67               
-   183 executarAteOFimEmOrdem[10,2]
-                                 148            19               
-   184 executarAteOFimEmOrdem[10,3]
-                                  93            53               
-   185 executarAteOFimEmOrdem[10,4]
-                                 161            99               
-   186 executarAteOFimEmOrdem[10,5]
-                                 175            27               
-   187 executarAteOFimEmOrdem[10,6]
-                                 182            54               
-   188 executarAteOFimEmOrdem[10,7]
-                                 191            81               
-   189 executarAteOFimEmOrdem[10,8]
-                                 161            25               
-   190 executarAteOFimEmOrdem[10,9]
-                                 195            60               
-   191 executarAteOFimEmOrdem[10,10]
-                                 141            85               
-   192 executarAteOFimEmOrdem[10,11]
-                                  85            55               
-   193 executarAteOFimEmOrdem[10,12]
+    46 naoComecarAntesDaAnterior[3,5]
+                                 219            56               
+    47 naoComecarAntesDaAnterior[3,6]
+                                  85            12               
+    48 naoComecarAntesDaAnterior[3,7]
+                                 159            90               
+    49 naoComecarAntesDaAnterior[3,8]
+                                 165            88               
+    50 naoComecarAntesDaAnterior[3,9]
+                                 101            65               
+    51 naoComecarAntesDaAnterior[3,10]
+                                  58             9               
+    52 naoComecarAntesDaAnterior[3,11]
+                                  80            28               
+    53 naoComecarAntesDaAnterior[3,12]
+                                  63            42               
+    54 naoComecarAntesDaAnterior[3,13]
+                                 142            91               
+    55 naoComecarAntesDaAnterior[3,14]
+                                  68            68               
+    56 naoComecarAntesDaAnterior[3,15]
+                                  63            34               
+    57 naoComecarAntesDaAnterior[3,16]
                                   93            65               
-   194 executarAteOFimEmOrdem[10,13]
-                                  53            20               
-   195 executarAteOFimEmOrdem[10,14]
-                                  93            93               
-   196 executarAteOFimEmOrdem[10,15]
-                                  95            35               
-   197 executarAteOFimEmOrdem[10,16]
-                                  37            37               
-   198 executarAteOFimEmOrdem[10,17]
-                                 115            95               
-   199 executarAteOFimEmOrdem[10,18]
-                                  98            83               
-   200 executarAteOFimEmOrdem[10,19]
-                                  74             6               
-   201 executarAteOFimEmOrdem[10,20]
-                                  52            13               
-   202 fixaOrdem1[1,1,2]
-                               32764            88               
-   203 fixaOrdem1[1,1,3]
-                                 679            88               
-   204 fixaOrdem1[1,1,4]
-                                 212            88               
-   205 fixaOrdem1[1,1,5]
-                               32797            88               
-   206 fixaOrdem1[1,1,6]
-                                  88            88               
-   207 fixaOrdem1[1,1,7]
-                                 115            88               
-   208 fixaOrdem1[1,1,8]
-                                 684            88               
-   209 fixaOrdem1[1,1,9]
-                                 219            88               
-   210 fixaOrdem1[1,1,10]
-                                 273            88               
-   211 fixaOrdem1[1,1,11]
-                               32598            88               
-   212 fixaOrdem1[1,1,12]
-                                 322            88               
-   213 fixaOrdem1[1,1,13]
-                                 325            88               
-   214 fixaOrdem1[1,1,14]
-                                 659            88               
-   215 fixaOrdem1[1,1,15]
-                                 385            88               
-   216 fixaOrdem1[1,1,16]
-                               32600            88               
-   217 fixaOrdem1[1,1,17]
-                                 474            88               
-   218 fixaOrdem1[1,1,18]
-                                 549            88               
-   219 fixaOrdem1[1,1,19]
-                               32666            88               
-   220 fixaOrdem1[1,1,20]
-                                 621            88               
-   221 fixaOrdem1[1,2,3]
-                                 715            33               
-   222 fixaOrdem1[1,2,4]
-                                 248            33               
-   223 fixaOrdem1[1,2,5]
-                                  33            33               
-   224 fixaOrdem1[1,2,6]
-                                 124            33               
-   225 fixaOrdem1[1,2,7]
-                                 151            33               
-   226 fixaOrdem1[1,2,8]
-                                 720            33               
-   227 fixaOrdem1[1,2,9]
-                                 255            33               
-   228 fixaOrdem1[1,2,10]
-                                 309            33               
-   229 fixaOrdem1[1,2,11]
-                               32634            33               
-   230 fixaOrdem1[1,2,12]
-                                 358            33               
-   231 fixaOrdem1[1,2,13]
-                                 361            33               
-   232 fixaOrdem1[1,2,14]
-                                 695            33               
-   233 fixaOrdem1[1,2,15]
-                                 421            33               
-   234 fixaOrdem1[1,2,16]
-                               32636            33               
-   235 fixaOrdem1[1,2,17]
-                                 510            33               
-   236 fixaOrdem1[1,2,18]
-                                 585            33               
-   237 fixaOrdem1[1,2,19]
-                               32702            33               
-   238 fixaOrdem1[1,2,20]
-                                 657            33               
-   239 fixaOrdem1[1,3,4]
-                               32333             5               
-   240 fixaOrdem1[1,3,5]
-                               32118             5               
-   241 fixaOrdem1[1,3,6]
-                               32209             5               
-   242 fixaOrdem1[1,3,7]
-                               32236             5               
-   243 fixaOrdem1[1,3,8]
-                                   5             5               
-   244 fixaOrdem1[1,3,9]
-                               32340             5               
-   245 fixaOrdem1[1,3,10]
-                               32394             5               
-   246 fixaOrdem1[1,3,11]
-                               31919             5               
-   247 fixaOrdem1[1,3,12]
-                               32443             5               
-   248 fixaOrdem1[1,3,13]
-                               32446             5               
-   249 fixaOrdem1[1,3,14]
-                               32780             5               
-   250 fixaOrdem1[1,3,15]
-                               32506             5               
-   251 fixaOrdem1[1,3,16]
-                               31921             5               
-   252 fixaOrdem1[1,3,17]
-                               32595             5               
-   253 fixaOrdem1[1,3,18]
-                               32670             5               
-   254 fixaOrdem1[1,3,19]
-                               31987             5               
-   255 fixaOrdem1[1,3,20]
-                               32742             5               
-   256 fixaOrdem1[1,4,5]
-                               32585             7               
-   257 fixaOrdem1[1,4,6]
-                               32676             7               
-   258 fixaOrdem1[1,4,7]
-                               32703             7               
-   259 fixaOrdem1[1,4,8]
-                                 472             7               
-   260 fixaOrdem1[1,4,9]
-                                   7             7               
-   261 fixaOrdem1[1,4,10]
-                                  61             7               
-   262 fixaOrdem1[1,4,11]
-                               32386             7               
-   263 fixaOrdem1[1,4,12]
-                                 110             7               
-   264 fixaOrdem1[1,4,13]
-                                 113             7               
-   265 fixaOrdem1[1,4,14]
-                                 447             7               
-   266 fixaOrdem1[1,4,15]
-                                 173             7               
-   267 fixaOrdem1[1,4,16]
-                               32388             7               
-   268 fixaOrdem1[1,4,17]
-                                 262             7               
-   269 fixaOrdem1[1,4,18]
-                                 337             7               
-   270 fixaOrdem1[1,4,19]
-                               32454             7               
-   271 fixaOrdem1[1,4,20]
-                                 409             7               
-   272 fixaOrdem1[1,5,6]
-                                  91             3               
-   273 fixaOrdem1[1,5,7]
-                                 118             3               
-   274 fixaOrdem1[1,5,8]
-                                 687             3               
-   275 fixaOrdem1[1,5,9]
-                                 222             3               
-   276 fixaOrdem1[1,5,10]
-                                 276             3               
-   277 fixaOrdem1[1,5,11]
-                               32601             3               
-   278 fixaOrdem1[1,5,12]
-                                 325             3               
-   279 fixaOrdem1[1,5,13]
-                                 328             3               
-   280 fixaOrdem1[1,5,14]
-                                 662             3               
-   281 fixaOrdem1[1,5,15]
-                                 388             3               
-   282 fixaOrdem1[1,5,16]
-                               32603             3               
-   283 fixaOrdem1[1,5,17]
-                                 477             3               
-   284 fixaOrdem1[1,5,18]
-                                 552             3               
-   285 fixaOrdem1[1,5,19]
-                               32669             3               
-   286 fixaOrdem1[1,5,20]
-                                 624             3               
-   287 fixaOrdem1[1,6,7]
+    58 naoComecarAntesDaAnterior[3,17]
+                                  88            80               
+    59 naoComecarAntesDaAnterior[3,18]
+                                  70            53               
+    60 naoComecarAntesDaAnterior[3,19]
+                                 273            86               
+    61 naoComecarAntesDaAnterior[3,20]
+                                  49             4               
+    62 naoComecarAntesDaAnterior[4,1]
+                                 173            61               
+    63 naoComecarAntesDaAnterior[4,2]
+                                 133            44               
+    64 naoComecarAntesDaAnterior[4,3]
+                                  97            97               
+    65 naoComecarAntesDaAnterior[4,4]
+                                 223             5               
+    66 naoComecarAntesDaAnterior[4,5]
+                                 135            18               
+    67 naoComecarAntesDaAnterior[4,6]
+                                 281            77               
+    68 naoComecarAntesDaAnterior[4,7]
+                                 147            14               
+    69 naoComecarAntesDaAnterior[4,8]
+                                 216            97               
+    70 naoComecarAntesDaAnterior[4,9]
+                                 207            82               
+    71 naoComecarAntesDaAnterior[4,10]
+                                 190            17               
+    72 naoComecarAntesDaAnterior[4,11]
+                                 125            79               
+    73 naoComecarAntesDaAnterior[4,12]
+                                 182            99               
+    74 naoComecarAntesDaAnterior[4,13]
+                                  74            74               
+    75 naoComecarAntesDaAnterior[4,14]
+                                  92            27               
+    76 naoComecarAntesDaAnterior[4,15]
+                                  91            22               
+    77 naoComecarAntesDaAnterior[4,16]
+                                 103            77               
+    78 naoComecarAntesDaAnterior[4,17]
+                                  91            83               
+    79 naoComecarAntesDaAnterior[4,18]
+                                 121            71               
+    80 naoComecarAntesDaAnterior[4,19]
+                                  85            36               
+    81 naoComecarAntesDaAnterior[4,20]
+                                 103            10               
+    82 naoComecarAntesDaAnterior[5,1]
+                                  60            60               
+    83 naoComecarAntesDaAnterior[5,2]
+                                  90            58               
+    84 naoComecarAntesDaAnterior[5,3]
+                                  92            92               
+    85 naoComecarAntesDaAnterior[5,4]
+                                  14             2               
+    86 naoComecarAntesDaAnterior[5,5]
+                                 111            69               
+    87 naoComecarAntesDaAnterior[5,6]
+                                  55            48               
+    88 naoComecarAntesDaAnterior[5,7]
+                                  76            76               
+    89 naoComecarAntesDaAnterior[5,8]
+                                  84            84               
+    90 naoComecarAntesDaAnterior[5,9]
+                                  97            83               
+    91 naoComecarAntesDaAnterior[5,10]
+                                  77            52               
+    92 naoComecarAntesDaAnterior[5,11]
+                                  58            53               
+    93 naoComecarAntesDaAnterior[5,12]
+                                  42            42               
+    94 naoComecarAntesDaAnterior[5,13]
+                                  42             8               
+    95 naoComecarAntesDaAnterior[5,14]
+                                  34            34               
+    96 naoComecarAntesDaAnterior[5,15]
+                                 108            54               
+    97 naoComecarAntesDaAnterior[5,16]
+                                  76            17               
+    98 naoComecarAntesDaAnterior[5,17]
+                                 136            46               
+    99 naoComecarAntesDaAnterior[5,18]
+                                 173            45               
+   100 naoComecarAntesDaAnterior[5,19]
+                                  92            17               
+   101 naoComecarAntesDaAnterior[5,20]
+                                 107            25               
+   102 naoComecarAntesDaAnterior[6,1]
+                                 135            19               
+   103 naoComecarAntesDaAnterior[6,2]
+                                 107            67               
+   104 naoComecarAntesDaAnterior[6,3]
+                                 210            77               
+   105 naoComecarAntesDaAnterior[6,4]
+                                  76            25               
+   106 naoComecarAntesDaAnterior[6,5]
+                                  87            21               
+   107 naoComecarAntesDaAnterior[6,6]
+                                  53            22               
+   108 naoComecarAntesDaAnterior[6,7]
+                                  98            98               
+   109 naoComecarAntesDaAnterior[6,8]
+                                  29            29               
+   110 naoComecarAntesDaAnterior[6,9]
+                                  49             4               
+   111 naoComecarAntesDaAnterior[6,10]
+                                  72            29               
+   112 naoComecarAntesDaAnterior[6,11]
+                                  83            83               
+   113 naoComecarAntesDaAnterior[6,12]
+                                  95            95               
+   114 naoComecarAntesDaAnterior[6,13]
+                                  95            94               
+   115 naoComecarAntesDaAnterior[6,14]
+                                  80            80               
+   116 naoComecarAntesDaAnterior[6,15]
+                                   9             9               
+   117 naoComecarAntesDaAnterior[6,16]
+                                  54             2               
+   118 naoComecarAntesDaAnterior[6,17]
+                                  69            12               
+   119 naoComecarAntesDaAnterior[6,18]
+                                 103            32               
+   120 naoComecarAntesDaAnterior[6,19]
+                                 140            70               
+   121 naoComecarAntesDaAnterior[6,20]
+                                 208            23               
+   122 naoComecarAntesDaAnterior[7,1]
+                                  82            82               
+   123 naoComecarAntesDaAnterior[7,2]
+                                  88            24               
+   124 naoComecarAntesDaAnterior[7,3]
+                                  42            41               
+   125 naoComecarAntesDaAnterior[7,4]
+                                 138            89               
+   126 naoComecarAntesDaAnterior[7,5]
+                                 140            79               
+   127 naoComecarAntesDaAnterior[7,6]
+                                  74            51               
+   128 naoComecarAntesDaAnterior[7,7]
+                                 131            91               
+   129 naoComecarAntesDaAnterior[7,8]
+                                  95            95               
+   130 naoComecarAntesDaAnterior[7,9]
+                                  64            64               
+   131 naoComecarAntesDaAnterior[7,10]
+                                  50            14               
+   132 naoComecarAntesDaAnterior[7,11]
+                                 124            67               
+   133 naoComecarAntesDaAnterior[7,12]
+                                  65            36               
+   134 naoComecarAntesDaAnterior[7,13]
+                                 140            31               
+   135 naoComecarAntesDaAnterior[7,14]
+                                  51            51               
+   136 naoComecarAntesDaAnterior[7,15]
+                                 183            92               
+   137 naoComecarAntesDaAnterior[7,16]
+                                 100            17               
+   138 naoComecarAntesDaAnterior[7,17]
+                                  85            26               
+   139 naoComecarAntesDaAnterior[7,18]
+                                  71            71               
+   140 naoComecarAntesDaAnterior[7,19]
+                                 152            82               
+   141 naoComecarAntesDaAnterior[7,20]
+                                  22             3               
+   142 naoComecarAntesDaAnterior[8,1]
+                                  83            83               
+   143 naoComecarAntesDaAnterior[8,2]
+                                  40            40               
+   144 naoComecarAntesDaAnterior[8,3]
+                                  90            90               
+   145 naoComecarAntesDaAnterior[8,4]
+                                  30            30               
+   146 naoComecarAntesDaAnterior[8,5]
+                                  82            41               
+   147 naoComecarAntesDaAnterior[8,6]
+                                  79            36               
+   148 naoComecarAntesDaAnterior[8,7]
+                                   9             9               
+   149 naoComecarAntesDaAnterior[8,8]
+                                  94            66               
+   150 naoComecarAntesDaAnterior[8,9]
+                                 123            30               
+   151 naoComecarAntesDaAnterior[8,10]
+                                 186            91               
+   152 naoComecarAntesDaAnterior[8,11]
+                                  79            67               
+   153 naoComecarAntesDaAnterior[8,12]
+                                 109            66               
+   154 naoComecarAntesDaAnterior[8,13]
+                                  79            79               
+   155 naoComecarAntesDaAnterior[8,14]
+                                  74            74               
+   156 naoComecarAntesDaAnterior[8,15]
+                                  51            51               
+   157 naoComecarAntesDaAnterior[8,16]
+                                  92             7               
+   158 naoComecarAntesDaAnterior[8,17]
+                                 102            28               
+   159 naoComecarAntesDaAnterior[8,18]
+                                 100            76               
+   160 naoComecarAntesDaAnterior[8,19]
                                   27            27               
+   161 naoComecarAntesDaAnterior[8,20]
+                                 105            18               
+   162 naoComecarAntesDaAnterior[9,1]
+                                  90            90               
+   163 naoComecarAntesDaAnterior[9,2]
+                                 125            72               
+   164 naoComecarAntesDaAnterior[9,3]
+                                  73            72               
+   165 naoComecarAntesDaAnterior[9,4]
+                                 119            58               
+   166 naoComecarAntesDaAnterior[9,5]
+                                  23            11               
+   167 naoComecarAntesDaAnterior[9,6]
+                                 101            63               
+   168 naoComecarAntesDaAnterior[9,7]
+                                 100            51               
+   169 naoComecarAntesDaAnterior[9,8]
+                                  74            74               
+   170 naoComecarAntesDaAnterior[9,9]
+                                   9             6               
+   171 naoComecarAntesDaAnterior[9,10]
+                                  33             8               
+   172 naoComecarAntesDaAnterior[9,11]
+                                 114             7               
+   173 naoComecarAntesDaAnterior[9,12]
+                                 116            25               
+   174 naoComecarAntesDaAnterior[9,13]
+                                 174            62               
+   175 naoComecarAntesDaAnterior[9,14]
+                                 293            91               
+   176 naoComecarAntesDaAnterior[9,15]
+                                 191            55               
+   177 naoComecarAntesDaAnterior[9,16]
+                                 187            74               
+   178 naoComecarAntesDaAnterior[9,17]
+                                 120            78               
+   179 naoComecarAntesDaAnterior[9,18]
+                                  70            37               
+   180 naoComecarAntesDaAnterior[9,19]
+                                  80            80               
+   181 naoComecarAntesDaAnterior[9,20]
+                                 109            54               
+   182 naoComecarAntesDaAnterior[10,1]
+                                  68            67               
+   183 naoComecarAntesDaAnterior[10,2]
+                                  91            19               
+   184 naoComecarAntesDaAnterior[10,3]
+                                  97            53               
+   185 naoComecarAntesDaAnterior[10,4]
+                                 122            99               
+   186 naoComecarAntesDaAnterior[10,5]
+                                  84            27               
+   187 naoComecarAntesDaAnterior[10,6]
+                                  81            54               
+   188 naoComecarAntesDaAnterior[10,7]
+                                 152            81               
+   189 naoComecarAntesDaAnterior[10,8]
+                                  90            25               
+   190 naoComecarAntesDaAnterior[10,9]
+                                 196            60               
+   191 naoComecarAntesDaAnterior[10,10]
+                                 142            85               
+   192 naoComecarAntesDaAnterior[10,11]
+                                  68            55               
+   193 naoComecarAntesDaAnterior[10,12]
+                                  65            65               
+   194 naoComecarAntesDaAnterior[10,13]
+                                  20            20               
+   195 naoComecarAntesDaAnterior[10,14]
+                                 116            93               
+   196 naoComecarAntesDaAnterior[10,15]
+                                  62            35               
+   197 naoComecarAntesDaAnterior[10,16]
+                                  82            37               
+   198 naoComecarAntesDaAnterior[10,17]
+                                 119            95               
+   199 naoComecarAntesDaAnterior[10,18]
+                                 102            83               
+   200 naoComecarAntesDaAnterior[10,19]
+                                   6             6               
+   201 naoComecarAntesDaAnterior[10,20]
+                                  56            13               
+   202 fixaOrdem1[1,1,2]
+                                  88            88               
+   203 fixaOrdem1[1,1,3]
+                                 775            88               
+   204 fixaOrdem1[1,1,4]
+                                 218            88               
+   205 fixaOrdem1[1,1,5]
+                              327997            88               
+   206 fixaOrdem1[1,1,6]
+                                 225            88               
+   207 fixaOrdem1[1,1,7]
+                                 121            88               
+   208 fixaOrdem1[1,1,8]
+                                 252            88               
+   209 fixaOrdem1[1,1,9]
+                                 267            88               
+   210 fixaOrdem1[1,1,10]
+                                 321            88               
+   211 fixaOrdem1[1,1,11]
+                                 373            88               
+   212 fixaOrdem1[1,1,12]
+                                 370            88               
+   213 fixaOrdem1[1,1,13]
+                                 375            88               
+   214 fixaOrdem1[1,1,14]
+                                 780            88               
+   215 fixaOrdem1[1,1,15]
+                                 435            88               
+   216 fixaOrdem1[1,1,16]
+                                 524            88               
+   217 fixaOrdem1[1,1,17]
+                                 590            88               
+   218 fixaOrdem1[1,1,18]
+                                 665            88               
+   219 fixaOrdem1[1,1,19]
+                              327899            88               
+   220 fixaOrdem1[1,1,20]
+                                 737            88               
+   221 fixaOrdem1[1,2,3]
+                                 687            33               
+   222 fixaOrdem1[1,2,4]
+                                 130            33               
+   223 fixaOrdem1[1,2,5]
+                              327909            33               
+   224 fixaOrdem1[1,2,6]
+                                 137            33               
+   225 fixaOrdem1[1,2,7]
+                                  33            33               
+   226 fixaOrdem1[1,2,8]
+                                 164            33               
+   227 fixaOrdem1[1,2,9]
+                                 179            33               
+   228 fixaOrdem1[1,2,10]
+                                 233            33               
+   229 fixaOrdem1[1,2,11]
+                                 285            33               
+   230 fixaOrdem1[1,2,12]
+                                 282            33               
+   231 fixaOrdem1[1,2,13]
+                                 287            33               
+   232 fixaOrdem1[1,2,14]
+                                 692            33               
+   233 fixaOrdem1[1,2,15]
+                                 347            33               
+   234 fixaOrdem1[1,2,16]
+                                 436            33               
+   235 fixaOrdem1[1,2,17]
+                                 502            33               
+   236 fixaOrdem1[1,2,18]
+                                 577            33               
+   237 fixaOrdem1[1,2,19]
+                              327811            33               
+   238 fixaOrdem1[1,2,20]
+                                 649            33               
+   239 fixaOrdem1[1,3,4]
+                              327443             5               
+   240 fixaOrdem1[1,3,5]
+                              327222             5               
+   241 fixaOrdem1[1,3,6]
+                              327450             5               
+   242 fixaOrdem1[1,3,7]
+                              327346             5               
+   243 fixaOrdem1[1,3,8]
+                              327477             5               
+   244 fixaOrdem1[1,3,9]
+                              327492             5               
+   245 fixaOrdem1[1,3,10]
+                              327546             5               
+   246 fixaOrdem1[1,3,11]
+                              327598             5               
+   247 fixaOrdem1[1,3,12]
+                              327595             5               
+   248 fixaOrdem1[1,3,13]
+                              327600             5               
+   249 fixaOrdem1[1,3,14]
+                                   5             5               
+   250 fixaOrdem1[1,3,15]
+                              327660             5               
+   251 fixaOrdem1[1,3,16]
+                              327749             5               
+   252 fixaOrdem1[1,3,17]
+                              327815             5               
+   253 fixaOrdem1[1,3,18]
+                              327890             5               
+   254 fixaOrdem1[1,3,19]
+                              327124             5               
+   255 fixaOrdem1[1,3,20]
+                              327962             5               
+   256 fixaOrdem1[1,4,5]
+                              327779             7               
+   257 fixaOrdem1[1,4,6]
+                                   7             7               
+   258 fixaOrdem1[1,4,7]
+                              327903             7               
+   259 fixaOrdem1[1,4,8]
+                                  34             7               
+   260 fixaOrdem1[1,4,9]
+                                  49             7               
+   261 fixaOrdem1[1,4,10]
+                                 103             7               
+   262 fixaOrdem1[1,4,11]
+                                 155             7               
+   263 fixaOrdem1[1,4,12]
+                                 152             7               
+   264 fixaOrdem1[1,4,13]
+                                 157             7               
+   265 fixaOrdem1[1,4,14]
+                                 562             7               
+   266 fixaOrdem1[1,4,15]
+                                 217             7               
+   267 fixaOrdem1[1,4,16]
+                                 306             7               
+   268 fixaOrdem1[1,4,17]
+                                 372             7               
+   269 fixaOrdem1[1,4,18]
+                                 447             7               
+   270 fixaOrdem1[1,4,19]
+                              327681             7               
+   271 fixaOrdem1[1,4,20]
+                                 519             7               
+   272 fixaOrdem1[1,5,6]
+                                 228             3               
+   273 fixaOrdem1[1,5,7]
+                                 124             3               
+   274 fixaOrdem1[1,5,8]
+                                 255             3               
+   275 fixaOrdem1[1,5,9]
+                                 270             3               
+   276 fixaOrdem1[1,5,10]
+                                 324             3               
+   277 fixaOrdem1[1,5,11]
+                                 376             3               
+   278 fixaOrdem1[1,5,12]
+                                 373             3               
+   279 fixaOrdem1[1,5,13]
+                                 378             3               
+   280 fixaOrdem1[1,5,14]
+                                 783             3               
+   281 fixaOrdem1[1,5,15]
+                                 438             3               
+   282 fixaOrdem1[1,5,16]
+                                 527             3               
+   283 fixaOrdem1[1,5,17]
+                                 593             3               
+   284 fixaOrdem1[1,5,18]
+                                 668             3               
+   285 fixaOrdem1[1,5,19]
+                              327902             3               
+   286 fixaOrdem1[1,5,20]
+                                 740             3               
+   287 fixaOrdem1[1,6,7]
+                              327896            27               
    288 fixaOrdem1[1,6,8]
-                                 596            27               
+                                  27            27               
    289 fixaOrdem1[1,6,9]
-                                 131            27               
+                                  42            27               
    290 fixaOrdem1[1,6,10]
-                                 185            27               
+                                  96            27               
    291 fixaOrdem1[1,6,11]
-                               32510            27               
+                                 148            27               
    292 fixaOrdem1[1,6,12]
-                                 234            27               
+                                 145            27               
    293 fixaOrdem1[1,6,13]
-                                 237            27               
+                                 150            27               
    294 fixaOrdem1[1,6,14]
-                                 571            27               
+                                 555            27               
    295 fixaOrdem1[1,6,15]
-                                 297            27               
+                                 210            27               
    296 fixaOrdem1[1,6,16]
-                               32512            27               
+                                 299            27               
    297 fixaOrdem1[1,6,17]
-                                 386            27               
+                                 365            27               
    298 fixaOrdem1[1,6,18]
-                                 461            27               
+                                 440            27               
    299 fixaOrdem1[1,6,19]
-                               32578            27               
+                              327674            27               
    300 fixaOrdem1[1,6,20]
-                                 533            27               
+                                 512            27               
    301 fixaOrdem1[1,7,8]
-                                 569            97               
+                                 131            97               
    302 fixaOrdem1[1,7,9]
-                                 104            97               
+                                 146            97               
    303 fixaOrdem1[1,7,10]
-                                 158            97               
+                                 200            97               
    304 fixaOrdem1[1,7,11]
-                               32483            97               
+                                 252            97               
    305 fixaOrdem1[1,7,12]
-                                 207            97               
+                                 249            97               
    306 fixaOrdem1[1,7,13]
-                                 210            97               
+                                 254            97               
    307 fixaOrdem1[1,7,14]
-                                 544            97               
+                                 659            97               
    308 fixaOrdem1[1,7,15]
-                                 270            97               
+                                 314            97               
    309 fixaOrdem1[1,7,16]
-                               32485            97               
+                                 403            97               
    310 fixaOrdem1[1,7,17]
-                                 359            97               
+                                 469            97               
    311 fixaOrdem1[1,7,18]
-                                 434            97               
+                                 544            97               
    312 fixaOrdem1[1,7,19]
-                               32551            97               
+                              327778            97               
    313 fixaOrdem1[1,7,20]
-                                 506            97               
+                                 616            97               
    314 fixaOrdem1[1,8,9]
-                               32335            15               
+                                  15            15               
    315 fixaOrdem1[1,8,10]
-                               32389            15               
+                                  69            15               
    316 fixaOrdem1[1,8,11]
-                               31914            15               
+                                 121            15               
    317 fixaOrdem1[1,8,12]
-                               32438            15               
+                                 118            15               
    318 fixaOrdem1[1,8,13]
-                               32441            15               
+                                 123            15               
    319 fixaOrdem1[1,8,14]
-                               32775            15               
+                                 528            15               
    320 fixaOrdem1[1,8,15]
-                               32501            15               
+                                 183            15               
    321 fixaOrdem1[1,8,16]
-                               31916            15               
+                                 272            15               
    322 fixaOrdem1[1,8,17]
-                               32590            15               
+                                 338            15               
    323 fixaOrdem1[1,8,18]
-                               32665            15               
+                                 413            15               
    324 fixaOrdem1[1,8,19]
-                               31982            15               
+                              327647            15               
    325 fixaOrdem1[1,8,20]
-                               32737            15               
+                                 485            15               
    326 fixaOrdem1[1,9,10]
                                   54            54               
    327 fixaOrdem1[1,9,11]
-                               32379            54               
+                                 106            54               
    328 fixaOrdem1[1,9,12]
                                  103            54               
    329 fixaOrdem1[1,9,13]
-                                 106            54               
+                                 108            54               
    330 fixaOrdem1[1,9,14]
-                                 440            54               
+                                 513            54               
    331 fixaOrdem1[1,9,15]
-                                 166            54               
+                                 168            54               
    332 fixaOrdem1[1,9,16]
-                               32381            54               
+                                 257            54               
    333 fixaOrdem1[1,9,17]
-                                 255            54               
+                                 323            54               
    334 fixaOrdem1[1,9,18]
-                                 330            54               
+                                 398            54               
    335 fixaOrdem1[1,9,19]
-                               32447            54               
+                              327632            54               
    336 fixaOrdem1[1,9,20]
-                                 402            54               
+                                 470            54               
    337 fixaOrdem1[1,10,11]
-                               32325            49               
+                                  52            49               
    338 fixaOrdem1[1,10,12]
                                   49            49               
    339 fixaOrdem1[1,10,13]
-                                  52            49               
+                                  54            49               
    340 fixaOrdem1[1,10,14]
-                                 386            49               
+                                 459            49               
    341 fixaOrdem1[1,10,15]
-                                 112            49               
+                                 114            49               
    342 fixaOrdem1[1,10,16]
-                               32327            49               
+                                 203            49               
    343 fixaOrdem1[1,10,17]
-                                 201            49               
+                                 269            49               
    344 fixaOrdem1[1,10,18]
-                                 276            49               
+                                 344            49               
    345 fixaOrdem1[1,10,19]
-                               32393            49               
+                              327578            49               
    346 fixaOrdem1[1,10,20]
-                                 348            49               
+                                 416            49               
    347 fixaOrdem1[1,11,12]
-                                 524             2               
+                              327997             2               
    348 fixaOrdem1[1,11,13]
-                                 527             2               
-   349 fixaOrdem1[1,11,14]
-                                 861             2               
-   350 fixaOrdem1[1,11,15]
-                                 587             2               
-   351 fixaOrdem1[1,11,16]
                                    2             2               
+   349 fixaOrdem1[1,11,14]
+                                 407             2               
+   350 fixaOrdem1[1,11,15]
+                                  62             2               
+   351 fixaOrdem1[1,11,16]
+                                 151             2               
    352 fixaOrdem1[1,11,17]
-                                 676             2               
+                                 217             2               
    353 fixaOrdem1[1,11,18]
-                                 751             2               
+                                 292             2               
    354 fixaOrdem1[1,11,19]
-                                  68             2               
+                              327526             2               
    355 fixaOrdem1[1,11,20]
-                                 823             2               
+                                 364             2               
    356 fixaOrdem1[1,12,13]
-                                   3             3               
+                                   5             3               
    357 fixaOrdem1[1,12,14]
-                                 337             3               
+                                 410             3               
    358 fixaOrdem1[1,12,15]
-                                  63             3               
+                                  65             3               
    359 fixaOrdem1[1,12,16]
-                               32278             3               
+                                 154             3               
    360 fixaOrdem1[1,12,17]
-                                 152             3               
+                                 220             3               
    361 fixaOrdem1[1,12,18]
-                                 227             3               
+                                 295             3               
    362 fixaOrdem1[1,12,19]
-                               32344             3               
+                              327529             3               
    363 fixaOrdem1[1,12,20]
-                                 299             3               
+                                 367             3               
    364 fixaOrdem1[1,13,14]
-                                 334            60               
+                                 405            60               
    365 fixaOrdem1[1,13,15]
                                   60            60               
    366 fixaOrdem1[1,13,16]
-                               32275            60               
-   367 fixaOrdem1[1,13,17]
                                  149            60               
+   367 fixaOrdem1[1,13,17]
+                                 215            60               
    368 fixaOrdem1[1,13,18]
-                                 224            60               
+                                 290            60               
    369 fixaOrdem1[1,13,19]
-                               32341            60               
+                              327524            60               
    370 fixaOrdem1[1,13,20]
-                                 296            60               
+                                 362            60               
    371 fixaOrdem1[1,14,15]
-                               32526            20               
+                              327655            20               
    372 fixaOrdem1[1,14,16]
-                               31941            20               
+                              327744            20               
    373 fixaOrdem1[1,14,17]
-                               32615            20               
+                              327810            20               
    374 fixaOrdem1[1,14,18]
-                               32690            20               
+                              327885            20               
    375 fixaOrdem1[1,14,19]
-                               32007            20               
+                              327119            20               
    376 fixaOrdem1[1,14,20]
-                               32762            20               
+                              327957            20               
    377 fixaOrdem1[1,15,16]
-                               32215            89               
-   378 fixaOrdem1[1,15,17]
                                   89            89               
+   378 fixaOrdem1[1,15,17]
+                                 155            89               
    379 fixaOrdem1[1,15,18]
-                                 164            89               
+                                 230            89               
    380 fixaOrdem1[1,15,19]
-                               32281            89               
+                              327464            89               
    381 fixaOrdem1[1,15,20]
-                                 236            89               
+                                 302            89               
    382 fixaOrdem1[1,16,17]
-                                 674            66               
-   383 fixaOrdem1[1,16,18]
-                                 749            66               
-   384 fixaOrdem1[1,16,19]
                                   66            66               
+   383 fixaOrdem1[1,16,18]
+                                 141            66               
+   384 fixaOrdem1[1,16,19]
+                              327375            66               
    385 fixaOrdem1[1,16,20]
-                                 821            66               
+                                 213            66               
    386 fixaOrdem1[1,17,18]
                                   75            75               
    387 fixaOrdem1[1,17,19]
-                               32192            75               
+                              327309            75               
    388 fixaOrdem1[1,17,20]
                                  147            75               
    389 fixaOrdem1[1,18,19]
-                               32117            72               
+                              327234            72               
    390 fixaOrdem1[1,18,20]
                                   72            72               
    391 fixaOrdem1[1,19,20]
-                                 755            98               
+                                 838            98               
    392 fixaOrdem1[2,1,2]
-                               32745            49               
+                                  49            49               
    393 fixaOrdem1[2,1,3]
-                                 685            49               
+                                 816            49               
    394 fixaOrdem1[2,1,4]
-                                 213            49               
+                                 108            49               
    395 fixaOrdem1[2,1,5]
-                               32784            49               
+                              327984            49               
    396 fixaOrdem1[2,1,6]
-                                 101            49               
+                                 205            49               
    397 fixaOrdem1[2,1,7]
-                                 193            49               
+                                  88            49               
    398 fixaOrdem1[2,1,8]
-                                 773            49               
+                                 297            49               
    399 fixaOrdem1[2,1,9]
-                                 310            49               
+                                 321            49               
    400 fixaOrdem1[2,1,10]
                                  343            49               
    401 fixaOrdem1[2,1,11]
-                               32563            49               
+                                 416            49               
    402 fixaOrdem1[2,1,12]
                                  357            49               
    403 fixaOrdem1[2,1,13]
-                                 416            49               
+                                 506            49               
    404 fixaOrdem1[2,1,14]
-                                 636            49               
+                                 884            49               
    405 fixaOrdem1[2,1,15]
-                                 428            49               
+                                 518            49               
    406 fixaOrdem1[2,1,16]
-                               32653            49               
+                                 582            49               
    407 fixaOrdem1[2,1,17]
-                                 492            49               
+                                 642            49               
    408 fixaOrdem1[2,1,18]
-                                 587            49               
+                                 737            49               
    409 fixaOrdem1[2,1,19]
-                               32713            49               
+                              327952            49               
    410 fixaOrdem1[2,1,20]
-                                 619            49               
+                                 769            49               
    411 fixaOrdem1[2,2,3]
-                                 740            39               
+                                 767            39               
    412 fixaOrdem1[2,2,4]
-                                 268            39               
+                                  59            39               
    413 fixaOrdem1[2,2,5]
-                                  39            39               
+                              327935            39               
    414 fixaOrdem1[2,2,6]
                                  156            39               
    415 fixaOrdem1[2,2,7]
-                                 248            39               
+                                  39            39               
    416 fixaOrdem1[2,2,8]
-                                 828            39               
+                                 248            39               
    417 fixaOrdem1[2,2,9]
-                                 365            39               
+                                 272            39               
    418 fixaOrdem1[2,2,10]
-                                 398            39               
+                                 294            39               
    419 fixaOrdem1[2,2,11]
-                               32618            39               
+                                 367            39               
    420 fixaOrdem1[2,2,12]
-                                 412            39               
+                                 308            39               
    421 fixaOrdem1[2,2,13]
-                                 471            39               
+                                 457            39               
    422 fixaOrdem1[2,2,14]
-                                 691            39               
+                                 835            39               
    423 fixaOrdem1[2,2,15]
-                                 483            39               
+                                 469            39               
    424 fixaOrdem1[2,2,16]
-                               32708            39               
+                                 533            39               
    425 fixaOrdem1[2,2,17]
-                                 547            39               
+                                 593            39               
    426 fixaOrdem1[2,2,18]
-                                 642            39               
+                                 688            39               
    427 fixaOrdem1[2,2,19]
-                               32768            39               
+                              327903            39               
    428 fixaOrdem1[2,2,20]
-                                 674            39               
+                                 720            39               
    429 fixaOrdem1[2,3,4]
-                               32328            68               
+                              327292            68               
    430 fixaOrdem1[2,3,5]
-                               32099            68               
+                              327168            68               
    431 fixaOrdem1[2,3,6]
-                               32216            68               
+                              327389            68               
    432 fixaOrdem1[2,3,7]
-                               32308            68               
+                              327272            68               
    433 fixaOrdem1[2,3,8]
-                                  88            68               
+                              327481            68               
    434 fixaOrdem1[2,3,9]
-                               32425            68               
+                              327505            68               
    435 fixaOrdem1[2,3,10]
-                               32458            68               
+                              327527            68               
    436 fixaOrdem1[2,3,11]
-                               31878            68               
+                              327600            68               
    437 fixaOrdem1[2,3,12]
-                               32472            68               
+                              327541            68               
    438 fixaOrdem1[2,3,13]
-                               32531            68               
+                              327690            68               
    439 fixaOrdem1[2,3,14]
-                               32751            68               
+                                  68            68               
    440 fixaOrdem1[2,3,15]
-                               32543            68               
+                              327702            68               
    441 fixaOrdem1[2,3,16]
-                               31968            68               
+                              327766            68               
    442 fixaOrdem1[2,3,17]
-                               32607            68               
+                              327826            68               
    443 fixaOrdem1[2,3,18]
-                               32702            68               
+                              327921            68               
    444 fixaOrdem1[2,3,19]
-                               32028            68               
+                              327136            68               
    445 fixaOrdem1[2,3,20]
-                               32734            68               
+                              327953            68               
    446 fixaOrdem1[2,4,5]
-                               32571            97               
+                              327876            97               
    447 fixaOrdem1[2,4,6]
-                               32688            97               
-   448 fixaOrdem1[2,4,7]
-                               32780            97               
-   449 fixaOrdem1[2,4,8]
-                                 560            97               
-   450 fixaOrdem1[2,4,9]
                                   97            97               
+   448 fixaOrdem1[2,4,7]
+                              327980            97               
+   449 fixaOrdem1[2,4,8]
+                                 189            97               
+   450 fixaOrdem1[2,4,9]
+                                 213            97               
    451 fixaOrdem1[2,4,10]
-                                 130            97               
+                                 235            97               
    452 fixaOrdem1[2,4,11]
-                               32350            97               
+                                 308            97               
    453 fixaOrdem1[2,4,12]
-                                 144            97               
+                                 249            97               
    454 fixaOrdem1[2,4,13]
-                                 203            97               
+                                 398            97               
    455 fixaOrdem1[2,4,14]
-                                 423            97               
+                                 776            97               
    456 fixaOrdem1[2,4,15]
-                                 215            97               
+                                 410            97               
    457 fixaOrdem1[2,4,16]
-                               32440            97               
+                                 474            97               
    458 fixaOrdem1[2,4,17]
-                                 279            97               
+                                 534            97               
    459 fixaOrdem1[2,4,18]
-                                 374            97               
+                                 629            97               
    460 fixaOrdem1[2,4,19]
-                               32500            97               
+                              327844            97               
    461 fixaOrdem1[2,4,20]
-                                 406            97               
+                                 661            97               
    462 fixaOrdem1[2,5,6]
-                                 117            16               
+                                 221            16               
    463 fixaOrdem1[2,5,7]
-                                 209            16               
+                                 104            16               
    464 fixaOrdem1[2,5,8]
-                                 789            16               
+                                 313            16               
    465 fixaOrdem1[2,5,9]
-                                 326            16               
+                                 337            16               
    466 fixaOrdem1[2,5,10]
                                  359            16               
    467 fixaOrdem1[2,5,11]
-                               32579            16               
+                                 432            16               
    468 fixaOrdem1[2,5,12]
                                  373            16               
    469 fixaOrdem1[2,5,13]
-                                 432            16               
+                                 522            16               
    470 fixaOrdem1[2,5,14]
-                                 652            16               
+                                 900            16               
    471 fixaOrdem1[2,5,15]
-                                 444            16               
+                                 534            16               
    472 fixaOrdem1[2,5,16]
-                               32669            16               
+                                 598            16               
    473 fixaOrdem1[2,5,17]
-                                 508            16               
+                                 658            16               
    474 fixaOrdem1[2,5,18]
-                                 603            16               
+                                 753            16               
    475 fixaOrdem1[2,5,19]
-                               32729            16               
+                              327968            16               
    476 fixaOrdem1[2,5,20]
-                                 635            16               
+                                 785            16               
    477 fixaOrdem1[2,6,7]
-                                  92            92               
+                              327883            92               
    478 fixaOrdem1[2,6,8]
-                                 672            92               
+                                  92            92               
    479 fixaOrdem1[2,6,9]
-                                 209            92               
+                                 116            92               
    480 fixaOrdem1[2,6,10]
-                                 242            92               
+                                 138            92               
    481 fixaOrdem1[2,6,11]
-                               32462            92               
+                                 211            92               
    482 fixaOrdem1[2,6,12]
-                                 256            92               
+                                 152            92               
    483 fixaOrdem1[2,6,13]
-                                 315            92               
+                                 301            92               
    484 fixaOrdem1[2,6,14]
-                                 535            92               
+                                 679            92               
    485 fixaOrdem1[2,6,15]
-                                 327            92               
+                                 313            92               
    486 fixaOrdem1[2,6,16]
-                               32552            92               
+                                 377            92               
    487 fixaOrdem1[2,6,17]
-                                 391            92               
+                                 437            92               
    488 fixaOrdem1[2,6,18]
-                                 486            92               
+                                 532            92               
    489 fixaOrdem1[2,6,19]
-                               32612            92               
+                              327747            92               
    490 fixaOrdem1[2,6,20]
-                                 518            92               
+                                 564            92               
    491 fixaOrdem1[2,7,8]
-                                 580            20               
+                                 209            20               
    492 fixaOrdem1[2,7,9]
-                                 117            20               
+                                 233            20               
    493 fixaOrdem1[2,7,10]
-                                 150            20               
+                                 255            20               
    494 fixaOrdem1[2,7,11]
-                               32370            20               
+                                 328            20               
    495 fixaOrdem1[2,7,12]
-                                 164            20               
+                                 269            20               
    496 fixaOrdem1[2,7,13]
-                                 223            20               
+                                 418            20               
    497 fixaOrdem1[2,7,14]
-                                 443            20               
+                                 796            20               
    498 fixaOrdem1[2,7,15]
-                                 235            20               
+                                 430            20               
    499 fixaOrdem1[2,7,16]
-                               32460            20               
+                                 494            20               
    500 fixaOrdem1[2,7,17]
-                                 299            20               
+                                 554            20               
    501 fixaOrdem1[2,7,18]
-                                 394            20               
+                                 649            20               
    502 fixaOrdem1[2,7,19]
-                               32520            20               
+                              327864            20               
    503 fixaOrdem1[2,7,20]
-                                 426            20               
+                                 681            20               
    504 fixaOrdem1[2,8,9]
-                               32337            24               
+                                  24            24               
    505 fixaOrdem1[2,8,10]
-                               32370            24               
+                                  46            24               
    506 fixaOrdem1[2,8,11]
-                               31790            24               
+                                 119            24               
    507 fixaOrdem1[2,8,12]
-                               32384            24               
+                                  60            24               
    508 fixaOrdem1[2,8,13]
-                               32443            24               
+                                 209            24               
    509 fixaOrdem1[2,8,14]
-                               32663            24               
+                                 587            24               
    510 fixaOrdem1[2,8,15]
-                               32455            24               
+                                 221            24               
    511 fixaOrdem1[2,8,16]
-                               31880            24               
+                                 285            24               
    512 fixaOrdem1[2,8,17]
-                               32519            24               
+                                 345            24               
    513 fixaOrdem1[2,8,18]
-                               32614            24               
+                                 440            24               
    514 fixaOrdem1[2,8,19]
-                               31940            24               
+                              327655            24               
    515 fixaOrdem1[2,8,20]
-                               32646            24               
+                                 472            24               
    516 fixaOrdem1[2,9,10]
-                                  33            22               
+                                  22            22               
    517 fixaOrdem1[2,9,11]
-                               32253            22               
+                                  95            22               
    518 fixaOrdem1[2,9,12]
-                                  47            22               
+                                  36            22               
    519 fixaOrdem1[2,9,13]
-                                 106            22               
+                                 185            22               
    520 fixaOrdem1[2,9,14]
-                                 326            22               
+                                 563            22               
    521 fixaOrdem1[2,9,15]
-                                 118            22               
+                                 197            22               
    522 fixaOrdem1[2,9,16]
-                               32343            22               
+                                 261            22               
    523 fixaOrdem1[2,9,17]
-                                 182            22               
+                                 321            22               
    524 fixaOrdem1[2,9,18]
-                                 277            22               
+                                 416            22               
    525 fixaOrdem1[2,9,19]
-                               32403            22               
+                              327631            22               
    526 fixaOrdem1[2,9,20]
-                                 309            22               
+                                 448            22               
    527 fixaOrdem1[2,10,11]
-                               32220            14               
+                                  73            14               
    528 fixaOrdem1[2,10,12]
                                   14            14               
    529 fixaOrdem1[2,10,13]
-                                  73            14               
+                                 163            14               
    530 fixaOrdem1[2,10,14]
-                                 293            14               
+                                 541            14               
    531 fixaOrdem1[2,10,15]
-                                  85            14               
+                                 175            14               
    532 fixaOrdem1[2,10,16]
-                               32310            14               
+                                 239            14               
    533 fixaOrdem1[2,10,17]
-                                 149            14               
+                                 299            14               
    534 fixaOrdem1[2,10,18]
-                                 244            14               
+                                 394            14               
    535 fixaOrdem1[2,10,19]
-                               32370            14               
+                              327609            14               
    536 fixaOrdem1[2,10,20]
-                                 276            14               
+                                 426            14               
    537 fixaOrdem1[2,11,12]
-                                 594            90               
+                              327941            90               
    538 fixaOrdem1[2,11,13]
-                                 653            90               
-   539 fixaOrdem1[2,11,14]
-                                 873            90               
-   540 fixaOrdem1[2,11,15]
-                                 665            90               
-   541 fixaOrdem1[2,11,16]
                                   90            90               
+   539 fixaOrdem1[2,11,14]
+                                 468            90               
+   540 fixaOrdem1[2,11,15]
+                                 102            90               
+   541 fixaOrdem1[2,11,16]
+                                 166            90               
    542 fixaOrdem1[2,11,17]
-                                 729            90               
+                                 226            90               
    543 fixaOrdem1[2,11,18]
-                                 824            90               
+                                 321            90               
    544 fixaOrdem1[2,11,19]
-                                 150            90               
+                              327536            90               
    545 fixaOrdem1[2,11,20]
-                                 856            90               
+                                 353            90               
    546 fixaOrdem1[2,12,13]
-                                  59            59               
+                                 149            59               
    547 fixaOrdem1[2,12,14]
-                                 279            59               
+                                 527            59               
    548 fixaOrdem1[2,12,15]
-                                  71            59               
+                                 161            59               
    549 fixaOrdem1[2,12,16]
-                               32296            59               
+                                 225            59               
    550 fixaOrdem1[2,12,17]
-                                 135            59               
+                                 285            59               
    551 fixaOrdem1[2,12,18]
-                                 230            59               
+                                 380            59               
    552 fixaOrdem1[2,12,19]
-                               32356            59               
+                              327595            59               
    553 fixaOrdem1[2,12,20]
-                                 262            59               
+                                 412            59               
    554 fixaOrdem1[2,13,14]
-                                 220            12               
+                                 378            12               
    555 fixaOrdem1[2,13,15]
                                   12            12               
    556 fixaOrdem1[2,13,16]
-                               32237            12               
-   557 fixaOrdem1[2,13,17]
                                   76            12               
+   557 fixaOrdem1[2,13,17]
+                                 136            12               
    558 fixaOrdem1[2,13,18]
-                                 171            12               
+                                 231            12               
    559 fixaOrdem1[2,13,19]
-                               32297            12               
+                              327446            12               
    560 fixaOrdem1[2,13,20]
-                                 203            12               
+                                 263            12               
    561 fixaOrdem1[2,14,15]
-                               32592            43               
+                              327634            43               
    562 fixaOrdem1[2,14,16]
-                               32017            43               
+                              327698            43               
    563 fixaOrdem1[2,14,17]
-                               32656            43               
+                              327758            43               
    564 fixaOrdem1[2,14,18]
-                               32751            43               
+                              327853            43               
    565 fixaOrdem1[2,14,19]
-                               32077            43               
+                              327068            43               
    566 fixaOrdem1[2,14,20]
-                               32783            43               
+                              327885            43               
    567 fixaOrdem1[2,15,16]
-                               32225            64               
-   568 fixaOrdem1[2,15,17]
                                   64            64               
+   568 fixaOrdem1[2,15,17]
+                                 124            64               
    569 fixaOrdem1[2,15,18]
-                                 159            64               
+                                 219            64               
    570 fixaOrdem1[2,15,19]
-                               32285            64               
+                              327434            64               
    571 fixaOrdem1[2,15,20]
-                                 191            64               
+                                 251            64               
    572 fixaOrdem1[2,16,17]
-                                 639            60               
-   573 fixaOrdem1[2,16,18]
-                                 734            60               
-   574 fixaOrdem1[2,16,19]
                                   60            60               
+   573 fixaOrdem1[2,16,18]
+                                 155            60               
+   574 fixaOrdem1[2,16,19]
+                              327370            60               
    575 fixaOrdem1[2,16,20]
-                                 766            60               
+                                 187            60               
    576 fixaOrdem1[2,17,18]
                                   95            95               
    577 fixaOrdem1[2,17,19]
-                               32221            95               
+                              327310            95               
    578 fixaOrdem1[2,17,20]
                                  127            95               
    579 fixaOrdem1[2,18,19]
-                               32126            32               
+                              327215            32               
    580 fixaOrdem1[2,18,20]
                                   32            32               
    581 fixaOrdem1[2,19,20]
-                                 706            32               
+                                 817            32               
    582 fixaOrdem1[3,1,2]
-                               32686            50               
-   583 fixaOrdem1[3,1,3]
-                                 719            50               
-   584 fixaOrdem1[3,1,4]
-                                 152            50               
-   585 fixaOrdem1[3,1,5]
-                               32744            50               
-   586 fixaOrdem1[3,1,6]
                                   50            50               
+   583 fixaOrdem1[3,1,3]
+                                 903            50               
+   584 fixaOrdem1[3,1,4]
+                                 198            50               
+   585 fixaOrdem1[3,1,5]
+                              327944            50               
+   586 fixaOrdem1[3,1,6]
+                                 299            50               
    587 fixaOrdem1[3,1,7]
-                                  62            50               
+                                 108            50               
    588 fixaOrdem1[3,1,8]
-                                 811            50               
+                                 311            50               
    589 fixaOrdem1[3,1,9]
-                                 241            50               
+                                 399            50               
    590 fixaOrdem1[3,1,10]
-                                 306            50               
+                                 464            50               
    591 fixaOrdem1[3,1,11]
-                               32458            50               
+                                 515            50               
    592 fixaOrdem1[3,1,12]
-                                 315            50               
+                                 473            50               
    593 fixaOrdem1[3,1,13]
-                                 389            50               
+                                 543            50               
    594 fixaOrdem1[3,1,14]
-                                 651            50               
+                                 995            50               
    595 fixaOrdem1[3,1,15]
-                                 480            50               
+                                 634            50               
    596 fixaOrdem1[3,1,16]
-                               32535            50               
+                                 668            50               
    597 fixaOrdem1[3,1,17]
-                                 514            50               
+                                 733            50               
    598 fixaOrdem1[3,1,18]
-                                 594            50               
+                                 846            50               
    599 fixaOrdem1[3,1,19]
-                               32600            50               
+                              327858            50               
    600 fixaOrdem1[3,1,20]
-                                 647            50               
+                                 899            50               
    601 fixaOrdem1[3,2,3]
-                                 833            58               
+                                 853            58               
    602 fixaOrdem1[3,2,4]
-                                 266            58               
+                                 148            58               
    603 fixaOrdem1[3,2,5]
-                                  58            58               
+                              327894            58               
    604 fixaOrdem1[3,2,6]
-                                 164            58               
+                                 249            58               
    605 fixaOrdem1[3,2,7]
-                                 176            58               
+                                  58            58               
    606 fixaOrdem1[3,2,8]
-                                 925            58               
+                                 261            58               
    607 fixaOrdem1[3,2,9]
-                                 355            58               
+                                 349            58               
    608 fixaOrdem1[3,2,10]
-                                 420            58               
+                                 414            58               
    609 fixaOrdem1[3,2,11]
-                               32572            58               
+                                 465            58               
    610 fixaOrdem1[3,2,12]
-                                 429            58               
+                                 423            58               
    611 fixaOrdem1[3,2,13]
-                                 503            58               
+                                 493            58               
    612 fixaOrdem1[3,2,14]
-                                 765            58               
+                                 945            58               
    613 fixaOrdem1[3,2,15]
-                                 594            58               
+                                 584            58               
    614 fixaOrdem1[3,2,16]
-                               32649            58               
+                                 618            58               
    615 fixaOrdem1[3,2,17]
-                                 628            58               
+                                 683            58               
    616 fixaOrdem1[3,2,18]
-                                 708            58               
+                                 796            58               
    617 fixaOrdem1[3,2,19]
-                               32714            58               
+                              327808            58               
    618 fixaOrdem1[3,2,20]
-                                 761            58               
+                                 849            58               
    619 fixaOrdem1[3,3,4]
-                               32233            92               
+                              327295            92               
    620 fixaOrdem1[3,3,5]
-                               32025            92               
+                              327041            92               
    621 fixaOrdem1[3,3,6]
-                               32131            92               
+                              327396            92               
    622 fixaOrdem1[3,3,7]
-                               32143            92               
+                              327205            92               
    623 fixaOrdem1[3,3,8]
-                                  92            92               
+                              327408            92               
    624 fixaOrdem1[3,3,9]
-                               32322            92               
+                              327496            92               
    625 fixaOrdem1[3,3,10]
-                               32387            92               
+                              327561            92               
    626 fixaOrdem1[3,3,11]
-                               31739            92               
+                              327612            92               
    627 fixaOrdem1[3,3,12]
-                               32396            92               
+                              327570            92               
    628 fixaOrdem1[3,3,13]
-                               32470            92               
+                              327640            92               
    629 fixaOrdem1[3,3,14]
-                               32732            92               
+                                  92            92               
    630 fixaOrdem1[3,3,15]
-                               32561            92               
+                              327731            92               
    631 fixaOrdem1[3,3,16]
-                               31816            92               
+                              327765            92               
    632 fixaOrdem1[3,3,17]
-                               32595            92               
+                              327830            92               
    633 fixaOrdem1[3,3,18]
-                               32675            92               
+                              327943            92               
    634 fixaOrdem1[3,3,19]
-                               31881            92               
+                              326955            92               
    635 fixaOrdem1[3,3,20]
-                               32728            92               
+                              327996            92               
    636 fixaOrdem1[3,4,5]
-                               32592            89               
+                              327746            89               
    637 fixaOrdem1[3,4,6]
-                               32698            89               
+                                 101            89               
    638 fixaOrdem1[3,4,7]
-                               32710            89               
+                              327910            89               
    639 fixaOrdem1[3,4,8]
-                                 659            89               
+                                 113            89               
    640 fixaOrdem1[3,4,9]
-                                  89            89               
+                                 201            89               
    641 fixaOrdem1[3,4,10]
-                                 154            89               
+                                 266            89               
    642 fixaOrdem1[3,4,11]
-                               32306            89               
+                                 317            89               
    643 fixaOrdem1[3,4,12]
-                                 163            89               
+                                 275            89               
    644 fixaOrdem1[3,4,13]
-                                 237            89               
+                                 345            89               
    645 fixaOrdem1[3,4,14]
-                                 499            89               
+                                 797            89               
    646 fixaOrdem1[3,4,15]
-                                 328            89               
+                                 436            89               
    647 fixaOrdem1[3,4,16]
-                               32383            89               
+                                 470            89               
    648 fixaOrdem1[3,4,17]
-                                 362            89               
+                                 535            89               
    649 fixaOrdem1[3,4,18]
-                                 442            89               
+                                 648            89               
    650 fixaOrdem1[3,4,19]
-                               32448            89               
+                              327660            89               
    651 fixaOrdem1[3,4,20]
-                                 495            89               
+                                 701            89               
    652 fixaOrdem1[3,5,6]
-                                 106            56               
+                                 355            56               
    653 fixaOrdem1[3,5,7]
-                                 118            56               
+                                 164            56               
    654 fixaOrdem1[3,5,8]
-                                 867            56               
+                                 367            56               
    655 fixaOrdem1[3,5,9]
-                                 297            56               
+                                 455            56               
    656 fixaOrdem1[3,5,10]
-                                 362            56               
+                                 520            56               
    657 fixaOrdem1[3,5,11]
-                               32514            56               
+                                 571            56               
    658 fixaOrdem1[3,5,12]
-                                 371            56               
+                                 529            56               
    659 fixaOrdem1[3,5,13]
-                                 445            56               
+                                 599            56               
    660 fixaOrdem1[3,5,14]
-                                 707            56               
+                                1051            56               
    661 fixaOrdem1[3,5,15]
-                                 536            56               
+                                 690            56               
    662 fixaOrdem1[3,5,16]
-                               32591            56               
+                                 724            56               
    663 fixaOrdem1[3,5,17]
-                                 570            56               
+                                 789            56               
    664 fixaOrdem1[3,5,18]
-                                 650            56               
+                                 902            56               
    665 fixaOrdem1[3,5,19]
-                               32656            56               
+                              327914            56               
    666 fixaOrdem1[3,5,20]
-                                 703            56               
+                                 955            56               
    667 fixaOrdem1[3,6,7]
-                                  12            12               
+                              327809            12               
    668 fixaOrdem1[3,6,8]
-                                 761            12               
+                                  12            12               
    669 fixaOrdem1[3,6,9]
-                                 191            12               
+                                 100            12               
    670 fixaOrdem1[3,6,10]
-                                 256            12               
+                                 165            12               
    671 fixaOrdem1[3,6,11]
-                               32408            12               
+                                 216            12               
    672 fixaOrdem1[3,6,12]
-                                 265            12               
+                                 174            12               
    673 fixaOrdem1[3,6,13]
-                                 339            12               
+                                 244            12               
    674 fixaOrdem1[3,6,14]
-                                 601            12               
+                                 696            12               
    675 fixaOrdem1[3,6,15]
-                                 430            12               
+                                 335            12               
    676 fixaOrdem1[3,6,16]
-                               32485            12               
+                                 369            12               
    677 fixaOrdem1[3,6,17]
-                                 464            12               
+                                 434            12               
    678 fixaOrdem1[3,6,18]
-                                 544            12               
+                                 547            12               
    679 fixaOrdem1[3,6,19]
-                               32550            12               
+                              327559            12               
    680 fixaOrdem1[3,6,20]
-                                 597            12               
+                                 600            12               
    681 fixaOrdem1[3,7,8]
-                                 749            90               
+                                 203            90               
    682 fixaOrdem1[3,7,9]
-                                 179            90               
+                                 291            90               
    683 fixaOrdem1[3,7,10]
-                                 244            90               
+                                 356            90               
    684 fixaOrdem1[3,7,11]
-                               32396            90               
+                                 407            90               
    685 fixaOrdem1[3,7,12]
-                                 253            90               
+                                 365            90               
    686 fixaOrdem1[3,7,13]
-                                 327            90               
+                                 435            90               
    687 fixaOrdem1[3,7,14]
-                                 589            90               
+                                 887            90               
    688 fixaOrdem1[3,7,15]
-                                 418            90               
+                                 526            90               
    689 fixaOrdem1[3,7,16]
-                               32473            90               
+                                 560            90               
    690 fixaOrdem1[3,7,17]
-                                 452            90               
+                                 625            90               
    691 fixaOrdem1[3,7,18]
-                                 532            90               
+                                 738            90               
    692 fixaOrdem1[3,7,19]
-                               32538            90               
+                              327750            90               
    693 fixaOrdem1[3,7,20]
-                                 585            90               
+                                 791            90               
    694 fixaOrdem1[3,8,9]
-                               32230            88               
+                                  88            88               
    695 fixaOrdem1[3,8,10]
-                               32295            88               
+                                 153            88               
    696 fixaOrdem1[3,8,11]
-                               31647            88               
+                                 204            88               
    697 fixaOrdem1[3,8,12]
-                               32304            88               
+                                 162            88               
    698 fixaOrdem1[3,8,13]
-                               32378            88               
+                                 232            88               
    699 fixaOrdem1[3,8,14]
-                               32640            88               
+                                 684            88               
    700 fixaOrdem1[3,8,15]
-                               32469            88               
+                                 323            88               
    701 fixaOrdem1[3,8,16]
-                               31724            88               
+                                 357            88               
    702 fixaOrdem1[3,8,17]
-                               32503            88               
+                                 422            88               
    703 fixaOrdem1[3,8,18]
-                               32583            88               
+                                 535            88               
    704 fixaOrdem1[3,8,19]
-                               31789            88               
+                              327547            88               
    705 fixaOrdem1[3,8,20]
-                               32636            88               
+                                 588            88               
    706 fixaOrdem1[3,9,10]
                                   65            65               
    707 fixaOrdem1[3,9,11]
-                               32217            65               
+                                 116            65               
    708 fixaOrdem1[3,9,12]
                                   74            65               
    709 fixaOrdem1[3,9,13]
-                                 148            65               
+                                 144            65               
    710 fixaOrdem1[3,9,14]
-                                 410            65               
+                                 596            65               
    711 fixaOrdem1[3,9,15]
-                                 239            65               
+                                 235            65               
    712 fixaOrdem1[3,9,16]
-                               32294            65               
+                                 269            65               
    713 fixaOrdem1[3,9,17]
-                                 273            65               
+                                 334            65               
    714 fixaOrdem1[3,9,18]
-                                 353            65               
+                                 447            65               
    715 fixaOrdem1[3,9,19]
-                               32359            65               
+                              327459            65               
    716 fixaOrdem1[3,9,20]
-                                 406            65               
+                                 500            65               
    717 fixaOrdem1[3,10,11]
-                               32152             9               
+                                  51             9               
    718 fixaOrdem1[3,10,12]
                                    9             9               
    719 fixaOrdem1[3,10,13]
-                                  83             9               
+                                  79             9               
    720 fixaOrdem1[3,10,14]
-                                 345             9               
+                                 531             9               
    721 fixaOrdem1[3,10,15]
-                                 174             9               
+                                 170             9               
    722 fixaOrdem1[3,10,16]
-                               32229             9               
+                                 204             9               
    723 fixaOrdem1[3,10,17]
-                                 208             9               
+                                 269             9               
    724 fixaOrdem1[3,10,18]
-                                 288             9               
+                                 382             9               
    725 fixaOrdem1[3,10,19]
-                               32294             9               
+                              327394             9               
    726 fixaOrdem1[3,10,20]
-                                 341             9               
+                                 435             9               
    727 fixaOrdem1[3,11,12]
-                                 657            28               
+                              327958            28               
    728 fixaOrdem1[3,11,13]
-                                 731            28               
+                                  28            28               
    729 fixaOrdem1[3,11,14]
-                                 993            28               
+                                 480            28               
    730 fixaOrdem1[3,11,15]
-                                 822            28               
+                                 119            28               
    731 fixaOrdem1[3,11,16]
-                                  77            28               
+                                 153            28               
    732 fixaOrdem1[3,11,17]
-                                 856            28               
+                                 218            28               
    733 fixaOrdem1[3,11,18]
-                                 936            28               
+                                 331            28               
    734 fixaOrdem1[3,11,19]
-                                 142            28               
+                              327343            28               
    735 fixaOrdem1[3,11,20]
-                                 989            28               
+                                 384            28               
    736 fixaOrdem1[3,12,13]
-                                  74            42               
+                                  70            42               
    737 fixaOrdem1[3,12,14]
-                                 336            42               
+                                 522            42               
    738 fixaOrdem1[3,12,15]
-                                 165            42               
+                                 161            42               
    739 fixaOrdem1[3,12,16]
-                               32220            42               
+                                 195            42               
    740 fixaOrdem1[3,12,17]
-                                 199            42               
+                                 260            42               
    741 fixaOrdem1[3,12,18]
-                                 279            42               
+                                 373            42               
    742 fixaOrdem1[3,12,19]
-                               32285            42               
+                              327385            42               
    743 fixaOrdem1[3,12,20]
-                                 332            42               
+                                 426            42               
    744 fixaOrdem1[3,13,14]
-                                 262            91               
+                                 452            91               
    745 fixaOrdem1[3,13,15]
                                   91            91               
    746 fixaOrdem1[3,13,16]
-                               32146            91               
-   747 fixaOrdem1[3,13,17]
                                  125            91               
+   747 fixaOrdem1[3,13,17]
+                                 190            91               
    748 fixaOrdem1[3,13,18]
-                                 205            91               
+                                 303            91               
    749 fixaOrdem1[3,13,19]
-                               32211            91               
+                              327315            91               
    750 fixaOrdem1[3,13,20]
-                                 258            91               
+                                 356            91               
    751 fixaOrdem1[3,14,15]
-                               32629            68               
+                              327639            68               
    752 fixaOrdem1[3,14,16]
-                               31884            68               
+                              327673            68               
    753 fixaOrdem1[3,14,17]
-                               32663            68               
+                              327738            68               
    754 fixaOrdem1[3,14,18]
-                               32743            68               
+                              327851            68               
    755 fixaOrdem1[3,14,19]
-                               31949            68               
+                              326863            68               
    756 fixaOrdem1[3,14,20]
-                               32796            68               
+                              327904            68               
    757 fixaOrdem1[3,15,16]
-                               32055            34               
-   758 fixaOrdem1[3,15,17]
                                   34            34               
+   758 fixaOrdem1[3,15,17]
+                                  99            34               
    759 fixaOrdem1[3,15,18]
-                                 114            34               
+                                 212            34               
    760 fixaOrdem1[3,15,19]
-                               32120            34               
+                              327224            34               
    761 fixaOrdem1[3,15,20]
-                                 167            34               
+                                 265            34               
    762 fixaOrdem1[3,16,17]
-                                 779            65               
-   763 fixaOrdem1[3,16,18]
-                                 859            65               
-   764 fixaOrdem1[3,16,19]
                                   65            65               
+   763 fixaOrdem1[3,16,18]
+                                 178            65               
+   764 fixaOrdem1[3,16,19]
+                              327190            65               
    765 fixaOrdem1[3,16,20]
-                                 912            65               
+                                 231            65               
    766 fixaOrdem1[3,17,18]
-                                  80            80               
+                                 113            80               
    767 fixaOrdem1[3,17,19]
-                               32086            80               
+                              327125            80               
    768 fixaOrdem1[3,17,20]
-                                 133            80               
+                                 166            80               
    769 fixaOrdem1[3,18,19]
-                               32006            53               
+                              327012            53               
    770 fixaOrdem1[3,18,20]
                                   53            53               
    771 fixaOrdem1[3,19,20]
-                                 847            86               
+                                1041            86               
    772 fixaOrdem1[4,1,2]
-                               32694            61               
+                                  90            61               
    773 fixaOrdem1[4,1,3]
-                                 740            61               
+                                 979            61               
    774 fixaOrdem1[4,1,4]
-                                 235            61               
+                                 148            61               
    775 fixaOrdem1[4,1,5]
-                               32782            61               
+                              327982            61               
    776 fixaOrdem1[4,1,6]
-                                  79            61               
+                                 191            61               
    777 fixaOrdem1[4,1,7]
-                                 156            61               
+                                 134            61               
    778 fixaOrdem1[4,1,8]
-                                 837            61               
+                                 268            61               
    779 fixaOrdem1[4,1,9]
-                                 240            61               
+                                 365            61               
    780 fixaOrdem1[4,1,10]
-                                 322            61               
+                                 447            61               
    781 fixaOrdem1[4,1,11]
-                               32502            61               
+                                 563            61               
    782 fixaOrdem1[4,1,12]
-                                 339            61               
+                                 464            61               
    783 fixaOrdem1[4,1,13]
-                                 438            61               
+                                 642            61               
    784 fixaOrdem1[4,1,14]
-                                 713            61               
+                                1076            61               
    785 fixaOrdem1[4,1,15]
-                                 512            61               
+                                 716            61               
    786 fixaOrdem1[4,1,16]
-                               32581            61               
+                                 738            61               
    787 fixaOrdem1[4,1,17]
-                                 534            61               
+                                 815            61               
    788 fixaOrdem1[4,1,18]
-                                 632            61               
+                                 898            61               
    789 fixaOrdem1[4,1,19]
-                               32658            61               
+                              327946            61               
    790 fixaOrdem1[4,1,20]
-                                 703            61               
+                                 969            61               
    791 fixaOrdem1[4,2,3]
-                                 846            44               
+                                 889            44               
    792 fixaOrdem1[4,2,4]
-                                 341            44               
+                                  58            44               
    793 fixaOrdem1[4,2,5]
-                                  88            44               
+                              327892            44               
    794 fixaOrdem1[4,2,6]
-                                 185            44               
+                                 101            44               
    795 fixaOrdem1[4,2,7]
-                                 262            44               
+                                  44            44               
    796 fixaOrdem1[4,2,8]
-                                 943            44               
+                                 178            44               
    797 fixaOrdem1[4,2,9]
-                                 346            44               
+                                 275            44               
    798 fixaOrdem1[4,2,10]
-                                 428            44               
+                                 357            44               
    799 fixaOrdem1[4,2,11]
-                               32608            44               
+                                 473            44               
    800 fixaOrdem1[4,2,12]
-                                 445            44               
+                                 374            44               
    801 fixaOrdem1[4,2,13]
-                                 544            44               
+                                 552            44               
    802 fixaOrdem1[4,2,14]
-                                 819            44               
+                                 986            44               
    803 fixaOrdem1[4,2,15]
-                                 618            44               
+                                 626            44               
    804 fixaOrdem1[4,2,16]
-                               32687            44               
+                                 648            44               
    805 fixaOrdem1[4,2,17]
-                                 640            44               
+                                 725            44               
    806 fixaOrdem1[4,2,18]
-                                 738            44               
+                                 808            44               
    807 fixaOrdem1[4,2,19]
-                               32764            44               
+                              327856            44               
    808 fixaOrdem1[4,2,20]
-                                 809            44               
+                                 879            44               
    809 fixaOrdem1[4,3,4]
-                               32295            97               
+                              327169            97               
    810 fixaOrdem1[4,3,5]
-                               32042            97               
+                              327003            97               
    811 fixaOrdem1[4,3,6]
-                               32139            97               
+                              327212            97               
    812 fixaOrdem1[4,3,7]
-                               32216            97               
+                              327155            97               
    813 fixaOrdem1[4,3,8]
-                                  97            97               
+                              327289            97               
    814 fixaOrdem1[4,3,9]
-                               32300            97               
+                              327386            97               
    815 fixaOrdem1[4,3,10]
-                               32382            97               
+                              327468            97               
    816 fixaOrdem1[4,3,11]
-                               31762            97               
+                              327584            97               
    817 fixaOrdem1[4,3,12]
-                               32399            97               
+                              327485            97               
    818 fixaOrdem1[4,3,13]
-                               32498            97               
+                              327663            97               
    819 fixaOrdem1[4,3,14]
-                               32773            97               
+                                  97            97               
    820 fixaOrdem1[4,3,15]
-                               32572            97               
+                              327737            97               
    821 fixaOrdem1[4,3,16]
-                               31841            97               
+                              327759            97               
    822 fixaOrdem1[4,3,17]
-                               32594            97               
+                              327836            97               
    823 fixaOrdem1[4,3,18]
-                               32692            97               
+                              327919            97               
    824 fixaOrdem1[4,3,19]
-                               31918            97               
+                              326967            97               
    825 fixaOrdem1[4,3,20]
-                               32763            97               
+                              327990            97               
    826 fixaOrdem1[4,4,5]
-                               32547             5               
+                              327834             5               
    827 fixaOrdem1[4,4,6]
-                               32644             5               
+                                  43             5               
    828 fixaOrdem1[4,4,7]
-                               32721             5               
+                              327986             5               
    829 fixaOrdem1[4,4,8]
-                                 602             5               
+                                 120             5               
    830 fixaOrdem1[4,4,9]
-                                   5             5               
+                                 217             5               
    831 fixaOrdem1[4,4,10]
-                                  87             5               
-   832 fixaOrdem1[4,4,11]
-                               32267             5               
-   833 fixaOrdem1[4,4,12]
-                                 104             5               
-   834 fixaOrdem1[4,4,13]
-                                 203             5               
-   835 fixaOrdem1[4,4,14]
-                                 478             5               
-   836 fixaOrdem1[4,4,15]
-                                 277             5               
-   837 fixaOrdem1[4,4,16]
-                               32346             5               
-   838 fixaOrdem1[4,4,17]
                                  299             5               
+   832 fixaOrdem1[4,4,11]
+                                 415             5               
+   833 fixaOrdem1[4,4,12]
+                                 316             5               
+   834 fixaOrdem1[4,4,13]
+                                 494             5               
+   835 fixaOrdem1[4,4,14]
+                                 928             5               
+   836 fixaOrdem1[4,4,15]
+                                 568             5               
+   837 fixaOrdem1[4,4,16]
+                                 590             5               
+   838 fixaOrdem1[4,4,17]
+                                 667             5               
    839 fixaOrdem1[4,4,18]
-                                 397             5               
+                                 750             5               
    840 fixaOrdem1[4,4,19]
-                               32423             5               
+                              327798             5               
    841 fixaOrdem1[4,4,20]
-                                 468             5               
+                                 821             5               
    842 fixaOrdem1[4,5,6]
-                                  97            18               
+                                 209            18               
    843 fixaOrdem1[4,5,7]
-                                 174            18               
+                                 152            18               
    844 fixaOrdem1[4,5,8]
-                                 855            18               
+                                 286            18               
    845 fixaOrdem1[4,5,9]
-                                 258            18               
+                                 383            18               
    846 fixaOrdem1[4,5,10]
-                                 340            18               
+                                 465            18               
    847 fixaOrdem1[4,5,11]
-                               32520            18               
+                                 581            18               
    848 fixaOrdem1[4,5,12]
-                                 357            18               
+                                 482            18               
    849 fixaOrdem1[4,5,13]
-                                 456            18               
+                                 660            18               
    850 fixaOrdem1[4,5,14]
-                                 731            18               
+                                1094            18               
    851 fixaOrdem1[4,5,15]
-                                 530            18               
+                                 734            18               
    852 fixaOrdem1[4,5,16]
-                               32599            18               
+                                 756            18               
    853 fixaOrdem1[4,5,17]
-                                 552            18               
+                                 833            18               
    854 fixaOrdem1[4,5,18]
-                                 650            18               
+                                 916            18               
    855 fixaOrdem1[4,5,19]
-                               32676            18               
+                              327964            18               
    856 fixaOrdem1[4,5,20]
-                                 721            18               
+                                 987            18               
    857 fixaOrdem1[4,6,7]
-                                  77            77               
+                              327943            77               
    858 fixaOrdem1[4,6,8]
-                                 758            77               
+                                  77            77               
    859 fixaOrdem1[4,6,9]
-                                 161            77               
+                                 174            77               
    860 fixaOrdem1[4,6,10]
-                                 243            77               
+                                 256            77               
    861 fixaOrdem1[4,6,11]
-                               32423            77               
+                                 372            77               
    862 fixaOrdem1[4,6,12]
-                                 260            77               
+                                 273            77               
    863 fixaOrdem1[4,6,13]
-                                 359            77               
+                                 451            77               
    864 fixaOrdem1[4,6,14]
-                                 634            77               
+                                 885            77               
    865 fixaOrdem1[4,6,15]
-                                 433            77               
+                                 525            77               
    866 fixaOrdem1[4,6,16]
-                               32502            77               
+                                 547            77               
    867 fixaOrdem1[4,6,17]
-                                 455            77               
-   868 fixaOrdem1[4,6,18]
-                                 553            77               
-   869 fixaOrdem1[4,6,19]
-                               32579            77               
-   870 fixaOrdem1[4,6,20]
                                  624            77               
+   868 fixaOrdem1[4,6,18]
+                                 707            77               
+   869 fixaOrdem1[4,6,19]
+                              327755            77               
+   870 fixaOrdem1[4,6,20]
+                                 778            77               
    871 fixaOrdem1[4,7,8]
-                                 681            14               
+                                 134            14               
    872 fixaOrdem1[4,7,9]
-                                  84            14               
+                                 231            14               
    873 fixaOrdem1[4,7,10]
-                                 166            14               
+                                 313            14               
    874 fixaOrdem1[4,7,11]
-                               32346            14               
+                                 429            14               
    875 fixaOrdem1[4,7,12]
-                                 183            14               
+                                 330            14               
    876 fixaOrdem1[4,7,13]
-                                 282            14               
+                                 508            14               
    877 fixaOrdem1[4,7,14]
-                                 557            14               
+                                 942            14               
    878 fixaOrdem1[4,7,15]
-                                 356            14               
+                                 582            14               
    879 fixaOrdem1[4,7,16]
-                               32425            14               
+                                 604            14               
    880 fixaOrdem1[4,7,17]
-                                 378            14               
+                                 681            14               
    881 fixaOrdem1[4,7,18]
-                                 476            14               
+                                 764            14               
    882 fixaOrdem1[4,7,19]
-                               32502            14               
+                              327812            14               
    883 fixaOrdem1[4,7,20]
-                                 547            14               
+                                 835            14               
    884 fixaOrdem1[4,8,9]
-                               32203            97               
+                                  97            97               
    885 fixaOrdem1[4,8,10]
-                               32285            97               
+                                 179            97               
    886 fixaOrdem1[4,8,11]
-                               31665            97               
+                                 295            97               
    887 fixaOrdem1[4,8,12]
-                               32302            97               
+                                 196            97               
    888 fixaOrdem1[4,8,13]
-                               32401            97               
+                                 374            97               
    889 fixaOrdem1[4,8,14]
-                               32676            97               
+                                 808            97               
    890 fixaOrdem1[4,8,15]
-                               32475            97               
+                                 448            97               
    891 fixaOrdem1[4,8,16]
-                               31744            97               
+                                 470            97               
    892 fixaOrdem1[4,8,17]
-                               32497            97               
+                                 547            97               
    893 fixaOrdem1[4,8,18]
-                               32595            97               
+                                 630            97               
    894 fixaOrdem1[4,8,19]
-                               31821            97               
+                              327678            97               
    895 fixaOrdem1[4,8,20]
-                               32666            97               
+                                 701            97               
    896 fixaOrdem1[4,9,10]
                                   82            82               
    897 fixaOrdem1[4,9,11]
-                               32262            82               
+                                 198            82               
    898 fixaOrdem1[4,9,12]
                                   99            82               
    899 fixaOrdem1[4,9,13]
-                                 198            82               
+                                 277            82               
    900 fixaOrdem1[4,9,14]
-                                 473            82               
+                                 711            82               
    901 fixaOrdem1[4,9,15]
-                                 272            82               
+                                 351            82               
    902 fixaOrdem1[4,9,16]
-                               32341            82               
+                                 373            82               
    903 fixaOrdem1[4,9,17]
-                                 294            82               
+                                 450            82               
    904 fixaOrdem1[4,9,18]
-                                 392            82               
+                                 533            82               
    905 fixaOrdem1[4,9,19]
-                               32418            82               
+                              327581            82               
    906 fixaOrdem1[4,9,20]
-                                 463            82               
+                                 604            82               
    907 fixaOrdem1[4,10,11]
-                               32180            17               
+                                 116            17               
    908 fixaOrdem1[4,10,12]
                                   17            17               
    909 fixaOrdem1[4,10,13]
-                                 116            17               
+                                 195            17               
    910 fixaOrdem1[4,10,14]
-                                 391            17               
+                                 629            17               
    911 fixaOrdem1[4,10,15]
-                                 190            17               
+                                 269            17               
    912 fixaOrdem1[4,10,16]
-                               32259            17               
+                                 291            17               
    913 fixaOrdem1[4,10,17]
-                                 212            17               
+                                 368            17               
    914 fixaOrdem1[4,10,18]
-                                 310            17               
+                                 451            17               
    915 fixaOrdem1[4,10,19]
-                               32336            17               
+                              327499            17               
    916 fixaOrdem1[4,10,20]
-                                 381            17               
+                                 522            17               
    917 fixaOrdem1[4,11,12]
-                                 637            79               
+                              327901            79               
    918 fixaOrdem1[4,11,13]
-                                 736            79               
-   919 fixaOrdem1[4,11,14]
-                                1011            79               
-   920 fixaOrdem1[4,11,15]
-                                 810            79               
-   921 fixaOrdem1[4,11,16]
                                   79            79               
+   919 fixaOrdem1[4,11,14]
+                                 513            79               
+   920 fixaOrdem1[4,11,15]
+                                 153            79               
+   921 fixaOrdem1[4,11,16]
+                                 175            79               
    922 fixaOrdem1[4,11,17]
-                                 832            79               
+                                 252            79               
    923 fixaOrdem1[4,11,18]
-                                 930            79               
+                                 335            79               
    924 fixaOrdem1[4,11,19]
-                                 156            79               
+                              327383            79               
    925 fixaOrdem1[4,11,20]
-                                1001            79               
+                                 406            79               
    926 fixaOrdem1[4,12,13]
-                                  99            99               
+                                 178            99               
    927 fixaOrdem1[4,12,14]
-                                 374            99               
+                                 612            99               
    928 fixaOrdem1[4,12,15]
-                                 173            99               
+                                 252            99               
    929 fixaOrdem1[4,12,16]
-                               32242            99               
+                                 274            99               
    930 fixaOrdem1[4,12,17]
-                                 195            99               
+                                 351            99               
    931 fixaOrdem1[4,12,18]
-                                 293            99               
+                                 434            99               
    932 fixaOrdem1[4,12,19]
-                               32319            99               
+                              327482            99               
    933 fixaOrdem1[4,12,20]
-                                 364            99               
+                                 505            99               
    934 fixaOrdem1[4,13,14]
-                                 275            74               
+                                 434            74               
    935 fixaOrdem1[4,13,15]
                                   74            74               
    936 fixaOrdem1[4,13,16]
-                               32143            74               
-   937 fixaOrdem1[4,13,17]
                                   96            74               
+   937 fixaOrdem1[4,13,17]
+                                 173            74               
    938 fixaOrdem1[4,13,18]
-                                 194            74               
+                                 256            74               
    939 fixaOrdem1[4,13,19]
-                               32220            74               
+                              327304            74               
    940 fixaOrdem1[4,13,20]
-                                 265            74               
+                                 327            74               
    941 fixaOrdem1[4,14,15]
-                               32599            27               
+                              327640            27               
    942 fixaOrdem1[4,14,16]
-                               31868            27               
+                              327662            27               
    943 fixaOrdem1[4,14,17]
-                               32621            27               
+                              327739            27               
    944 fixaOrdem1[4,14,18]
-                               32719            27               
+                              327822            27               
    945 fixaOrdem1[4,14,19]
-                               31945            27               
+                              326870            27               
    946 fixaOrdem1[4,14,20]
-                               32790            27               
+                              327893            27               
    947 fixaOrdem1[4,15,16]
-                               32069            22               
-   948 fixaOrdem1[4,15,17]
                                   22            22               
+   948 fixaOrdem1[4,15,17]
+                                  99            22               
    949 fixaOrdem1[4,15,18]
-                                 120            22               
+                                 182            22               
    950 fixaOrdem1[4,15,19]
-                               32146            22               
+                              327230            22               
    951 fixaOrdem1[4,15,20]
-                                 191            22               
+                                 253            22               
    952 fixaOrdem1[4,16,17]
-                                 753            77               
-   953 fixaOrdem1[4,16,18]
-                                 851            77               
-   954 fixaOrdem1[4,16,19]
                                   77            77               
+   953 fixaOrdem1[4,16,18]
+                                 160            77               
+   954 fixaOrdem1[4,16,19]
+                              327208            77               
    955 fixaOrdem1[4,16,20]
-                                 922            77               
+                                 231            77               
    956 fixaOrdem1[4,17,18]
-                                  98            83               
+                                  83            83               
    957 fixaOrdem1[4,17,19]
-                               32124            83               
+                              327131            83               
    958 fixaOrdem1[4,17,20]
-                                 169            83               
+                                 154            83               
    959 fixaOrdem1[4,18,19]
-                               32026            71               
+                              327048            71               
    960 fixaOrdem1[4,18,20]
                                   71            71               
    961 fixaOrdem1[4,19,20]
-                                 845            36               
+                                1023            36               
    962 fixaOrdem1[5,1,2]
-                               32658            60               
+                                  60            60               
    963 fixaOrdem1[5,1,3]
-                                 708            60               
+                                 947            60               
    964 fixaOrdem1[5,1,4]
-                                 215            60               
+                                 194            60               
    965 fixaOrdem1[5,1,5]
-                               32731            60               
+                              327931            60               
    966 fixaOrdem1[5,1,6]
-                                  91            60               
+                                 196            60               
    967 fixaOrdem1[5,1,7]
-                                 139            60               
+                                 118            60               
    968 fixaOrdem1[5,1,8]
-                                 813            60               
+                                 244            60               
    969 fixaOrdem1[5,1,9]
-                                 217            60               
+                                 328            60               
    970 fixaOrdem1[5,1,10]
-                                 300            60               
+                                 430            60               
    971 fixaOrdem1[5,1,11]
-                               32468            60               
+                                 565            60               
    972 fixaOrdem1[5,1,12]
-                                 352            60               
+                                 482            60               
    973 fixaOrdem1[5,1,13]
-                                 475            60               
+                                 660            60               
    974 fixaOrdem1[5,1,14]
-                                 674            60               
+                                1102            60               
    975 fixaOrdem1[5,1,15]
-                                 484            60               
+                                 668            60               
    976 fixaOrdem1[5,1,16]
-                               32624            60               
+                                 722            60               
    977 fixaOrdem1[5,1,17]
-                                 538            60               
+                                 739            60               
    978 fixaOrdem1[5,1,18]
-                                 604            60               
+                                 785            60               
    979 fixaOrdem1[5,1,19]
-                               32641            60               
+                              327914            60               
    980 fixaOrdem1[5,1,20]
-                                 649            60               
+                                 922            60               
    981 fixaOrdem1[5,2,3]
-                                 850            58               
+                                 887            58               
    982 fixaOrdem1[5,2,4]
-                                 357            58               
+                                 134            58               
    983 fixaOrdem1[5,2,5]
-                                  73            58               
+                              327871            58               
    984 fixaOrdem1[5,2,6]
-                                 233            58               
+                                 136            58               
    985 fixaOrdem1[5,2,7]
-                                 281            58               
+                                  58            58               
    986 fixaOrdem1[5,2,8]
-                                 955            58               
+                                 184            58               
    987 fixaOrdem1[5,2,9]
-                                 359            58               
+                                 268            58               
    988 fixaOrdem1[5,2,10]
-                                 442            58               
+                                 370            58               
    989 fixaOrdem1[5,2,11]
-                               32610            58               
+                                 505            58               
    990 fixaOrdem1[5,2,12]
-                                 494            58               
+                                 422            58               
    991 fixaOrdem1[5,2,13]
-                                 617            58               
+                                 600            58               
    992 fixaOrdem1[5,2,14]
-                                 816            58               
+                                1042            58               
    993 fixaOrdem1[5,2,15]
-                                 626            58               
+                                 608            58               
    994 fixaOrdem1[5,2,16]
-                               32766            58               
+                                 662            58               
    995 fixaOrdem1[5,2,17]
-                                 680            58               
+                                 679            58               
    996 fixaOrdem1[5,2,18]
-                                 746            58               
+                                 725            58               
    997 fixaOrdem1[5,2,19]
-                               32783            58               
+                              327854            58               
    998 fixaOrdem1[5,2,20]
-                                 791            58               
+                                 862            58               
    999 fixaOrdem1[5,3,4]
-                               32307            92               
+                              327247            92               
   1000 fixaOrdem1[5,3,5]
-                               32023            92               
+                              326984            92               
   1001 fixaOrdem1[5,3,6]
-                               32183            92               
+                              327249            92               
   1002 fixaOrdem1[5,3,7]
-                               32231            92               
+                              327171            92               
   1003 fixaOrdem1[5,3,8]
-                                 105            92               
+                              327297            92               
   1004 fixaOrdem1[5,3,9]
-                               32309            92               
+                              327381            92               
   1005 fixaOrdem1[5,3,10]
-                               32392            92               
+                              327483            92               
   1006 fixaOrdem1[5,3,11]
-                               31760            92               
+                              327618            92               
   1007 fixaOrdem1[5,3,12]
-                               32444            92               
+                              327535            92               
   1008 fixaOrdem1[5,3,13]
-                               32567            92               
+                              327713            92               
   1009 fixaOrdem1[5,3,14]
-                               32766            92               
+                                 155            92               
   1010 fixaOrdem1[5,3,15]
-                               32576            92               
+                              327721            92               
   1011 fixaOrdem1[5,3,16]
-                               31916            92               
+                              327775            92               
   1012 fixaOrdem1[5,3,17]
-                               32630            92               
+                              327792            92               
   1013 fixaOrdem1[5,3,18]
-                               32696            92               
+                              327838            92               
   1014 fixaOrdem1[5,3,19]
-                               31933            92               
+                              326967            92               
   1015 fixaOrdem1[5,3,20]
-                               32741            92               
+                              327975            92               
   1016 fixaOrdem1[5,4,5]
-                               32516             2               
+                              327737             2               
   1017 fixaOrdem1[5,4,6]
-                               32676             2               
-  1018 fixaOrdem1[5,4,7]
-                               32724             2               
-  1019 fixaOrdem1[5,4,8]
-                                 598             2               
-  1020 fixaOrdem1[5,4,9]
                                    2             2               
+  1018 fixaOrdem1[5,4,7]
+                              327924             2               
+  1019 fixaOrdem1[5,4,8]
+                                  50             2               
+  1020 fixaOrdem1[5,4,9]
+                                 134             2               
   1021 fixaOrdem1[5,4,10]
-                                  85             2               
+                                 236             2               
   1022 fixaOrdem1[5,4,11]
-                               32253             2               
+                                 371             2               
   1023 fixaOrdem1[5,4,12]
-                                 137             2               
+                                 288             2               
   1024 fixaOrdem1[5,4,13]
-                                 260             2               
+                                 466             2               
   1025 fixaOrdem1[5,4,14]
-                                 459             2               
+                                 908             2               
   1026 fixaOrdem1[5,4,15]
-                                 269             2               
+                                 474             2               
   1027 fixaOrdem1[5,4,16]
-                               32409             2               
+                                 528             2               
   1028 fixaOrdem1[5,4,17]
-                                 323             2               
+                                 545             2               
   1029 fixaOrdem1[5,4,18]
-                                 389             2               
+                                 591             2               
   1030 fixaOrdem1[5,4,19]
-                               32426             2               
+                              327720             2               
   1031 fixaOrdem1[5,4,20]
-                                 434             2               
+                                 728             2               
   1032 fixaOrdem1[5,5,6]
-                                 160            69               
+                                 265            69               
   1033 fixaOrdem1[5,5,7]
-                                 208            69               
+                                 187            69               
   1034 fixaOrdem1[5,5,8]
-                                 882            69               
+                                 313            69               
   1035 fixaOrdem1[5,5,9]
-                                 286            69               
+                                 397            69               
   1036 fixaOrdem1[5,5,10]
-                                 369            69               
+                                 499            69               
   1037 fixaOrdem1[5,5,11]
-                               32537            69               
+                                 634            69               
   1038 fixaOrdem1[5,5,12]
-                                 421            69               
+                                 551            69               
   1039 fixaOrdem1[5,5,13]
-                                 544            69               
+                                 729            69               
   1040 fixaOrdem1[5,5,14]
-                                 743            69               
+                                1171            69               
   1041 fixaOrdem1[5,5,15]
-                                 553            69               
+                                 737            69               
   1042 fixaOrdem1[5,5,16]
-                               32693            69               
+                                 791            69               
   1043 fixaOrdem1[5,5,17]
-                                 607            69               
+                                 808            69               
   1044 fixaOrdem1[5,5,18]
-                                 673            69               
+                                 854            69               
   1045 fixaOrdem1[5,5,19]
-                               32710            69               
+                              327983            69               
   1046 fixaOrdem1[5,5,20]
-                                 718            69               
+                                 991            69               
   1047 fixaOrdem1[5,6,7]
-                                  48            48               
+                              327922            48               
   1048 fixaOrdem1[5,6,8]
-                                 722            48               
+                                  48            48               
   1049 fixaOrdem1[5,6,9]
-                                 126            48               
+                                 132            48               
   1050 fixaOrdem1[5,6,10]
-                                 209            48               
+                                 234            48               
   1051 fixaOrdem1[5,6,11]
-                               32377            48               
+                                 369            48               
   1052 fixaOrdem1[5,6,12]
-                                 261            48               
+                                 286            48               
   1053 fixaOrdem1[5,6,13]
-                                 384            48               
+                                 464            48               
   1054 fixaOrdem1[5,6,14]
-                                 583            48               
+                                 906            48               
   1055 fixaOrdem1[5,6,15]
-                                 393            48               
+                                 472            48               
   1056 fixaOrdem1[5,6,16]
-                               32533            48               
+                                 526            48               
   1057 fixaOrdem1[5,6,17]
-                                 447            48               
+                                 543            48               
   1058 fixaOrdem1[5,6,18]
-                                 513            48               
+                                 589            48               
   1059 fixaOrdem1[5,6,19]
-                               32550            48               
+                              327718            48               
   1060 fixaOrdem1[5,6,20]
-                                 558            48               
+                                 726            48               
   1061 fixaOrdem1[5,7,8]
-                                 674            76               
+                                 126            76               
   1062 fixaOrdem1[5,7,9]
-                                  78            76               
+                                 210            76               
   1063 fixaOrdem1[5,7,10]
-                                 161            76               
+                                 312            76               
   1064 fixaOrdem1[5,7,11]
-                               32329            76               
+                                 447            76               
   1065 fixaOrdem1[5,7,12]
-                                 213            76               
+                                 364            76               
   1066 fixaOrdem1[5,7,13]
-                                 336            76               
+                                 542            76               
   1067 fixaOrdem1[5,7,14]
-                                 535            76               
+                                 984            76               
   1068 fixaOrdem1[5,7,15]
-                                 345            76               
+                                 550            76               
   1069 fixaOrdem1[5,7,16]
-                               32485            76               
+                                 604            76               
   1070 fixaOrdem1[5,7,17]
-                                 399            76               
+                                 621            76               
   1071 fixaOrdem1[5,7,18]
-                                 465            76               
+                                 667            76               
   1072 fixaOrdem1[5,7,19]
-                               32502            76               
+                              327796            76               
   1073 fixaOrdem1[5,7,20]
-                                 510            76               
+                                 804            76               
   1074 fixaOrdem1[5,8,9]
-                               32204            84               
+                                  84            84               
   1075 fixaOrdem1[5,8,10]
-                               32287            84               
+                                 186            84               
   1076 fixaOrdem1[5,8,11]
-                               31655            84               
+                                 321            84               
   1077 fixaOrdem1[5,8,12]
-                               32339            84               
+                                 238            84               
   1078 fixaOrdem1[5,8,13]
-                               32462            84               
+                                 416            84               
   1079 fixaOrdem1[5,8,14]
-                               32661            84               
+                                 858            84               
   1080 fixaOrdem1[5,8,15]
-                               32471            84               
+                                 424            84               
   1081 fixaOrdem1[5,8,16]
-                               31811            84               
+                                 478            84               
   1082 fixaOrdem1[5,8,17]
-                               32525            84               
+                                 495            84               
   1083 fixaOrdem1[5,8,18]
-                               32591            84               
+                                 541            84               
   1084 fixaOrdem1[5,8,19]
-                               31828            84               
+                              327670            84               
   1085 fixaOrdem1[5,8,20]
-                               32636            84               
+                                 678            84               
   1086 fixaOrdem1[5,9,10]
-                                  83            83               
+                                 102            83               
   1087 fixaOrdem1[5,9,11]
-                               32251            83               
+                                 237            83               
   1088 fixaOrdem1[5,9,12]
-                                 135            83               
+                                 154            83               
   1089 fixaOrdem1[5,9,13]
-                                 258            83               
+                                 332            83               
   1090 fixaOrdem1[5,9,14]
-                                 457            83               
+                                 774            83               
   1091 fixaOrdem1[5,9,15]
-                                 267            83               
+                                 340            83               
   1092 fixaOrdem1[5,9,16]
-                               32407            83               
+                                 394            83               
   1093 fixaOrdem1[5,9,17]
-                                 321            83               
+                                 411            83               
   1094 fixaOrdem1[5,9,18]
-                                 387            83               
+                                 457            83               
   1095 fixaOrdem1[5,9,19]
-                               32424            83               
+                              327586            83               
   1096 fixaOrdem1[5,9,20]
-                                 432            83               
+                                 594            83               
   1097 fixaOrdem1[5,10,11]
-                               32168            52               
+                                 135            52               
   1098 fixaOrdem1[5,10,12]
                                   52            52               
   1099 fixaOrdem1[5,10,13]
-                                 175            52               
+                                 230            52               
   1100 fixaOrdem1[5,10,14]
-                                 374            52               
+                                 672            52               
   1101 fixaOrdem1[5,10,15]
-                                 184            52               
-  1102 fixaOrdem1[5,10,16]
-                               32324            52               
-  1103 fixaOrdem1[5,10,17]
                                  238            52               
+  1102 fixaOrdem1[5,10,16]
+                                 292            52               
+  1103 fixaOrdem1[5,10,17]
+                                 309            52               
   1104 fixaOrdem1[5,10,18]
-                                 304            52               
+                                 355            52               
   1105 fixaOrdem1[5,10,19]
-                               32341            52               
+                              327484            52               
   1106 fixaOrdem1[5,10,20]
-                                 349            52               
+                                 492            52               
   1107 fixaOrdem1[5,11,12]
-                                 684            53               
+                              327917            53               
   1108 fixaOrdem1[5,11,13]
-                                 807            53               
+                                  95            53               
   1109 fixaOrdem1[5,11,14]
-                                1006            53               
+                                 537            53               
   1110 fixaOrdem1[5,11,15]
-                                 816            53               
+                                 103            53               
   1111 fixaOrdem1[5,11,16]
-                                 156            53               
+                                 157            53               
   1112 fixaOrdem1[5,11,17]
-                                 870            53               
+                                 174            53               
   1113 fixaOrdem1[5,11,18]
-                                 936            53               
+                                 220            53               
   1114 fixaOrdem1[5,11,19]
-                                 173            53               
+                              327349            53               
   1115 fixaOrdem1[5,11,20]
-                                 981            53               
+                                 357            53               
   1116 fixaOrdem1[5,12,13]
-                                 123            42               
+                                 178            42               
   1117 fixaOrdem1[5,12,14]
-                                 322            42               
+                                 620            42               
   1118 fixaOrdem1[5,12,15]
-                                 132            42               
-  1119 fixaOrdem1[5,12,16]
-                               32272            42               
-  1120 fixaOrdem1[5,12,17]
                                  186            42               
+  1119 fixaOrdem1[5,12,16]
+                                 240            42               
+  1120 fixaOrdem1[5,12,17]
+                                 257            42               
   1121 fixaOrdem1[5,12,18]
-                                 252            42               
+                                 303            42               
   1122 fixaOrdem1[5,12,19]
-                               32289            42               
+                              327432            42               
   1123 fixaOrdem1[5,12,20]
-                                 297            42               
+                                 440            42               
   1124 fixaOrdem1[5,13,14]
-                                 199             8               
+                                 442             8               
   1125 fixaOrdem1[5,13,15]
-                                   9             8               
+                                   8             8               
   1126 fixaOrdem1[5,13,16]
-                               32149             8               
+                                  62             8               
   1127 fixaOrdem1[5,13,17]
-                                  63             8               
+                                  79             8               
   1128 fixaOrdem1[5,13,18]
-                                 129             8               
+                                 125             8               
   1129 fixaOrdem1[5,13,19]
-                               32166             8               
+                              327254             8               
   1130 fixaOrdem1[5,13,20]
-                                 174             8               
+                                 262             8               
   1131 fixaOrdem1[5,14,15]
-                               32610            34               
+                              327566            34               
   1132 fixaOrdem1[5,14,16]
-                               31950            34               
+                              327620            34               
   1133 fixaOrdem1[5,14,17]
-                               32664            34               
+                              327637            34               
   1134 fixaOrdem1[5,14,18]
-                               32730            34               
+                              327683            34               
   1135 fixaOrdem1[5,14,19]
-                               31967            34               
+                              326812            34               
   1136 fixaOrdem1[5,14,20]
-                               32775            34               
+                              327820            34               
   1137 fixaOrdem1[5,15,16]
-                               32140            54               
-  1138 fixaOrdem1[5,15,17]
                                   54            54               
+  1138 fixaOrdem1[5,15,17]
+                                  71            54               
   1139 fixaOrdem1[5,15,18]
-                                 120            54               
+                                 117            54               
   1140 fixaOrdem1[5,15,19]
-                               32157            54               
+                              327246            54               
   1141 fixaOrdem1[5,15,20]
-                                 165            54               
+                                 254            54               
   1142 fixaOrdem1[5,16,17]
-                                 714            17               
-  1143 fixaOrdem1[5,16,18]
-                                 780            17               
-  1144 fixaOrdem1[5,16,19]
                                   17            17               
+  1143 fixaOrdem1[5,16,18]
+                                  63            17               
+  1144 fixaOrdem1[5,16,19]
+                              327192            17               
   1145 fixaOrdem1[5,16,20]
-                                 825            17               
+                                 200            17               
   1146 fixaOrdem1[5,17,18]
-                                  66            46               
+                                  46            46               
   1147 fixaOrdem1[5,17,19]
-                               32103            46               
+                              327175            46               
   1148 fixaOrdem1[5,17,20]
-                                 111            46               
+                                 183            46               
   1149 fixaOrdem1[5,18,19]
-                               32037            45               
+                              327129            45               
   1150 fixaOrdem1[5,18,20]
-                                  45            45               
+                                 137            45               
   1151 fixaOrdem1[5,19,20]
-                                 808            17               
+                                1008            17               
   1152 fixaOrdem1[6,1,2]
-                               32609            19               
+                                  88            19               
   1153 fixaOrdem1[6,1,3]
-                                 700            19               
+                                 872            19               
   1154 fixaOrdem1[6,1,4]
-                                 208            19               
+                                 253            19               
   1155 fixaOrdem1[6,1,5]
-                               32779            19               
+                              327979            19               
   1156 fixaOrdem1[6,1,6]
-                                  19            19               
+                                 278            19               
   1157 fixaOrdem1[6,1,7]
-                                 110            19               
+                                 155            19               
   1158 fixaOrdem1[6,1,8]
-                                 853            19               
+                                 350            19               
   1159 fixaOrdem1[6,1,9]
-                                 282            19               
+                                 414            19               
   1160 fixaOrdem1[6,1,10]
-                                 286            19               
+                                 493            19               
   1161 fixaOrdem1[6,1,11]
-                               32454            19               
+                                 617            19               
   1162 fixaOrdem1[6,1,12]
-                                 322            19               
+                                 522            19               
   1163 fixaOrdem1[6,1,13]
-                                 450            19               
+                                 700            19               
   1164 fixaOrdem1[6,1,14]
-                                 620            19               
+                                1157            19               
   1165 fixaOrdem1[6,1,15]
-                                 544            19               
+                                 794            19               
   1166 fixaOrdem1[6,1,16]
-                               32537            19               
+                                 803            19               
   1167 fixaOrdem1[6,1,17]
-                                 553            19               
+                                 805            19               
   1168 fixaOrdem1[6,1,18]
-                                 565            19               
+                                 817            19               
   1169 fixaOrdem1[6,1,19]
-                               32539            19               
+                              327909            19               
   1170 fixaOrdem1[6,1,20]
-                                 597            19               
+                                 849            19               
   1171 fixaOrdem1[6,2,3]
-                                 891            67               
+                                 784            67               
   1172 fixaOrdem1[6,2,4]
-                                 399            67               
+                                 165            67               
   1173 fixaOrdem1[6,2,5]
-                                 170            67               
+                              327891            67               
   1174 fixaOrdem1[6,2,6]
-                                 210            67               
+                                 190            67               
   1175 fixaOrdem1[6,2,7]
-                                 301            67               
+                                  67            67               
   1176 fixaOrdem1[6,2,8]
-                                1044            67               
+                                 262            67               
   1177 fixaOrdem1[6,2,9]
-                                 473            67               
+                                 326            67               
   1178 fixaOrdem1[6,2,10]
-                                 477            67               
+                                 405            67               
   1179 fixaOrdem1[6,2,11]
-                               32645            67               
+                                 529            67               
   1180 fixaOrdem1[6,2,12]
-                                 513            67               
+                                 434            67               
   1181 fixaOrdem1[6,2,13]
-                                 641            67               
+                                 612            67               
   1182 fixaOrdem1[6,2,14]
-                                 811            67               
+                                1069            67               
   1183 fixaOrdem1[6,2,15]
-                                 735            67               
+                                 706            67               
   1184 fixaOrdem1[6,2,16]
-                               32728            67               
+                                 715            67               
   1185 fixaOrdem1[6,2,17]
-                                 744            67               
+                                 717            67               
   1186 fixaOrdem1[6,2,18]
-                                 756            67               
+                                 729            67               
   1187 fixaOrdem1[6,2,19]
-                               32730            67               
+                              327821            67               
   1188 fixaOrdem1[6,2,20]
-                                 788            67               
+                                 761            67               
   1189 fixaOrdem1[6,3,4]
-                               32308            77               
+                              327381            77               
   1190 fixaOrdem1[6,3,5]
-                               32079            77               
+                              327107            77               
   1191 fixaOrdem1[6,3,6]
-                               32119            77               
+                              327406            77               
   1192 fixaOrdem1[6,3,7]
-                               32210            77               
+                              327283            77               
   1193 fixaOrdem1[6,3,8]
-                                 153            77               
+                              327478            77               
   1194 fixaOrdem1[6,3,9]
-                               32382            77               
+                              327542            77               
   1195 fixaOrdem1[6,3,10]
-                               32386            77               
+                              327621            77               
   1196 fixaOrdem1[6,3,11]
-                               31754            77               
+                              327745            77               
   1197 fixaOrdem1[6,3,12]
-                               32422            77               
+                              327650            77               
   1198 fixaOrdem1[6,3,13]
-                               32550            77               
+                              327828            77               
   1199 fixaOrdem1[6,3,14]
-                               32720            77               
+                                 285            77               
   1200 fixaOrdem1[6,3,15]
-                               32644            77               
+                              327922            77               
   1201 fixaOrdem1[6,3,16]
-                               31837            77               
+                              327931            77               
   1202 fixaOrdem1[6,3,17]
-                               32653            77               
+                              327933            77               
   1203 fixaOrdem1[6,3,18]
-                               32665            77               
+                              327945            77               
   1204 fixaOrdem1[6,3,19]
-                               31839            77               
+                              327037            77               
   1205 fixaOrdem1[6,3,20]
-                               32697            77               
+                              327977            77               
   1206 fixaOrdem1[6,4,5]
-                               32571            25               
+                              327726            25               
   1207 fixaOrdem1[6,4,6]
-                               32611            25               
+                                  25            25               
   1208 fixaOrdem1[6,4,7]
-                               32702            25               
+                              327902            25               
   1209 fixaOrdem1[6,4,8]
-                                 645            25               
+                                  97            25               
   1210 fixaOrdem1[6,4,9]
-                                  74            25               
+                                 161            25               
   1211 fixaOrdem1[6,4,10]
-                                  78            25               
+                                 240            25               
   1212 fixaOrdem1[6,4,11]
-                               32246            25               
+                                 364            25               
   1213 fixaOrdem1[6,4,12]
-                                 114            25               
+                                 269            25               
   1214 fixaOrdem1[6,4,13]
-                                 242            25               
+                                 447            25               
   1215 fixaOrdem1[6,4,14]
-                                 412            25               
+                                 904            25               
   1216 fixaOrdem1[6,4,15]
-                                 336            25               
+                                 541            25               
   1217 fixaOrdem1[6,4,16]
-                               32329            25               
+                                 550            25               
   1218 fixaOrdem1[6,4,17]
-                                 345            25               
+                                 552            25               
   1219 fixaOrdem1[6,4,18]
-                                 357            25               
+                                 564            25               
   1220 fixaOrdem1[6,4,19]
-                               32331            25               
+                              327656            25               
   1221 fixaOrdem1[6,4,20]
-                                 389            25               
+                                 596            25               
   1222 fixaOrdem1[6,5,6]
-                                  40            21               
+                                 299            21               
   1223 fixaOrdem1[6,5,7]
-                                 131            21               
+                                 176            21               
   1224 fixaOrdem1[6,5,8]
-                                 874            21               
+                                 371            21               
   1225 fixaOrdem1[6,5,9]
-                                 303            21               
+                                 435            21               
   1226 fixaOrdem1[6,5,10]
-                                 307            21               
+                                 514            21               
   1227 fixaOrdem1[6,5,11]
-                               32475            21               
+                                 638            21               
   1228 fixaOrdem1[6,5,12]
-                                 343            21               
+                                 543            21               
   1229 fixaOrdem1[6,5,13]
-                                 471            21               
+                                 721            21               
   1230 fixaOrdem1[6,5,14]
-                                 641            21               
+                                1178            21               
   1231 fixaOrdem1[6,5,15]
-                                 565            21               
+                                 815            21               
   1232 fixaOrdem1[6,5,16]
-                               32558            21               
+                                 824            21               
   1233 fixaOrdem1[6,5,17]
-                                 574            21               
+                                 826            21               
   1234 fixaOrdem1[6,5,18]
-                                 586            21               
+                                 838            21               
   1235 fixaOrdem1[6,5,19]
-                               32560            21               
+                              327930            21               
   1236 fixaOrdem1[6,5,20]
-                                 618            21               
+                                 870            21               
   1237 fixaOrdem1[6,6,7]
-                                  91            22               
+                              327877            22               
   1238 fixaOrdem1[6,6,8]
-                                 834            22               
+                                  72            22               
   1239 fixaOrdem1[6,6,9]
-                                 263            22               
+                                 136            22               
   1240 fixaOrdem1[6,6,10]
-                                 267            22               
+                                 215            22               
   1241 fixaOrdem1[6,6,11]
-                               32435            22               
+                                 339            22               
   1242 fixaOrdem1[6,6,12]
-                                 303            22               
+                                 244            22               
   1243 fixaOrdem1[6,6,13]
-                                 431            22               
+                                 422            22               
   1244 fixaOrdem1[6,6,14]
-                                 601            22               
+                                 879            22               
   1245 fixaOrdem1[6,6,15]
-                                 525            22               
+                                 516            22               
   1246 fixaOrdem1[6,6,16]
-                               32518            22               
+                                 525            22               
   1247 fixaOrdem1[6,6,17]
-                                 534            22               
+                                 527            22               
   1248 fixaOrdem1[6,6,18]
-                                 546            22               
+                                 539            22               
   1249 fixaOrdem1[6,6,19]
-                               32520            22               
+                              327631            22               
   1250 fixaOrdem1[6,6,20]
-                                 578            22               
+                                 571            22               
   1251 fixaOrdem1[6,7,8]
-                                 743            98               
+                                 195            98               
   1252 fixaOrdem1[6,7,9]
-                                 172            98               
+                                 259            98               
   1253 fixaOrdem1[6,7,10]
-                                 176            98               
+                                 338            98               
   1254 fixaOrdem1[6,7,11]
-                               32344            98               
+                                 462            98               
   1255 fixaOrdem1[6,7,12]
-                                 212            98               
+                                 367            98               
   1256 fixaOrdem1[6,7,13]
-                                 340            98               
+                                 545            98               
   1257 fixaOrdem1[6,7,14]
-                                 510            98               
+                                1002            98               
   1258 fixaOrdem1[6,7,15]
-                                 434            98               
+                                 639            98               
   1259 fixaOrdem1[6,7,16]
-                               32427            98               
+                                 648            98               
   1260 fixaOrdem1[6,7,17]
-                                 443            98               
+                                 650            98               
   1261 fixaOrdem1[6,7,18]
-                                 455            98               
+                                 662            98               
   1262 fixaOrdem1[6,7,19]
-                               32429            98               
+                              327754            98               
   1263 fixaOrdem1[6,7,20]
-                                 487            98               
+                                 694            98               
   1264 fixaOrdem1[6,8,9]
-                               32229            29               
+                                  64            29               
   1265 fixaOrdem1[6,8,10]
-                               32233            29               
+                                 143            29               
   1266 fixaOrdem1[6,8,11]
-                               31601            29               
-  1267 fixaOrdem1[6,8,12]
-                               32269            29               
-  1268 fixaOrdem1[6,8,13]
-                               32397            29               
-  1269 fixaOrdem1[6,8,14]
-                               32567            29               
-  1270 fixaOrdem1[6,8,15]
-                               32491            29               
-  1271 fixaOrdem1[6,8,16]
-                               31684            29               
-  1272 fixaOrdem1[6,8,17]
-                               32500            29               
-  1273 fixaOrdem1[6,8,18]
-                               32512            29               
-  1274 fixaOrdem1[6,8,19]
-                               31686            29               
-  1275 fixaOrdem1[6,8,20]
-                               32544            29               
-  1276 fixaOrdem1[6,9,10]
-                                   4             4               
-  1277 fixaOrdem1[6,9,11]
-                               32172             4               
-  1278 fixaOrdem1[6,9,12]
-                                  40             4               
-  1279 fixaOrdem1[6,9,13]
-                                 168             4               
-  1280 fixaOrdem1[6,9,14]
-                                 338             4               
-  1281 fixaOrdem1[6,9,15]
-                                 262             4               
-  1282 fixaOrdem1[6,9,16]
-                               32255             4               
-  1283 fixaOrdem1[6,9,17]
-                                 271             4               
-  1284 fixaOrdem1[6,9,18]
-                                 283             4               
-  1285 fixaOrdem1[6,9,19]
-                               32257             4               
-  1286 fixaOrdem1[6,9,20]
-                                 315             4               
-  1287 fixaOrdem1[6,10,11]
-                               32168            29               
-  1288 fixaOrdem1[6,10,12]
-                                  36            29               
-  1289 fixaOrdem1[6,10,13]
-                                 164            29               
-  1290 fixaOrdem1[6,10,14]
-                                 334            29               
-  1291 fixaOrdem1[6,10,15]
-                                 258            29               
-  1292 fixaOrdem1[6,10,16]
-                               32251            29               
-  1293 fixaOrdem1[6,10,17]
                                  267            29               
+  1267 fixaOrdem1[6,8,12]
+                                 172            29               
+  1268 fixaOrdem1[6,8,13]
+                                 350            29               
+  1269 fixaOrdem1[6,8,14]
+                                 807            29               
+  1270 fixaOrdem1[6,8,15]
+                                 444            29               
+  1271 fixaOrdem1[6,8,16]
+                                 453            29               
+  1272 fixaOrdem1[6,8,17]
+                                 455            29               
+  1273 fixaOrdem1[6,8,18]
+                                 467            29               
+  1274 fixaOrdem1[6,8,19]
+                              327559            29               
+  1275 fixaOrdem1[6,8,20]
+                                 499            29               
+  1276 fixaOrdem1[6,9,10]
+                                  79             4               
+  1277 fixaOrdem1[6,9,11]
+                                 203             4               
+  1278 fixaOrdem1[6,9,12]
+                                 108             4               
+  1279 fixaOrdem1[6,9,13]
+                                 286             4               
+  1280 fixaOrdem1[6,9,14]
+                                 743             4               
+  1281 fixaOrdem1[6,9,15]
+                                 380             4               
+  1282 fixaOrdem1[6,9,16]
+                                 389             4               
+  1283 fixaOrdem1[6,9,17]
+                                 391             4               
+  1284 fixaOrdem1[6,9,18]
+                                 403             4               
+  1285 fixaOrdem1[6,9,19]
+                              327495             4               
+  1286 fixaOrdem1[6,9,20]
+                                 435             4               
+  1287 fixaOrdem1[6,10,11]
+                                 124            29               
+  1288 fixaOrdem1[6,10,12]
+                                  29            29               
+  1289 fixaOrdem1[6,10,13]
+                                 207            29               
+  1290 fixaOrdem1[6,10,14]
+                                 664            29               
+  1291 fixaOrdem1[6,10,15]
+                                 301            29               
+  1292 fixaOrdem1[6,10,16]
+                                 310            29               
+  1293 fixaOrdem1[6,10,17]
+                                 312            29               
   1294 fixaOrdem1[6,10,18]
-                                 279            29               
+                                 324            29               
   1295 fixaOrdem1[6,10,19]
-                               32253            29               
+                              327416            29               
   1296 fixaOrdem1[6,10,20]
-                                 311            29               
+                                 356            29               
   1297 fixaOrdem1[6,11,12]
-                                 668            83               
+                              327905            83               
   1298 fixaOrdem1[6,11,13]
-                                 796            83               
-  1299 fixaOrdem1[6,11,14]
-                                 966            83               
-  1300 fixaOrdem1[6,11,15]
-                                 890            83               
-  1301 fixaOrdem1[6,11,16]
                                   83            83               
+  1299 fixaOrdem1[6,11,14]
+                                 540            83               
+  1300 fixaOrdem1[6,11,15]
+                                 177            83               
+  1301 fixaOrdem1[6,11,16]
+                                 186            83               
   1302 fixaOrdem1[6,11,17]
-                                 899            83               
+                                 188            83               
   1303 fixaOrdem1[6,11,18]
-                                 911            83               
+                                 200            83               
   1304 fixaOrdem1[6,11,19]
-                                  85            83               
+                              327292            83               
   1305 fixaOrdem1[6,11,20]
-                                 943            83               
+                                 232            83               
   1306 fixaOrdem1[6,12,13]
-                                 128            95               
+                                 178            95               
   1307 fixaOrdem1[6,12,14]
-                                 298            95               
+                                 635            95               
   1308 fixaOrdem1[6,12,15]
-                                 222            95               
+                                 272            95               
   1309 fixaOrdem1[6,12,16]
-                               32215            95               
+                                 281            95               
   1310 fixaOrdem1[6,12,17]
-                                 231            95               
+                                 283            95               
   1311 fixaOrdem1[6,12,18]
-                                 243            95               
+                                 295            95               
   1312 fixaOrdem1[6,12,19]
-                               32217            95               
+                              327387            95               
   1313 fixaOrdem1[6,12,20]
-                                 275            95               
+                                 327            95               
   1314 fixaOrdem1[6,13,14]
-                                 170            94               
+                                 457            94               
   1315 fixaOrdem1[6,13,15]
                                   94            94               
   1316 fixaOrdem1[6,13,16]
-                               32087            94               
-  1317 fixaOrdem1[6,13,17]
                                  103            94               
+  1317 fixaOrdem1[6,13,17]
+                                 105            94               
   1318 fixaOrdem1[6,13,18]
-                                 115            94               
+                                 117            94               
   1319 fixaOrdem1[6,13,19]
-                               32089            94               
+                              327209            94               
   1320 fixaOrdem1[6,13,20]
-                                 147            94               
+                                 149            94               
   1321 fixaOrdem1[6,14,15]
-                               32724            80               
+                              327637            80               
   1322 fixaOrdem1[6,14,16]
-                               31917            80               
+                              327646            80               
   1323 fixaOrdem1[6,14,17]
-                               32733            80               
+                              327648            80               
   1324 fixaOrdem1[6,14,18]
-                               32745            80               
+                              327660            80               
   1325 fixaOrdem1[6,14,19]
-                               31919            80               
+                              326752            80               
   1326 fixaOrdem1[6,14,20]
-                               32777            80               
+                              327692            80               
   1327 fixaOrdem1[6,15,16]
-                               31993             9               
-  1328 fixaOrdem1[6,15,17]
                                    9             9               
+  1328 fixaOrdem1[6,15,17]
+                                  11             9               
   1329 fixaOrdem1[6,15,18]
-                                  21             9               
+                                  23             9               
   1330 fixaOrdem1[6,15,19]
-                               31995             9               
+                              327115             9               
   1331 fixaOrdem1[6,15,20]
-                                  53             9               
+                                  55             9               
   1332 fixaOrdem1[6,16,17]
-                                 816             2               
-  1333 fixaOrdem1[6,16,18]
-                                 828             2               
-  1334 fixaOrdem1[6,16,19]
                                    2             2               
+  1333 fixaOrdem1[6,16,18]
+                                  14             2               
+  1334 fixaOrdem1[6,16,19]
+                              327106             2               
   1335 fixaOrdem1[6,16,20]
-                                 860             2               
+                                  46             2               
   1336 fixaOrdem1[6,17,18]
                                   12            12               
   1337 fixaOrdem1[6,17,19]
-                               31986            12               
+                              327104            12               
   1338 fixaOrdem1[6,17,20]
                                   44            12               
   1339 fixaOrdem1[6,18,19]
-                               31974            32               
+                              327092            32               
   1340 fixaOrdem1[6,18,20]
                                   32            32               
   1341 fixaOrdem1[6,19,20]
-                                 858            70               
+                                 940            70               
   1342 fixaOrdem1[7,1,2]
-                               32697            82               
-  1343 fixaOrdem1[7,1,3]
-                                 773            82               
-  1344 fixaOrdem1[7,1,4]
-                                 233            82               
-  1345 fixaOrdem1[7,1,5]
-                               32721            82               
-  1346 fixaOrdem1[7,1,6]
                                   82            82               
+  1343 fixaOrdem1[7,1,3]
+                                 912            82               
+  1344 fixaOrdem1[7,1,4]
+                                 197            82               
+  1345 fixaOrdem1[7,1,5]
+                              327921            82               
+  1346 fixaOrdem1[7,1,6]
+                                 286            82               
   1347 fixaOrdem1[7,1,7]
-                                 133            82               
+                                 106            82               
   1348 fixaOrdem1[7,1,8]
-                                 872            82               
+                                 337            82               
   1349 fixaOrdem1[7,1,9]
-                                 322            82               
+                                 432            82               
   1350 fixaOrdem1[7,1,10]
-                                 386            82               
+                                 525            82               
   1351 fixaOrdem1[7,1,11]
-                               32487            82               
+                                 575            82               
   1352 fixaOrdem1[7,1,12]
-                                 400            82               
+                                 539            82               
   1353 fixaOrdem1[7,1,13]
-                                 436            82               
+                                 642            82               
   1354 fixaOrdem1[7,1,14]
-                                 683            82               
+                                1188            82               
   1355 fixaOrdem1[7,1,15]
-                                 490            82               
+                                 693            82               
   1356 fixaOrdem1[7,1,16]
-                               32554            82               
+                                 785            82               
   1357 fixaOrdem1[7,1,17]
-                                 582            82               
+                                 802            82               
   1358 fixaOrdem1[7,1,18]
-                                 608            82               
+                                 828            82               
   1359 fixaOrdem1[7,1,19]
-                               32571            82               
+                              327839            82               
   1360 fixaOrdem1[7,1,20]
-                                 680            82               
+                                 909            82               
   1361 fixaOrdem1[7,2,3]
-                                 876            24               
+                                 830            24               
   1362 fixaOrdem1[7,2,4]
-                                 336            24               
+                                 115            24               
   1363 fixaOrdem1[7,2,5]
-                                  24            24               
+                              327839            24               
   1364 fixaOrdem1[7,2,6]
-                                 185            24               
+                                 204            24               
   1365 fixaOrdem1[7,2,7]
-                                 236            24               
+                                  24            24               
   1366 fixaOrdem1[7,2,8]
-                                 975            24               
+                                 255            24               
   1367 fixaOrdem1[7,2,9]
-                                 425            24               
+                                 350            24               
   1368 fixaOrdem1[7,2,10]
-                                 489            24               
+                                 443            24               
   1369 fixaOrdem1[7,2,11]
-                               32590            24               
+                                 493            24               
   1370 fixaOrdem1[7,2,12]
-                                 503            24               
+                                 457            24               
   1371 fixaOrdem1[7,2,13]
-                                 539            24               
+                                 560            24               
   1372 fixaOrdem1[7,2,14]
-                                 786            24               
+                                1106            24               
   1373 fixaOrdem1[7,2,15]
-                                 593            24               
+                                 611            24               
   1374 fixaOrdem1[7,2,16]
-                               32657            24               
+                                 703            24               
   1375 fixaOrdem1[7,2,17]
-                                 685            24               
+                                 720            24               
   1376 fixaOrdem1[7,2,18]
-                                 711            24               
+                                 746            24               
   1377 fixaOrdem1[7,2,19]
-                               32674            24               
+                              327757            24               
   1378 fixaOrdem1[7,2,20]
-                                 783            24               
+                                 827            24               
   1379 fixaOrdem1[7,3,4]
-                               32260            41               
+                              327285            41               
   1380 fixaOrdem1[7,3,5]
-                               31948            41               
+                              327009            41               
   1381 fixaOrdem1[7,3,6]
-                               32109            41               
+                              327374            41               
   1382 fixaOrdem1[7,3,7]
-                               32160            41               
+                              327194            41               
   1383 fixaOrdem1[7,3,8]
-                                  99            41               
+                              327425            41               
   1384 fixaOrdem1[7,3,9]
-                               32349            41               
+                              327520            41               
   1385 fixaOrdem1[7,3,10]
-                               32413            41               
+                              327613            41               
   1386 fixaOrdem1[7,3,11]
-                               31714            41               
+                              327663            41               
   1387 fixaOrdem1[7,3,12]
-                               32427            41               
+                              327627            41               
   1388 fixaOrdem1[7,3,13]
-                               32463            41               
+                              327730            41               
   1389 fixaOrdem1[7,3,14]
-                               32710            41               
+                                 276            41               
   1390 fixaOrdem1[7,3,15]
-                               32517            41               
+                              327781            41               
   1391 fixaOrdem1[7,3,16]
-                               31781            41               
+                              327873            41               
   1392 fixaOrdem1[7,3,17]
-                               32609            41               
+                              327890            41               
   1393 fixaOrdem1[7,3,18]
-                               32635            41               
+                              327916            41               
   1394 fixaOrdem1[7,3,19]
-                               31798            41               
+                              326927            41               
   1395 fixaOrdem1[7,3,20]
-                               32707            41               
+                              327997            41               
   1396 fixaOrdem1[7,4,5]
-                               32488            89               
+                              327724            89               
   1397 fixaOrdem1[7,4,6]
-                               32649            89               
-  1398 fixaOrdem1[7,4,7]
-                               32700            89               
-  1399 fixaOrdem1[7,4,8]
-                                 639            89               
-  1400 fixaOrdem1[7,4,9]
                                   89            89               
+  1398 fixaOrdem1[7,4,7]
+                              327909            89               
+  1399 fixaOrdem1[7,4,8]
+                                 140            89               
+  1400 fixaOrdem1[7,4,9]
+                                 235            89               
   1401 fixaOrdem1[7,4,10]
-                                 153            89               
+                                 328            89               
   1402 fixaOrdem1[7,4,11]
-                               32254            89               
+                                 378            89               
   1403 fixaOrdem1[7,4,12]
-                                 167            89               
+                                 342            89               
   1404 fixaOrdem1[7,4,13]
-                                 203            89               
+                                 445            89               
   1405 fixaOrdem1[7,4,14]
-                                 450            89               
+                                 991            89               
   1406 fixaOrdem1[7,4,15]
-                                 257            89               
+                                 496            89               
   1407 fixaOrdem1[7,4,16]
-                               32321            89               
+                                 588            89               
   1408 fixaOrdem1[7,4,17]
-                                 349            89               
+                                 605            89               
   1409 fixaOrdem1[7,4,18]
-                                 375            89               
+                                 631            89               
   1410 fixaOrdem1[7,4,19]
-                               32338            89               
+                              327642            89               
   1411 fixaOrdem1[7,4,20]
-                                 447            89               
+                                 712            89               
   1412 fixaOrdem1[7,5,6]
-                                 161            79               
+                                 365            79               
   1413 fixaOrdem1[7,5,7]
-                                 212            79               
+                                 185            79               
   1414 fixaOrdem1[7,5,8]
-                                 951            79               
+                                 416            79               
   1415 fixaOrdem1[7,5,9]
-                                 401            79               
+                                 511            79               
   1416 fixaOrdem1[7,5,10]
-                                 465            79               
+                                 604            79               
   1417 fixaOrdem1[7,5,11]
-                               32566            79               
+                                 654            79               
   1418 fixaOrdem1[7,5,12]
-                                 479            79               
+                                 618            79               
   1419 fixaOrdem1[7,5,13]
-                                 515            79               
+                                 721            79               
   1420 fixaOrdem1[7,5,14]
-                                 762            79               
+                                1267            79               
   1421 fixaOrdem1[7,5,15]
-                                 569            79               
+                                 772            79               
   1422 fixaOrdem1[7,5,16]
-                               32633            79               
+                                 864            79               
   1423 fixaOrdem1[7,5,17]
-                                 661            79               
+                                 881            79               
   1424 fixaOrdem1[7,5,18]
-                                 687            79               
+                                 907            79               
   1425 fixaOrdem1[7,5,19]
-                               32650            79               
+                              327918            79               
   1426 fixaOrdem1[7,5,20]
-                                 759            79               
+                                 988            79               
   1427 fixaOrdem1[7,6,7]
-                                  51            51               
+                              327820            51               
   1428 fixaOrdem1[7,6,8]
-                                 790            51               
+                                  51            51               
   1429 fixaOrdem1[7,6,9]
-                                 240            51               
+                                 146            51               
   1430 fixaOrdem1[7,6,10]
-                                 304            51               
+                                 239            51               
   1431 fixaOrdem1[7,6,11]
-                               32405            51               
+                                 289            51               
   1432 fixaOrdem1[7,6,12]
-                                 318            51               
+                                 253            51               
   1433 fixaOrdem1[7,6,13]
-                                 354            51               
+                                 356            51               
   1434 fixaOrdem1[7,6,14]
-                                 601            51               
+                                 902            51               
   1435 fixaOrdem1[7,6,15]
-                                 408            51               
+                                 407            51               
   1436 fixaOrdem1[7,6,16]
-                               32472            51               
+                                 499            51               
   1437 fixaOrdem1[7,6,17]
-                                 500            51               
+                                 516            51               
   1438 fixaOrdem1[7,6,18]
-                                 526            51               
+                                 542            51               
   1439 fixaOrdem1[7,6,19]
-                               32489            51               
+                              327553            51               
   1440 fixaOrdem1[7,6,20]
-                                 598            51               
+                                 623            51               
   1441 fixaOrdem1[7,7,8]
-                                 739            91               
+                                 231            91               
   1442 fixaOrdem1[7,7,9]
-                                 189            91               
+                                 326            91               
   1443 fixaOrdem1[7,7,10]
-                                 253            91               
+                                 419            91               
   1444 fixaOrdem1[7,7,11]
-                               32354            91               
+                                 469            91               
   1445 fixaOrdem1[7,7,12]
-                                 267            91               
+                                 433            91               
   1446 fixaOrdem1[7,7,13]
-                                 303            91               
+                                 536            91               
   1447 fixaOrdem1[7,7,14]
-                                 550            91               
+                                1082            91               
   1448 fixaOrdem1[7,7,15]
-                                 357            91               
+                                 587            91               
   1449 fixaOrdem1[7,7,16]
-                               32421            91               
+                                 679            91               
   1450 fixaOrdem1[7,7,17]
-                                 449            91               
+                                 696            91               
   1451 fixaOrdem1[7,7,18]
-                                 475            91               
+                                 722            91               
   1452 fixaOrdem1[7,7,19]
-                               32438            91               
+                              327733            91               
   1453 fixaOrdem1[7,7,20]
-                                 547            91               
+                                 803            91               
   1454 fixaOrdem1[7,8,9]
-                               32250            95               
+                                  95            95               
   1455 fixaOrdem1[7,8,10]
-                               32314            95               
+                                 188            95               
   1456 fixaOrdem1[7,8,11]
-                               31615            95               
+                                 238            95               
   1457 fixaOrdem1[7,8,12]
-                               32328            95               
+                                 202            95               
   1458 fixaOrdem1[7,8,13]
-                               32364            95               
+                                 305            95               
   1459 fixaOrdem1[7,8,14]
-                               32611            95               
+                                 851            95               
   1460 fixaOrdem1[7,8,15]
-                               32418            95               
+                                 356            95               
   1461 fixaOrdem1[7,8,16]
-                               31682            95               
+                                 448            95               
   1462 fixaOrdem1[7,8,17]
-                               32510            95               
+                                 465            95               
   1463 fixaOrdem1[7,8,18]
-                               32536            95               
+                                 491            95               
   1464 fixaOrdem1[7,8,19]
-                               31699            95               
+                              327502            95               
   1465 fixaOrdem1[7,8,20]
-                               32608            95               
+                                 572            95               
   1466 fixaOrdem1[7,9,10]
-                                  64            64               
+                                  93            64               
   1467 fixaOrdem1[7,9,11]
-                               32165            64               
+                                 143            64               
   1468 fixaOrdem1[7,9,12]
-                                  78            64               
+                                 107            64               
   1469 fixaOrdem1[7,9,13]
-                                 114            64               
+                                 210            64               
   1470 fixaOrdem1[7,9,14]
-                                 361            64               
+                                 756            64               
   1471 fixaOrdem1[7,9,15]
-                                 168            64               
+                                 261            64               
   1472 fixaOrdem1[7,9,16]
-                               32232            64               
+                                 353            64               
   1473 fixaOrdem1[7,9,17]
-                                 260            64               
+                                 370            64               
   1474 fixaOrdem1[7,9,18]
-                                 286            64               
+                                 396            64               
   1475 fixaOrdem1[7,9,19]
-                               32249            64               
+                              327407            64               
   1476 fixaOrdem1[7,9,20]
-                                 358            64               
+                                 477            64               
   1477 fixaOrdem1[7,10,11]
-                               32101            14               
+                                  50            14               
   1478 fixaOrdem1[7,10,12]
                                   14            14               
   1479 fixaOrdem1[7,10,13]
-                                  50            14               
+                                 117            14               
   1480 fixaOrdem1[7,10,14]
-                                 297            14               
+                                 663            14               
   1481 fixaOrdem1[7,10,15]
-                                 104            14               
+                                 168            14               
   1482 fixaOrdem1[7,10,16]
-                               32168            14               
+                                 260            14               
   1483 fixaOrdem1[7,10,17]
-                                 196            14               
+                                 277            14               
   1484 fixaOrdem1[7,10,18]
-                                 222            14               
+                                 303            14               
   1485 fixaOrdem1[7,10,19]
-                               32185            14               
+                              327314            14               
   1486 fixaOrdem1[7,10,20]
-                                 294            14               
+                                 384            14               
   1487 fixaOrdem1[7,11,12]
-                                 713            67               
+                              327964            67               
   1488 fixaOrdem1[7,11,13]
-                                 749            67               
-  1489 fixaOrdem1[7,11,14]
-                                 996            67               
-  1490 fixaOrdem1[7,11,15]
-                                 803            67               
-  1491 fixaOrdem1[7,11,16]
                                   67            67               
+  1489 fixaOrdem1[7,11,14]
+                                 613            67               
+  1490 fixaOrdem1[7,11,15]
+                                 118            67               
+  1491 fixaOrdem1[7,11,16]
+                                 210            67               
   1492 fixaOrdem1[7,11,17]
-                                 895            67               
+                                 227            67               
   1493 fixaOrdem1[7,11,18]
-                                 921            67               
+                                 253            67               
   1494 fixaOrdem1[7,11,19]
-                                  84            67               
+                              327264            67               
   1495 fixaOrdem1[7,11,20]
-                                 993            67               
+                                 334            67               
   1496 fixaOrdem1[7,12,13]
-                                  36            36               
+                                 103            36               
   1497 fixaOrdem1[7,12,14]
-                                 283            36               
+                                 649            36               
   1498 fixaOrdem1[7,12,15]
-                                  90            36               
+                                 154            36               
   1499 fixaOrdem1[7,12,16]
-                               32154            36               
+                                 246            36               
   1500 fixaOrdem1[7,12,17]
-                                 182            36               
+                                 263            36               
   1501 fixaOrdem1[7,12,18]
-                                 208            36               
+                                 289            36               
   1502 fixaOrdem1[7,12,19]
-                               32171            36               
+                              327300            36               
   1503 fixaOrdem1[7,12,20]
-                                 280            36               
+                                 370            36               
   1504 fixaOrdem1[7,13,14]
-                                 247            31               
+                                 546            31               
   1505 fixaOrdem1[7,13,15]
-                                  54            31               
+                                  51            31               
   1506 fixaOrdem1[7,13,16]
-                               32118            31               
+                                 143            31               
   1507 fixaOrdem1[7,13,17]
-                                 146            31               
+                                 160            31               
   1508 fixaOrdem1[7,13,18]
-                                 172            31               
+                                 186            31               
   1509 fixaOrdem1[7,13,19]
-                               32135            31               
+                              327197            31               
   1510 fixaOrdem1[7,13,20]
-                                 244            31               
+                                 267            31               
   1511 fixaOrdem1[7,14,15]
-                               32607            51               
+                              327505            51               
   1512 fixaOrdem1[7,14,16]
-                               31871            51               
+                              327597            51               
   1513 fixaOrdem1[7,14,17]
-                               32699            51               
+                              327614            51               
   1514 fixaOrdem1[7,14,18]
-                               32725            51               
+                              327640            51               
   1515 fixaOrdem1[7,14,19]
-                               31888            51               
+                              326651            51               
   1516 fixaOrdem1[7,14,20]
-                               32797            51               
+                              327721            51               
   1517 fixaOrdem1[7,15,16]
-                               32064            92               
-  1518 fixaOrdem1[7,15,17]
                                   92            92               
+  1518 fixaOrdem1[7,15,17]
+                                 109            92               
   1519 fixaOrdem1[7,15,18]
-                                 118            92               
+                                 135            92               
   1520 fixaOrdem1[7,15,19]
-                               32081            92               
+                              327146            92               
   1521 fixaOrdem1[7,15,20]
-                                 190            92               
+                                 216            92               
   1522 fixaOrdem1[7,16,17]
-                                 828            17               
-  1523 fixaOrdem1[7,16,18]
-                                 854            17               
-  1524 fixaOrdem1[7,16,19]
                                   17            17               
+  1523 fixaOrdem1[7,16,18]
+                                  43            17               
+  1524 fixaOrdem1[7,16,19]
+                              327054            17               
   1525 fixaOrdem1[7,16,20]
-                                 926            17               
+                                 124            17               
   1526 fixaOrdem1[7,17,18]
                                   26            26               
   1527 fixaOrdem1[7,17,19]
-                               31989            26               
+                              327037            26               
   1528 fixaOrdem1[7,17,20]
-                                  98            26               
+                                 107            26               
   1529 fixaOrdem1[7,18,19]
-                               31963            71               
+                              327011            71               
   1530 fixaOrdem1[7,18,20]
-                                  72            71               
+                                  81            71               
   1531 fixaOrdem1[7,19,20]
-                                 909            82               
+                                1070            82               
   1532 fixaOrdem1[8,1,2]
-                               32719            83               
+                                 125            83               
   1533 fixaOrdem1[8,1,3]
-                                 766            83               
+                                 905            83               
   1534 fixaOrdem1[8,1,4]
-                                 216            83               
+                                 250            83               
   1535 fixaOrdem1[8,1,5]
-                               32759            83               
+                              327922            83               
   1536 fixaOrdem1[8,1,6]
-                                  83            83               
+                                 290            83               
   1537 fixaOrdem1[8,1,7]
-                                 207            83               
+                                 180            83               
   1538 fixaOrdem1[8,1,8]
-                                 889            83               
+                                 326            83               
   1539 fixaOrdem1[8,1,9]
-                                 253            83               
+                                 392            83               
   1540 fixaOrdem1[8,1,10]
-                                 283            83               
+                                 422            83               
   1541 fixaOrdem1[8,1,11]
-                               32473            83               
+                                 579            83               
   1542 fixaOrdem1[8,1,12]
-                                 374            83               
+                                 513            83               
   1543 fixaOrdem1[8,1,13]
-                                 440            83               
+                                 646            83               
   1544 fixaOrdem1[8,1,14]
-                                 692            83               
+                                1197            83               
   1545 fixaOrdem1[8,1,15]
-                                 519            83               
+                                 725            83               
   1546 fixaOrdem1[8,1,16]
-                               32547            83               
+                                 776            83               
   1547 fixaOrdem1[8,1,17]
-                                 570            83               
+                                 783            83               
   1548 fixaOrdem1[8,1,18]
-                                 598            83               
+                                 811            83               
   1549 fixaOrdem1[8,1,19]
-                               32627            83               
+                              327895            83               
   1550 fixaOrdem1[8,1,20]
-                                 674            83               
+                                 887            83               
   1551 fixaOrdem1[8,2,3]
-                                 847            40               
+                                 780            40               
   1552 fixaOrdem1[8,2,4]
-                                 297            40               
+                                 125            40               
   1553 fixaOrdem1[8,2,5]
-                                  40            40               
+                              327797            40               
   1554 fixaOrdem1[8,2,6]
-                                 164            40               
+                                 165            40               
   1555 fixaOrdem1[8,2,7]
-                                 288            40               
+                                  55            40               
   1556 fixaOrdem1[8,2,8]
-                                 970            40               
+                                 201            40               
   1557 fixaOrdem1[8,2,9]
-                                 334            40               
+                                 267            40               
   1558 fixaOrdem1[8,2,10]
-                                 364            40               
+                                 297            40               
   1559 fixaOrdem1[8,2,11]
-                               32554            40               
+                                 454            40               
   1560 fixaOrdem1[8,2,12]
-                                 455            40               
+                                 388            40               
   1561 fixaOrdem1[8,2,13]
                                  521            40               
   1562 fixaOrdem1[8,2,14]
-                                 773            40               
+                                1072            40               
   1563 fixaOrdem1[8,2,15]
                                  600            40               
   1564 fixaOrdem1[8,2,16]
-                               32628            40               
-  1565 fixaOrdem1[8,2,17]
                                  651            40               
+  1565 fixaOrdem1[8,2,17]
+                                 658            40               
   1566 fixaOrdem1[8,2,18]
-                                 679            40               
+                                 686            40               
   1567 fixaOrdem1[8,2,19]
-                               32708            40               
+                              327770            40               
   1568 fixaOrdem1[8,2,20]
-                                 755            40               
+                                 762            40               
   1569 fixaOrdem1[8,3,4]
-                               32250            90               
+                              327345            90               
   1570 fixaOrdem1[8,3,5]
-                               31993            90               
+                              327017            90               
   1571 fixaOrdem1[8,3,6]
-                               32117            90               
+                              327385            90               
   1572 fixaOrdem1[8,3,7]
-                               32241            90               
+                              327275            90               
   1573 fixaOrdem1[8,3,8]
-                                 123            90               
+                              327421            90               
   1574 fixaOrdem1[8,3,9]
-                               32287            90               
+                              327487            90               
   1575 fixaOrdem1[8,3,10]
-                               32317            90               
+                              327517            90               
   1576 fixaOrdem1[8,3,11]
-                               31707            90               
+                              327674            90               
   1577 fixaOrdem1[8,3,12]
-                               32408            90               
+                              327608            90               
   1578 fixaOrdem1[8,3,13]
-                               32474            90               
+                              327741            90               
   1579 fixaOrdem1[8,3,14]
-                               32726            90               
+                                 292            90               
   1580 fixaOrdem1[8,3,15]
-                               32553            90               
+                              327820            90               
   1581 fixaOrdem1[8,3,16]
-                               31781            90               
+                              327871            90               
   1582 fixaOrdem1[8,3,17]
-                               32604            90               
+                              327878            90               
   1583 fixaOrdem1[8,3,18]
-                               32632            90               
+                              327906            90               
   1584 fixaOrdem1[8,3,19]
-                               31861            90               
+                              326990            90               
   1585 fixaOrdem1[8,3,20]
-                               32708            90               
+                              327982            90               
   1586 fixaOrdem1[8,4,5]
-                               32543            30               
+                              327672            30               
   1587 fixaOrdem1[8,4,6]
-                               32667            30               
+                                  40            30               
   1588 fixaOrdem1[8,4,7]
-                               32791            30               
+                              327930            30               
   1589 fixaOrdem1[8,4,8]
-                                 673            30               
+                                  76            30               
   1590 fixaOrdem1[8,4,9]
-                                  37            30               
+                                 142            30               
   1591 fixaOrdem1[8,4,10]
-                                  67            30               
+                                 172            30               
   1592 fixaOrdem1[8,4,11]
-                               32257            30               
+                                 329            30               
   1593 fixaOrdem1[8,4,12]
-                                 158            30               
+                                 263            30               
   1594 fixaOrdem1[8,4,13]
-                                 224            30               
+                                 396            30               
   1595 fixaOrdem1[8,4,14]
-                                 476            30               
+                                 947            30               
   1596 fixaOrdem1[8,4,15]
-                                 303            30               
+                                 475            30               
   1597 fixaOrdem1[8,4,16]
-                               32331            30               
+                                 526            30               
   1598 fixaOrdem1[8,4,17]
-                                 354            30               
+                                 533            30               
   1599 fixaOrdem1[8,4,18]
-                                 382            30               
+                                 561            30               
   1600 fixaOrdem1[8,4,19]
-                               32411            30               
+                              327645            30               
   1601 fixaOrdem1[8,4,20]
-                                 458            30               
+                                 637            30               
   1602 fixaOrdem1[8,5,6]
-                                 124            41               
+                                 368            41               
   1603 fixaOrdem1[8,5,7]
-                                 248            41               
+                                 258            41               
   1604 fixaOrdem1[8,5,8]
-                                 930            41               
+                                 404            41               
   1605 fixaOrdem1[8,5,9]
-                                 294            41               
+                                 470            41               
   1606 fixaOrdem1[8,5,10]
-                                 324            41               
+                                 500            41               
   1607 fixaOrdem1[8,5,11]
-                               32514            41               
+                                 657            41               
   1608 fixaOrdem1[8,5,12]
-                                 415            41               
+                                 591            41               
   1609 fixaOrdem1[8,5,13]
-                                 481            41               
+                                 724            41               
   1610 fixaOrdem1[8,5,14]
-                                 733            41               
+                                1275            41               
   1611 fixaOrdem1[8,5,15]
-                                 560            41               
+                                 803            41               
   1612 fixaOrdem1[8,5,16]
-                               32588            41               
+                                 854            41               
   1613 fixaOrdem1[8,5,17]
-                                 611            41               
+                                 861            41               
   1614 fixaOrdem1[8,5,18]
-                                 639            41               
+                                 889            41               
   1615 fixaOrdem1[8,5,19]
-                               32668            41               
+                              327973            41               
   1616 fixaOrdem1[8,5,20]
-                                 715            41               
+                                 965            41               
   1617 fixaOrdem1[8,6,7]
-                                 124            36               
+                              327890            36               
   1618 fixaOrdem1[8,6,8]
-                                 806            36               
+                                  36            36               
   1619 fixaOrdem1[8,6,9]
-                                 170            36               
+                                 102            36               
   1620 fixaOrdem1[8,6,10]
-                                 200            36               
+                                 132            36               
   1621 fixaOrdem1[8,6,11]
-                               32390            36               
+                                 289            36               
   1622 fixaOrdem1[8,6,12]
-                                 291            36               
+                                 223            36               
   1623 fixaOrdem1[8,6,13]
-                                 357            36               
+                                 356            36               
   1624 fixaOrdem1[8,6,14]
-                                 609            36               
+                                 907            36               
   1625 fixaOrdem1[8,6,15]
-                                 436            36               
+                                 435            36               
   1626 fixaOrdem1[8,6,16]
-                               32464            36               
+                                 486            36               
   1627 fixaOrdem1[8,6,17]
-                                 487            36               
+                                 493            36               
   1628 fixaOrdem1[8,6,18]
-                                 515            36               
+                                 521            36               
   1629 fixaOrdem1[8,6,19]
-                               32544            36               
+                              327605            36               
   1630 fixaOrdem1[8,6,20]
-                                 591            36               
+                                 597            36               
   1631 fixaOrdem1[8,7,8]
-                                 682             9               
+                                 146             9               
   1632 fixaOrdem1[8,7,9]
-                                  46             9               
+                                 212             9               
   1633 fixaOrdem1[8,7,10]
-                                  76             9               
+                                 242             9               
   1634 fixaOrdem1[8,7,11]
-                               32266             9               
+                                 399             9               
   1635 fixaOrdem1[8,7,12]
-                                 167             9               
+                                 333             9               
   1636 fixaOrdem1[8,7,13]
-                                 233             9               
+                                 466             9               
   1637 fixaOrdem1[8,7,14]
-                                 485             9               
+                                1017             9               
   1638 fixaOrdem1[8,7,15]
-                                 312             9               
+                                 545             9               
   1639 fixaOrdem1[8,7,16]
-                               32340             9               
+                                 596             9               
   1640 fixaOrdem1[8,7,17]
-                                 363             9               
+                                 603             9               
   1641 fixaOrdem1[8,7,18]
-                                 391             9               
+                                 631             9               
   1642 fixaOrdem1[8,7,19]
-                               32420             9               
+                              327715             9               
   1643 fixaOrdem1[8,7,20]
-                                 467             9               
+                                 707             9               
   1644 fixaOrdem1[8,8,9]
-                               32164            66               
+                                  66            66               
   1645 fixaOrdem1[8,8,10]
-                               32194            66               
+                                  96            66               
   1646 fixaOrdem1[8,8,11]
-                               31584            66               
+                                 253            66               
   1647 fixaOrdem1[8,8,12]
-                               32285            66               
+                                 187            66               
   1648 fixaOrdem1[8,8,13]
-                               32351            66               
+                                 320            66               
   1649 fixaOrdem1[8,8,14]
-                               32603            66               
+                                 871            66               
   1650 fixaOrdem1[8,8,15]
-                               32430            66               
+                                 399            66               
   1651 fixaOrdem1[8,8,16]
-                               31658            66               
+                                 450            66               
   1652 fixaOrdem1[8,8,17]
-                               32481            66               
+                                 457            66               
   1653 fixaOrdem1[8,8,18]
-                               32509            66               
+                                 485            66               
   1654 fixaOrdem1[8,8,19]
-                               31738            66               
+                              327569            66               
   1655 fixaOrdem1[8,8,20]
-                               32585            66               
+                                 561            66               
   1656 fixaOrdem1[8,9,10]
                                   30            30               
   1657 fixaOrdem1[8,9,11]
-                               32220            30               
+                                 187            30               
   1658 fixaOrdem1[8,9,12]
                                  121            30               
   1659 fixaOrdem1[8,9,13]
-                                 187            30               
+                                 254            30               
   1660 fixaOrdem1[8,9,14]
-                                 439            30               
+                                 805            30               
   1661 fixaOrdem1[8,9,15]
-                                 266            30               
+                                 333            30               
   1662 fixaOrdem1[8,9,16]
-                               32294            30               
+                                 384            30               
   1663 fixaOrdem1[8,9,17]
-                                 317            30               
+                                 391            30               
   1664 fixaOrdem1[8,9,18]
-                                 345            30               
+                                 419            30               
   1665 fixaOrdem1[8,9,19]
-                               32374            30               
+                              327503            30               
   1666 fixaOrdem1[8,9,20]
-                                 421            30               
+                                 495            30               
   1667 fixaOrdem1[8,10,11]
-                               32190            91               
+                                 157            91               
   1668 fixaOrdem1[8,10,12]
                                   91            91               
   1669 fixaOrdem1[8,10,13]
-                                 157            91               
+                                 224            91               
   1670 fixaOrdem1[8,10,14]
-                                 409            91               
+                                 775            91               
   1671 fixaOrdem1[8,10,15]
-                                 236            91               
+                                 303            91               
   1672 fixaOrdem1[8,10,16]
-                               32264            91               
+                                 354            91               
   1673 fixaOrdem1[8,10,17]
-                                 287            91               
+                                 361            91               
   1674 fixaOrdem1[8,10,18]
-                                 315            91               
+                                 389            91               
   1675 fixaOrdem1[8,10,19]
-                               32344            91               
+                              327473            91               
   1676 fixaOrdem1[8,10,20]
-                                 391            91               
+                                 465            91               
   1677 fixaOrdem1[8,11,12]
-                                 701            67               
+                              327934            67               
   1678 fixaOrdem1[8,11,13]
-                                 767            67               
+                                  67            67               
   1679 fixaOrdem1[8,11,14]
-                                1019            67               
+                                 618            67               
   1680 fixaOrdem1[8,11,15]
-                                 846            67               
+                                 146            67               
   1681 fixaOrdem1[8,11,16]
-                                  74            67               
+                                 197            67               
   1682 fixaOrdem1[8,11,17]
-                                 897            67               
+                                 204            67               
   1683 fixaOrdem1[8,11,18]
-                                 925            67               
+                                 232            67               
   1684 fixaOrdem1[8,11,19]
-                                 154            67               
+                              327316            67               
   1685 fixaOrdem1[8,11,20]
-                                1001            67               
+                                 308            67               
   1686 fixaOrdem1[8,12,13]
-                                  66            66               
+                                 133            66               
   1687 fixaOrdem1[8,12,14]
-                                 318            66               
+                                 684            66               
   1688 fixaOrdem1[8,12,15]
-                                 145            66               
+                                 212            66               
   1689 fixaOrdem1[8,12,16]
-                               32173            66               
+                                 263            66               
   1690 fixaOrdem1[8,12,17]
-                                 196            66               
+                                 270            66               
   1691 fixaOrdem1[8,12,18]
-                                 224            66               
+                                 298            66               
   1692 fixaOrdem1[8,12,19]
-                               32253            66               
+                              327382            66               
   1693 fixaOrdem1[8,12,20]
-                                 300            66               
+                                 374            66               
   1694 fixaOrdem1[8,13,14]
-                                 252            79               
+                                 551            79               
   1695 fixaOrdem1[8,13,15]
                                   79            79               
   1696 fixaOrdem1[8,13,16]
-                               32107            79               
-  1697 fixaOrdem1[8,13,17]
                                  130            79               
+  1697 fixaOrdem1[8,13,17]
+                                 137            79               
   1698 fixaOrdem1[8,13,18]
-                                 158            79               
+                                 165            79               
   1699 fixaOrdem1[8,13,19]
-                               32187            79               
+                              327249            79               
   1700 fixaOrdem1[8,13,20]
-                                 234            79               
+                                 241            79               
   1701 fixaOrdem1[8,14,15]
-                               32627            74               
+                              327528            74               
   1702 fixaOrdem1[8,14,16]
-                               31855            74               
+                              327579            74               
   1703 fixaOrdem1[8,14,17]
-                               32678            74               
+                              327586            74               
   1704 fixaOrdem1[8,14,18]
-                               32706            74               
+                              327614            74               
   1705 fixaOrdem1[8,14,19]
-                               31935            74               
+                              326698            74               
   1706 fixaOrdem1[8,14,20]
-                               32782            74               
+                              327690            74               
   1707 fixaOrdem1[8,15,16]
-                               32028            51               
-  1708 fixaOrdem1[8,15,17]
                                   51            51               
+  1708 fixaOrdem1[8,15,17]
+                                  58            51               
   1709 fixaOrdem1[8,15,18]
-                                  79            51               
+                                  86            51               
   1710 fixaOrdem1[8,15,19]
-                               32108            51               
+                              327170            51               
   1711 fixaOrdem1[8,15,20]
-                                 155            51               
+                                 162            51               
   1712 fixaOrdem1[8,16,17]
-                                 823             7               
+                                   7             7               
   1713 fixaOrdem1[8,16,18]
-                                 851             7               
+                                  35             7               
   1714 fixaOrdem1[8,16,19]
-                                  80             7               
+                              327119             7               
   1715 fixaOrdem1[8,16,20]
-                                 927             7               
+                                 111             7               
   1716 fixaOrdem1[8,17,18]
                                   28            28               
   1717 fixaOrdem1[8,17,19]
-                               32057            28               
+                              327112            28               
   1718 fixaOrdem1[8,17,20]
                                  104            28               
   1719 fixaOrdem1[8,18,19]
-                               32029            76               
+                              327084            76               
   1720 fixaOrdem1[8,18,20]
                                   76            76               
   1721 fixaOrdem1[8,19,20]
-                                 847            27               
+                                 992            27               
   1722 fixaOrdem1[9,1,2]
-                               32717            90               
-  1723 fixaOrdem1[9,1,3]
-                                 784            90               
-  1724 fixaOrdem1[9,1,4]
-                                 204            90               
-  1725 fixaOrdem1[9,1,5]
-                               32789            90               
-  1726 fixaOrdem1[9,1,6]
                                   90            90               
+  1723 fixaOrdem1[9,1,3]
+                                 922            90               
+  1724 fixaOrdem1[9,1,4]
+                                 221            90               
+  1725 fixaOrdem1[9,1,5]
+                              327989            90               
+  1726 fixaOrdem1[9,1,6]
+                                 279            90               
   1727 fixaOrdem1[9,1,7]
-                                 153            90               
+                                 170            90               
   1728 fixaOrdem1[9,1,8]
-                                 905            90               
+                                 342            90               
   1729 fixaOrdem1[9,1,9]
-                                 337            90               
+                                 473            90               
   1730 fixaOrdem1[9,1,10]
-                                 343            90               
+                                 479            90               
   1731 fixaOrdem1[9,1,11]
-                               32556            90               
+                                 555            90               
   1732 fixaOrdem1[9,1,12]
-                                 380            90               
+                                 487            90               
   1733 fixaOrdem1[9,1,13]
-                                 405            90               
+                                 562            90               
   1734 fixaOrdem1[9,1,14]
-                                 691            90               
+                                 994            90               
   1735 fixaOrdem1[9,1,15]
-                                 467            90               
+                                 624            90               
   1736 fixaOrdem1[9,1,16]
-                               32563            90               
+                                 679            90               
   1737 fixaOrdem1[9,1,17]
-                                 522            90               
+                                 753            90               
   1738 fixaOrdem1[9,1,18]
-                                 600            90               
+                                 831            90               
   1739 fixaOrdem1[9,1,19]
-                               32637            90               
+                              327905            90               
   1740 fixaOrdem1[9,1,20]
-                                 637            90               
+                                 868            90               
   1741 fixaOrdem1[9,2,3]
-                                 867            72               
+                                 832            72               
   1742 fixaOrdem1[9,2,4]
-                                 287            72               
+                                 131            72               
   1743 fixaOrdem1[9,2,5]
-                                  72            72               
+                              327899            72               
   1744 fixaOrdem1[9,2,6]
-                                 173            72               
+                                 189            72               
   1745 fixaOrdem1[9,2,7]
-                                 236            72               
+                                  80            72               
   1746 fixaOrdem1[9,2,8]
-                                 988            72               
+                                 252            72               
   1747 fixaOrdem1[9,2,9]
-                                 420            72               
+                                 383            72               
   1748 fixaOrdem1[9,2,10]
-                                 426            72               
+                                 389            72               
   1749 fixaOrdem1[9,2,11]
-                               32639            72               
+                                 465            72               
   1750 fixaOrdem1[9,2,12]
-                                 463            72               
+                                 397            72               
   1751 fixaOrdem1[9,2,13]
-                                 488            72               
+                                 472            72               
   1752 fixaOrdem1[9,2,14]
-                                 774            72               
+                                 904            72               
   1753 fixaOrdem1[9,2,15]
-                                 550            72               
+                                 534            72               
   1754 fixaOrdem1[9,2,16]
-                               32646            72               
+                                 589            72               
   1755 fixaOrdem1[9,2,17]
-                                 605            72               
+                                 663            72               
   1756 fixaOrdem1[9,2,18]
-                                 683            72               
+                                 741            72               
   1757 fixaOrdem1[9,2,19]
-                               32720            72               
+                              327815            72               
   1758 fixaOrdem1[9,2,20]
-                                 720            72               
+                                 778            72               
   1759 fixaOrdem1[9,3,4]
-                               32220            72               
+                              327299            72               
   1760 fixaOrdem1[9,3,5]
-                               32005            72               
+                              327067            72               
   1761 fixaOrdem1[9,3,6]
-                               32106            72               
+                              327357            72               
   1762 fixaOrdem1[9,3,7]
-                               32169            72               
+                              327248            72               
   1763 fixaOrdem1[9,3,8]
-                                 121            72               
+                              327420            72               
   1764 fixaOrdem1[9,3,9]
-                               32353            72               
+                              327551            72               
   1765 fixaOrdem1[9,3,10]
-                               32359            72               
+                              327557            72               
   1766 fixaOrdem1[9,3,11]
-                               31772            72               
+                              327633            72               
   1767 fixaOrdem1[9,3,12]
-                               32396            72               
+                              327565            72               
   1768 fixaOrdem1[9,3,13]
-                               32421            72               
+                              327640            72               
   1769 fixaOrdem1[9,3,14]
-                               32707            72               
+                                  72            72               
   1770 fixaOrdem1[9,3,15]
-                               32483            72               
+                              327702            72               
   1771 fixaOrdem1[9,3,16]
-                               31779            72               
+                              327757            72               
   1772 fixaOrdem1[9,3,17]
-                               32538            72               
+                              327831            72               
   1773 fixaOrdem1[9,3,18]
-                               32616            72               
+                              327909            72               
   1774 fixaOrdem1[9,3,19]
-                               31853            72               
+                              326983            72               
   1775 fixaOrdem1[9,3,20]
-                               32653            72               
+                              327946            72               
   1776 fixaOrdem1[9,4,5]
-                               32585            58               
+                              327768            58               
   1777 fixaOrdem1[9,4,6]
-                               32686            58               
+                                  58            58               
   1778 fixaOrdem1[9,4,7]
-                               32749            58               
+                              327949            58               
   1779 fixaOrdem1[9,4,8]
-                                 701            58               
+                                 121            58               
   1780 fixaOrdem1[9,4,9]
-                                 133            58               
+                                 252            58               
   1781 fixaOrdem1[9,4,10]
-                                 139            58               
+                                 258            58               
   1782 fixaOrdem1[9,4,11]
-                               32352            58               
+                                 334            58               
   1783 fixaOrdem1[9,4,12]
-                                 176            58               
+                                 266            58               
   1784 fixaOrdem1[9,4,13]
-                                 201            58               
+                                 341            58               
   1785 fixaOrdem1[9,4,14]
-                                 487            58               
+                                 773            58               
   1786 fixaOrdem1[9,4,15]
-                                 263            58               
+                                 403            58               
   1787 fixaOrdem1[9,4,16]
-                               32359            58               
+                                 458            58               
   1788 fixaOrdem1[9,4,17]
-                                 318            58               
+                                 532            58               
   1789 fixaOrdem1[9,4,18]
-                                 396            58               
+                                 610            58               
   1790 fixaOrdem1[9,4,19]
-                               32433            58               
+                              327684            58               
   1791 fixaOrdem1[9,4,20]
-                                 433            58               
+                                 647            58               
   1792 fixaOrdem1[9,5,6]
-                                 101            11               
+                                 290            11               
   1793 fixaOrdem1[9,5,7]
-                                 164            11               
+                                 181            11               
   1794 fixaOrdem1[9,5,8]
-                                 916            11               
+                                 353            11               
   1795 fixaOrdem1[9,5,9]
-                                 348            11               
+                                 484            11               
   1796 fixaOrdem1[9,5,10]
-                                 354            11               
+                                 490            11               
   1797 fixaOrdem1[9,5,11]
-                               32567            11               
+                                 566            11               
   1798 fixaOrdem1[9,5,12]
-                                 391            11               
+                                 498            11               
   1799 fixaOrdem1[9,5,13]
-                                 416            11               
+                                 573            11               
   1800 fixaOrdem1[9,5,14]
-                                 702            11               
+                                1005            11               
   1801 fixaOrdem1[9,5,15]
-                                 478            11               
+                                 635            11               
   1802 fixaOrdem1[9,5,16]
-                               32574            11               
+                                 690            11               
   1803 fixaOrdem1[9,5,17]
-                                 533            11               
+                                 764            11               
   1804 fixaOrdem1[9,5,18]
-                                 611            11               
+                                 842            11               
   1805 fixaOrdem1[9,5,19]
-                               32648            11               
+                              327916            11               
   1806 fixaOrdem1[9,5,20]
-                                 648            11               
+                                 879            11               
   1807 fixaOrdem1[9,6,7]
-                                  63            63               
+                              327891            63               
   1808 fixaOrdem1[9,6,8]
-                                 815            63               
+                                  63            63               
   1809 fixaOrdem1[9,6,9]
-                                 247            63               
+                                 194            63               
   1810 fixaOrdem1[9,6,10]
-                                 253            63               
+                                 200            63               
   1811 fixaOrdem1[9,6,11]
-                               32466            63               
+                                 276            63               
   1812 fixaOrdem1[9,6,12]
-                                 290            63               
+                                 208            63               
   1813 fixaOrdem1[9,6,13]
-                                 315            63               
+                                 283            63               
   1814 fixaOrdem1[9,6,14]
-                                 601            63               
+                                 715            63               
   1815 fixaOrdem1[9,6,15]
-                                 377            63               
+                                 345            63               
   1816 fixaOrdem1[9,6,16]
-                               32473            63               
+                                 400            63               
   1817 fixaOrdem1[9,6,17]
-                                 432            63               
+                                 474            63               
   1818 fixaOrdem1[9,6,18]
-                                 510            63               
+                                 552            63               
   1819 fixaOrdem1[9,6,19]
-                               32547            63               
+                              327626            63               
   1820 fixaOrdem1[9,6,20]
-                                 547            63               
+                                 589            63               
   1821 fixaOrdem1[9,7,8]
-                                 752            51               
+                                 172            51               
   1822 fixaOrdem1[9,7,9]
-                                 184            51               
+                                 303            51               
   1823 fixaOrdem1[9,7,10]
-                                 190            51               
+                                 309            51               
   1824 fixaOrdem1[9,7,11]
-                               32403            51               
+                                 385            51               
   1825 fixaOrdem1[9,7,12]
-                                 227            51               
+                                 317            51               
   1826 fixaOrdem1[9,7,13]
-                                 252            51               
+                                 392            51               
   1827 fixaOrdem1[9,7,14]
-                                 538            51               
+                                 824            51               
   1828 fixaOrdem1[9,7,15]
-                                 314            51               
+                                 454            51               
   1829 fixaOrdem1[9,7,16]
-                               32410            51               
+                                 509            51               
   1830 fixaOrdem1[9,7,17]
-                                 369            51               
+                                 583            51               
   1831 fixaOrdem1[9,7,18]
-                                 447            51               
+                                 661            51               
   1832 fixaOrdem1[9,7,19]
-                               32484            51               
+                              327735            51               
   1833 fixaOrdem1[9,7,20]
-                                 484            51               
+                                 698            51               
   1834 fixaOrdem1[9,8,9]
-                               32232            74               
+                                 131            74               
   1835 fixaOrdem1[9,8,10]
-                               32238            74               
+                                 137            74               
   1836 fixaOrdem1[9,8,11]
-                               31651            74               
+                                 213            74               
   1837 fixaOrdem1[9,8,12]
-                               32275            74               
+                                 145            74               
   1838 fixaOrdem1[9,8,13]
-                               32300            74               
+                                 220            74               
   1839 fixaOrdem1[9,8,14]
-                               32586            74               
+                                 652            74               
   1840 fixaOrdem1[9,8,15]
-                               32362            74               
+                                 282            74               
   1841 fixaOrdem1[9,8,16]
-                               31658            74               
+                                 337            74               
   1842 fixaOrdem1[9,8,17]
-                               32417            74               
+                                 411            74               
   1843 fixaOrdem1[9,8,18]
-                               32495            74               
+                                 489            74               
   1844 fixaOrdem1[9,8,19]
-                               31732            74               
+                              327563            74               
   1845 fixaOrdem1[9,8,20]
-                               32532            74               
+                                 526            74               
   1846 fixaOrdem1[9,9,10]
                                    6             6               
   1847 fixaOrdem1[9,9,11]
-                               32219             6               
+                                  82             6               
   1848 fixaOrdem1[9,9,12]
-                                  43             6               
+                                  14             6               
   1849 fixaOrdem1[9,9,13]
-                                  68             6               
+                                  89             6               
   1850 fixaOrdem1[9,9,14]
-                                 354             6               
+                                 521             6               
   1851 fixaOrdem1[9,9,15]
-                                 130             6               
+                                 151             6               
   1852 fixaOrdem1[9,9,16]
-                               32226             6               
+                                 206             6               
   1853 fixaOrdem1[9,9,17]
-                                 185             6               
+                                 280             6               
   1854 fixaOrdem1[9,9,18]
-                                 263             6               
+                                 358             6               
   1855 fixaOrdem1[9,9,19]
-                               32300             6               
+                              327432             6               
   1856 fixaOrdem1[9,9,20]
-                                 300             6               
+                                 395             6               
   1857 fixaOrdem1[9,10,11]
-                               32213             8               
+                                  76             8               
   1858 fixaOrdem1[9,10,12]
-                                  37             8               
+                                   8             8               
   1859 fixaOrdem1[9,10,13]
-                                  62             8               
+                                  83             8               
   1860 fixaOrdem1[9,10,14]
-                                 348             8               
+                                 515             8               
   1861 fixaOrdem1[9,10,15]
-                                 124             8               
+                                 145             8               
   1862 fixaOrdem1[9,10,16]
-                               32220             8               
+                                 200             8               
   1863 fixaOrdem1[9,10,17]
-                                 179             8               
+                                 274             8               
   1864 fixaOrdem1[9,10,18]
-                                 257             8               
+                                 352             8               
   1865 fixaOrdem1[9,10,19]
-                               32294             8               
+                              327426             8               
   1866 fixaOrdem1[9,10,20]
-                                 294             8               
+                                 389             8               
   1867 fixaOrdem1[9,11,12]
-                                 624             7               
+                              327932             7               
   1868 fixaOrdem1[9,11,13]
-                                 649             7               
-  1869 fixaOrdem1[9,11,14]
-                                 935             7               
-  1870 fixaOrdem1[9,11,15]
-                                 711             7               
-  1871 fixaOrdem1[9,11,16]
                                    7             7               
+  1869 fixaOrdem1[9,11,14]
+                                 439             7               
+  1870 fixaOrdem1[9,11,15]
+                                  69             7               
+  1871 fixaOrdem1[9,11,16]
+                                 124             7               
   1872 fixaOrdem1[9,11,17]
-                                 766             7               
+                                 198             7               
   1873 fixaOrdem1[9,11,18]
-                                 844             7               
+                                 276             7               
   1874 fixaOrdem1[9,11,19]
-                                  81             7               
+                              327350             7               
   1875 fixaOrdem1[9,11,20]
-                                 881             7               
+                                 313             7               
   1876 fixaOrdem1[9,12,13]
-                                  25            25               
+                                  75            25               
   1877 fixaOrdem1[9,12,14]
-                                 311            25               
+                                 507            25               
   1878 fixaOrdem1[9,12,15]
-                                  87            25               
+                                 137            25               
   1879 fixaOrdem1[9,12,16]
-                               32183            25               
+                                 192            25               
   1880 fixaOrdem1[9,12,17]
-                                 142            25               
+                                 266            25               
   1881 fixaOrdem1[9,12,18]
-                                 220            25               
+                                 344            25               
   1882 fixaOrdem1[9,12,19]
-                               32257            25               
+                              327418            25               
   1883 fixaOrdem1[9,12,20]
-                                 257            25               
+                                 381            25               
   1884 fixaOrdem1[9,13,14]
-                                 286            62               
+                                 432            62               
   1885 fixaOrdem1[9,13,15]
                                   62            62               
   1886 fixaOrdem1[9,13,16]
-                               32158            62               
-  1887 fixaOrdem1[9,13,17]
                                  117            62               
+  1887 fixaOrdem1[9,13,17]
+                                 191            62               
   1888 fixaOrdem1[9,13,18]
-                                 195            62               
+                                 269            62               
   1889 fixaOrdem1[9,13,19]
-                               32232            62               
+                              327343            62               
   1890 fixaOrdem1[9,13,20]
-                                 232            62               
+                                 306            62               
   1891 fixaOrdem1[9,14,15]
-                               32576            91               
+                              327630            91               
   1892 fixaOrdem1[9,14,16]
-                               31872            91               
+                              327685            91               
   1893 fixaOrdem1[9,14,17]
-                               32631            91               
+                              327759            91               
   1894 fixaOrdem1[9,14,18]
-                               32709            91               
+                              327837            91               
   1895 fixaOrdem1[9,14,19]
-                               31946            91               
+                              326911            91               
   1896 fixaOrdem1[9,14,20]
-                               32746            91               
+                              327874            91               
   1897 fixaOrdem1[9,15,16]
-                               32096            55               
-  1898 fixaOrdem1[9,15,17]
                                   55            55               
+  1898 fixaOrdem1[9,15,17]
+                                 129            55               
   1899 fixaOrdem1[9,15,18]
-                                 133            55               
+                                 207            55               
   1900 fixaOrdem1[9,15,19]
-                               32170            55               
+                              327281            55               
   1901 fixaOrdem1[9,15,20]
-                                 170            55               
+                                 244            55               
   1902 fixaOrdem1[9,16,17]
-                                 759            74               
-  1903 fixaOrdem1[9,16,18]
-                                 837            74               
-  1904 fixaOrdem1[9,16,19]
                                   74            74               
+  1903 fixaOrdem1[9,16,18]
+                                 152            74               
+  1904 fixaOrdem1[9,16,19]
+                              327226            74               
   1905 fixaOrdem1[9,16,20]
-                                 874            74               
+                                 189            74               
   1906 fixaOrdem1[9,17,18]
                                   78            78               
   1907 fixaOrdem1[9,17,19]
-                               32115            78               
+                              327152            78               
   1908 fixaOrdem1[9,17,20]
                                  115            78               
   1909 fixaOrdem1[9,18,19]
-                               32037            37               
+                              327074            37               
   1910 fixaOrdem1[9,18,20]
                                   37            37               
   1911 fixaOrdem1[9,19,20]
-                                 800            80               
+                                 963            80               
   1912 fixaOrdem1[10,1,2]
-                               32728            67               
-  1913 fixaOrdem1[10,1,3]
-                                 850            67               
-  1914 fixaOrdem1[10,1,4]
-                                 202            67               
-  1915 fixaOrdem1[10,1,5]
-                               32773            67               
-  1916 fixaOrdem1[10,1,6]
                                   67            67               
+  1913 fixaOrdem1[10,1,3]
+                                 893            67               
+  1914 fixaOrdem1[10,1,4]
+                                 167            67               
+  1915 fixaOrdem1[10,1,5]
+                              327973            67               
+  1916 fixaOrdem1[10,1,6]
+                                 266            67               
   1917 fixaOrdem1[10,1,7]
-                                 121            67               
+                                  86            67               
   1918 fixaOrdem1[10,1,8]
-                                 903            67               
+                                 320            67               
   1919 fixaOrdem1[10,1,9]
-                                 301            67               
+                                 345            67               
   1920 fixaOrdem1[10,1,10]
-                                 361            67               
+                                 405            67               
   1921 fixaOrdem1[10,1,11]
-                               32630            67               
+                                 555            67               
   1922 fixaOrdem1[10,1,12]
-                                 446            67               
+                                 490            67               
   1923 fixaOrdem1[10,1,13]
-                                 511            67               
+                                 610            67               
   1924 fixaOrdem1[10,1,14]
-                                 757            67               
+                                 946            67               
   1925 fixaOrdem1[10,1,15]
-                                 531            67               
+                                 630            67               
   1926 fixaOrdem1[10,1,16]
-                               32685            67               
+                                 665            67               
   1927 fixaOrdem1[10,1,17]
-                                 566            67               
+                                 702            67               
   1928 fixaOrdem1[10,1,18]
-                                 661            67               
+                                 797            67               
   1929 fixaOrdem1[10,1,19]
-                               32722            67               
+                              327967            67               
   1930 fixaOrdem1[10,1,20]
-                                 744            67               
+                                 880            67               
   1931 fixaOrdem1[10,2,3]
-                                 922            19               
+                                 826            19               
   1932 fixaOrdem1[10,2,4]
-                                 274            19               
+                                 100            19               
   1933 fixaOrdem1[10,2,5]
-                                  45            19               
+                              327906            19               
   1934 fixaOrdem1[10,2,6]
-                                 139            19               
+                                 199            19               
   1935 fixaOrdem1[10,2,7]
-                                 193            19               
+                                  19            19               
   1936 fixaOrdem1[10,2,8]
-                                 975            19               
+                                 253            19               
   1937 fixaOrdem1[10,2,9]
-                                 373            19               
+                                 278            19               
   1938 fixaOrdem1[10,2,10]
-                                 433            19               
+                                 338            19               
   1939 fixaOrdem1[10,2,11]
-                               32702            19               
+                                 488            19               
   1940 fixaOrdem1[10,2,12]
-                                 518            19               
+                                 423            19               
   1941 fixaOrdem1[10,2,13]
-                                 583            19               
+                                 543            19               
   1942 fixaOrdem1[10,2,14]
-                                 829            19               
+                                 879            19               
   1943 fixaOrdem1[10,2,15]
-                                 603            19               
+                                 563            19               
   1944 fixaOrdem1[10,2,16]
-                               32757            19               
+                                 598            19               
   1945 fixaOrdem1[10,2,17]
-                                 638            19               
+                                 635            19               
   1946 fixaOrdem1[10,2,18]
-                                 733            19               
+                                 730            19               
   1947 fixaOrdem1[10,2,19]
-                               32794            19               
+                              327900            19               
   1948 fixaOrdem1[10,2,20]
-                                 816            19               
+                                 813            19               
   1949 fixaOrdem1[10,3,4]
-                               32152            53               
+                              327274            53               
   1950 fixaOrdem1[10,3,5]
-                               31923            53               
+                              327080            53               
   1951 fixaOrdem1[10,3,6]
-                               32017            53               
+                              327373            53               
   1952 fixaOrdem1[10,3,7]
-                               32071            53               
+                              327193            53               
   1953 fixaOrdem1[10,3,8]
-                                  53            53               
+                              327427            53               
   1954 fixaOrdem1[10,3,9]
-                               32251            53               
+                              327452            53               
   1955 fixaOrdem1[10,3,10]
-                               32311            53               
+                              327512            53               
   1956 fixaOrdem1[10,3,11]
-                               31780            53               
+                              327662            53               
   1957 fixaOrdem1[10,3,12]
-                               32396            53               
+                              327597            53               
   1958 fixaOrdem1[10,3,13]
-                               32461            53               
+                              327717            53               
   1959 fixaOrdem1[10,3,14]
-                               32707            53               
+                                  53            53               
   1960 fixaOrdem1[10,3,15]
-                               32481            53               
+                              327737            53               
   1961 fixaOrdem1[10,3,16]
-                               31835            53               
+                              327772            53               
   1962 fixaOrdem1[10,3,17]
-                               32516            53               
+                              327809            53               
   1963 fixaOrdem1[10,3,18]
-                               32611            53               
+                              327904            53               
   1964 fixaOrdem1[10,3,19]
-                               31872            53               
+                              327074            53               
   1965 fixaOrdem1[10,3,20]
-                               32694            53               
+                              327987            53               
   1966 fixaOrdem1[10,4,5]
-                               32571            99               
+                              327806            99               
   1967 fixaOrdem1[10,4,6]
-                               32665            99               
-  1968 fixaOrdem1[10,4,7]
-                               32719            99               
-  1969 fixaOrdem1[10,4,8]
-                                 701            99               
-  1970 fixaOrdem1[10,4,9]
                                   99            99               
+  1968 fixaOrdem1[10,4,7]
+                              327919            99               
+  1969 fixaOrdem1[10,4,8]
+                                 153            99               
+  1970 fixaOrdem1[10,4,9]
+                                 178            99               
   1971 fixaOrdem1[10,4,10]
-                                 159            99               
+                                 238            99               
   1972 fixaOrdem1[10,4,11]
-                               32428            99               
+                                 388            99               
   1973 fixaOrdem1[10,4,12]
-                                 244            99               
+                                 323            99               
   1974 fixaOrdem1[10,4,13]
-                                 309            99               
+                                 443            99               
   1975 fixaOrdem1[10,4,14]
-                                 555            99               
+                                 779            99               
   1976 fixaOrdem1[10,4,15]
-                                 329            99               
+                                 463            99               
   1977 fixaOrdem1[10,4,16]
-                               32483            99               
+                                 498            99               
   1978 fixaOrdem1[10,4,17]
-                                 364            99               
+                                 535            99               
   1979 fixaOrdem1[10,4,18]
-                                 459            99               
+                                 630            99               
   1980 fixaOrdem1[10,4,19]
-                               32520            99               
+                              327800            99               
   1981 fixaOrdem1[10,4,20]
-                                 542            99               
+                                 713            99               
   1982 fixaOrdem1[10,5,6]
-                                  94            27               
+                                 293            27               
   1983 fixaOrdem1[10,5,7]
-                                 148            27               
+                                 113            27               
   1984 fixaOrdem1[10,5,8]
-                                 930            27               
+                                 347            27               
   1985 fixaOrdem1[10,5,9]
-                                 328            27               
+                                 372            27               
   1986 fixaOrdem1[10,5,10]
-                                 388            27               
+                                 432            27               
   1987 fixaOrdem1[10,5,11]
-                               32657            27               
+                                 582            27               
   1988 fixaOrdem1[10,5,12]
-                                 473            27               
+                                 517            27               
   1989 fixaOrdem1[10,5,13]
-                                 538            27               
+                                 637            27               
   1990 fixaOrdem1[10,5,14]
-                                 784            27               
+                                 973            27               
   1991 fixaOrdem1[10,5,15]
-                                 558            27               
+                                 657            27               
   1992 fixaOrdem1[10,5,16]
-                               32712            27               
+                                 692            27               
   1993 fixaOrdem1[10,5,17]
-                                 593            27               
+                                 729            27               
   1994 fixaOrdem1[10,5,18]
-                                 688            27               
+                                 824            27               
   1995 fixaOrdem1[10,5,19]
-                               32749            27               
+                              327994            27               
   1996 fixaOrdem1[10,5,20]
-                                 771            27               
+                                 907            27               
   1997 fixaOrdem1[10,6,7]
-                                  54            54               
+                              327820            54               
   1998 fixaOrdem1[10,6,8]
-                                 836            54               
+                                  54            54               
   1999 fixaOrdem1[10,6,9]
-                                 234            54               
+                                  79            54               
   2000 fixaOrdem1[10,6,10]
-                                 294            54               
+                                 139            54               
   2001 fixaOrdem1[10,6,11]
-                               32563            54               
+                                 289            54               
   2002 fixaOrdem1[10,6,12]
-                                 379            54               
+                                 224            54               
   2003 fixaOrdem1[10,6,13]
-                                 444            54               
+                                 344            54               
   2004 fixaOrdem1[10,6,14]
-                                 690            54               
+                                 680            54               
   2005 fixaOrdem1[10,6,15]
-                                 464            54               
+                                 364            54               
   2006 fixaOrdem1[10,6,16]
-                               32618            54               
+                                 399            54               
   2007 fixaOrdem1[10,6,17]
-                                 499            54               
+                                 436            54               
   2008 fixaOrdem1[10,6,18]
-                                 594            54               
+                                 531            54               
   2009 fixaOrdem1[10,6,19]
-                               32655            54               
+                              327701            54               
   2010 fixaOrdem1[10,6,20]
-                                 677            54               
+                                 614            54               
   2011 fixaOrdem1[10,7,8]
-                                 782            81               
+                                 234            81               
   2012 fixaOrdem1[10,7,9]
-                                 180            81               
+                                 259            81               
   2013 fixaOrdem1[10,7,10]
-                                 240            81               
+                                 319            81               
   2014 fixaOrdem1[10,7,11]
-                               32509            81               
+                                 469            81               
   2015 fixaOrdem1[10,7,12]
-                                 325            81               
+                                 404            81               
   2016 fixaOrdem1[10,7,13]
-                                 390            81               
+                                 524            81               
   2017 fixaOrdem1[10,7,14]
-                                 636            81               
+                                 860            81               
   2018 fixaOrdem1[10,7,15]
-                                 410            81               
+                                 544            81               
   2019 fixaOrdem1[10,7,16]
-                               32564            81               
+                                 579            81               
   2020 fixaOrdem1[10,7,17]
-                                 445            81               
+                                 616            81               
   2021 fixaOrdem1[10,7,18]
-                                 540            81               
+                                 711            81               
   2022 fixaOrdem1[10,7,19]
-                               32601            81               
+                              327881            81               
   2023 fixaOrdem1[10,7,20]
-                                 623            81               
+                                 794            81               
   2024 fixaOrdem1[10,8,9]
-                               32198            25               
+                                  25            25               
   2025 fixaOrdem1[10,8,10]
-                               32258            25               
+                                  85            25               
   2026 fixaOrdem1[10,8,11]
-                               31727            25               
+                                 235            25               
   2027 fixaOrdem1[10,8,12]
-                               32343            25               
+                                 170            25               
   2028 fixaOrdem1[10,8,13]
-                               32408            25               
+                                 290            25               
   2029 fixaOrdem1[10,8,14]
-                               32654            25               
+                                 626            25               
   2030 fixaOrdem1[10,8,15]
-                               32428            25               
+                                 310            25               
   2031 fixaOrdem1[10,8,16]
-                               31782            25               
+                                 345            25               
   2032 fixaOrdem1[10,8,17]
-                               32463            25               
+                                 382            25               
   2033 fixaOrdem1[10,8,18]
-                               32558            25               
+                                 477            25               
   2034 fixaOrdem1[10,8,19]
-                               31819            25               
+                              327647            25               
   2035 fixaOrdem1[10,8,20]
-                               32641            25               
+                                 560            25               
   2036 fixaOrdem1[10,9,10]
                                   60            60               
   2037 fixaOrdem1[10,9,11]
-                               32329            60               
+                                 210            60               
   2038 fixaOrdem1[10,9,12]
                                  145            60               
   2039 fixaOrdem1[10,9,13]
-                                 210            60               
-  2040 fixaOrdem1[10,9,14]
-                                 456            60               
-  2041 fixaOrdem1[10,9,15]
-                                 230            60               
-  2042 fixaOrdem1[10,9,16]
-                               32384            60               
-  2043 fixaOrdem1[10,9,17]
                                  265            60               
+  2040 fixaOrdem1[10,9,14]
+                                 601            60               
+  2041 fixaOrdem1[10,9,15]
+                                 285            60               
+  2042 fixaOrdem1[10,9,16]
+                                 320            60               
+  2043 fixaOrdem1[10,9,17]
+                                 357            60               
   2044 fixaOrdem1[10,9,18]
-                                 360            60               
+                                 452            60               
   2045 fixaOrdem1[10,9,19]
-                               32421            60               
+                              327622            60               
   2046 fixaOrdem1[10,9,20]
-                                 443            60               
+                                 535            60               
   2047 fixaOrdem1[10,10,11]
-                               32269            85               
+                                 150            85               
   2048 fixaOrdem1[10,10,12]
                                   85            85               
   2049 fixaOrdem1[10,10,13]
-                                 150            85               
-  2050 fixaOrdem1[10,10,14]
-                                 396            85               
-  2051 fixaOrdem1[10,10,15]
-                                 170            85               
-  2052 fixaOrdem1[10,10,16]
-                               32324            85               
-  2053 fixaOrdem1[10,10,17]
                                  205            85               
+  2050 fixaOrdem1[10,10,14]
+                                 541            85               
+  2051 fixaOrdem1[10,10,15]
+                                 225            85               
+  2052 fixaOrdem1[10,10,16]
+                                 260            85               
+  2053 fixaOrdem1[10,10,17]
+                                 297            85               
   2054 fixaOrdem1[10,10,18]
-                                 300            85               
+                                 392            85               
   2055 fixaOrdem1[10,10,19]
-                               32361            85               
+                              327562            85               
   2056 fixaOrdem1[10,10,20]
-                                 383            85               
+                                 475            85               
   2057 fixaOrdem1[10,11,12]
-                                 616            55               
+                              327935            55               
   2058 fixaOrdem1[10,11,13]
-                                 681            55               
-  2059 fixaOrdem1[10,11,14]
-                                 927            55               
-  2060 fixaOrdem1[10,11,15]
-                                 701            55               
-  2061 fixaOrdem1[10,11,16]
                                   55            55               
+  2059 fixaOrdem1[10,11,14]
+                                 391            55               
+  2060 fixaOrdem1[10,11,15]
+                                  75            55               
+  2061 fixaOrdem1[10,11,16]
+                                 110            55               
   2062 fixaOrdem1[10,11,17]
-                                 736            55               
+                                 147            55               
   2063 fixaOrdem1[10,11,18]
-                                 831            55               
+                                 242            55               
   2064 fixaOrdem1[10,11,19]
-                                  92            55               
+                              327412            55               
   2065 fixaOrdem1[10,11,20]
-                                 914            55               
+                                 325            55               
   2066 fixaOrdem1[10,12,13]
-                                  65            65               
-  2067 fixaOrdem1[10,12,14]
-                                 311            65               
-  2068 fixaOrdem1[10,12,15]
-                                  85            65               
-  2069 fixaOrdem1[10,12,16]
-                               32239            65               
-  2070 fixaOrdem1[10,12,17]
                                  120            65               
+  2067 fixaOrdem1[10,12,14]
+                                 456            65               
+  2068 fixaOrdem1[10,12,15]
+                                 140            65               
+  2069 fixaOrdem1[10,12,16]
+                                 175            65               
+  2070 fixaOrdem1[10,12,17]
+                                 212            65               
   2071 fixaOrdem1[10,12,18]
-                                 215            65               
+                                 307            65               
   2072 fixaOrdem1[10,12,19]
-                               32276            65               
+                              327477            65               
   2073 fixaOrdem1[10,12,20]
-                                 298            65               
+                                 390            65               
   2074 fixaOrdem1[10,13,14]
-                                 246            20               
+                                 336            20               
   2075 fixaOrdem1[10,13,15]
                                   20            20               
   2076 fixaOrdem1[10,13,16]
-                               32174            20               
-  2077 fixaOrdem1[10,13,17]
                                   55            20               
+  2077 fixaOrdem1[10,13,17]
+                                  92            20               
   2078 fixaOrdem1[10,13,18]
-                                 150            20               
+                                 187            20               
   2079 fixaOrdem1[10,13,19]
-                               32211            20               
+                              327357            20               
   2080 fixaOrdem1[10,13,20]
-                                 233            20               
+                                 270            20               
   2081 fixaOrdem1[10,14,15]
-                               32574            93               
+                              327684            93               
   2082 fixaOrdem1[10,14,16]
-                               31928            93               
+                              327719            93               
   2083 fixaOrdem1[10,14,17]
-                               32609            93               
+                              327756            93               
   2084 fixaOrdem1[10,14,18]
-                               32704            93               
+                              327851            93               
   2085 fixaOrdem1[10,14,19]
-                               31965            93               
+                              327021            93               
   2086 fixaOrdem1[10,14,20]
-                               32787            93               
+                              327934            93               
   2087 fixaOrdem1[10,15,16]
-                               32154            35               
-  2088 fixaOrdem1[10,15,17]
                                   35            35               
+  2088 fixaOrdem1[10,15,17]
+                                  72            35               
   2089 fixaOrdem1[10,15,18]
-                                 130            35               
+                                 167            35               
   2090 fixaOrdem1[10,15,19]
-                               32191            35               
+                              327337            35               
   2091 fixaOrdem1[10,15,20]
-                                 213            35               
+                                 250            35               
   2092 fixaOrdem1[10,16,17]
-                                 681            37               
-  2093 fixaOrdem1[10,16,18]
-                                 776            37               
-  2094 fixaOrdem1[10,16,19]
                                   37            37               
+  2093 fixaOrdem1[10,16,18]
+                                 132            37               
+  2094 fixaOrdem1[10,16,19]
+                              327302            37               
   2095 fixaOrdem1[10,16,20]
-                                 859            37               
+                                 215            37               
   2096 fixaOrdem1[10,17,18]
                                   95            95               
   2097 fixaOrdem1[10,17,19]
-                               32156            95               
+                              327265            95               
   2098 fixaOrdem1[10,17,20]
                                  178            95               
   2099 fixaOrdem1[10,18,19]
-                               32061            83               
+                              327170            83               
   2100 fixaOrdem1[10,18,20]
                                   83            83               
   2101 fixaOrdem1[10,19,20]
-                                 822             6               
+                                 913             6               
   2102 fixaOrdem2[1,1,2]
-                               32764                       32767 
+                                  88                      327967 
   2103 fixaOrdem2[1,1,3]
-                                 679                       32795 
+                                 775                      327995 
   2104 fixaOrdem2[1,1,4]
-                                 212                       32793 
+                                 218                      327993 
   2105 fixaOrdem2[1,1,5]
-                               32797                       32797 
+                              327997                      327997 
   2106 fixaOrdem2[1,1,6]
-                                  88                       32773 
+                                 225                      327973 
   2107 fixaOrdem2[1,1,7]
-                                 115                       32703 
+                                 121                      327903 
   2108 fixaOrdem2[1,1,8]
-                                 684                       32785 
+                                 252                      327985 
   2109 fixaOrdem2[1,1,9]
-                                 219                       32746 
+                                 267                      327946 
   2110 fixaOrdem2[1,1,10]
-                                 273                       32751 
+                                 321                      327951 
   2111 fixaOrdem2[1,1,11]
-                               32598                       32798 
+                                 373                      327998 
   2112 fixaOrdem2[1,1,12]
-                                 322                       32797 
+                                 370                      327997 
   2113 fixaOrdem2[1,1,13]
-                                 325                       32740 
+                                 375                      327940 
   2114 fixaOrdem2[1,1,14]
-                                 659                       32780 
+                                 780                      327980 
   2115 fixaOrdem2[1,1,15]
-                                 385                       32711 
+                                 435                      327911 
   2116 fixaOrdem2[1,1,16]
-                               32600                       32734 
+                                 524                      327934 
   2117 fixaOrdem2[1,1,17]
-                                 474                       32725 
+                                 590                      327925 
   2118 fixaOrdem2[1,1,18]
-                                 549                       32728 
+                                 665                      327928 
   2119 fixaOrdem2[1,1,19]
-                               32666                       32702 
+                              327899                      327902 
   2120 fixaOrdem2[1,1,20]
-                                 621                       32762 
+                                 737                      327962 
   2121 fixaOrdem2[1,2,3]
-                                 715                       32795 
+                                 687                      327995 
   2122 fixaOrdem2[1,2,4]
-                                 248                       32793 
+                                 130                      327993 
   2123 fixaOrdem2[1,2,5]
-                                  33                       32797 
+                              327909                      327997 
   2124 fixaOrdem2[1,2,6]
-                                 124                       32773 
+                                 137                      327973 
   2125 fixaOrdem2[1,2,7]
-                                 151                       32703 
+                                  33                      327903 
   2126 fixaOrdem2[1,2,8]
-                                 720                       32785 
+                                 164                      327985 
   2127 fixaOrdem2[1,2,9]
-                                 255                       32746 
+                                 179                      327946 
   2128 fixaOrdem2[1,2,10]
-                                 309                       32751 
+                                 233                      327951 
   2129 fixaOrdem2[1,2,11]
-                               32634                       32798 
+                                 285                      327998 
   2130 fixaOrdem2[1,2,12]
-                                 358                       32797 
+                                 282                      327997 
   2131 fixaOrdem2[1,2,13]
-                                 361                       32740 
+                                 287                      327940 
   2132 fixaOrdem2[1,2,14]
-                                 695                       32780 
+                                 692                      327980 
   2133 fixaOrdem2[1,2,15]
-                                 421                       32711 
+                                 347                      327911 
   2134 fixaOrdem2[1,2,16]
-                               32636                       32734 
+                                 436                      327934 
   2135 fixaOrdem2[1,2,17]
-                                 510                       32725 
+                                 502                      327925 
   2136 fixaOrdem2[1,2,18]
-                                 585                       32728 
+                                 577                      327928 
   2137 fixaOrdem2[1,2,19]
-                               32702                       32702 
+                              327811                      327902 
   2138 fixaOrdem2[1,2,20]
-                                 657                       32762 
+                                 649                      327962 
   2139 fixaOrdem2[1,3,4]
-                               32333                       32793 
+                              327443                      327993 
   2140 fixaOrdem2[1,3,5]
-                               32118                       32797 
+                              327222                      327997 
   2141 fixaOrdem2[1,3,6]
-                               32209                       32773 
+                              327450                      327973 
   2142 fixaOrdem2[1,3,7]
-                               32236                       32703 
+                              327346                      327903 
   2143 fixaOrdem2[1,3,8]
-                                   5                       32785 
+                              327477                      327985 
   2144 fixaOrdem2[1,3,9]
-                               32340                       32746 
+                              327492                      327946 
   2145 fixaOrdem2[1,3,10]
-                               32394                       32751 
+                              327546                      327951 
   2146 fixaOrdem2[1,3,11]
-                               31919                       32798 
+                              327598                      327998 
   2147 fixaOrdem2[1,3,12]
-                               32443                       32797 
+                              327595                      327997 
   2148 fixaOrdem2[1,3,13]
-                               32446                       32740 
+                              327600                      327940 
   2149 fixaOrdem2[1,3,14]
-                               32780                       32780 
+                                   5                      327980 
   2150 fixaOrdem2[1,3,15]
-                               32506                       32711 
+                              327660                      327911 
   2151 fixaOrdem2[1,3,16]
-                               31921                       32734 
+                              327749                      327934 
   2152 fixaOrdem2[1,3,17]
-                               32595                       32725 
+                              327815                      327925 
   2153 fixaOrdem2[1,3,18]
-                               32670                       32728 
+                              327890                      327928 
   2154 fixaOrdem2[1,3,19]
-                               31987                       32702 
+                              327124                      327902 
   2155 fixaOrdem2[1,3,20]
-                               32742                       32762 
+                              327962                      327962 
   2156 fixaOrdem2[1,4,5]
-                               32585                       32797 
+                              327779                      327997 
   2157 fixaOrdem2[1,4,6]
-                               32676                       32773 
+                                   7                      327973 
   2158 fixaOrdem2[1,4,7]
-                               32703                       32703 
+                              327903                      327903 
   2159 fixaOrdem2[1,4,8]
-                                 472                       32785 
+                                  34                      327985 
   2160 fixaOrdem2[1,4,9]
-                                   7                       32746 
+                                  49                      327946 
   2161 fixaOrdem2[1,4,10]
-                                  61                       32751 
+                                 103                      327951 
   2162 fixaOrdem2[1,4,11]
-                               32386                       32798 
+                                 155                      327998 
   2163 fixaOrdem2[1,4,12]
-                                 110                       32797 
+                                 152                      327997 
   2164 fixaOrdem2[1,4,13]
-                                 113                       32740 
+                                 157                      327940 
   2165 fixaOrdem2[1,4,14]
-                                 447                       32780 
+                                 562                      327980 
   2166 fixaOrdem2[1,4,15]
-                                 173                       32711 
+                                 217                      327911 
   2167 fixaOrdem2[1,4,16]
-                               32388                       32734 
+                                 306                      327934 
   2168 fixaOrdem2[1,4,17]
-                                 262                       32725 
+                                 372                      327925 
   2169 fixaOrdem2[1,4,18]
-                                 337                       32728 
+                                 447                      327928 
   2170 fixaOrdem2[1,4,19]
-                               32454                       32702 
+                              327681                      327902 
   2171 fixaOrdem2[1,4,20]
-                                 409                       32762 
+                                 519                      327962 
   2172 fixaOrdem2[1,5,6]
-                                  91                       32773 
+                                 228                      327973 
   2173 fixaOrdem2[1,5,7]
-                                 118                       32703 
+                                 124                      327903 
   2174 fixaOrdem2[1,5,8]
-                                 687                       32785 
+                                 255                      327985 
   2175 fixaOrdem2[1,5,9]
-                                 222                       32746 
+                                 270                      327946 
   2176 fixaOrdem2[1,5,10]
-                                 276                       32751 
+                                 324                      327951 
   2177 fixaOrdem2[1,5,11]
-                               32601                       32798 
+                                 376                      327998 
   2178 fixaOrdem2[1,5,12]
-                                 325                       32797 
+                                 373                      327997 
   2179 fixaOrdem2[1,5,13]
-                                 328                       32740 
+                                 378                      327940 
   2180 fixaOrdem2[1,5,14]
-                                 662                       32780 
+                                 783                      327980 
   2181 fixaOrdem2[1,5,15]
-                                 388                       32711 
+                                 438                      327911 
   2182 fixaOrdem2[1,5,16]
-                               32603                       32734 
+                                 527                      327934 
   2183 fixaOrdem2[1,5,17]
-                                 477                       32725 
+                                 593                      327925 
   2184 fixaOrdem2[1,5,18]
-                                 552                       32728 
+                                 668                      327928 
   2185 fixaOrdem2[1,5,19]
-                               32669                       32702 
+                              327902                      327902 
   2186 fixaOrdem2[1,5,20]
-                                 624                       32762 
+                                 740                      327962 
   2187 fixaOrdem2[1,6,7]
-                                  27                       32703 
+                              327896                      327903 
   2188 fixaOrdem2[1,6,8]
-                                 596                       32785 
+                                  27                      327985 
   2189 fixaOrdem2[1,6,9]
-                                 131                       32746 
+                                  42                      327946 
   2190 fixaOrdem2[1,6,10]
-                                 185                       32751 
+                                  96                      327951 
   2191 fixaOrdem2[1,6,11]
-                               32510                       32798 
+                                 148                      327998 
   2192 fixaOrdem2[1,6,12]
-                                 234                       32797 
+                                 145                      327997 
   2193 fixaOrdem2[1,6,13]
-                                 237                       32740 
+                                 150                      327940 
   2194 fixaOrdem2[1,6,14]
-                                 571                       32780 
+                                 555                      327980 
   2195 fixaOrdem2[1,6,15]
-                                 297                       32711 
+                                 210                      327911 
   2196 fixaOrdem2[1,6,16]
-                               32512                       32734 
+                                 299                      327934 
   2197 fixaOrdem2[1,6,17]
-                                 386                       32725 
+                                 365                      327925 
   2198 fixaOrdem2[1,6,18]
-                                 461                       32728 
+                                 440                      327928 
   2199 fixaOrdem2[1,6,19]
-                               32578                       32702 
+                              327674                      327902 
   2200 fixaOrdem2[1,6,20]
-                                 533                       32762 
+                                 512                      327962 
   2201 fixaOrdem2[1,7,8]
-                                 569                       32785 
+                                 131                      327985 
   2202 fixaOrdem2[1,7,9]
-                                 104                       32746 
+                                 146                      327946 
   2203 fixaOrdem2[1,7,10]
-                                 158                       32751 
+                                 200                      327951 
   2204 fixaOrdem2[1,7,11]
-                               32483                       32798 
+                                 252                      327998 
   2205 fixaOrdem2[1,7,12]
-                                 207                       32797 
+                                 249                      327997 
   2206 fixaOrdem2[1,7,13]
-                                 210                       32740 
+                                 254                      327940 
   2207 fixaOrdem2[1,7,14]
-                                 544                       32780 
+                                 659                      327980 
   2208 fixaOrdem2[1,7,15]
-                                 270                       32711 
+                                 314                      327911 
   2209 fixaOrdem2[1,7,16]
-                               32485                       32734 
+                                 403                      327934 
   2210 fixaOrdem2[1,7,17]
-                                 359                       32725 
+                                 469                      327925 
   2211 fixaOrdem2[1,7,18]
-                                 434                       32728 
+                                 544                      327928 
   2212 fixaOrdem2[1,7,19]
-                               32551                       32702 
+                              327778                      327902 
   2213 fixaOrdem2[1,7,20]
-                                 506                       32762 
+                                 616                      327962 
   2214 fixaOrdem2[1,8,9]
-                               32335                       32746 
+                                  15                      327946 
   2215 fixaOrdem2[1,8,10]
-                               32389                       32751 
+                                  69                      327951 
   2216 fixaOrdem2[1,8,11]
-                               31914                       32798 
+                                 121                      327998 
   2217 fixaOrdem2[1,8,12]
-                               32438                       32797 
+                                 118                      327997 
   2218 fixaOrdem2[1,8,13]
-                               32441                       32740 
+                                 123                      327940 
   2219 fixaOrdem2[1,8,14]
-                               32775                       32780 
+                                 528                      327980 
   2220 fixaOrdem2[1,8,15]
-                               32501                       32711 
+                                 183                      327911 
   2221 fixaOrdem2[1,8,16]
-                               31916                       32734 
+                                 272                      327934 
   2222 fixaOrdem2[1,8,17]
-                               32590                       32725 
+                                 338                      327925 
   2223 fixaOrdem2[1,8,18]
-                               32665                       32728 
+                                 413                      327928 
   2224 fixaOrdem2[1,8,19]
-                               31982                       32702 
+                              327647                      327902 
   2225 fixaOrdem2[1,8,20]
-                               32737                       32762 
+                                 485                      327962 
   2226 fixaOrdem2[1,9,10]
-                                  54                       32751 
+                                  54                      327951 
   2227 fixaOrdem2[1,9,11]
-                               32379                       32798 
+                                 106                      327998 
   2228 fixaOrdem2[1,9,12]
-                                 103                       32797 
+                                 103                      327997 
   2229 fixaOrdem2[1,9,13]
-                                 106                       32740 
+                                 108                      327940 
   2230 fixaOrdem2[1,9,14]
-                                 440                       32780 
+                                 513                      327980 
   2231 fixaOrdem2[1,9,15]
-                                 166                       32711 
+                                 168                      327911 
   2232 fixaOrdem2[1,9,16]
-                               32381                       32734 
+                                 257                      327934 
   2233 fixaOrdem2[1,9,17]
-                                 255                       32725 
+                                 323                      327925 
   2234 fixaOrdem2[1,9,18]
-                                 330                       32728 
+                                 398                      327928 
   2235 fixaOrdem2[1,9,19]
-                               32447                       32702 
+                              327632                      327902 
   2236 fixaOrdem2[1,9,20]
-                                 402                       32762 
+                                 470                      327962 
   2237 fixaOrdem2[1,10,11]
-                               32325                       32798 
+                                  52                      327998 
   2238 fixaOrdem2[1,10,12]
-                                  49                       32797 
+                                  49                      327997 
   2239 fixaOrdem2[1,10,13]
-                                  52                       32740 
+                                  54                      327940 
   2240 fixaOrdem2[1,10,14]
-                                 386                       32780 
+                                 459                      327980 
   2241 fixaOrdem2[1,10,15]
-                                 112                       32711 
+                                 114                      327911 
   2242 fixaOrdem2[1,10,16]
-                               32327                       32734 
+                                 203                      327934 
   2243 fixaOrdem2[1,10,17]
-                                 201                       32725 
+                                 269                      327925 
   2244 fixaOrdem2[1,10,18]
-                                 276                       32728 
+                                 344                      327928 
   2245 fixaOrdem2[1,10,19]
-                               32393                       32702 
+                              327578                      327902 
   2246 fixaOrdem2[1,10,20]
-                                 348                       32762 
+                                 416                      327962 
   2247 fixaOrdem2[1,11,12]
-                                 524                       32797 
+                              327997                      327997 
   2248 fixaOrdem2[1,11,13]
-                                 527                       32740 
+                                   2                      327940 
   2249 fixaOrdem2[1,11,14]
-                                 861                       32780 
+                                 407                      327980 
   2250 fixaOrdem2[1,11,15]
-                                 587                       32711 
+                                  62                      327911 
   2251 fixaOrdem2[1,11,16]
-                                   2                       32734 
+                                 151                      327934 
   2252 fixaOrdem2[1,11,17]
-                                 676                       32725 
+                                 217                      327925 
   2253 fixaOrdem2[1,11,18]
-                                 751                       32728 
+                                 292                      327928 
   2254 fixaOrdem2[1,11,19]
-                                  68                       32702 
+                              327526                      327902 
   2255 fixaOrdem2[1,11,20]
-                                 823                       32762 
+                                 364                      327962 
   2256 fixaOrdem2[1,12,13]
-                                   3                       32740 
+                                   5                      327940 
   2257 fixaOrdem2[1,12,14]
-                                 337                       32780 
+                                 410                      327980 
   2258 fixaOrdem2[1,12,15]
-                                  63                       32711 
+                                  65                      327911 
   2259 fixaOrdem2[1,12,16]
-                               32278                       32734 
+                                 154                      327934 
   2260 fixaOrdem2[1,12,17]
-                                 152                       32725 
+                                 220                      327925 
   2261 fixaOrdem2[1,12,18]
-                                 227                       32728 
+                                 295                      327928 
   2262 fixaOrdem2[1,12,19]
-                               32344                       32702 
+                              327529                      327902 
   2263 fixaOrdem2[1,12,20]
-                                 299                       32762 
+                                 367                      327962 
   2264 fixaOrdem2[1,13,14]
-                                 334                       32780 
+                                 405                      327980 
   2265 fixaOrdem2[1,13,15]
-                                  60                       32711 
+                                  60                      327911 
   2266 fixaOrdem2[1,13,16]
-                               32275                       32734 
+                                 149                      327934 
   2267 fixaOrdem2[1,13,17]
-                                 149                       32725 
+                                 215                      327925 
   2268 fixaOrdem2[1,13,18]
-                                 224                       32728 
+                                 290                      327928 
   2269 fixaOrdem2[1,13,19]
-                               32341                       32702 
+                              327524                      327902 
   2270 fixaOrdem2[1,13,20]
-                                 296                       32762 
+                                 362                      327962 
   2271 fixaOrdem2[1,14,15]
-                               32526                       32711 
+                              327655                      327911 
   2272 fixaOrdem2[1,14,16]
-                               31941                       32734 
+                              327744                      327934 
   2273 fixaOrdem2[1,14,17]
-                               32615                       32725 
+                              327810                      327925 
   2274 fixaOrdem2[1,14,18]
-                               32690                       32728 
+                              327885                      327928 
   2275 fixaOrdem2[1,14,19]
-                               32007                       32702 
+                              327119                      327902 
   2276 fixaOrdem2[1,14,20]
-                               32762                       32762 
+                              327957                      327962 
   2277 fixaOrdem2[1,15,16]
-                               32215                       32734 
+                                  89                      327934 
   2278 fixaOrdem2[1,15,17]
-                                  89                       32725 
+                                 155                      327925 
   2279 fixaOrdem2[1,15,18]
-                                 164                       32728 
+                                 230                      327928 
   2280 fixaOrdem2[1,15,19]
-                               32281                       32702 
+                              327464                      327902 
   2281 fixaOrdem2[1,15,20]
-                                 236                       32762 
+                                 302                      327962 
   2282 fixaOrdem2[1,16,17]
-                                 674                       32725 
+                                  66                      327925 
   2283 fixaOrdem2[1,16,18]
-                                 749                       32728 
+                                 141                      327928 
   2284 fixaOrdem2[1,16,19]
-                                  66                       32702 
+                              327375                      327902 
   2285 fixaOrdem2[1,16,20]
-                                 821                       32762 
+                                 213                      327962 
   2286 fixaOrdem2[1,17,18]
-                                  75                       32728 
+                                  75                      327928 
   2287 fixaOrdem2[1,17,19]
-                               32192                       32702 
+                              327309                      327902 
   2288 fixaOrdem2[1,17,20]
-                                 147                       32762 
+                                 147                      327962 
   2289 fixaOrdem2[1,18,19]
-                               32117                       32702 
+                              327234                      327902 
   2290 fixaOrdem2[1,18,20]
-                                  72                       32762 
+                                  72                      327962 
   2291 fixaOrdem2[1,19,20]
-                                 755                       32762 
+                                 838                      327962 
   2292 fixaOrdem2[2,1,2]
-                               32745                       32761 
+                                  49                      327961 
   2293 fixaOrdem2[2,1,3]
-                                 685                       32732 
+                                 816                      327932 
   2294 fixaOrdem2[2,1,4]
-                                 213                       32703 
+                                 108                      327903 
   2295 fixaOrdem2[2,1,5]
-                               32784                       32784 
+                              327984                      327984 
   2296 fixaOrdem2[2,1,6]
-                                 101                       32708 
+                                 205                      327908 
   2297 fixaOrdem2[2,1,7]
-                                 193                       32780 
+                                  88                      327980 
   2298 fixaOrdem2[2,1,8]
-                                 773                       32776 
+                                 297                      327976 
   2299 fixaOrdem2[2,1,9]
-                                 310                       32778 
+                                 321                      327978 
   2300 fixaOrdem2[2,1,10]
-                                 343                       32786 
+                                 343                      327986 
   2301 fixaOrdem2[2,1,11]
-                               32563                       32710 
+                                 416                      327910 
   2302 fixaOrdem2[2,1,12]
-                                 357                       32741 
+                                 357                      327941 
   2303 fixaOrdem2[2,1,13]
-                                 416                       32788 
+                                 506                      327988 
   2304 fixaOrdem2[2,1,14]
-                                 636                       32757 
+                                 884                      327957 
   2305 fixaOrdem2[2,1,15]
-                                 428                       32736 
+                                 518                      327936 
   2306 fixaOrdem2[2,1,16]
-                               32653                       32740 
+                                 582                      327940 
   2307 fixaOrdem2[2,1,17]
-                                 492                       32705 
+                                 642                      327905 
   2308 fixaOrdem2[2,1,18]
-                                 587                       32768 
+                                 737                      327968 
   2309 fixaOrdem2[2,1,19]
-                               32713                       32768 
+                              327952                      327968 
   2310 fixaOrdem2[2,1,20]
-                                 619                       32783 
+                                 769                      327983 
   2311 fixaOrdem2[2,2,3]
-                                 740                       32732 
+                                 767                      327932 
   2312 fixaOrdem2[2,2,4]
-                                 268                       32703 
+                                  59                      327903 
   2313 fixaOrdem2[2,2,5]
-                                  39                       32784 
+                              327935                      327984 
   2314 fixaOrdem2[2,2,6]
-                                 156                       32708 
+                                 156                      327908 
   2315 fixaOrdem2[2,2,7]
-                                 248                       32780 
+                                  39                      327980 
   2316 fixaOrdem2[2,2,8]
-                                 828                       32776 
+                                 248                      327976 
   2317 fixaOrdem2[2,2,9]
-                                 365                       32778 
+                                 272                      327978 
   2318 fixaOrdem2[2,2,10]
-                                 398                       32786 
+                                 294                      327986 
   2319 fixaOrdem2[2,2,11]
-                               32618                       32710 
+                                 367                      327910 
   2320 fixaOrdem2[2,2,12]
-                                 412                       32741 
+                                 308                      327941 
   2321 fixaOrdem2[2,2,13]
-                                 471                       32788 
+                                 457                      327988 
   2322 fixaOrdem2[2,2,14]
-                                 691                       32757 
+                                 835                      327957 
   2323 fixaOrdem2[2,2,15]
-                                 483                       32736 
+                                 469                      327936 
   2324 fixaOrdem2[2,2,16]
-                               32708                       32740 
+                                 533                      327940 
   2325 fixaOrdem2[2,2,17]
-                                 547                       32705 
+                                 593                      327905 
   2326 fixaOrdem2[2,2,18]
-                                 642                       32768 
+                                 688                      327968 
   2327 fixaOrdem2[2,2,19]
-                               32768                       32768 
+                              327903                      327968 
   2328 fixaOrdem2[2,2,20]
-                                 674                       32783 
+                                 720                      327983 
   2329 fixaOrdem2[2,3,4]
-                               32328                       32703 
+                              327292                      327903 
   2330 fixaOrdem2[2,3,5]
-                               32099                       32784 
+                              327168                      327984 
   2331 fixaOrdem2[2,3,6]
-                               32216                       32708 
+                              327389                      327908 
   2332 fixaOrdem2[2,3,7]
-                               32308                       32780 
+                              327272                      327980 
   2333 fixaOrdem2[2,3,8]
-                                  88                       32776 
+                              327481                      327976 
   2334 fixaOrdem2[2,3,9]
-                               32425                       32778 
+                              327505                      327978 
   2335 fixaOrdem2[2,3,10]
-                               32458                       32786 
+                              327527                      327986 
   2336 fixaOrdem2[2,3,11]
-                               31878                       32710 
+                              327600                      327910 
   2337 fixaOrdem2[2,3,12]
-                               32472                       32741 
+                              327541                      327941 
   2338 fixaOrdem2[2,3,13]
-                               32531                       32788 
+                              327690                      327988 
   2339 fixaOrdem2[2,3,14]
-                               32751                       32757 
+                                  68                      327957 
   2340 fixaOrdem2[2,3,15]
-                               32543                       32736 
+                              327702                      327936 
   2341 fixaOrdem2[2,3,16]
-                               31968                       32740 
+                              327766                      327940 
   2342 fixaOrdem2[2,3,17]
-                               32607                       32705 
+                              327826                      327905 
   2343 fixaOrdem2[2,3,18]
-                               32702                       32768 
+                              327921                      327968 
   2344 fixaOrdem2[2,3,19]
-                               32028                       32768 
+                              327136                      327968 
   2345 fixaOrdem2[2,3,20]
-                               32734                       32783 
+                              327953                      327983 
   2346 fixaOrdem2[2,4,5]
-                               32571                       32784 
+                              327876                      327984 
   2347 fixaOrdem2[2,4,6]
-                               32688                       32708 
+                                  97                      327908 
   2348 fixaOrdem2[2,4,7]
-                               32780                       32780 
+                              327980                      327980 
   2349 fixaOrdem2[2,4,8]
-                                 560                       32776 
+                                 189                      327976 
   2350 fixaOrdem2[2,4,9]
-                                  97                       32778 
+                                 213                      327978 
   2351 fixaOrdem2[2,4,10]
-                                 130                       32786 
+                                 235                      327986 
   2352 fixaOrdem2[2,4,11]
-                               32350                       32710 
+                                 308                      327910 
   2353 fixaOrdem2[2,4,12]
-                                 144                       32741 
+                                 249                      327941 
   2354 fixaOrdem2[2,4,13]
-                                 203                       32788 
+                                 398                      327988 
   2355 fixaOrdem2[2,4,14]
-                                 423                       32757 
+                                 776                      327957 
   2356 fixaOrdem2[2,4,15]
-                                 215                       32736 
+                                 410                      327936 
   2357 fixaOrdem2[2,4,16]
-                               32440                       32740 
+                                 474                      327940 
   2358 fixaOrdem2[2,4,17]
-                                 279                       32705 
+                                 534                      327905 
   2359 fixaOrdem2[2,4,18]
-                                 374                       32768 
+                                 629                      327968 
   2360 fixaOrdem2[2,4,19]
-                               32500                       32768 
+                              327844                      327968 
   2361 fixaOrdem2[2,4,20]
-                                 406                       32783 
+                                 661                      327983 
   2362 fixaOrdem2[2,5,6]
-                                 117                       32708 
+                                 221                      327908 
   2363 fixaOrdem2[2,5,7]
-                                 209                       32780 
+                                 104                      327980 
   2364 fixaOrdem2[2,5,8]
-                                 789                       32776 
+                                 313                      327976 
   2365 fixaOrdem2[2,5,9]
-                                 326                       32778 
+                                 337                      327978 
   2366 fixaOrdem2[2,5,10]
-                                 359                       32786 
+                                 359                      327986 
   2367 fixaOrdem2[2,5,11]
-                               32579                       32710 
+                                 432                      327910 
   2368 fixaOrdem2[2,5,12]
-                                 373                       32741 
+                                 373                      327941 
   2369 fixaOrdem2[2,5,13]
-                                 432                       32788 
+                                 522                      327988 
   2370 fixaOrdem2[2,5,14]
-                                 652                       32757 
+                                 900                      327957 
   2371 fixaOrdem2[2,5,15]
-                                 444                       32736 
+                                 534                      327936 
   2372 fixaOrdem2[2,5,16]
-                               32669                       32740 
+                                 598                      327940 
   2373 fixaOrdem2[2,5,17]
-                                 508                       32705 
+                                 658                      327905 
   2374 fixaOrdem2[2,5,18]
-                                 603                       32768 
+                                 753                      327968 
   2375 fixaOrdem2[2,5,19]
-                               32729                       32768 
+                              327968                      327968 
   2376 fixaOrdem2[2,5,20]
-                                 635                       32783 
+                                 785                      327983 
   2377 fixaOrdem2[2,6,7]
-                                  92                       32780 
+                              327883                      327980 
   2378 fixaOrdem2[2,6,8]
-                                 672                       32776 
+                                  92                      327976 
   2379 fixaOrdem2[2,6,9]
-                                 209                       32778 
+                                 116                      327978 
   2380 fixaOrdem2[2,6,10]
-                                 242                       32786 
+                                 138                      327986 
   2381 fixaOrdem2[2,6,11]
-                               32462                       32710 
+                                 211                      327910 
   2382 fixaOrdem2[2,6,12]
-                                 256                       32741 
+                                 152                      327941 
   2383 fixaOrdem2[2,6,13]
-                                 315                       32788 
+                                 301                      327988 
   2384 fixaOrdem2[2,6,14]
-                                 535                       32757 
+                                 679                      327957 
   2385 fixaOrdem2[2,6,15]
-                                 327                       32736 
+                                 313                      327936 
   2386 fixaOrdem2[2,6,16]
-                               32552                       32740 
+                                 377                      327940 
   2387 fixaOrdem2[2,6,17]
-                                 391                       32705 
+                                 437                      327905 
   2388 fixaOrdem2[2,6,18]
-                                 486                       32768 
+                                 532                      327968 
   2389 fixaOrdem2[2,6,19]
-                               32612                       32768 
+                              327747                      327968 
   2390 fixaOrdem2[2,6,20]
-                                 518                       32783 
+                                 564                      327983 
   2391 fixaOrdem2[2,7,8]
-                                 580                       32776 
+                                 209                      327976 
   2392 fixaOrdem2[2,7,9]
-                                 117                       32778 
+                                 233                      327978 
   2393 fixaOrdem2[2,7,10]
-                                 150                       32786 
+                                 255                      327986 
   2394 fixaOrdem2[2,7,11]
-                               32370                       32710 
+                                 328                      327910 
   2395 fixaOrdem2[2,7,12]
-                                 164                       32741 
+                                 269                      327941 
   2396 fixaOrdem2[2,7,13]
-                                 223                       32788 
+                                 418                      327988 
   2397 fixaOrdem2[2,7,14]
-                                 443                       32757 
+                                 796                      327957 
   2398 fixaOrdem2[2,7,15]
-                                 235                       32736 
+                                 430                      327936 
   2399 fixaOrdem2[2,7,16]
-                               32460                       32740 
+                                 494                      327940 
   2400 fixaOrdem2[2,7,17]
-                                 299                       32705 
+                                 554                      327905 
   2401 fixaOrdem2[2,7,18]
-                                 394                       32768 
+                                 649                      327968 
   2402 fixaOrdem2[2,7,19]
-                               32520                       32768 
+                              327864                      327968 
   2403 fixaOrdem2[2,7,20]
-                                 426                       32783 
+                                 681                      327983 
   2404 fixaOrdem2[2,8,9]
-                               32337                       32778 
+                                  24                      327978 
   2405 fixaOrdem2[2,8,10]
-                               32370                       32786 
+                                  46                      327986 
   2406 fixaOrdem2[2,8,11]
-                               31790                       32710 
+                                 119                      327910 
   2407 fixaOrdem2[2,8,12]
-                               32384                       32741 
+                                  60                      327941 
   2408 fixaOrdem2[2,8,13]
-                               32443                       32788 
+                                 209                      327988 
   2409 fixaOrdem2[2,8,14]
-                               32663                       32757 
+                                 587                      327957 
   2410 fixaOrdem2[2,8,15]
-                               32455                       32736 
+                                 221                      327936 
   2411 fixaOrdem2[2,8,16]
-                               31880                       32740 
+                                 285                      327940 
   2412 fixaOrdem2[2,8,17]
-                               32519                       32705 
+                                 345                      327905 
   2413 fixaOrdem2[2,8,18]
-                               32614                       32768 
+                                 440                      327968 
   2414 fixaOrdem2[2,8,19]
-                               31940                       32768 
+                              327655                      327968 
   2415 fixaOrdem2[2,8,20]
-                               32646                       32783 
+                                 472                      327983 
   2416 fixaOrdem2[2,9,10]
-                                  33                       32786 
+                                  22                      327986 
   2417 fixaOrdem2[2,9,11]
-                               32253                       32710 
+                                  95                      327910 
   2418 fixaOrdem2[2,9,12]
-                                  47                       32741 
+                                  36                      327941 
   2419 fixaOrdem2[2,9,13]
-                                 106                       32788 
+                                 185                      327988 
   2420 fixaOrdem2[2,9,14]
-                                 326                       32757 
+                                 563                      327957 
   2421 fixaOrdem2[2,9,15]
-                                 118                       32736 
+                                 197                      327936 
   2422 fixaOrdem2[2,9,16]
-                               32343                       32740 
+                                 261                      327940 
   2423 fixaOrdem2[2,9,17]
-                                 182                       32705 
+                                 321                      327905 
   2424 fixaOrdem2[2,9,18]
-                                 277                       32768 
+                                 416                      327968 
   2425 fixaOrdem2[2,9,19]
-                               32403                       32768 
+                              327631                      327968 
   2426 fixaOrdem2[2,9,20]
-                                 309                       32783 
+                                 448                      327983 
   2427 fixaOrdem2[2,10,11]
-                               32220                       32710 
+                                  73                      327910 
   2428 fixaOrdem2[2,10,12]
-                                  14                       32741 
+                                  14                      327941 
   2429 fixaOrdem2[2,10,13]
-                                  73                       32788 
+                                 163                      327988 
   2430 fixaOrdem2[2,10,14]
-                                 293                       32757 
+                                 541                      327957 
   2431 fixaOrdem2[2,10,15]
-                                  85                       32736 
+                                 175                      327936 
   2432 fixaOrdem2[2,10,16]
-                               32310                       32740 
+                                 239                      327940 
   2433 fixaOrdem2[2,10,17]
-                                 149                       32705 
+                                 299                      327905 
   2434 fixaOrdem2[2,10,18]
-                                 244                       32768 
+                                 394                      327968 
   2435 fixaOrdem2[2,10,19]
-                               32370                       32768 
+                              327609                      327968 
   2436 fixaOrdem2[2,10,20]
-                                 276                       32783 
+                                 426                      327983 
   2437 fixaOrdem2[2,11,12]
-                                 594                       32741 
+                              327941                      327941 
   2438 fixaOrdem2[2,11,13]
-                                 653                       32788 
+                                  90                      327988 
   2439 fixaOrdem2[2,11,14]
-                                 873                       32757 
+                                 468                      327957 
   2440 fixaOrdem2[2,11,15]
-                                 665                       32736 
+                                 102                      327936 
   2441 fixaOrdem2[2,11,16]
-                                  90                       32740 
+                                 166                      327940 
   2442 fixaOrdem2[2,11,17]
-                                 729                       32705 
+                                 226                      327905 
   2443 fixaOrdem2[2,11,18]
-                                 824                       32768 
+                                 321                      327968 
   2444 fixaOrdem2[2,11,19]
-                                 150                       32768 
+                              327536                      327968 
   2445 fixaOrdem2[2,11,20]
-                                 856                       32783 
+                                 353                      327983 
   2446 fixaOrdem2[2,12,13]
-                                  59                       32788 
+                                 149                      327988 
   2447 fixaOrdem2[2,12,14]
-                                 279                       32757 
+                                 527                      327957 
   2448 fixaOrdem2[2,12,15]
-                                  71                       32736 
+                                 161                      327936 
   2449 fixaOrdem2[2,12,16]
-                               32296                       32740 
+                                 225                      327940 
   2450 fixaOrdem2[2,12,17]
-                                 135                       32705 
+                                 285                      327905 
   2451 fixaOrdem2[2,12,18]
-                                 230                       32768 
+                                 380                      327968 
   2452 fixaOrdem2[2,12,19]
-                               32356                       32768 
+                              327595                      327968 
   2453 fixaOrdem2[2,12,20]
-                                 262                       32783 
+                                 412                      327983 
   2454 fixaOrdem2[2,13,14]
-                                 220                       32757 
+                                 378                      327957 
   2455 fixaOrdem2[2,13,15]
-                                  12                       32736 
+                                  12                      327936 
   2456 fixaOrdem2[2,13,16]
-                               32237                       32740 
+                                  76                      327940 
   2457 fixaOrdem2[2,13,17]
-                                  76                       32705 
+                                 136                      327905 
   2458 fixaOrdem2[2,13,18]
-                                 171                       32768 
+                                 231                      327968 
   2459 fixaOrdem2[2,13,19]
-                               32297                       32768 
+                              327446                      327968 
   2460 fixaOrdem2[2,13,20]
-                                 203                       32783 
+                                 263                      327983 
   2461 fixaOrdem2[2,14,15]
-                               32592                       32736 
+                              327634                      327936 
   2462 fixaOrdem2[2,14,16]
-                               32017                       32740 
+                              327698                      327940 
   2463 fixaOrdem2[2,14,17]
-                               32656                       32705 
+                              327758                      327905 
   2464 fixaOrdem2[2,14,18]
-                               32751                       32768 
+                              327853                      327968 
   2465 fixaOrdem2[2,14,19]
-                               32077                       32768 
+                              327068                      327968 
   2466 fixaOrdem2[2,14,20]
-                               32783                       32783 
+                              327885                      327983 
   2467 fixaOrdem2[2,15,16]
-                               32225                       32740 
+                                  64                      327940 
   2468 fixaOrdem2[2,15,17]
-                                  64                       32705 
+                                 124                      327905 
   2469 fixaOrdem2[2,15,18]
-                                 159                       32768 
+                                 219                      327968 
   2470 fixaOrdem2[2,15,19]
-                               32285                       32768 
+                              327434                      327968 
   2471 fixaOrdem2[2,15,20]
-                                 191                       32783 
+                                 251                      327983 
   2472 fixaOrdem2[2,16,17]
-                                 639                       32705 
+                                  60                      327905 
   2473 fixaOrdem2[2,16,18]
-                                 734                       32768 
+                                 155                      327968 
   2474 fixaOrdem2[2,16,19]
-                                  60                       32768 
+                              327370                      327968 
   2475 fixaOrdem2[2,16,20]
-                                 766                       32783 
+                                 187                      327983 
   2476 fixaOrdem2[2,17,18]
-                                  95                       32768 
+                                  95                      327968 
   2477 fixaOrdem2[2,17,19]
-                               32221                       32768 
+                              327310                      327968 
   2478 fixaOrdem2[2,17,20]
-                                 127                       32783 
+                                 127                      327983 
   2479 fixaOrdem2[2,18,19]
-                               32126                       32768 
+                              327215                      327968 
   2480 fixaOrdem2[2,18,20]
-                                  32                       32783 
+                                  32                      327983 
   2481 fixaOrdem2[2,19,20]
-                                 706                       32783 
+                                 817                      327983 
   2482 fixaOrdem2[3,1,2]
-                               32686                       32742 
+                                  50                      327942 
   2483 fixaOrdem2[3,1,3]
-                                 719                       32708 
+                                 903                      327908 
   2484 fixaOrdem2[3,1,4]
-                                 152                       32711 
+                                 198                      327911 
   2485 fixaOrdem2[3,1,5]
-                               32744                       32744 
+                              327944                      327944 
   2486 fixaOrdem2[3,1,6]
-                                  50                       32788 
+                                 299                      327988 
   2487 fixaOrdem2[3,1,7]
-                                  62                       32710 
+                                 108                      327910 
   2488 fixaOrdem2[3,1,8]
-                                 811                       32712 
+                                 311                      327912 
   2489 fixaOrdem2[3,1,9]
-                                 241                       32735 
+                                 399                      327935 
   2490 fixaOrdem2[3,1,10]
-                                 306                       32791 
+                                 464                      327991 
   2491 fixaOrdem2[3,1,11]
-                               32458                       32772 
+                                 515                      327972 
   2492 fixaOrdem2[3,1,12]
-                                 315                       32758 
+                                 473                      327958 
   2493 fixaOrdem2[3,1,13]
-                                 389                       32709 
+                                 543                      327909 
   2494 fixaOrdem2[3,1,14]
-                                 651                       32732 
+                                 995                      327932 
   2495 fixaOrdem2[3,1,15]
-                                 480                       32766 
+                                 634                      327966 
   2496 fixaOrdem2[3,1,16]
-                               32535                       32735 
+                                 668                      327935 
   2497 fixaOrdem2[3,1,17]
-                                 514                       32720 
+                                 733                      327920 
   2498 fixaOrdem2[3,1,18]
-                                 594                       32747 
+                                 846                      327947 
   2499 fixaOrdem2[3,1,19]
-                               32600                       32714 
+                              327858                      327914 
   2500 fixaOrdem2[3,1,20]
-                                 647                       32796 
+                                 899                      327996 
   2501 fixaOrdem2[3,2,3]
-                                 833                       32708 
+                                 853                      327908 
   2502 fixaOrdem2[3,2,4]
-                                 266                       32711 
+                                 148                      327911 
   2503 fixaOrdem2[3,2,5]
-                                  58                       32744 
+                              327894                      327944 
   2504 fixaOrdem2[3,2,6]
-                                 164                       32788 
+                                 249                      327988 
   2505 fixaOrdem2[3,2,7]
-                                 176                       32710 
+                                  58                      327910 
   2506 fixaOrdem2[3,2,8]
-                                 925                       32712 
+                                 261                      327912 
   2507 fixaOrdem2[3,2,9]
-                                 355                       32735 
+                                 349                      327935 
   2508 fixaOrdem2[3,2,10]
-                                 420                       32791 
+                                 414                      327991 
   2509 fixaOrdem2[3,2,11]
-                               32572                       32772 
+                                 465                      327972 
   2510 fixaOrdem2[3,2,12]
-                                 429                       32758 
+                                 423                      327958 
   2511 fixaOrdem2[3,2,13]
-                                 503                       32709 
+                                 493                      327909 
   2512 fixaOrdem2[3,2,14]
-                                 765                       32732 
+                                 945                      327932 
   2513 fixaOrdem2[3,2,15]
-                                 594                       32766 
+                                 584                      327966 
   2514 fixaOrdem2[3,2,16]
-                               32649                       32735 
+                                 618                      327935 
   2515 fixaOrdem2[3,2,17]
-                                 628                       32720 
+                                 683                      327920 
   2516 fixaOrdem2[3,2,18]
-                                 708                       32747 
+                                 796                      327947 
   2517 fixaOrdem2[3,2,19]
-                               32714                       32714 
+                              327808                      327914 
   2518 fixaOrdem2[3,2,20]
-                                 761                       32796 
+                                 849                      327996 
   2519 fixaOrdem2[3,3,4]
-                               32233                       32711 
+                              327295                      327911 
   2520 fixaOrdem2[3,3,5]
-                               32025                       32744 
+                              327041                      327944 
   2521 fixaOrdem2[3,3,6]
-                               32131                       32788 
+                              327396                      327988 
   2522 fixaOrdem2[3,3,7]
-                               32143                       32710 
+                              327205                      327910 
   2523 fixaOrdem2[3,3,8]
-                                  92                       32712 
+                              327408                      327912 
   2524 fixaOrdem2[3,3,9]
-                               32322                       32735 
+                              327496                      327935 
   2525 fixaOrdem2[3,3,10]
-                               32387                       32791 
+                              327561                      327991 
   2526 fixaOrdem2[3,3,11]
-                               31739                       32772 
+                              327612                      327972 
   2527 fixaOrdem2[3,3,12]
-                               32396                       32758 
+                              327570                      327958 
   2528 fixaOrdem2[3,3,13]
-                               32470                       32709 
+                              327640                      327909 
   2529 fixaOrdem2[3,3,14]
-                               32732                       32732 
+                                  92                      327932 
   2530 fixaOrdem2[3,3,15]
-                               32561                       32766 
+                              327731                      327966 
   2531 fixaOrdem2[3,3,16]
-                               31816                       32735 
+                              327765                      327935 
   2532 fixaOrdem2[3,3,17]
-                               32595                       32720 
+                              327830                      327920 
   2533 fixaOrdem2[3,3,18]
-                               32675                       32747 
+                              327943                      327947 
   2534 fixaOrdem2[3,3,19]
-                               31881                       32714 
+                              326955                      327914 
   2535 fixaOrdem2[3,3,20]
-                               32728                       32796 
+                              327996                      327996 
   2536 fixaOrdem2[3,4,5]
-                               32592                       32744 
+                              327746                      327944 
   2537 fixaOrdem2[3,4,6]
-                               32698                       32788 
+                                 101                      327988 
   2538 fixaOrdem2[3,4,7]
-                               32710                       32710 
+                              327910                      327910 
   2539 fixaOrdem2[3,4,8]
-                                 659                       32712 
+                                 113                      327912 
   2540 fixaOrdem2[3,4,9]
-                                  89                       32735 
+                                 201                      327935 
   2541 fixaOrdem2[3,4,10]
-                                 154                       32791 
+                                 266                      327991 
   2542 fixaOrdem2[3,4,11]
-                               32306                       32772 
+                                 317                      327972 
   2543 fixaOrdem2[3,4,12]
-                                 163                       32758 
+                                 275                      327958 
   2544 fixaOrdem2[3,4,13]
-                                 237                       32709 
+                                 345                      327909 
   2545 fixaOrdem2[3,4,14]
-                                 499                       32732 
+                                 797                      327932 
   2546 fixaOrdem2[3,4,15]
-                                 328                       32766 
+                                 436                      327966 
   2547 fixaOrdem2[3,4,16]
-                               32383                       32735 
+                                 470                      327935 
   2548 fixaOrdem2[3,4,17]
-                                 362                       32720 
+                                 535                      327920 
   2549 fixaOrdem2[3,4,18]
-                                 442                       32747 
+                                 648                      327947 
   2550 fixaOrdem2[3,4,19]
-                               32448                       32714 
+                              327660                      327914 
   2551 fixaOrdem2[3,4,20]
-                                 495                       32796 
+                                 701                      327996 
   2552 fixaOrdem2[3,5,6]
-                                 106                       32788 
+                                 355                      327988 
   2553 fixaOrdem2[3,5,7]
-                                 118                       32710 
+                                 164                      327910 
   2554 fixaOrdem2[3,5,8]
-                                 867                       32712 
+                                 367                      327912 
   2555 fixaOrdem2[3,5,9]
-                                 297                       32735 
+                                 455                      327935 
   2556 fixaOrdem2[3,5,10]
-                                 362                       32791 
+                                 520                      327991 
   2557 fixaOrdem2[3,5,11]
-                               32514                       32772 
+                                 571                      327972 
   2558 fixaOrdem2[3,5,12]
-                                 371                       32758 
+                                 529                      327958 
   2559 fixaOrdem2[3,5,13]
-                                 445                       32709 
+                                 599                      327909 
   2560 fixaOrdem2[3,5,14]
-                                 707                       32732 
+                                1051                      327932 
   2561 fixaOrdem2[3,5,15]
-                                 536                       32766 
+                                 690                      327966 
   2562 fixaOrdem2[3,5,16]
-                               32591                       32735 
+                                 724                      327935 
   2563 fixaOrdem2[3,5,17]
-                                 570                       32720 
+                                 789                      327920 
   2564 fixaOrdem2[3,5,18]
-                                 650                       32747 
+                                 902                      327947 
   2565 fixaOrdem2[3,5,19]
-                               32656                       32714 
+                              327914                      327914 
   2566 fixaOrdem2[3,5,20]
-                                 703                       32796 
+                                 955                      327996 
   2567 fixaOrdem2[3,6,7]
-                                  12                       32710 
+                              327809                      327910 
   2568 fixaOrdem2[3,6,8]
-                                 761                       32712 
+                                  12                      327912 
   2569 fixaOrdem2[3,6,9]
-                                 191                       32735 
+                                 100                      327935 
   2570 fixaOrdem2[3,6,10]
-                                 256                       32791 
+                                 165                      327991 
   2571 fixaOrdem2[3,6,11]
-                               32408                       32772 
+                                 216                      327972 
   2572 fixaOrdem2[3,6,12]
-                                 265                       32758 
+                                 174                      327958 
   2573 fixaOrdem2[3,6,13]
-                                 339                       32709 
+                                 244                      327909 
   2574 fixaOrdem2[3,6,14]
-                                 601                       32732 
+                                 696                      327932 
   2575 fixaOrdem2[3,6,15]
-                                 430                       32766 
+                                 335                      327966 
   2576 fixaOrdem2[3,6,16]
-                               32485                       32735 
+                                 369                      327935 
   2577 fixaOrdem2[3,6,17]
-                                 464                       32720 
+                                 434                      327920 
   2578 fixaOrdem2[3,6,18]
-                                 544                       32747 
+                                 547                      327947 
   2579 fixaOrdem2[3,6,19]
-                               32550                       32714 
+                              327559                      327914 
   2580 fixaOrdem2[3,6,20]
-                                 597                       32796 
+                                 600                      327996 
   2581 fixaOrdem2[3,7,8]
-                                 749                       32712 
+                                 203                      327912 
   2582 fixaOrdem2[3,7,9]
-                                 179                       32735 
+                                 291                      327935 
   2583 fixaOrdem2[3,7,10]
-                                 244                       32791 
+                                 356                      327991 
   2584 fixaOrdem2[3,7,11]
-                               32396                       32772 
+                                 407                      327972 
   2585 fixaOrdem2[3,7,12]
-                                 253                       32758 
+                                 365                      327958 
   2586 fixaOrdem2[3,7,13]
-                                 327                       32709 
+                                 435                      327909 
   2587 fixaOrdem2[3,7,14]
-                                 589                       32732 
+                                 887                      327932 
   2588 fixaOrdem2[3,7,15]
-                                 418                       32766 
+                                 526                      327966 
   2589 fixaOrdem2[3,7,16]
-                               32473                       32735 
+                                 560                      327935 
   2590 fixaOrdem2[3,7,17]
-                                 452                       32720 
+                                 625                      327920 
   2591 fixaOrdem2[3,7,18]
-                                 532                       32747 
+                                 738                      327947 
   2592 fixaOrdem2[3,7,19]
-                               32538                       32714 
+                              327750                      327914 
   2593 fixaOrdem2[3,7,20]
-                                 585                       32796 
+                                 791                      327996 
   2594 fixaOrdem2[3,8,9]
-                               32230                       32735 
+                                  88                      327935 
   2595 fixaOrdem2[3,8,10]
-                               32295                       32791 
+                                 153                      327991 
   2596 fixaOrdem2[3,8,11]
-                               31647                       32772 
+                                 204                      327972 
   2597 fixaOrdem2[3,8,12]
-                               32304                       32758 
+                                 162                      327958 
   2598 fixaOrdem2[3,8,13]
-                               32378                       32709 
+                                 232                      327909 
   2599 fixaOrdem2[3,8,14]
-                               32640                       32732 
+                                 684                      327932 
   2600 fixaOrdem2[3,8,15]
-                               32469                       32766 
+                                 323                      327966 
   2601 fixaOrdem2[3,8,16]
-                               31724                       32735 
+                                 357                      327935 
   2602 fixaOrdem2[3,8,17]
-                               32503                       32720 
+                                 422                      327920 
   2603 fixaOrdem2[3,8,18]
-                               32583                       32747 
+                                 535                      327947 
   2604 fixaOrdem2[3,8,19]
-                               31789                       32714 
+                              327547                      327914 
   2605 fixaOrdem2[3,8,20]
-                               32636                       32796 
+                                 588                      327996 
   2606 fixaOrdem2[3,9,10]
-                                  65                       32791 
+                                  65                      327991 
   2607 fixaOrdem2[3,9,11]
-                               32217                       32772 
+                                 116                      327972 
   2608 fixaOrdem2[3,9,12]
-                                  74                       32758 
+                                  74                      327958 
   2609 fixaOrdem2[3,9,13]
-                                 148                       32709 
+                                 144                      327909 
   2610 fixaOrdem2[3,9,14]
-                                 410                       32732 
+                                 596                      327932 
   2611 fixaOrdem2[3,9,15]
-                                 239                       32766 
+                                 235                      327966 
   2612 fixaOrdem2[3,9,16]
-                               32294                       32735 
+                                 269                      327935 
   2613 fixaOrdem2[3,9,17]
-                                 273                       32720 
+                                 334                      327920 
   2614 fixaOrdem2[3,9,18]
-                                 353                       32747 
+                                 447                      327947 
   2615 fixaOrdem2[3,9,19]
-                               32359                       32714 
+                              327459                      327914 
   2616 fixaOrdem2[3,9,20]
-                                 406                       32796 
+                                 500                      327996 
   2617 fixaOrdem2[3,10,11]
-                               32152                       32772 
+                                  51                      327972 
   2618 fixaOrdem2[3,10,12]
-                                   9                       32758 
+                                   9                      327958 
   2619 fixaOrdem2[3,10,13]
-                                  83                       32709 
+                                  79                      327909 
   2620 fixaOrdem2[3,10,14]
-                                 345                       32732 
+                                 531                      327932 
   2621 fixaOrdem2[3,10,15]
-                                 174                       32766 
+                                 170                      327966 
   2622 fixaOrdem2[3,10,16]
-                               32229                       32735 
+                                 204                      327935 
   2623 fixaOrdem2[3,10,17]
-                                 208                       32720 
+                                 269                      327920 
   2624 fixaOrdem2[3,10,18]
-                                 288                       32747 
+                                 382                      327947 
   2625 fixaOrdem2[3,10,19]
-                               32294                       32714 
+                              327394                      327914 
   2626 fixaOrdem2[3,10,20]
-                                 341                       32796 
+                                 435                      327996 
   2627 fixaOrdem2[3,11,12]
-                                 657                       32758 
+                              327958                      327958 
   2628 fixaOrdem2[3,11,13]
-                                 731                       32709 
+                                  28                      327909 
   2629 fixaOrdem2[3,11,14]
-                                 993                       32732 
+                                 480                      327932 
   2630 fixaOrdem2[3,11,15]
-                                 822                       32766 
+                                 119                      327966 
   2631 fixaOrdem2[3,11,16]
-                                  77                       32735 
+                                 153                      327935 
   2632 fixaOrdem2[3,11,17]
-                                 856                       32720 
+                                 218                      327920 
   2633 fixaOrdem2[3,11,18]
-                                 936                       32747 
+                                 331                      327947 
   2634 fixaOrdem2[3,11,19]
-                                 142                       32714 
+                              327343                      327914 
   2635 fixaOrdem2[3,11,20]
-                                 989                       32796 
+                                 384                      327996 
   2636 fixaOrdem2[3,12,13]
-                                  74                       32709 
+                                  70                      327909 
   2637 fixaOrdem2[3,12,14]
-                                 336                       32732 
+                                 522                      327932 
   2638 fixaOrdem2[3,12,15]
-                                 165                       32766 
+                                 161                      327966 
   2639 fixaOrdem2[3,12,16]
-                               32220                       32735 
+                                 195                      327935 
   2640 fixaOrdem2[3,12,17]
-                                 199                       32720 
+                                 260                      327920 
   2641 fixaOrdem2[3,12,18]
-                                 279                       32747 
+                                 373                      327947 
   2642 fixaOrdem2[3,12,19]
-                               32285                       32714 
+                              327385                      327914 
   2643 fixaOrdem2[3,12,20]
-                                 332                       32796 
+                                 426                      327996 
   2644 fixaOrdem2[3,13,14]
-                                 262                       32732 
+                                 452                      327932 
   2645 fixaOrdem2[3,13,15]
-                                  91                       32766 
+                                  91                      327966 
   2646 fixaOrdem2[3,13,16]
-                               32146                       32735 
+                                 125                      327935 
   2647 fixaOrdem2[3,13,17]
-                                 125                       32720 
+                                 190                      327920 
   2648 fixaOrdem2[3,13,18]
-                                 205                       32747 
+                                 303                      327947 
   2649 fixaOrdem2[3,13,19]
-                               32211                       32714 
+                              327315                      327914 
   2650 fixaOrdem2[3,13,20]
-                                 258                       32796 
+                                 356                      327996 
   2651 fixaOrdem2[3,14,15]
-                               32629                       32766 
+                              327639                      327966 
   2652 fixaOrdem2[3,14,16]
-                               31884                       32735 
+                              327673                      327935 
   2653 fixaOrdem2[3,14,17]
-                               32663                       32720 
+                              327738                      327920 
   2654 fixaOrdem2[3,14,18]
-                               32743                       32747 
+                              327851                      327947 
   2655 fixaOrdem2[3,14,19]
-                               31949                       32714 
+                              326863                      327914 
   2656 fixaOrdem2[3,14,20]
-                               32796                       32796 
+                              327904                      327996 
   2657 fixaOrdem2[3,15,16]
-                               32055                       32735 
+                                  34                      327935 
   2658 fixaOrdem2[3,15,17]
-                                  34                       32720 
+                                  99                      327920 
   2659 fixaOrdem2[3,15,18]
-                                 114                       32747 
+                                 212                      327947 
   2660 fixaOrdem2[3,15,19]
-                               32120                       32714 
+                              327224                      327914 
   2661 fixaOrdem2[3,15,20]
-                                 167                       32796 
+                                 265                      327996 
   2662 fixaOrdem2[3,16,17]
-                                 779                       32720 
+                                  65                      327920 
   2663 fixaOrdem2[3,16,18]
-                                 859                       32747 
+                                 178                      327947 
   2664 fixaOrdem2[3,16,19]
-                                  65                       32714 
+                              327190                      327914 
   2665 fixaOrdem2[3,16,20]
-                                 912                       32796 
+                                 231                      327996 
   2666 fixaOrdem2[3,17,18]
-                                  80                       32747 
+                                 113                      327947 
   2667 fixaOrdem2[3,17,19]
-                               32086                       32714 
+                              327125                      327914 
   2668 fixaOrdem2[3,17,20]
-                                 133                       32796 
+                                 166                      327996 
   2669 fixaOrdem2[3,18,19]
-                               32006                       32714 
+                              327012                      327914 
   2670 fixaOrdem2[3,18,20]
-                                  53                       32796 
+                                  53                      327996 
   2671 fixaOrdem2[3,19,20]
-                                 847                       32796 
+                                1041                      327996 
   2672 fixaOrdem2[4,1,2]
-                               32694                       32756 
+                                  90                      327956 
   2673 fixaOrdem2[4,1,3]
-                                 740                       32703 
+                                 979                      327903 
   2674 fixaOrdem2[4,1,4]
-                                 235                       32795 
+                                 148                      327995 
   2675 fixaOrdem2[4,1,5]
-                               32782                       32782 
+                              327982                      327982 
   2676 fixaOrdem2[4,1,6]
-                                  79                       32723 
+                                 191                      327923 
   2677 fixaOrdem2[4,1,7]
-                                 156                       32786 
+                                 134                      327986 
   2678 fixaOrdem2[4,1,8]
-                                 837                       32703 
+                                 268                      327903 
   2679 fixaOrdem2[4,1,9]
-                                 240                       32718 
+                                 365                      327918 
   2680 fixaOrdem2[4,1,10]
-                                 322                       32783 
+                                 447                      327983 
   2681 fixaOrdem2[4,1,11]
-                               32502                       32721 
+                                 563                      327921 
   2682 fixaOrdem2[4,1,12]
-                                 339                       32701 
+                                 464                      327901 
   2683 fixaOrdem2[4,1,13]
-                                 438                       32726 
+                                 642                      327926 
   2684 fixaOrdem2[4,1,14]
-                                 713                       32773 
+                                1076                      327973 
   2685 fixaOrdem2[4,1,15]
-                                 512                       32778 
+                                 716                      327978 
   2686 fixaOrdem2[4,1,16]
-                               32581                       32723 
+                                 738                      327923 
   2687 fixaOrdem2[4,1,17]
-                                 534                       32717 
+                                 815                      327917 
   2688 fixaOrdem2[4,1,18]
-                                 632                       32729 
+                                 898                      327929 
   2689 fixaOrdem2[4,1,19]
-                               32658                       32764 
+                              327946                      327964 
   2690 fixaOrdem2[4,1,20]
-                                 703                       32790 
+                                 969                      327990 
   2691 fixaOrdem2[4,2,3]
-                                 846                       32703 
+                                 889                      327903 
   2692 fixaOrdem2[4,2,4]
-                                 341                       32795 
+                                  58                      327995 
   2693 fixaOrdem2[4,2,5]
-                                  88                       32782 
+                              327892                      327982 
   2694 fixaOrdem2[4,2,6]
-                                 185                       32723 
+                                 101                      327923 
   2695 fixaOrdem2[4,2,7]
-                                 262                       32786 
+                                  44                      327986 
   2696 fixaOrdem2[4,2,8]
-                                 943                       32703 
+                                 178                      327903 
   2697 fixaOrdem2[4,2,9]
-                                 346                       32718 
+                                 275                      327918 
   2698 fixaOrdem2[4,2,10]
-                                 428                       32783 
+                                 357                      327983 
   2699 fixaOrdem2[4,2,11]
-                               32608                       32721 
+                                 473                      327921 
   2700 fixaOrdem2[4,2,12]
-                                 445                       32701 
+                                 374                      327901 
   2701 fixaOrdem2[4,2,13]
-                                 544                       32726 
+                                 552                      327926 
   2702 fixaOrdem2[4,2,14]
-                                 819                       32773 
+                                 986                      327973 
   2703 fixaOrdem2[4,2,15]
-                                 618                       32778 
+                                 626                      327978 
   2704 fixaOrdem2[4,2,16]
-                               32687                       32723 
+                                 648                      327923 
   2705 fixaOrdem2[4,2,17]
-                                 640                       32717 
+                                 725                      327917 
   2706 fixaOrdem2[4,2,18]
-                                 738                       32729 
+                                 808                      327929 
   2707 fixaOrdem2[4,2,19]
-                               32764                       32764 
+                              327856                      327964 
   2708 fixaOrdem2[4,2,20]
-                                 809                       32790 
+                                 879                      327990 
   2709 fixaOrdem2[4,3,4]
-                               32295                       32795 
+                              327169                      327995 
   2710 fixaOrdem2[4,3,5]
-                               32042                       32782 
+                              327003                      327982 
   2711 fixaOrdem2[4,3,6]
-                               32139                       32723 
+                              327212                      327923 
   2712 fixaOrdem2[4,3,7]
-                               32216                       32786 
+                              327155                      327986 
   2713 fixaOrdem2[4,3,8]
-                                  97                       32703 
+                              327289                      327903 
   2714 fixaOrdem2[4,3,9]
-                               32300                       32718 
+                              327386                      327918 
   2715 fixaOrdem2[4,3,10]
-                               32382                       32783 
+                              327468                      327983 
   2716 fixaOrdem2[4,3,11]
-                               31762                       32721 
+                              327584                      327921 
   2717 fixaOrdem2[4,3,12]
-                               32399                       32701 
+                              327485                      327901 
   2718 fixaOrdem2[4,3,13]
-                               32498                       32726 
+                              327663                      327926 
   2719 fixaOrdem2[4,3,14]
-                               32773                       32773 
+                                  97                      327973 
   2720 fixaOrdem2[4,3,15]
-                               32572                       32778 
+                              327737                      327978 
   2721 fixaOrdem2[4,3,16]
-                               31841                       32723 
+                              327759                      327923 
   2722 fixaOrdem2[4,3,17]
-                               32594                       32717 
+                              327836                      327917 
   2723 fixaOrdem2[4,3,18]
-                               32692                       32729 
+                              327919                      327929 
   2724 fixaOrdem2[4,3,19]
-                               31918                       32764 
+                              326967                      327964 
   2725 fixaOrdem2[4,3,20]
-                               32763                       32790 
+                              327990                      327990 
   2726 fixaOrdem2[4,4,5]
-                               32547                       32782 
+                              327834                      327982 
   2727 fixaOrdem2[4,4,6]
-                               32644                       32723 
+                                  43                      327923 
   2728 fixaOrdem2[4,4,7]
-                               32721                       32786 
+                              327986                      327986 
   2729 fixaOrdem2[4,4,8]
-                                 602                       32703 
+                                 120                      327903 
   2730 fixaOrdem2[4,4,9]
-                                   5                       32718 
+                                 217                      327918 
   2731 fixaOrdem2[4,4,10]
-                                  87                       32783 
+                                 299                      327983 
   2732 fixaOrdem2[4,4,11]
-                               32267                       32721 
+                                 415                      327921 
   2733 fixaOrdem2[4,4,12]
-                                 104                       32701 
+                                 316                      327901 
   2734 fixaOrdem2[4,4,13]
-                                 203                       32726 
+                                 494                      327926 
   2735 fixaOrdem2[4,4,14]
-                                 478                       32773 
+                                 928                      327973 
   2736 fixaOrdem2[4,4,15]
-                                 277                       32778 
+                                 568                      327978 
   2737 fixaOrdem2[4,4,16]
-                               32346                       32723 
+                                 590                      327923 
   2738 fixaOrdem2[4,4,17]
-                                 299                       32717 
+                                 667                      327917 
   2739 fixaOrdem2[4,4,18]
-                                 397                       32729 
+                                 750                      327929 
   2740 fixaOrdem2[4,4,19]
-                               32423                       32764 
+                              327798                      327964 
   2741 fixaOrdem2[4,4,20]
-                                 468                       32790 
+                                 821                      327990 
   2742 fixaOrdem2[4,5,6]
-                                  97                       32723 
+                                 209                      327923 
   2743 fixaOrdem2[4,5,7]
-                                 174                       32786 
+                                 152                      327986 
   2744 fixaOrdem2[4,5,8]
-                                 855                       32703 
+                                 286                      327903 
   2745 fixaOrdem2[4,5,9]
-                                 258                       32718 
+                                 383                      327918 
   2746 fixaOrdem2[4,5,10]
-                                 340                       32783 
+                                 465                      327983 
   2747 fixaOrdem2[4,5,11]
-                               32520                       32721 
+                                 581                      327921 
   2748 fixaOrdem2[4,5,12]
-                                 357                       32701 
+                                 482                      327901 
   2749 fixaOrdem2[4,5,13]
-                                 456                       32726 
+                                 660                      327926 
   2750 fixaOrdem2[4,5,14]
-                                 731                       32773 
+                                1094                      327973 
   2751 fixaOrdem2[4,5,15]
-                                 530                       32778 
+                                 734                      327978 
   2752 fixaOrdem2[4,5,16]
-                               32599                       32723 
+                                 756                      327923 
   2753 fixaOrdem2[4,5,17]
-                                 552                       32717 
+                                 833                      327917 
   2754 fixaOrdem2[4,5,18]
-                                 650                       32729 
+                                 916                      327929 
   2755 fixaOrdem2[4,5,19]
-                               32676                       32764 
+                              327964                      327964 
   2756 fixaOrdem2[4,5,20]
-                                 721                       32790 
+                                 987                      327990 
   2757 fixaOrdem2[4,6,7]
-                                  77                       32786 
+                              327943                      327986 
   2758 fixaOrdem2[4,6,8]
-                                 758                       32703 
+                                  77                      327903 
   2759 fixaOrdem2[4,6,9]
-                                 161                       32718 
+                                 174                      327918 
   2760 fixaOrdem2[4,6,10]
-                                 243                       32783 
+                                 256                      327983 
   2761 fixaOrdem2[4,6,11]
-                               32423                       32721 
+                                 372                      327921 
   2762 fixaOrdem2[4,6,12]
-                                 260                       32701 
+                                 273                      327901 
   2763 fixaOrdem2[4,6,13]
-                                 359                       32726 
+                                 451                      327926 
   2764 fixaOrdem2[4,6,14]
-                                 634                       32773 
+                                 885                      327973 
   2765 fixaOrdem2[4,6,15]
-                                 433                       32778 
+                                 525                      327978 
   2766 fixaOrdem2[4,6,16]
-                               32502                       32723 
+                                 547                      327923 
   2767 fixaOrdem2[4,6,17]
-                                 455                       32717 
+                                 624                      327917 
   2768 fixaOrdem2[4,6,18]
-                                 553                       32729 
+                                 707                      327929 
   2769 fixaOrdem2[4,6,19]
-                               32579                       32764 
+                              327755                      327964 
   2770 fixaOrdem2[4,6,20]
-                                 624                       32790 
+                                 778                      327990 
   2771 fixaOrdem2[4,7,8]
-                                 681                       32703 
+                                 134                      327903 
   2772 fixaOrdem2[4,7,9]
-                                  84                       32718 
+                                 231                      327918 
   2773 fixaOrdem2[4,7,10]
-                                 166                       32783 
+                                 313                      327983 
   2774 fixaOrdem2[4,7,11]
-                               32346                       32721 
+                                 429                      327921 
   2775 fixaOrdem2[4,7,12]
-                                 183                       32701 
+                                 330                      327901 
   2776 fixaOrdem2[4,7,13]
-                                 282                       32726 
+                                 508                      327926 
   2777 fixaOrdem2[4,7,14]
-                                 557                       32773 
+                                 942                      327973 
   2778 fixaOrdem2[4,7,15]
-                                 356                       32778 
+                                 582                      327978 
   2779 fixaOrdem2[4,7,16]
-                               32425                       32723 
+                                 604                      327923 
   2780 fixaOrdem2[4,7,17]
-                                 378                       32717 
+                                 681                      327917 
   2781 fixaOrdem2[4,7,18]
-                                 476                       32729 
+                                 764                      327929 
   2782 fixaOrdem2[4,7,19]
-                               32502                       32764 
+                              327812                      327964 
   2783 fixaOrdem2[4,7,20]
-                                 547                       32790 
+                                 835                      327990 
   2784 fixaOrdem2[4,8,9]
-                               32203                       32718 
+                                  97                      327918 
   2785 fixaOrdem2[4,8,10]
-                               32285                       32783 
+                                 179                      327983 
   2786 fixaOrdem2[4,8,11]
-                               31665                       32721 
+                                 295                      327921 
   2787 fixaOrdem2[4,8,12]
-                               32302                       32701 
+                                 196                      327901 
   2788 fixaOrdem2[4,8,13]
-                               32401                       32726 
+                                 374                      327926 
   2789 fixaOrdem2[4,8,14]
-                               32676                       32773 
+                                 808                      327973 
   2790 fixaOrdem2[4,8,15]
-                               32475                       32778 
+                                 448                      327978 
   2791 fixaOrdem2[4,8,16]
-                               31744                       32723 
+                                 470                      327923 
   2792 fixaOrdem2[4,8,17]
-                               32497                       32717 
+                                 547                      327917 
   2793 fixaOrdem2[4,8,18]
-                               32595                       32729 
+                                 630                      327929 
   2794 fixaOrdem2[4,8,19]
-                               31821                       32764 
+                              327678                      327964 
   2795 fixaOrdem2[4,8,20]
-                               32666                       32790 
+                                 701                      327990 
   2796 fixaOrdem2[4,9,10]
-                                  82                       32783 
+                                  82                      327983 
   2797 fixaOrdem2[4,9,11]
-                               32262                       32721 
+                                 198                      327921 
   2798 fixaOrdem2[4,9,12]
-                                  99                       32701 
+                                  99                      327901 
   2799 fixaOrdem2[4,9,13]
-                                 198                       32726 
+                                 277                      327926 
   2800 fixaOrdem2[4,9,14]
-                                 473                       32773 
+                                 711                      327973 
   2801 fixaOrdem2[4,9,15]
-                                 272                       32778 
+                                 351                      327978 
   2802 fixaOrdem2[4,9,16]
-                               32341                       32723 
+                                 373                      327923 
   2803 fixaOrdem2[4,9,17]
-                                 294                       32717 
+                                 450                      327917 
   2804 fixaOrdem2[4,9,18]
-                                 392                       32729 
+                                 533                      327929 
   2805 fixaOrdem2[4,9,19]
-                               32418                       32764 
+                              327581                      327964 
   2806 fixaOrdem2[4,9,20]
-                                 463                       32790 
+                                 604                      327990 
   2807 fixaOrdem2[4,10,11]
-                               32180                       32721 
+                                 116                      327921 
   2808 fixaOrdem2[4,10,12]
-                                  17                       32701 
+                                  17                      327901 
   2809 fixaOrdem2[4,10,13]
-                                 116                       32726 
+                                 195                      327926 
   2810 fixaOrdem2[4,10,14]
-                                 391                       32773 
+                                 629                      327973 
   2811 fixaOrdem2[4,10,15]
-                                 190                       32778 
+                                 269                      327978 
   2812 fixaOrdem2[4,10,16]
-                               32259                       32723 
+                                 291                      327923 
   2813 fixaOrdem2[4,10,17]
-                                 212                       32717 
+                                 368                      327917 
   2814 fixaOrdem2[4,10,18]
-                                 310                       32729 
+                                 451                      327929 
   2815 fixaOrdem2[4,10,19]
-                               32336                       32764 
+                              327499                      327964 
   2816 fixaOrdem2[4,10,20]
-                                 381                       32790 
+                                 522                      327990 
   2817 fixaOrdem2[4,11,12]
-                                 637                       32701 
+                              327901                      327901 
   2818 fixaOrdem2[4,11,13]
-                                 736                       32726 
+                                  79                      327926 
   2819 fixaOrdem2[4,11,14]
-                                1011                       32773 
+                                 513                      327973 
   2820 fixaOrdem2[4,11,15]
-                                 810                       32778 
+                                 153                      327978 
   2821 fixaOrdem2[4,11,16]
-                                  79                       32723 
+                                 175                      327923 
   2822 fixaOrdem2[4,11,17]
-                                 832                       32717 
+                                 252                      327917 
   2823 fixaOrdem2[4,11,18]
-                                 930                       32729 
+                                 335                      327929 
   2824 fixaOrdem2[4,11,19]
-                                 156                       32764 
+                              327383                      327964 
   2825 fixaOrdem2[4,11,20]
-                                1001                       32790 
+                                 406                      327990 
   2826 fixaOrdem2[4,12,13]
-                                  99                       32726 
+                                 178                      327926 
   2827 fixaOrdem2[4,12,14]
-                                 374                       32773 
+                                 612                      327973 
   2828 fixaOrdem2[4,12,15]
-                                 173                       32778 
+                                 252                      327978 
   2829 fixaOrdem2[4,12,16]
-                               32242                       32723 
+                                 274                      327923 
   2830 fixaOrdem2[4,12,17]
-                                 195                       32717 
+                                 351                      327917 
   2831 fixaOrdem2[4,12,18]
-                                 293                       32729 
+                                 434                      327929 
   2832 fixaOrdem2[4,12,19]
-                               32319                       32764 
+                              327482                      327964 
   2833 fixaOrdem2[4,12,20]
-                                 364                       32790 
+                                 505                      327990 
   2834 fixaOrdem2[4,13,14]
-                                 275                       32773 
+                                 434                      327973 
   2835 fixaOrdem2[4,13,15]
-                                  74                       32778 
+                                  74                      327978 
   2836 fixaOrdem2[4,13,16]
-                               32143                       32723 
+                                  96                      327923 
   2837 fixaOrdem2[4,13,17]
-                                  96                       32717 
+                                 173                      327917 
   2838 fixaOrdem2[4,13,18]
-                                 194                       32729 
+                                 256                      327929 
   2839 fixaOrdem2[4,13,19]
-                               32220                       32764 
+                              327304                      327964 
   2840 fixaOrdem2[4,13,20]
-                                 265                       32790 
+                                 327                      327990 
   2841 fixaOrdem2[4,14,15]
-                               32599                       32778 
+                              327640                      327978 
   2842 fixaOrdem2[4,14,16]
-                               31868                       32723 
+                              327662                      327923 
   2843 fixaOrdem2[4,14,17]
-                               32621                       32717 
+                              327739                      327917 
   2844 fixaOrdem2[4,14,18]
-                               32719                       32729 
+                              327822                      327929 
   2845 fixaOrdem2[4,14,19]
-                               31945                       32764 
+                              326870                      327964 
   2846 fixaOrdem2[4,14,20]
-                               32790                       32790 
+                              327893                      327990 
   2847 fixaOrdem2[4,15,16]
-                               32069                       32723 
+                                  22                      327923 
   2848 fixaOrdem2[4,15,17]
-                                  22                       32717 
+                                  99                      327917 
   2849 fixaOrdem2[4,15,18]
-                                 120                       32729 
+                                 182                      327929 
   2850 fixaOrdem2[4,15,19]
-                               32146                       32764 
+                              327230                      327964 
   2851 fixaOrdem2[4,15,20]
-                                 191                       32790 
+                                 253                      327990 
   2852 fixaOrdem2[4,16,17]
-                                 753                       32717 
+                                  77                      327917 
   2853 fixaOrdem2[4,16,18]
-                                 851                       32729 
+                                 160                      327929 
   2854 fixaOrdem2[4,16,19]
-                                  77                       32764 
+                              327208                      327964 
   2855 fixaOrdem2[4,16,20]
-                                 922                       32790 
+                                 231                      327990 
   2856 fixaOrdem2[4,17,18]
-                                  98                       32729 
+                                  83                      327929 
   2857 fixaOrdem2[4,17,19]
-                               32124                       32764 
+                              327131                      327964 
   2858 fixaOrdem2[4,17,20]
-                                 169                       32790 
+                                 154                      327990 
   2859 fixaOrdem2[4,18,19]
-                               32026                       32764 
+                              327048                      327964 
   2860 fixaOrdem2[4,18,20]
-                                  71                       32790 
+                                  71                      327990 
   2861 fixaOrdem2[4,19,20]
-                                 845                       32790 
+                                1023                      327990 
   2862 fixaOrdem2[5,1,2]
-                               32658                       32742 
+                                  60                      327942 
   2863 fixaOrdem2[5,1,3]
-                                 708                       32708 
+                                 947                      327908 
   2864 fixaOrdem2[5,1,4]
-                                 215                       32798 
+                                 194                      327998 
   2865 fixaOrdem2[5,1,5]
-                               32731                       32731 
+                              327931                      327931 
   2866 fixaOrdem2[5,1,6]
-                                  91                       32752 
+                                 196                      327952 
   2867 fixaOrdem2[5,1,7]
-                                 139                       32724 
+                                 118                      327924 
   2868 fixaOrdem2[5,1,8]
-                                 813                       32716 
+                                 244                      327916 
   2869 fixaOrdem2[5,1,9]
-                                 217                       32717 
+                                 328                      327917 
   2870 fixaOrdem2[5,1,10]
-                                 300                       32748 
+                                 430                      327948 
   2871 fixaOrdem2[5,1,11]
-                               32468                       32747 
+                                 565                      327947 
   2872 fixaOrdem2[5,1,12]
-                                 352                       32758 
+                                 482                      327958 
   2873 fixaOrdem2[5,1,13]
-                                 475                       32792 
+                                 660                      327992 
   2874 fixaOrdem2[5,1,14]
-                                 674                       32766 
+                                1102                      327966 
   2875 fixaOrdem2[5,1,15]
-                                 484                       32746 
+                                 668                      327946 
   2876 fixaOrdem2[5,1,16]
-                               32624                       32783 
+                                 722                      327983 
   2877 fixaOrdem2[5,1,17]
-                                 538                       32754 
+                                 739                      327954 
   2878 fixaOrdem2[5,1,18]
-                                 604                       32755 
+                                 785                      327955 
   2879 fixaOrdem2[5,1,19]
-                               32641                       32783 
+                              327914                      327983 
   2880 fixaOrdem2[5,1,20]
-                                 649                       32775 
+                                 922                      327975 
   2881 fixaOrdem2[5,2,3]
-                                 850                       32708 
+                                 887                      327908 
   2882 fixaOrdem2[5,2,4]
-                                 357                       32798 
+                                 134                      327998 
   2883 fixaOrdem2[5,2,5]
-                                  73                       32731 
+                              327871                      327931 
   2884 fixaOrdem2[5,2,6]
-                                 233                       32752 
+                                 136                      327952 
   2885 fixaOrdem2[5,2,7]
-                                 281                       32724 
+                                  58                      327924 
   2886 fixaOrdem2[5,2,8]
-                                 955                       32716 
+                                 184                      327916 
   2887 fixaOrdem2[5,2,9]
-                                 359                       32717 
+                                 268                      327917 
   2888 fixaOrdem2[5,2,10]
-                                 442                       32748 
+                                 370                      327948 
   2889 fixaOrdem2[5,2,11]
-                               32610                       32747 
+                                 505                      327947 
   2890 fixaOrdem2[5,2,12]
-                                 494                       32758 
+                                 422                      327958 
   2891 fixaOrdem2[5,2,13]
-                                 617                       32792 
+                                 600                      327992 
   2892 fixaOrdem2[5,2,14]
-                                 816                       32766 
+                                1042                      327966 
   2893 fixaOrdem2[5,2,15]
-                                 626                       32746 
+                                 608                      327946 
   2894 fixaOrdem2[5,2,16]
-                               32766                       32783 
+                                 662                      327983 
   2895 fixaOrdem2[5,2,17]
-                                 680                       32754 
+                                 679                      327954 
   2896 fixaOrdem2[5,2,18]
-                                 746                       32755 
+                                 725                      327955 
   2897 fixaOrdem2[5,2,19]
-                               32783                       32783 
+                              327854                      327983 
   2898 fixaOrdem2[5,2,20]
-                                 791                       32775 
+                                 862                      327975 
   2899 fixaOrdem2[5,3,4]
-                               32307                       32798 
+                              327247                      327998 
   2900 fixaOrdem2[5,3,5]
-                               32023                       32731 
+                              326984                      327931 
   2901 fixaOrdem2[5,3,6]
-                               32183                       32752 
+                              327249                      327952 
   2902 fixaOrdem2[5,3,7]
-                               32231                       32724 
+                              327171                      327924 
   2903 fixaOrdem2[5,3,8]
-                                 105                       32716 
+                              327297                      327916 
   2904 fixaOrdem2[5,3,9]
-                               32309                       32717 
+                              327381                      327917 
   2905 fixaOrdem2[5,3,10]
-                               32392                       32748 
+                              327483                      327948 
   2906 fixaOrdem2[5,3,11]
-                               31760                       32747 
+                              327618                      327947 
   2907 fixaOrdem2[5,3,12]
-                               32444                       32758 
+                              327535                      327958 
   2908 fixaOrdem2[5,3,13]
-                               32567                       32792 
+                              327713                      327992 
   2909 fixaOrdem2[5,3,14]
-                               32766                       32766 
+                                 155                      327966 
   2910 fixaOrdem2[5,3,15]
-                               32576                       32746 
+                              327721                      327946 
   2911 fixaOrdem2[5,3,16]
-                               31916                       32783 
+                              327775                      327983 
   2912 fixaOrdem2[5,3,17]
-                               32630                       32754 
+                              327792                      327954 
   2913 fixaOrdem2[5,3,18]
-                               32696                       32755 
+                              327838                      327955 
   2914 fixaOrdem2[5,3,19]
-                               31933                       32783 
+                              326967                      327983 
   2915 fixaOrdem2[5,3,20]
-                               32741                       32775 
+                              327975                      327975 
   2916 fixaOrdem2[5,4,5]
-                               32516                       32731 
+                              327737                      327931 
   2917 fixaOrdem2[5,4,6]
-                               32676                       32752 
+                                   2                      327952 
   2918 fixaOrdem2[5,4,7]
-                               32724                       32724 
+                              327924                      327924 
   2919 fixaOrdem2[5,4,8]
-                                 598                       32716 
+                                  50                      327916 
   2920 fixaOrdem2[5,4,9]
-                                   2                       32717 
+                                 134                      327917 
   2921 fixaOrdem2[5,4,10]
-                                  85                       32748 
+                                 236                      327948 
   2922 fixaOrdem2[5,4,11]
-                               32253                       32747 
+                                 371                      327947 
   2923 fixaOrdem2[5,4,12]
-                                 137                       32758 
+                                 288                      327958 
   2924 fixaOrdem2[5,4,13]
-                                 260                       32792 
+                                 466                      327992 
   2925 fixaOrdem2[5,4,14]
-                                 459                       32766 
+                                 908                      327966 
   2926 fixaOrdem2[5,4,15]
-                                 269                       32746 
+                                 474                      327946 
   2927 fixaOrdem2[5,4,16]
-                               32409                       32783 
+                                 528                      327983 
   2928 fixaOrdem2[5,4,17]
-                                 323                       32754 
+                                 545                      327954 
   2929 fixaOrdem2[5,4,18]
-                                 389                       32755 
+                                 591                      327955 
   2930 fixaOrdem2[5,4,19]
-                               32426                       32783 
+                              327720                      327983 
   2931 fixaOrdem2[5,4,20]
-                                 434                       32775 
+                                 728                      327975 
   2932 fixaOrdem2[5,5,6]
-                                 160                       32752 
+                                 265                      327952 
   2933 fixaOrdem2[5,5,7]
-                                 208                       32724 
+                                 187                      327924 
   2934 fixaOrdem2[5,5,8]
-                                 882                       32716 
+                                 313                      327916 
   2935 fixaOrdem2[5,5,9]
-                                 286                       32717 
+                                 397                      327917 
   2936 fixaOrdem2[5,5,10]
-                                 369                       32748 
+                                 499                      327948 
   2937 fixaOrdem2[5,5,11]
-                               32537                       32747 
+                                 634                      327947 
   2938 fixaOrdem2[5,5,12]
-                                 421                       32758 
+                                 551                      327958 
   2939 fixaOrdem2[5,5,13]
-                                 544                       32792 
+                                 729                      327992 
   2940 fixaOrdem2[5,5,14]
-                                 743                       32766 
+                                1171                      327966 
   2941 fixaOrdem2[5,5,15]
-                                 553                       32746 
+                                 737                      327946 
   2942 fixaOrdem2[5,5,16]
-                               32693                       32783 
+                                 791                      327983 
   2943 fixaOrdem2[5,5,17]
-                                 607                       32754 
+                                 808                      327954 
   2944 fixaOrdem2[5,5,18]
-                                 673                       32755 
+                                 854                      327955 
   2945 fixaOrdem2[5,5,19]
-                               32710                       32783 
+                              327983                      327983 
   2946 fixaOrdem2[5,5,20]
-                                 718                       32775 
+                                 991                      327975 
   2947 fixaOrdem2[5,6,7]
-                                  48                       32724 
+                              327922                      327924 
   2948 fixaOrdem2[5,6,8]
-                                 722                       32716 
+                                  48                      327916 
   2949 fixaOrdem2[5,6,9]
-                                 126                       32717 
+                                 132                      327917 
   2950 fixaOrdem2[5,6,10]
-                                 209                       32748 
+                                 234                      327948 
   2951 fixaOrdem2[5,6,11]
-                               32377                       32747 
+                                 369                      327947 
   2952 fixaOrdem2[5,6,12]
-                                 261                       32758 
+                                 286                      327958 
   2953 fixaOrdem2[5,6,13]
-                                 384                       32792 
+                                 464                      327992 
   2954 fixaOrdem2[5,6,14]
-                                 583                       32766 
+                                 906                      327966 
   2955 fixaOrdem2[5,6,15]
-                                 393                       32746 
+                                 472                      327946 
   2956 fixaOrdem2[5,6,16]
-                               32533                       32783 
+                                 526                      327983 
   2957 fixaOrdem2[5,6,17]
-                                 447                       32754 
+                                 543                      327954 
   2958 fixaOrdem2[5,6,18]
-                                 513                       32755 
+                                 589                      327955 
   2959 fixaOrdem2[5,6,19]
-                               32550                       32783 
+                              327718                      327983 
   2960 fixaOrdem2[5,6,20]
-                                 558                       32775 
+                                 726                      327975 
   2961 fixaOrdem2[5,7,8]
-                                 674                       32716 
+                                 126                      327916 
   2962 fixaOrdem2[5,7,9]
-                                  78                       32717 
+                                 210                      327917 
   2963 fixaOrdem2[5,7,10]
-                                 161                       32748 
+                                 312                      327948 
   2964 fixaOrdem2[5,7,11]
-                               32329                       32747 
+                                 447                      327947 
   2965 fixaOrdem2[5,7,12]
-                                 213                       32758 
+                                 364                      327958 
   2966 fixaOrdem2[5,7,13]
-                                 336                       32792 
+                                 542                      327992 
   2967 fixaOrdem2[5,7,14]
-                                 535                       32766 
+                                 984                      327966 
   2968 fixaOrdem2[5,7,15]
-                                 345                       32746 
+                                 550                      327946 
   2969 fixaOrdem2[5,7,16]
-                               32485                       32783 
+                                 604                      327983 
   2970 fixaOrdem2[5,7,17]
-                                 399                       32754 
+                                 621                      327954 
   2971 fixaOrdem2[5,7,18]
-                                 465                       32755 
+                                 667                      327955 
   2972 fixaOrdem2[5,7,19]
-                               32502                       32783 
+                              327796                      327983 
   2973 fixaOrdem2[5,7,20]
-                                 510                       32775 
+                                 804                      327975 
   2974 fixaOrdem2[5,8,9]
-                               32204                       32717 
+                                  84                      327917 
   2975 fixaOrdem2[5,8,10]
-                               32287                       32748 
+                                 186                      327948 
   2976 fixaOrdem2[5,8,11]
-                               31655                       32747 
+                                 321                      327947 
   2977 fixaOrdem2[5,8,12]
-                               32339                       32758 
+                                 238                      327958 
   2978 fixaOrdem2[5,8,13]
-                               32462                       32792 
+                                 416                      327992 
   2979 fixaOrdem2[5,8,14]
-                               32661                       32766 
+                                 858                      327966 
   2980 fixaOrdem2[5,8,15]
-                               32471                       32746 
+                                 424                      327946 
   2981 fixaOrdem2[5,8,16]
-                               31811                       32783 
+                                 478                      327983 
   2982 fixaOrdem2[5,8,17]
-                               32525                       32754 
+                                 495                      327954 
   2983 fixaOrdem2[5,8,18]
-                               32591                       32755 
+                                 541                      327955 
   2984 fixaOrdem2[5,8,19]
-                               31828                       32783 
+                              327670                      327983 
   2985 fixaOrdem2[5,8,20]
-                               32636                       32775 
+                                 678                      327975 
   2986 fixaOrdem2[5,9,10]
-                                  83                       32748 
+                                 102                      327948 
   2987 fixaOrdem2[5,9,11]
-                               32251                       32747 
+                                 237                      327947 
   2988 fixaOrdem2[5,9,12]
-                                 135                       32758 
+                                 154                      327958 
   2989 fixaOrdem2[5,9,13]
-                                 258                       32792 
+                                 332                      327992 
   2990 fixaOrdem2[5,9,14]
-                                 457                       32766 
+                                 774                      327966 
   2991 fixaOrdem2[5,9,15]
-                                 267                       32746 
+                                 340                      327946 
   2992 fixaOrdem2[5,9,16]
-                               32407                       32783 
+                                 394                      327983 
   2993 fixaOrdem2[5,9,17]
-                                 321                       32754 
+                                 411                      327954 
   2994 fixaOrdem2[5,9,18]
-                                 387                       32755 
+                                 457                      327955 
   2995 fixaOrdem2[5,9,19]
-                               32424                       32783 
+                              327586                      327983 
   2996 fixaOrdem2[5,9,20]
-                                 432                       32775 
+                                 594                      327975 
   2997 fixaOrdem2[5,10,11]
-                               32168                       32747 
+                                 135                      327947 
   2998 fixaOrdem2[5,10,12]
-                                  52                       32758 
+                                  52                      327958 
   2999 fixaOrdem2[5,10,13]
-                                 175                       32792 
+                                 230                      327992 
   3000 fixaOrdem2[5,10,14]
-                                 374                       32766 
+                                 672                      327966 
   3001 fixaOrdem2[5,10,15]
-                                 184                       32746 
+                                 238                      327946 
   3002 fixaOrdem2[5,10,16]
-                               32324                       32783 
+                                 292                      327983 
   3003 fixaOrdem2[5,10,17]
-                                 238                       32754 
+                                 309                      327954 
   3004 fixaOrdem2[5,10,18]
-                                 304                       32755 
+                                 355                      327955 
   3005 fixaOrdem2[5,10,19]
-                               32341                       32783 
+                              327484                      327983 
   3006 fixaOrdem2[5,10,20]
-                                 349                       32775 
+                                 492                      327975 
   3007 fixaOrdem2[5,11,12]
-                                 684                       32758 
+                              327917                      327958 
   3008 fixaOrdem2[5,11,13]
-                                 807                       32792 
+                                  95                      327992 
   3009 fixaOrdem2[5,11,14]
-                                1006                       32766 
+                                 537                      327966 
   3010 fixaOrdem2[5,11,15]
-                                 816                       32746 
+                                 103                      327946 
   3011 fixaOrdem2[5,11,16]
-                                 156                       32783 
+                                 157                      327983 
   3012 fixaOrdem2[5,11,17]
-                                 870                       32754 
+                                 174                      327954 
   3013 fixaOrdem2[5,11,18]
-                                 936                       32755 
+                                 220                      327955 
   3014 fixaOrdem2[5,11,19]
-                                 173                       32783 
+                              327349                      327983 
   3015 fixaOrdem2[5,11,20]
-                                 981                       32775 
+                                 357                      327975 
   3016 fixaOrdem2[5,12,13]
-                                 123                       32792 
+                                 178                      327992 
   3017 fixaOrdem2[5,12,14]
-                                 322                       32766 
+                                 620                      327966 
   3018 fixaOrdem2[5,12,15]
-                                 132                       32746 
+                                 186                      327946 
   3019 fixaOrdem2[5,12,16]
-                               32272                       32783 
+                                 240                      327983 
   3020 fixaOrdem2[5,12,17]
-                                 186                       32754 
+                                 257                      327954 
   3021 fixaOrdem2[5,12,18]
-                                 252                       32755 
+                                 303                      327955 
   3022 fixaOrdem2[5,12,19]
-                               32289                       32783 
+                              327432                      327983 
   3023 fixaOrdem2[5,12,20]
-                                 297                       32775 
+                                 440                      327975 
   3024 fixaOrdem2[5,13,14]
-                                 199                       32766 
+                                 442                      327966 
   3025 fixaOrdem2[5,13,15]
-                                   9                       32746 
+                                   8                      327946 
   3026 fixaOrdem2[5,13,16]
-                               32149                       32783 
+                                  62                      327983 
   3027 fixaOrdem2[5,13,17]
-                                  63                       32754 
+                                  79                      327954 
   3028 fixaOrdem2[5,13,18]
-                                 129                       32755 
+                                 125                      327955 
   3029 fixaOrdem2[5,13,19]
-                               32166                       32783 
+                              327254                      327983 
   3030 fixaOrdem2[5,13,20]
-                                 174                       32775 
+                                 262                      327975 
   3031 fixaOrdem2[5,14,15]
-                               32610                       32746 
+                              327566                      327946 
   3032 fixaOrdem2[5,14,16]
-                               31950                       32783 
+                              327620                      327983 
   3033 fixaOrdem2[5,14,17]
-                               32664                       32754 
+                              327637                      327954 
   3034 fixaOrdem2[5,14,18]
-                               32730                       32755 
+                              327683                      327955 
   3035 fixaOrdem2[5,14,19]
-                               31967                       32783 
+                              326812                      327983 
   3036 fixaOrdem2[5,14,20]
-                               32775                       32775 
+                              327820                      327975 
   3037 fixaOrdem2[5,15,16]
-                               32140                       32783 
+                                  54                      327983 
   3038 fixaOrdem2[5,15,17]
-                                  54                       32754 
+                                  71                      327954 
   3039 fixaOrdem2[5,15,18]
-                                 120                       32755 
+                                 117                      327955 
   3040 fixaOrdem2[5,15,19]
-                               32157                       32783 
+                              327246                      327983 
   3041 fixaOrdem2[5,15,20]
-                                 165                       32775 
+                                 254                      327975 
   3042 fixaOrdem2[5,16,17]
-                                 714                       32754 
+                                  17                      327954 
   3043 fixaOrdem2[5,16,18]
-                                 780                       32755 
+                                  63                      327955 
   3044 fixaOrdem2[5,16,19]
-                                  17                       32783 
+                              327192                      327983 
   3045 fixaOrdem2[5,16,20]
-                                 825                       32775 
+                                 200                      327975 
   3046 fixaOrdem2[5,17,18]
-                                  66                       32755 
+                                  46                      327955 
   3047 fixaOrdem2[5,17,19]
-                               32103                       32783 
+                              327175                      327983 
   3048 fixaOrdem2[5,17,20]
-                                 111                       32775 
+                                 183                      327975 
   3049 fixaOrdem2[5,18,19]
-                               32037                       32783 
+                              327129                      327983 
   3050 fixaOrdem2[5,18,20]
-                                  45                       32775 
+                                 137                      327975 
   3051 fixaOrdem2[5,19,20]
-                                 808                       32775 
+                                1008                      327975 
   3052 fixaOrdem2[6,1,2]
-                               32609                       32733 
+                                  88                      327933 
   3053 fixaOrdem2[6,1,3]
-                                 700                       32723 
+                                 872                      327923 
   3054 fixaOrdem2[6,1,4]
-                                 208                       32775 
+                                 253                      327975 
   3055 fixaOrdem2[6,1,5]
-                               32779                       32779 
+                              327979                      327979 
   3056 fixaOrdem2[6,1,6]
-                                  19                       32778 
+                                 278                      327978 
   3057 fixaOrdem2[6,1,7]
-                                 110                       32702 
+                                 155                      327902 
   3058 fixaOrdem2[6,1,8]
-                                 853                       32771 
+                                 350                      327971 
   3059 fixaOrdem2[6,1,9]
-                                 282                       32796 
+                                 414                      327996 
   3060 fixaOrdem2[6,1,10]
-                                 286                       32771 
+                                 493                      327971 
   3061 fixaOrdem2[6,1,11]
-                               32454                       32717 
+                                 617                      327917 
   3062 fixaOrdem2[6,1,12]
-                                 322                       32705 
+                                 522                      327905 
   3063 fixaOrdem2[6,1,13]
-                                 450                       32706 
+                                 700                      327906 
   3064 fixaOrdem2[6,1,14]
-                                 620                       32720 
+                                1157                      327920 
   3065 fixaOrdem2[6,1,15]
-                                 544                       32791 
+                                 794                      327991 
   3066 fixaOrdem2[6,1,16]
-                               32537                       32798 
+                                 803                      327998 
   3067 fixaOrdem2[6,1,17]
-                                 553                       32788 
+                                 805                      327988 
   3068 fixaOrdem2[6,1,18]
-                                 565                       32768 
+                                 817                      327968 
   3069 fixaOrdem2[6,1,19]
-                               32539                       32730 
+                              327909                      327930 
   3070 fixaOrdem2[6,1,20]
-                                 597                       32777 
+                                 849                      327977 
   3071 fixaOrdem2[6,2,3]
-                                 891                       32723 
+                                 784                      327923 
   3072 fixaOrdem2[6,2,4]
-                                 399                       32775 
+                                 165                      327975 
   3073 fixaOrdem2[6,2,5]
-                                 170                       32779 
+                              327891                      327979 
   3074 fixaOrdem2[6,2,6]
-                                 210                       32778 
+                                 190                      327978 
   3075 fixaOrdem2[6,2,7]
-                                 301                       32702 
+                                  67                      327902 
   3076 fixaOrdem2[6,2,8]
-                                1044                       32771 
+                                 262                      327971 
   3077 fixaOrdem2[6,2,9]
-                                 473                       32796 
+                                 326                      327996 
   3078 fixaOrdem2[6,2,10]
-                                 477                       32771 
+                                 405                      327971 
   3079 fixaOrdem2[6,2,11]
-                               32645                       32717 
+                                 529                      327917 
   3080 fixaOrdem2[6,2,12]
-                                 513                       32705 
+                                 434                      327905 
   3081 fixaOrdem2[6,2,13]
-                                 641                       32706 
+                                 612                      327906 
   3082 fixaOrdem2[6,2,14]
-                                 811                       32720 
+                                1069                      327920 
   3083 fixaOrdem2[6,2,15]
-                                 735                       32791 
+                                 706                      327991 
   3084 fixaOrdem2[6,2,16]
-                               32728                       32798 
+                                 715                      327998 
   3085 fixaOrdem2[6,2,17]
-                                 744                       32788 
+                                 717                      327988 
   3086 fixaOrdem2[6,2,18]
-                                 756                       32768 
+                                 729                      327968 
   3087 fixaOrdem2[6,2,19]
-                               32730                       32730 
+                              327821                      327930 
   3088 fixaOrdem2[6,2,20]
-                                 788                       32777 
+                                 761                      327977 
   3089 fixaOrdem2[6,3,4]
-                               32308                       32775 
+                              327381                      327975 
   3090 fixaOrdem2[6,3,5]
-                               32079                       32779 
+                              327107                      327979 
   3091 fixaOrdem2[6,3,6]
-                               32119                       32778 
+                              327406                      327978 
   3092 fixaOrdem2[6,3,7]
-                               32210                       32702 
+                              327283                      327902 
   3093 fixaOrdem2[6,3,8]
-                                 153                       32771 
+                              327478                      327971 
   3094 fixaOrdem2[6,3,9]
-                               32382                       32796 
+                              327542                      327996 
   3095 fixaOrdem2[6,3,10]
-                               32386                       32771 
+                              327621                      327971 
   3096 fixaOrdem2[6,3,11]
-                               31754                       32717 
+                              327745                      327917 
   3097 fixaOrdem2[6,3,12]
-                               32422                       32705 
+                              327650                      327905 
   3098 fixaOrdem2[6,3,13]
-                               32550                       32706 
+                              327828                      327906 
   3099 fixaOrdem2[6,3,14]
-                               32720                       32720 
+                                 285                      327920 
   3100 fixaOrdem2[6,3,15]
-                               32644                       32791 
+                              327922                      327991 
   3101 fixaOrdem2[6,3,16]
-                               31837                       32798 
+                              327931                      327998 
   3102 fixaOrdem2[6,3,17]
-                               32653                       32788 
+                              327933                      327988 
   3103 fixaOrdem2[6,3,18]
-                               32665                       32768 
+                              327945                      327968 
   3104 fixaOrdem2[6,3,19]
-                               31839                       32730 
+                              327037                      327930 
   3105 fixaOrdem2[6,3,20]
-                               32697                       32777 
+                              327977                      327977 
   3106 fixaOrdem2[6,4,5]
-                               32571                       32779 
+                              327726                      327979 
   3107 fixaOrdem2[6,4,6]
-                               32611                       32778 
+                                  25                      327978 
   3108 fixaOrdem2[6,4,7]
-                               32702                       32702 
+                              327902                      327902 
   3109 fixaOrdem2[6,4,8]
-                                 645                       32771 
+                                  97                      327971 
   3110 fixaOrdem2[6,4,9]
-                                  74                       32796 
+                                 161                      327996 
   3111 fixaOrdem2[6,4,10]
-                                  78                       32771 
+                                 240                      327971 
   3112 fixaOrdem2[6,4,11]
-                               32246                       32717 
+                                 364                      327917 
   3113 fixaOrdem2[6,4,12]
-                                 114                       32705 
+                                 269                      327905 
   3114 fixaOrdem2[6,4,13]
-                                 242                       32706 
+                                 447                      327906 
   3115 fixaOrdem2[6,4,14]
-                                 412                       32720 
+                                 904                      327920 
   3116 fixaOrdem2[6,4,15]
-                                 336                       32791 
+                                 541                      327991 
   3117 fixaOrdem2[6,4,16]
-                               32329                       32798 
+                                 550                      327998 
   3118 fixaOrdem2[6,4,17]
-                                 345                       32788 
+                                 552                      327988 
   3119 fixaOrdem2[6,4,18]
-                                 357                       32768 
+                                 564                      327968 
   3120 fixaOrdem2[6,4,19]
-                               32331                       32730 
+                              327656                      327930 
   3121 fixaOrdem2[6,4,20]
-                                 389                       32777 
+                                 596                      327977 
   3122 fixaOrdem2[6,5,6]
-                                  40                       32778 
+                                 299                      327978 
   3123 fixaOrdem2[6,5,7]
-                                 131                       32702 
+                                 176                      327902 
   3124 fixaOrdem2[6,5,8]
-                                 874                       32771 
+                                 371                      327971 
   3125 fixaOrdem2[6,5,9]
-                                 303                       32796 
+                                 435                      327996 
   3126 fixaOrdem2[6,5,10]
-                                 307                       32771 
+                                 514                      327971 
   3127 fixaOrdem2[6,5,11]
-                               32475                       32717 
+                                 638                      327917 
   3128 fixaOrdem2[6,5,12]
-                                 343                       32705 
+                                 543                      327905 
   3129 fixaOrdem2[6,5,13]
-                                 471                       32706 
+                                 721                      327906 
   3130 fixaOrdem2[6,5,14]
-                                 641                       32720 
+                                1178                      327920 
   3131 fixaOrdem2[6,5,15]
-                                 565                       32791 
+                                 815                      327991 
   3132 fixaOrdem2[6,5,16]
-                               32558                       32798 
+                                 824                      327998 
   3133 fixaOrdem2[6,5,17]
-                                 574                       32788 
+                                 826                      327988 
   3134 fixaOrdem2[6,5,18]
-                                 586                       32768 
+                                 838                      327968 
   3135 fixaOrdem2[6,5,19]
-                               32560                       32730 
+                              327930                      327930 
   3136 fixaOrdem2[6,5,20]
-                                 618                       32777 
+                                 870                      327977 
   3137 fixaOrdem2[6,6,7]
-                                  91                       32702 
+                              327877                      327902 
   3138 fixaOrdem2[6,6,8]
-                                 834                       32771 
+                                  72                      327971 
   3139 fixaOrdem2[6,6,9]
-                                 263                       32796 
+                                 136                      327996 
   3140 fixaOrdem2[6,6,10]
-                                 267                       32771 
+                                 215                      327971 
   3141 fixaOrdem2[6,6,11]
-                               32435                       32717 
+                                 339                      327917 
   3142 fixaOrdem2[6,6,12]
-                                 303                       32705 
+                                 244                      327905 
   3143 fixaOrdem2[6,6,13]
-                                 431                       32706 
+                                 422                      327906 
   3144 fixaOrdem2[6,6,14]
-                                 601                       32720 
+                                 879                      327920 
   3145 fixaOrdem2[6,6,15]
-                                 525                       32791 
+                                 516                      327991 
   3146 fixaOrdem2[6,6,16]
-                               32518                       32798 
+                                 525                      327998 
   3147 fixaOrdem2[6,6,17]
-                                 534                       32788 
+                                 527                      327988 
   3148 fixaOrdem2[6,6,18]
-                                 546                       32768 
+                                 539                      327968 
   3149 fixaOrdem2[6,6,19]
-                               32520                       32730 
+                              327631                      327930 
   3150 fixaOrdem2[6,6,20]
-                                 578                       32777 
+                                 571                      327977 
   3151 fixaOrdem2[6,7,8]
-                                 743                       32771 
+                                 195                      327971 
   3152 fixaOrdem2[6,7,9]
-                                 172                       32796 
+                                 259                      327996 
   3153 fixaOrdem2[6,7,10]
-                                 176                       32771 
+                                 338                      327971 
   3154 fixaOrdem2[6,7,11]
-                               32344                       32717 
+                                 462                      327917 
   3155 fixaOrdem2[6,7,12]
-                                 212                       32705 
+                                 367                      327905 
   3156 fixaOrdem2[6,7,13]
-                                 340                       32706 
+                                 545                      327906 
   3157 fixaOrdem2[6,7,14]
-                                 510                       32720 
+                                1002                      327920 
   3158 fixaOrdem2[6,7,15]
-                                 434                       32791 
+                                 639                      327991 
   3159 fixaOrdem2[6,7,16]
-                               32427                       32798 
+                                 648                      327998 
   3160 fixaOrdem2[6,7,17]
-                                 443                       32788 
+                                 650                      327988 
   3161 fixaOrdem2[6,7,18]
-                                 455                       32768 
+                                 662                      327968 
   3162 fixaOrdem2[6,7,19]
-                               32429                       32730 
+                              327754                      327930 
   3163 fixaOrdem2[6,7,20]
-                                 487                       32777 
+                                 694                      327977 
   3164 fixaOrdem2[6,8,9]
-                               32229                       32796 
+                                  64                      327996 
   3165 fixaOrdem2[6,8,10]
-                               32233                       32771 
+                                 143                      327971 
   3166 fixaOrdem2[6,8,11]
-                               31601                       32717 
+                                 267                      327917 
   3167 fixaOrdem2[6,8,12]
-                               32269                       32705 
+                                 172                      327905 
   3168 fixaOrdem2[6,8,13]
-                               32397                       32706 
+                                 350                      327906 
   3169 fixaOrdem2[6,8,14]
-                               32567                       32720 
+                                 807                      327920 
   3170 fixaOrdem2[6,8,15]
-                               32491                       32791 
+                                 444                      327991 
   3171 fixaOrdem2[6,8,16]
-                               31684                       32798 
+                                 453                      327998 
   3172 fixaOrdem2[6,8,17]
-                               32500                       32788 
+                                 455                      327988 
   3173 fixaOrdem2[6,8,18]
-                               32512                       32768 
+                                 467                      327968 
   3174 fixaOrdem2[6,8,19]
-                               31686                       32730 
+                              327559                      327930 
   3175 fixaOrdem2[6,8,20]
-                               32544                       32777 
+                                 499                      327977 
   3176 fixaOrdem2[6,9,10]
-                                   4                       32771 
+                                  79                      327971 
   3177 fixaOrdem2[6,9,11]
-                               32172                       32717 
+                                 203                      327917 
   3178 fixaOrdem2[6,9,12]
-                                  40                       32705 
+                                 108                      327905 
   3179 fixaOrdem2[6,9,13]
-                                 168                       32706 
+                                 286                      327906 
   3180 fixaOrdem2[6,9,14]
-                                 338                       32720 
+                                 743                      327920 
   3181 fixaOrdem2[6,9,15]
-                                 262                       32791 
+                                 380                      327991 
   3182 fixaOrdem2[6,9,16]
-                               32255                       32798 
+                                 389                      327998 
   3183 fixaOrdem2[6,9,17]
-                                 271                       32788 
+                                 391                      327988 
   3184 fixaOrdem2[6,9,18]
-                                 283                       32768 
+                                 403                      327968 
   3185 fixaOrdem2[6,9,19]
-                               32257                       32730 
+                              327495                      327930 
   3186 fixaOrdem2[6,9,20]
-                                 315                       32777 
+                                 435                      327977 
   3187 fixaOrdem2[6,10,11]
-                               32168                       32717 
+                                 124                      327917 
   3188 fixaOrdem2[6,10,12]
-                                  36                       32705 
+                                  29                      327905 
   3189 fixaOrdem2[6,10,13]
-                                 164                       32706 
+                                 207                      327906 
   3190 fixaOrdem2[6,10,14]
-                                 334                       32720 
+                                 664                      327920 
   3191 fixaOrdem2[6,10,15]
-                                 258                       32791 
+                                 301                      327991 
   3192 fixaOrdem2[6,10,16]
-                               32251                       32798 
+                                 310                      327998 
   3193 fixaOrdem2[6,10,17]
-                                 267                       32788 
+                                 312                      327988 
   3194 fixaOrdem2[6,10,18]
-                                 279                       32768 
+                                 324                      327968 
   3195 fixaOrdem2[6,10,19]
-                               32253                       32730 
+                              327416                      327930 
   3196 fixaOrdem2[6,10,20]
-                                 311                       32777 
+                                 356                      327977 
   3197 fixaOrdem2[6,11,12]
-                                 668                       32705 
+                              327905                      327905 
   3198 fixaOrdem2[6,11,13]
-                                 796                       32706 
+                                  83                      327906 
   3199 fixaOrdem2[6,11,14]
-                                 966                       32720 
+                                 540                      327920 
   3200 fixaOrdem2[6,11,15]
-                                 890                       32791 
+                                 177                      327991 
   3201 fixaOrdem2[6,11,16]
-                                  83                       32798 
+                                 186                      327998 
   3202 fixaOrdem2[6,11,17]
-                                 899                       32788 
+                                 188                      327988 
   3203 fixaOrdem2[6,11,18]
-                                 911                       32768 
+                                 200                      327968 
   3204 fixaOrdem2[6,11,19]
-                                  85                       32730 
+                              327292                      327930 
   3205 fixaOrdem2[6,11,20]
-                                 943                       32777 
+                                 232                      327977 
   3206 fixaOrdem2[6,12,13]
-                                 128                       32706 
+                                 178                      327906 
   3207 fixaOrdem2[6,12,14]
-                                 298                       32720 
+                                 635                      327920 
   3208 fixaOrdem2[6,12,15]
-                                 222                       32791 
+                                 272                      327991 
   3209 fixaOrdem2[6,12,16]
-                               32215                       32798 
+                                 281                      327998 
   3210 fixaOrdem2[6,12,17]
-                                 231                       32788 
+                                 283                      327988 
   3211 fixaOrdem2[6,12,18]
-                                 243                       32768 
+                                 295                      327968 
   3212 fixaOrdem2[6,12,19]
-                               32217                       32730 
+                              327387                      327930 
   3213 fixaOrdem2[6,12,20]
-                                 275                       32777 
+                                 327                      327977 
   3214 fixaOrdem2[6,13,14]
-                                 170                       32720 
+                                 457                      327920 
   3215 fixaOrdem2[6,13,15]
-                                  94                       32791 
+                                  94                      327991 
   3216 fixaOrdem2[6,13,16]
-                               32087                       32798 
+                                 103                      327998 
   3217 fixaOrdem2[6,13,17]
-                                 103                       32788 
+                                 105                      327988 
   3218 fixaOrdem2[6,13,18]
-                                 115                       32768 
+                                 117                      327968 
   3219 fixaOrdem2[6,13,19]
-                               32089                       32730 
+                              327209                      327930 
   3220 fixaOrdem2[6,13,20]
-                                 147                       32777 
+                                 149                      327977 
   3221 fixaOrdem2[6,14,15]
-                               32724                       32791 
+                              327637                      327991 
   3222 fixaOrdem2[6,14,16]
-                               31917                       32798 
+                              327646                      327998 
   3223 fixaOrdem2[6,14,17]
-                               32733                       32788 
+                              327648                      327988 
   3224 fixaOrdem2[6,14,18]
-                               32745                       32768 
+                              327660                      327968 
   3225 fixaOrdem2[6,14,19]
-                               31919                       32730 
+                              326752                      327930 
   3226 fixaOrdem2[6,14,20]
-                               32777                       32777 
+                              327692                      327977 
   3227 fixaOrdem2[6,15,16]
-                               31993                       32798 
+                                   9                      327998 
   3228 fixaOrdem2[6,15,17]
-                                   9                       32788 
+                                  11                      327988 
   3229 fixaOrdem2[6,15,18]
-                                  21                       32768 
+                                  23                      327968 
   3230 fixaOrdem2[6,15,19]
-                               31995                       32730 
+                              327115                      327930 
   3231 fixaOrdem2[6,15,20]
-                                  53                       32777 
+                                  55                      327977 
   3232 fixaOrdem2[6,16,17]
-                                 816                       32788 
+                                   2                      327988 
   3233 fixaOrdem2[6,16,18]
-                                 828                       32768 
+                                  14                      327968 
   3234 fixaOrdem2[6,16,19]
-                                   2                       32730 
+                              327106                      327930 
   3235 fixaOrdem2[6,16,20]
-                                 860                       32777 
+                                  46                      327977 
   3236 fixaOrdem2[6,17,18]
-                                  12                       32768 
+                                  12                      327968 
   3237 fixaOrdem2[6,17,19]
-                               31986                       32730 
+                              327104                      327930 
   3238 fixaOrdem2[6,17,20]
-                                  44                       32777 
+                                  44                      327977 
   3239 fixaOrdem2[6,18,19]
-                               31974                       32730 
+                              327092                      327930 
   3240 fixaOrdem2[6,18,20]
-                                  32                       32777 
+                                  32                      327977 
   3241 fixaOrdem2[6,19,20]
-                                 858                       32777 
+                                 940                      327977 
   3242 fixaOrdem2[7,1,2]
-                               32697                       32776 
+                                  82                      327976 
   3243 fixaOrdem2[7,1,3]
-                                 773                       32759 
+                                 912                      327959 
   3244 fixaOrdem2[7,1,4]
-                                 233                       32711 
+                                 197                      327911 
   3245 fixaOrdem2[7,1,5]
-                               32721                       32721 
+                              327921                      327921 
   3246 fixaOrdem2[7,1,6]
-                                  82                       32749 
+                                 286                      327949 
   3247 fixaOrdem2[7,1,7]
-                                 133                       32709 
+                                 106                      327909 
   3248 fixaOrdem2[7,1,8]
-                                 872                       32705 
+                                 337                      327905 
   3249 fixaOrdem2[7,1,9]
-                                 322                       32736 
+                                 432                      327936 
   3250 fixaOrdem2[7,1,10]
-                                 386                       32786 
+                                 525                      327986 
   3251 fixaOrdem2[7,1,11]
-                               32487                       32733 
+                                 575                      327933 
   3252 fixaOrdem2[7,1,12]
-                                 400                       32764 
+                                 539                      327964 
   3253 fixaOrdem2[7,1,13]
-                                 436                       32769 
+                                 642                      327969 
   3254 fixaOrdem2[7,1,14]
-                                 683                       32749 
+                                1188                      327949 
   3255 fixaOrdem2[7,1,15]
-                                 490                       32708 
+                                 693                      327908 
   3256 fixaOrdem2[7,1,16]
-                               32554                       32783 
+                                 785                      327983 
   3257 fixaOrdem2[7,1,17]
-                                 582                       32774 
+                                 802                      327974 
   3258 fixaOrdem2[7,1,18]
-                                 608                       32729 
+                                 828                      327929 
   3259 fixaOrdem2[7,1,19]
-                               32571                       32718 
+                              327839                      327918 
   3260 fixaOrdem2[7,1,20]
-                                 680                       32797 
+                                 909                      327997 
   3261 fixaOrdem2[7,2,3]
-                                 876                       32759 
+                                 830                      327959 
   3262 fixaOrdem2[7,2,4]
-                                 336                       32711 
+                                 115                      327911 
   3263 fixaOrdem2[7,2,5]
-                                  24                       32721 
+                              327839                      327921 
   3264 fixaOrdem2[7,2,6]
-                                 185                       32749 
+                                 204                      327949 
   3265 fixaOrdem2[7,2,7]
-                                 236                       32709 
+                                  24                      327909 
   3266 fixaOrdem2[7,2,8]
-                                 975                       32705 
+                                 255                      327905 
   3267 fixaOrdem2[7,2,9]
-                                 425                       32736 
+                                 350                      327936 
   3268 fixaOrdem2[7,2,10]
-                                 489                       32786 
+                                 443                      327986 
   3269 fixaOrdem2[7,2,11]
-                               32590                       32733 
+                                 493                      327933 
   3270 fixaOrdem2[7,2,12]
-                                 503                       32764 
+                                 457                      327964 
   3271 fixaOrdem2[7,2,13]
-                                 539                       32769 
+                                 560                      327969 
   3272 fixaOrdem2[7,2,14]
-                                 786                       32749 
+                                1106                      327949 
   3273 fixaOrdem2[7,2,15]
-                                 593                       32708 
+                                 611                      327908 
   3274 fixaOrdem2[7,2,16]
-                               32657                       32783 
+                                 703                      327983 
   3275 fixaOrdem2[7,2,17]
-                                 685                       32774 
+                                 720                      327974 
   3276 fixaOrdem2[7,2,18]
-                                 711                       32729 
+                                 746                      327929 
   3277 fixaOrdem2[7,2,19]
-                               32674                       32718 
+                              327757                      327918 
   3278 fixaOrdem2[7,2,20]
-                                 783                       32797 
+                                 827                      327997 
   3279 fixaOrdem2[7,3,4]
-                               32260                       32711 
+                              327285                      327911 
   3280 fixaOrdem2[7,3,5]
-                               31948                       32721 
+                              327009                      327921 
   3281 fixaOrdem2[7,3,6]
-                               32109                       32749 
+                              327374                      327949 
   3282 fixaOrdem2[7,3,7]
-                               32160                       32709 
+                              327194                      327909 
   3283 fixaOrdem2[7,3,8]
-                                  99                       32705 
+                              327425                      327905 
   3284 fixaOrdem2[7,3,9]
-                               32349                       32736 
+                              327520                      327936 
   3285 fixaOrdem2[7,3,10]
-                               32413                       32786 
+                              327613                      327986 
   3286 fixaOrdem2[7,3,11]
-                               31714                       32733 
+                              327663                      327933 
   3287 fixaOrdem2[7,3,12]
-                               32427                       32764 
+                              327627                      327964 
   3288 fixaOrdem2[7,3,13]
-                               32463                       32769 
+                              327730                      327969 
   3289 fixaOrdem2[7,3,14]
-                               32710                       32749 
+                                 276                      327949 
   3290 fixaOrdem2[7,3,15]
-                               32517                       32708 
+                              327781                      327908 
   3291 fixaOrdem2[7,3,16]
-                               31781                       32783 
+                              327873                      327983 
   3292 fixaOrdem2[7,3,17]
-                               32609                       32774 
+                              327890                      327974 
   3293 fixaOrdem2[7,3,18]
-                               32635                       32729 
+                              327916                      327929 
   3294 fixaOrdem2[7,3,19]
-                               31798                       32718 
+                              326927                      327918 
   3295 fixaOrdem2[7,3,20]
-                               32707                       32797 
+                              327997                      327997 
   3296 fixaOrdem2[7,4,5]
-                               32488                       32721 
+                              327724                      327921 
   3297 fixaOrdem2[7,4,6]
-                               32649                       32749 
+                                  89                      327949 
   3298 fixaOrdem2[7,4,7]
-                               32700                       32709 
+                              327909                      327909 
   3299 fixaOrdem2[7,4,8]
-                                 639                       32705 
+                                 140                      327905 
   3300 fixaOrdem2[7,4,9]
-                                  89                       32736 
+                                 235                      327936 
   3301 fixaOrdem2[7,4,10]
-                                 153                       32786 
+                                 328                      327986 
   3302 fixaOrdem2[7,4,11]
-                               32254                       32733 
+                                 378                      327933 
   3303 fixaOrdem2[7,4,12]
-                                 167                       32764 
+                                 342                      327964 
   3304 fixaOrdem2[7,4,13]
-                                 203                       32769 
+                                 445                      327969 
   3305 fixaOrdem2[7,4,14]
-                                 450                       32749 
+                                 991                      327949 
   3306 fixaOrdem2[7,4,15]
-                                 257                       32708 
+                                 496                      327908 
   3307 fixaOrdem2[7,4,16]
-                               32321                       32783 
+                                 588                      327983 
   3308 fixaOrdem2[7,4,17]
-                                 349                       32774 
+                                 605                      327974 
   3309 fixaOrdem2[7,4,18]
-                                 375                       32729 
+                                 631                      327929 
   3310 fixaOrdem2[7,4,19]
-                               32338                       32718 
+                              327642                      327918 
   3311 fixaOrdem2[7,4,20]
-                                 447                       32797 
+                                 712                      327997 
   3312 fixaOrdem2[7,5,6]
-                                 161                       32749 
+                                 365                      327949 
   3313 fixaOrdem2[7,5,7]
-                                 212                       32709 
+                                 185                      327909 
   3314 fixaOrdem2[7,5,8]
-                                 951                       32705 
+                                 416                      327905 
   3315 fixaOrdem2[7,5,9]
-                                 401                       32736 
+                                 511                      327936 
   3316 fixaOrdem2[7,5,10]
-                                 465                       32786 
+                                 604                      327986 
   3317 fixaOrdem2[7,5,11]
-                               32566                       32733 
+                                 654                      327933 
   3318 fixaOrdem2[7,5,12]
-                                 479                       32764 
+                                 618                      327964 
   3319 fixaOrdem2[7,5,13]
-                                 515                       32769 
+                                 721                      327969 
   3320 fixaOrdem2[7,5,14]
-                                 762                       32749 
+                                1267                      327949 
   3321 fixaOrdem2[7,5,15]
-                                 569                       32708 
+                                 772                      327908 
   3322 fixaOrdem2[7,5,16]
-                               32633                       32783 
+                                 864                      327983 
   3323 fixaOrdem2[7,5,17]
-                                 661                       32774 
+                                 881                      327974 
   3324 fixaOrdem2[7,5,18]
-                                 687                       32729 
+                                 907                      327929 
   3325 fixaOrdem2[7,5,19]
-                               32650                       32718 
+                              327918                      327918 
   3326 fixaOrdem2[7,5,20]
-                                 759                       32797 
+                                 988                      327997 
   3327 fixaOrdem2[7,6,7]
-                                  51                       32709 
+                              327820                      327909 
   3328 fixaOrdem2[7,6,8]
-                                 790                       32705 
+                                  51                      327905 
   3329 fixaOrdem2[7,6,9]
-                                 240                       32736 
+                                 146                      327936 
   3330 fixaOrdem2[7,6,10]
-                                 304                       32786 
+                                 239                      327986 
   3331 fixaOrdem2[7,6,11]
-                               32405                       32733 
+                                 289                      327933 
   3332 fixaOrdem2[7,6,12]
-                                 318                       32764 
+                                 253                      327964 
   3333 fixaOrdem2[7,6,13]
-                                 354                       32769 
+                                 356                      327969 
   3334 fixaOrdem2[7,6,14]
-                                 601                       32749 
+                                 902                      327949 
   3335 fixaOrdem2[7,6,15]
-                                 408                       32708 
+                                 407                      327908 
   3336 fixaOrdem2[7,6,16]
-                               32472                       32783 
+                                 499                      327983 
   3337 fixaOrdem2[7,6,17]
-                                 500                       32774 
+                                 516                      327974 
   3338 fixaOrdem2[7,6,18]
-                                 526                       32729 
+                                 542                      327929 
   3339 fixaOrdem2[7,6,19]
-                               32489                       32718 
+                              327553                      327918 
   3340 fixaOrdem2[7,6,20]
-                                 598                       32797 
+                                 623                      327997 
   3341 fixaOrdem2[7,7,8]
-                                 739                       32705 
+                                 231                      327905 
   3342 fixaOrdem2[7,7,9]
-                                 189                       32736 
+                                 326                      327936 
   3343 fixaOrdem2[7,7,10]
-                                 253                       32786 
+                                 419                      327986 
   3344 fixaOrdem2[7,7,11]
-                               32354                       32733 
+                                 469                      327933 
   3345 fixaOrdem2[7,7,12]
-                                 267                       32764 
+                                 433                      327964 
   3346 fixaOrdem2[7,7,13]
-                                 303                       32769 
+                                 536                      327969 
   3347 fixaOrdem2[7,7,14]
-                                 550                       32749 
+                                1082                      327949 
   3348 fixaOrdem2[7,7,15]
-                                 357                       32708 
+                                 587                      327908 
   3349 fixaOrdem2[7,7,16]
-                               32421                       32783 
+                                 679                      327983 
   3350 fixaOrdem2[7,7,17]
-                                 449                       32774 
+                                 696                      327974 
   3351 fixaOrdem2[7,7,18]
-                                 475                       32729 
+                                 722                      327929 
   3352 fixaOrdem2[7,7,19]
-                               32438                       32718 
+                              327733                      327918 
   3353 fixaOrdem2[7,7,20]
-                                 547                       32797 
+                                 803                      327997 
   3354 fixaOrdem2[7,8,9]
-                               32250                       32736 
+                                  95                      327936 
   3355 fixaOrdem2[7,8,10]
-                               32314                       32786 
+                                 188                      327986 
   3356 fixaOrdem2[7,8,11]
-                               31615                       32733 
+                                 238                      327933 
   3357 fixaOrdem2[7,8,12]
-                               32328                       32764 
+                                 202                      327964 
   3358 fixaOrdem2[7,8,13]
-                               32364                       32769 
+                                 305                      327969 
   3359 fixaOrdem2[7,8,14]
-                               32611                       32749 
+                                 851                      327949 
   3360 fixaOrdem2[7,8,15]
-                               32418                       32708 
+                                 356                      327908 
   3361 fixaOrdem2[7,8,16]
-                               31682                       32783 
+                                 448                      327983 
   3362 fixaOrdem2[7,8,17]
-                               32510                       32774 
+                                 465                      327974 
   3363 fixaOrdem2[7,8,18]
-                               32536                       32729 
+                                 491                      327929 
   3364 fixaOrdem2[7,8,19]
-                               31699                       32718 
+                              327502                      327918 
   3365 fixaOrdem2[7,8,20]
-                               32608                       32797 
+                                 572                      327997 
   3366 fixaOrdem2[7,9,10]
-                                  64                       32786 
+                                  93                      327986 
   3367 fixaOrdem2[7,9,11]
-                               32165                       32733 
+                                 143                      327933 
   3368 fixaOrdem2[7,9,12]
-                                  78                       32764 
+                                 107                      327964 
   3369 fixaOrdem2[7,9,13]
-                                 114                       32769 
+                                 210                      327969 
   3370 fixaOrdem2[7,9,14]
-                                 361                       32749 
+                                 756                      327949 
   3371 fixaOrdem2[7,9,15]
-                                 168                       32708 
+                                 261                      327908 
   3372 fixaOrdem2[7,9,16]
-                               32232                       32783 
+                                 353                      327983 
   3373 fixaOrdem2[7,9,17]
-                                 260                       32774 
+                                 370                      327974 
   3374 fixaOrdem2[7,9,18]
-                                 286                       32729 
+                                 396                      327929 
   3375 fixaOrdem2[7,9,19]
-                               32249                       32718 
+                              327407                      327918 
   3376 fixaOrdem2[7,9,20]
-                                 358                       32797 
+                                 477                      327997 
   3377 fixaOrdem2[7,10,11]
-                               32101                       32733 
+                                  50                      327933 
   3378 fixaOrdem2[7,10,12]
-                                  14                       32764 
+                                  14                      327964 
   3379 fixaOrdem2[7,10,13]
-                                  50                       32769 
+                                 117                      327969 
   3380 fixaOrdem2[7,10,14]
-                                 297                       32749 
+                                 663                      327949 
   3381 fixaOrdem2[7,10,15]
-                                 104                       32708 
+                                 168                      327908 
   3382 fixaOrdem2[7,10,16]
-                               32168                       32783 
+                                 260                      327983 
   3383 fixaOrdem2[7,10,17]
-                                 196                       32774 
+                                 277                      327974 
   3384 fixaOrdem2[7,10,18]
-                                 222                       32729 
+                                 303                      327929 
   3385 fixaOrdem2[7,10,19]
-                               32185                       32718 
+                              327314                      327918 
   3386 fixaOrdem2[7,10,20]
-                                 294                       32797 
+                                 384                      327997 
   3387 fixaOrdem2[7,11,12]
-                                 713                       32764 
+                              327964                      327964 
   3388 fixaOrdem2[7,11,13]
-                                 749                       32769 
+                                  67                      327969 
   3389 fixaOrdem2[7,11,14]
-                                 996                       32749 
+                                 613                      327949 
   3390 fixaOrdem2[7,11,15]
-                                 803                       32708 
+                                 118                      327908 
   3391 fixaOrdem2[7,11,16]
-                                  67                       32783 
+                                 210                      327983 
   3392 fixaOrdem2[7,11,17]
-                                 895                       32774 
+                                 227                      327974 
   3393 fixaOrdem2[7,11,18]
-                                 921                       32729 
+                                 253                      327929 
   3394 fixaOrdem2[7,11,19]
-                                  84                       32718 
+                              327264                      327918 
   3395 fixaOrdem2[7,11,20]
-                                 993                       32797 
+                                 334                      327997 
   3396 fixaOrdem2[7,12,13]
-                                  36                       32769 
+                                 103                      327969 
   3397 fixaOrdem2[7,12,14]
-                                 283                       32749 
+                                 649                      327949 
   3398 fixaOrdem2[7,12,15]
-                                  90                       32708 
+                                 154                      327908 
   3399 fixaOrdem2[7,12,16]
-                               32154                       32783 
+                                 246                      327983 
   3400 fixaOrdem2[7,12,17]
-                                 182                       32774 
+                                 263                      327974 
   3401 fixaOrdem2[7,12,18]
-                                 208                       32729 
+                                 289                      327929 
   3402 fixaOrdem2[7,12,19]
-                               32171                       32718 
+                              327300                      327918 
   3403 fixaOrdem2[7,12,20]
-                                 280                       32797 
+                                 370                      327997 
   3404 fixaOrdem2[7,13,14]
-                                 247                       32749 
+                                 546                      327949 
   3405 fixaOrdem2[7,13,15]
-                                  54                       32708 
+                                  51                      327908 
   3406 fixaOrdem2[7,13,16]
-                               32118                       32783 
+                                 143                      327983 
   3407 fixaOrdem2[7,13,17]
-                                 146                       32774 
+                                 160                      327974 
   3408 fixaOrdem2[7,13,18]
-                                 172                       32729 
+                                 186                      327929 
   3409 fixaOrdem2[7,13,19]
-                               32135                       32718 
+                              327197                      327918 
   3410 fixaOrdem2[7,13,20]
-                                 244                       32797 
+                                 267                      327997 
   3411 fixaOrdem2[7,14,15]
-                               32607                       32708 
+                              327505                      327908 
   3412 fixaOrdem2[7,14,16]
-                               31871                       32783 
+                              327597                      327983 
   3413 fixaOrdem2[7,14,17]
-                               32699                       32774 
+                              327614                      327974 
   3414 fixaOrdem2[7,14,18]
-                               32725                       32729 
+                              327640                      327929 
   3415 fixaOrdem2[7,14,19]
-                               31888                       32718 
+                              326651                      327918 
   3416 fixaOrdem2[7,14,20]
-                               32797                       32797 
+                              327721                      327997 
   3417 fixaOrdem2[7,15,16]
-                               32064                       32783 
+                                  92                      327983 
   3418 fixaOrdem2[7,15,17]
-                                  92                       32774 
+                                 109                      327974 
   3419 fixaOrdem2[7,15,18]
-                                 118                       32729 
+                                 135                      327929 
   3420 fixaOrdem2[7,15,19]
-                               32081                       32718 
+                              327146                      327918 
   3421 fixaOrdem2[7,15,20]
-                                 190                       32797 
+                                 216                      327997 
   3422 fixaOrdem2[7,16,17]
-                                 828                       32774 
+                                  17                      327974 
   3423 fixaOrdem2[7,16,18]
-                                 854                       32729 
+                                  43                      327929 
   3424 fixaOrdem2[7,16,19]
-                                  17                       32718 
+                              327054                      327918 
   3425 fixaOrdem2[7,16,20]
-                                 926                       32797 
+                                 124                      327997 
   3426 fixaOrdem2[7,17,18]
-                                  26                       32729 
+                                  26                      327929 
   3427 fixaOrdem2[7,17,19]
-                               31989                       32718 
+                              327037                      327918 
   3428 fixaOrdem2[7,17,20]
-                                  98                       32797 
+                                 107                      327997 
   3429 fixaOrdem2[7,18,19]
-                               31963                       32718 
+                              327011                      327918 
   3430 fixaOrdem2[7,18,20]
-                                  72                       32797 
+                                  81                      327997 
   3431 fixaOrdem2[7,19,20]
-                                 909                       32797 
+                                1070                      327997 
   3432 fixaOrdem2[8,1,2]
-                               32719                       32760 
+                                 125                      327960 
   3433 fixaOrdem2[8,1,3]
-                                 766                       32710 
+                                 905                      327910 
   3434 fixaOrdem2[8,1,4]
-                                 216                       32770 
+                                 250                      327970 
   3435 fixaOrdem2[8,1,5]
-                               32759                       32759 
+                              327922                      327959 
   3436 fixaOrdem2[8,1,6]
-                                  83                       32764 
+                                 290                      327964 
   3437 fixaOrdem2[8,1,7]
-                                 207                       32791 
+                                 180                      327991 
   3438 fixaOrdem2[8,1,8]
-                                 889                       32734 
+                                 326                      327934 
   3439 fixaOrdem2[8,1,9]
-                                 253                       32770 
+                                 392                      327970 
   3440 fixaOrdem2[8,1,10]
-                                 283                       32709 
+                                 422                      327909 
   3441 fixaOrdem2[8,1,11]
-                               32473                       32733 
+                                 579                      327933 
   3442 fixaOrdem2[8,1,12]
-                                 374                       32734 
+                                 513                      327934 
   3443 fixaOrdem2[8,1,13]
-                                 440                       32721 
+                                 646                      327921 
   3444 fixaOrdem2[8,1,14]
-                                 692                       32726 
+                                1197                      327926 
   3445 fixaOrdem2[8,1,15]
-                                 519                       32749 
+                                 725                      327949 
   3446 fixaOrdem2[8,1,16]
-                               32547                       32793 
+                                 776                      327993 
   3447 fixaOrdem2[8,1,17]
-                                 570                       32772 
+                                 783                      327972 
   3448 fixaOrdem2[8,1,18]
-                                 598                       32724 
+                                 811                      327924 
   3449 fixaOrdem2[8,1,19]
-                               32627                       32773 
+                              327895                      327973 
   3450 fixaOrdem2[8,1,20]
-                                 674                       32782 
+                                 887                      327982 
   3451 fixaOrdem2[8,2,3]
-                                 847                       32710 
+                                 780                      327910 
   3452 fixaOrdem2[8,2,4]
-                                 297                       32770 
+                                 125                      327970 
   3453 fixaOrdem2[8,2,5]
-                                  40                       32759 
+                              327797                      327959 
   3454 fixaOrdem2[8,2,6]
-                                 164                       32764 
+                                 165                      327964 
   3455 fixaOrdem2[8,2,7]
-                                 288                       32791 
+                                  55                      327991 
   3456 fixaOrdem2[8,2,8]
-                                 970                       32734 
+                                 201                      327934 
   3457 fixaOrdem2[8,2,9]
-                                 334                       32770 
+                                 267                      327970 
   3458 fixaOrdem2[8,2,10]
-                                 364                       32709 
+                                 297                      327909 
   3459 fixaOrdem2[8,2,11]
-                               32554                       32733 
+                                 454                      327933 
   3460 fixaOrdem2[8,2,12]
-                                 455                       32734 
+                                 388                      327934 
   3461 fixaOrdem2[8,2,13]
-                                 521                       32721 
+                                 521                      327921 
   3462 fixaOrdem2[8,2,14]
-                                 773                       32726 
+                                1072                      327926 
   3463 fixaOrdem2[8,2,15]
-                                 600                       32749 
+                                 600                      327949 
   3464 fixaOrdem2[8,2,16]
-                               32628                       32793 
+                                 651                      327993 
   3465 fixaOrdem2[8,2,17]
-                                 651                       32772 
+                                 658                      327972 
   3466 fixaOrdem2[8,2,18]
-                                 679                       32724 
+                                 686                      327924 
   3467 fixaOrdem2[8,2,19]
-                               32708                       32773 
+                              327770                      327973 
   3468 fixaOrdem2[8,2,20]
-                                 755                       32782 
+                                 762                      327982 
   3469 fixaOrdem2[8,3,4]
-                               32250                       32770 
+                              327345                      327970 
   3470 fixaOrdem2[8,3,5]
-                               31993                       32759 
+                              327017                      327959 
   3471 fixaOrdem2[8,3,6]
-                               32117                       32764 
+                              327385                      327964 
   3472 fixaOrdem2[8,3,7]
-                               32241                       32791 
+                              327275                      327991 
   3473 fixaOrdem2[8,3,8]
-                                 123                       32734 
+                              327421                      327934 
   3474 fixaOrdem2[8,3,9]
-                               32287                       32770 
+                              327487                      327970 
   3475 fixaOrdem2[8,3,10]
-                               32317                       32709 
+                              327517                      327909 
   3476 fixaOrdem2[8,3,11]
-                               31707                       32733 
+                              327674                      327933 
   3477 fixaOrdem2[8,3,12]
-                               32408                       32734 
+                              327608                      327934 
   3478 fixaOrdem2[8,3,13]
-                               32474                       32721 
+                              327741                      327921 
   3479 fixaOrdem2[8,3,14]
-                               32726                       32726 
+                                 292                      327926 
   3480 fixaOrdem2[8,3,15]
-                               32553                       32749 
+                              327820                      327949 
   3481 fixaOrdem2[8,3,16]
-                               31781                       32793 
+                              327871                      327993 
   3482 fixaOrdem2[8,3,17]
-                               32604                       32772 
+                              327878                      327972 
   3483 fixaOrdem2[8,3,18]
-                               32632                       32724 
+                              327906                      327924 
   3484 fixaOrdem2[8,3,19]
-                               31861                       32773 
+                              326990                      327973 
   3485 fixaOrdem2[8,3,20]
-                               32708                       32782 
+                              327982                      327982 
   3486 fixaOrdem2[8,4,5]
-                               32543                       32759 
+                              327672                      327959 
   3487 fixaOrdem2[8,4,6]
-                               32667                       32764 
+                                  40                      327964 
   3488 fixaOrdem2[8,4,7]
-                               32791                       32791 
+                              327930                      327991 
   3489 fixaOrdem2[8,4,8]
-                                 673                       32734 
+                                  76                      327934 
   3490 fixaOrdem2[8,4,9]
-                                  37                       32770 
+                                 142                      327970 
   3491 fixaOrdem2[8,4,10]
-                                  67                       32709 
+                                 172                      327909 
   3492 fixaOrdem2[8,4,11]
-                               32257                       32733 
+                                 329                      327933 
   3493 fixaOrdem2[8,4,12]
-                                 158                       32734 
+                                 263                      327934 
   3494 fixaOrdem2[8,4,13]
-                                 224                       32721 
+                                 396                      327921 
   3495 fixaOrdem2[8,4,14]
-                                 476                       32726 
+                                 947                      327926 
   3496 fixaOrdem2[8,4,15]
-                                 303                       32749 
+                                 475                      327949 
   3497 fixaOrdem2[8,4,16]
-                               32331                       32793 
+                                 526                      327993 
   3498 fixaOrdem2[8,4,17]
-                                 354                       32772 
+                                 533                      327972 
   3499 fixaOrdem2[8,4,18]
-                                 382                       32724 
+                                 561                      327924 
   3500 fixaOrdem2[8,4,19]
-                               32411                       32773 
+                              327645                      327973 
   3501 fixaOrdem2[8,4,20]
-                                 458                       32782 
+                                 637                      327982 
   3502 fixaOrdem2[8,5,6]
-                                 124                       32764 
+                                 368                      327964 
   3503 fixaOrdem2[8,5,7]
-                                 248                       32791 
+                                 258                      327991 
   3504 fixaOrdem2[8,5,8]
-                                 930                       32734 
+                                 404                      327934 
   3505 fixaOrdem2[8,5,9]
-                                 294                       32770 
+                                 470                      327970 
   3506 fixaOrdem2[8,5,10]
-                                 324                       32709 
+                                 500                      327909 
   3507 fixaOrdem2[8,5,11]
-                               32514                       32733 
+                                 657                      327933 
   3508 fixaOrdem2[8,5,12]
-                                 415                       32734 
+                                 591                      327934 
   3509 fixaOrdem2[8,5,13]
-                                 481                       32721 
+                                 724                      327921 
   3510 fixaOrdem2[8,5,14]
-                                 733                       32726 
+                                1275                      327926 
   3511 fixaOrdem2[8,5,15]
-                                 560                       32749 
+                                 803                      327949 
   3512 fixaOrdem2[8,5,16]
-                               32588                       32793 
+                                 854                      327993 
   3513 fixaOrdem2[8,5,17]
-                                 611                       32772 
+                                 861                      327972 
   3514 fixaOrdem2[8,5,18]
-                                 639                       32724 
+                                 889                      327924 
   3515 fixaOrdem2[8,5,19]
-                               32668                       32773 
+                              327973                      327973 
   3516 fixaOrdem2[8,5,20]
-                                 715                       32782 
+                                 965                      327982 
   3517 fixaOrdem2[8,6,7]
-                                 124                       32791 
+                              327890                      327991 
   3518 fixaOrdem2[8,6,8]
-                                 806                       32734 
+                                  36                      327934 
   3519 fixaOrdem2[8,6,9]
-                                 170                       32770 
+                                 102                      327970 
   3520 fixaOrdem2[8,6,10]
-                                 200                       32709 
+                                 132                      327909 
   3521 fixaOrdem2[8,6,11]
-                               32390                       32733 
+                                 289                      327933 
   3522 fixaOrdem2[8,6,12]
-                                 291                       32734 
+                                 223                      327934 
   3523 fixaOrdem2[8,6,13]
-                                 357                       32721 
+                                 356                      327921 
   3524 fixaOrdem2[8,6,14]
-                                 609                       32726 
+                                 907                      327926 
   3525 fixaOrdem2[8,6,15]
-                                 436                       32749 
+                                 435                      327949 
   3526 fixaOrdem2[8,6,16]
-                               32464                       32793 
+                                 486                      327993 
   3527 fixaOrdem2[8,6,17]
-                                 487                       32772 
+                                 493                      327972 
   3528 fixaOrdem2[8,6,18]
-                                 515                       32724 
+                                 521                      327924 
   3529 fixaOrdem2[8,6,19]
-                               32544                       32773 
+                              327605                      327973 
   3530 fixaOrdem2[8,6,20]
-                                 591                       32782 
+                                 597                      327982 
   3531 fixaOrdem2[8,7,8]
-                                 682                       32734 
+                                 146                      327934 
   3532 fixaOrdem2[8,7,9]
-                                  46                       32770 
+                                 212                      327970 
   3533 fixaOrdem2[8,7,10]
-                                  76                       32709 
+                                 242                      327909 
   3534 fixaOrdem2[8,7,11]
-                               32266                       32733 
+                                 399                      327933 
   3535 fixaOrdem2[8,7,12]
-                                 167                       32734 
+                                 333                      327934 
   3536 fixaOrdem2[8,7,13]
-                                 233                       32721 
+                                 466                      327921 
   3537 fixaOrdem2[8,7,14]
-                                 485                       32726 
+                                1017                      327926 
   3538 fixaOrdem2[8,7,15]
-                                 312                       32749 
+                                 545                      327949 
   3539 fixaOrdem2[8,7,16]
-                               32340                       32793 
+                                 596                      327993 
   3540 fixaOrdem2[8,7,17]
-                                 363                       32772 
+                                 603                      327972 
   3541 fixaOrdem2[8,7,18]
-                                 391                       32724 
+                                 631                      327924 
   3542 fixaOrdem2[8,7,19]
-                               32420                       32773 
+                              327715                      327973 
   3543 fixaOrdem2[8,7,20]
-                                 467                       32782 
+                                 707                      327982 
   3544 fixaOrdem2[8,8,9]
-                               32164                       32770 
+                                  66                      327970 
   3545 fixaOrdem2[8,8,10]
-                               32194                       32709 
+                                  96                      327909 
   3546 fixaOrdem2[8,8,11]
-                               31584                       32733 
+                                 253                      327933 
   3547 fixaOrdem2[8,8,12]
-                               32285                       32734 
+                                 187                      327934 
   3548 fixaOrdem2[8,8,13]
-                               32351                       32721 
+                                 320                      327921 
   3549 fixaOrdem2[8,8,14]
-                               32603                       32726 
+                                 871                      327926 
   3550 fixaOrdem2[8,8,15]
-                               32430                       32749 
+                                 399                      327949 
   3551 fixaOrdem2[8,8,16]
-                               31658                       32793 
+                                 450                      327993 
   3552 fixaOrdem2[8,8,17]
-                               32481                       32772 
+                                 457                      327972 
   3553 fixaOrdem2[8,8,18]
-                               32509                       32724 
+                                 485                      327924 
   3554 fixaOrdem2[8,8,19]
-                               31738                       32773 
+                              327569                      327973 
   3555 fixaOrdem2[8,8,20]
-                               32585                       32782 
+                                 561                      327982 
   3556 fixaOrdem2[8,9,10]
-                                  30                       32709 
+                                  30                      327909 
   3557 fixaOrdem2[8,9,11]
-                               32220                       32733 
+                                 187                      327933 
   3558 fixaOrdem2[8,9,12]
-                                 121                       32734 
+                                 121                      327934 
   3559 fixaOrdem2[8,9,13]
-                                 187                       32721 
+                                 254                      327921 
   3560 fixaOrdem2[8,9,14]
-                                 439                       32726 
+                                 805                      327926 
   3561 fixaOrdem2[8,9,15]
-                                 266                       32749 
+                                 333                      327949 
   3562 fixaOrdem2[8,9,16]
-                               32294                       32793 
+                                 384                      327993 
   3563 fixaOrdem2[8,9,17]
-                                 317                       32772 
+                                 391                      327972 
   3564 fixaOrdem2[8,9,18]
-                                 345                       32724 
+                                 419                      327924 
   3565 fixaOrdem2[8,9,19]
-                               32374                       32773 
+                              327503                      327973 
   3566 fixaOrdem2[8,9,20]
-                                 421                       32782 
+                                 495                      327982 
   3567 fixaOrdem2[8,10,11]
-                               32190                       32733 
+                                 157                      327933 
   3568 fixaOrdem2[8,10,12]
-                                  91                       32734 
+                                  91                      327934 
   3569 fixaOrdem2[8,10,13]
-                                 157                       32721 
+                                 224                      327921 
   3570 fixaOrdem2[8,10,14]
-                                 409                       32726 
+                                 775                      327926 
   3571 fixaOrdem2[8,10,15]
-                                 236                       32749 
+                                 303                      327949 
   3572 fixaOrdem2[8,10,16]
-                               32264                       32793 
+                                 354                      327993 
   3573 fixaOrdem2[8,10,17]
-                                 287                       32772 
+                                 361                      327972 
   3574 fixaOrdem2[8,10,18]
-                                 315                       32724 
+                                 389                      327924 
   3575 fixaOrdem2[8,10,19]
-                               32344                       32773 
+                              327473                      327973 
   3576 fixaOrdem2[8,10,20]
-                                 391                       32782 
+                                 465                      327982 
   3577 fixaOrdem2[8,11,12]
-                                 701                       32734 
+                              327934                      327934 
   3578 fixaOrdem2[8,11,13]
-                                 767                       32721 
+                                  67                      327921 
   3579 fixaOrdem2[8,11,14]
-                                1019                       32726 
+                                 618                      327926 
   3580 fixaOrdem2[8,11,15]
-                                 846                       32749 
+                                 146                      327949 
   3581 fixaOrdem2[8,11,16]
-                                  74                       32793 
+                                 197                      327993 
   3582 fixaOrdem2[8,11,17]
-                                 897                       32772 
+                                 204                      327972 
   3583 fixaOrdem2[8,11,18]
-                                 925                       32724 
+                                 232                      327924 
   3584 fixaOrdem2[8,11,19]
-                                 154                       32773 
+                              327316                      327973 
   3585 fixaOrdem2[8,11,20]
-                                1001                       32782 
+                                 308                      327982 
   3586 fixaOrdem2[8,12,13]
-                                  66                       32721 
+                                 133                      327921 
   3587 fixaOrdem2[8,12,14]
-                                 318                       32726 
+                                 684                      327926 
   3588 fixaOrdem2[8,12,15]
-                                 145                       32749 
+                                 212                      327949 
   3589 fixaOrdem2[8,12,16]
-                               32173                       32793 
+                                 263                      327993 
   3590 fixaOrdem2[8,12,17]
-                                 196                       32772 
+                                 270                      327972 
   3591 fixaOrdem2[8,12,18]
-                                 224                       32724 
+                                 298                      327924 
   3592 fixaOrdem2[8,12,19]
-                               32253                       32773 
+                              327382                      327973 
   3593 fixaOrdem2[8,12,20]
-                                 300                       32782 
+                                 374                      327982 
   3594 fixaOrdem2[8,13,14]
-                                 252                       32726 
+                                 551                      327926 
   3595 fixaOrdem2[8,13,15]
-                                  79                       32749 
+                                  79                      327949 
   3596 fixaOrdem2[8,13,16]
-                               32107                       32793 
+                                 130                      327993 
   3597 fixaOrdem2[8,13,17]
-                                 130                       32772 
+                                 137                      327972 
   3598 fixaOrdem2[8,13,18]
-                                 158                       32724 
+                                 165                      327924 
   3599 fixaOrdem2[8,13,19]
-                               32187                       32773 
+                              327249                      327973 
   3600 fixaOrdem2[8,13,20]
-                                 234                       32782 
+                                 241                      327982 
   3601 fixaOrdem2[8,14,15]
-                               32627                       32749 
+                              327528                      327949 
   3602 fixaOrdem2[8,14,16]
-                               31855                       32793 
+                              327579                      327993 
   3603 fixaOrdem2[8,14,17]
-                               32678                       32772 
+                              327586                      327972 
   3604 fixaOrdem2[8,14,18]
-                               32706                       32724 
+                              327614                      327924 
   3605 fixaOrdem2[8,14,19]
-                               31935                       32773 
+                              326698                      327973 
   3606 fixaOrdem2[8,14,20]
-                               32782                       32782 
+                              327690                      327982 
   3607 fixaOrdem2[8,15,16]
-                               32028                       32793 
+                                  51                      327993 
   3608 fixaOrdem2[8,15,17]
-                                  51                       32772 
+                                  58                      327972 
   3609 fixaOrdem2[8,15,18]
-                                  79                       32724 
+                                  86                      327924 
   3610 fixaOrdem2[8,15,19]
-                               32108                       32773 
+                              327170                      327973 
   3611 fixaOrdem2[8,15,20]
-                                 155                       32782 
+                                 162                      327982 
   3612 fixaOrdem2[8,16,17]
-                                 823                       32772 
+                                   7                      327972 
   3613 fixaOrdem2[8,16,18]
-                                 851                       32724 
+                                  35                      327924 
   3614 fixaOrdem2[8,16,19]
-                                  80                       32773 
+                              327119                      327973 
   3615 fixaOrdem2[8,16,20]
-                                 927                       32782 
+                                 111                      327982 
   3616 fixaOrdem2[8,17,18]
-                                  28                       32724 
+                                  28                      327924 
   3617 fixaOrdem2[8,17,19]
-                               32057                       32773 
+                              327112                      327973 
   3618 fixaOrdem2[8,17,20]
-                                 104                       32782 
+                                 104                      327982 
   3619 fixaOrdem2[8,18,19]
-                               32029                       32773 
+                              327084                      327973 
   3620 fixaOrdem2[8,18,20]
-                                  76                       32782 
+                                  76                      327982 
   3621 fixaOrdem2[8,19,20]
-                                 847                       32782 
+                                 992                      327982 
   3622 fixaOrdem2[9,1,2]
-                               32717                       32728 
+                                  90                      327928 
   3623 fixaOrdem2[9,1,3]
-                                 784                       32728 
+                                 922                      327928 
   3624 fixaOrdem2[9,1,4]
-                                 204                       32742 
+                                 221                      327942 
   3625 fixaOrdem2[9,1,5]
-                               32789                       32789 
+                              327989                      327989 
   3626 fixaOrdem2[9,1,6]
-                                  90                       32737 
+                                 279                      327937 
   3627 fixaOrdem2[9,1,7]
-                                 153                       32749 
+                                 170                      327949 
   3628 fixaOrdem2[9,1,8]
-                                 905                       32726 
+                                 342                      327926 
   3629 fixaOrdem2[9,1,9]
-                                 337                       32794 
+                                 473                      327994 
   3630 fixaOrdem2[9,1,10]
-                                 343                       32792 
+                                 479                      327992 
   3631 fixaOrdem2[9,1,11]
-                               32556                       32793 
+                                 555                      327993 
   3632 fixaOrdem2[9,1,12]
-                                 380                       32775 
+                                 487                      327975 
   3633 fixaOrdem2[9,1,13]
-                                 405                       32738 
+                                 562                      327938 
   3634 fixaOrdem2[9,1,14]
-                                 691                       32709 
+                                 994                      327909 
   3635 fixaOrdem2[9,1,15]
-                                 467                       32745 
+                                 624                      327945 
   3636 fixaOrdem2[9,1,16]
-                               32563                       32726 
+                                 679                      327926 
   3637 fixaOrdem2[9,1,17]
-                                 522                       32722 
+                                 753                      327922 
   3638 fixaOrdem2[9,1,18]
-                                 600                       32763 
+                                 831                      327963 
   3639 fixaOrdem2[9,1,19]
-                               32637                       32720 
+                              327905                      327920 
   3640 fixaOrdem2[9,1,20]
-                                 637                       32746 
+                                 868                      327946 
   3641 fixaOrdem2[9,2,3]
-                                 867                       32728 
+                                 832                      327928 
   3642 fixaOrdem2[9,2,4]
-                                 287                       32742 
+                                 131                      327942 
   3643 fixaOrdem2[9,2,5]
-                                  72                       32789 
+                              327899                      327989 
   3644 fixaOrdem2[9,2,6]
-                                 173                       32737 
+                                 189                      327937 
   3645 fixaOrdem2[9,2,7]
-                                 236                       32749 
+                                  80                      327949 
   3646 fixaOrdem2[9,2,8]
-                                 988                       32726 
+                                 252                      327926 
   3647 fixaOrdem2[9,2,9]
-                                 420                       32794 
+                                 383                      327994 
   3648 fixaOrdem2[9,2,10]
-                                 426                       32792 
+                                 389                      327992 
   3649 fixaOrdem2[9,2,11]
-                               32639                       32793 
+                                 465                      327993 
   3650 fixaOrdem2[9,2,12]
-                                 463                       32775 
+                                 397                      327975 
   3651 fixaOrdem2[9,2,13]
-                                 488                       32738 
+                                 472                      327938 
   3652 fixaOrdem2[9,2,14]
-                                 774                       32709 
+                                 904                      327909 
   3653 fixaOrdem2[9,2,15]
-                                 550                       32745 
+                                 534                      327945 
   3654 fixaOrdem2[9,2,16]
-                               32646                       32726 
+                                 589                      327926 
   3655 fixaOrdem2[9,2,17]
-                                 605                       32722 
+                                 663                      327922 
   3656 fixaOrdem2[9,2,18]
-                                 683                       32763 
+                                 741                      327963 
   3657 fixaOrdem2[9,2,19]
-                               32720                       32720 
+                              327815                      327920 
   3658 fixaOrdem2[9,2,20]
-                                 720                       32746 
+                                 778                      327946 
   3659 fixaOrdem2[9,3,4]
-                               32220                       32742 
+                              327299                      327942 
   3660 fixaOrdem2[9,3,5]
-                               32005                       32789 
+                              327067                      327989 
   3661 fixaOrdem2[9,3,6]
-                               32106                       32737 
+                              327357                      327937 
   3662 fixaOrdem2[9,3,7]
-                               32169                       32749 
+                              327248                      327949 
   3663 fixaOrdem2[9,3,8]
-                                 121                       32726 
+                              327420                      327926 
   3664 fixaOrdem2[9,3,9]
-                               32353                       32794 
+                              327551                      327994 
   3665 fixaOrdem2[9,3,10]
-                               32359                       32792 
+                              327557                      327992 
   3666 fixaOrdem2[9,3,11]
-                               31772                       32793 
+                              327633                      327993 
   3667 fixaOrdem2[9,3,12]
-                               32396                       32775 
+                              327565                      327975 
   3668 fixaOrdem2[9,3,13]
-                               32421                       32738 
+                              327640                      327938 
   3669 fixaOrdem2[9,3,14]
-                               32707                       32709 
+                                  72                      327909 
   3670 fixaOrdem2[9,3,15]
-                               32483                       32745 
+                              327702                      327945 
   3671 fixaOrdem2[9,3,16]
-                               31779                       32726 
+                              327757                      327926 
   3672 fixaOrdem2[9,3,17]
-                               32538                       32722 
+                              327831                      327922 
   3673 fixaOrdem2[9,3,18]
-                               32616                       32763 
+                              327909                      327963 
   3674 fixaOrdem2[9,3,19]
-                               31853                       32720 
+                              326983                      327920 
   3675 fixaOrdem2[9,3,20]
-                               32653                       32746 
+                              327946                      327946 
   3676 fixaOrdem2[9,4,5]
-                               32585                       32789 
+                              327768                      327989 
   3677 fixaOrdem2[9,4,6]
-                               32686                       32737 
+                                  58                      327937 
   3678 fixaOrdem2[9,4,7]
-                               32749                       32749 
+                              327949                      327949 
   3679 fixaOrdem2[9,4,8]
-                                 701                       32726 
+                                 121                      327926 
   3680 fixaOrdem2[9,4,9]
-                                 133                       32794 
+                                 252                      327994 
   3681 fixaOrdem2[9,4,10]
-                                 139                       32792 
+                                 258                      327992 
   3682 fixaOrdem2[9,4,11]
-                               32352                       32793 
+                                 334                      327993 
   3683 fixaOrdem2[9,4,12]
-                                 176                       32775 
+                                 266                      327975 
   3684 fixaOrdem2[9,4,13]
-                                 201                       32738 
+                                 341                      327938 
   3685 fixaOrdem2[9,4,14]
-                                 487                       32709 
+                                 773                      327909 
   3686 fixaOrdem2[9,4,15]
-                                 263                       32745 
+                                 403                      327945 
   3687 fixaOrdem2[9,4,16]
-                               32359                       32726 
+                                 458                      327926 
   3688 fixaOrdem2[9,4,17]
-                                 318                       32722 
+                                 532                      327922 
   3689 fixaOrdem2[9,4,18]
-                                 396                       32763 
+                                 610                      327963 
   3690 fixaOrdem2[9,4,19]
-                               32433                       32720 
+                              327684                      327920 
   3691 fixaOrdem2[9,4,20]
-                                 433                       32746 
+                                 647                      327946 
   3692 fixaOrdem2[9,5,6]
-                                 101                       32737 
+                                 290                      327937 
   3693 fixaOrdem2[9,5,7]
-                                 164                       32749 
+                                 181                      327949 
   3694 fixaOrdem2[9,5,8]
-                                 916                       32726 
+                                 353                      327926 
   3695 fixaOrdem2[9,5,9]
-                                 348                       32794 
+                                 484                      327994 
   3696 fixaOrdem2[9,5,10]
-                                 354                       32792 
+                                 490                      327992 
   3697 fixaOrdem2[9,5,11]
-                               32567                       32793 
+                                 566                      327993 
   3698 fixaOrdem2[9,5,12]
-                                 391                       32775 
+                                 498                      327975 
   3699 fixaOrdem2[9,5,13]
-                                 416                       32738 
+                                 573                      327938 
   3700 fixaOrdem2[9,5,14]
-                                 702                       32709 
+                                1005                      327909 
   3701 fixaOrdem2[9,5,15]
-                                 478                       32745 
+                                 635                      327945 
   3702 fixaOrdem2[9,5,16]
-                               32574                       32726 
+                                 690                      327926 
   3703 fixaOrdem2[9,5,17]
-                                 533                       32722 
+                                 764                      327922 
   3704 fixaOrdem2[9,5,18]
-                                 611                       32763 
+                                 842                      327963 
   3705 fixaOrdem2[9,5,19]
-                               32648                       32720 
+                              327916                      327920 
   3706 fixaOrdem2[9,5,20]
-                                 648                       32746 
+                                 879                      327946 
   3707 fixaOrdem2[9,6,7]
-                                  63                       32749 
+                              327891                      327949 
   3708 fixaOrdem2[9,6,8]
-                                 815                       32726 
+                                  63                      327926 
   3709 fixaOrdem2[9,6,9]
-                                 247                       32794 
+                                 194                      327994 
   3710 fixaOrdem2[9,6,10]
-                                 253                       32792 
+                                 200                      327992 
   3711 fixaOrdem2[9,6,11]
-                               32466                       32793 
+                                 276                      327993 
   3712 fixaOrdem2[9,6,12]
-                                 290                       32775 
+                                 208                      327975 
   3713 fixaOrdem2[9,6,13]
-                                 315                       32738 
+                                 283                      327938 
   3714 fixaOrdem2[9,6,14]
-                                 601                       32709 
+                                 715                      327909 
   3715 fixaOrdem2[9,6,15]
-                                 377                       32745 
+                                 345                      327945 
   3716 fixaOrdem2[9,6,16]
-                               32473                       32726 
+                                 400                      327926 
   3717 fixaOrdem2[9,6,17]
-                                 432                       32722 
+                                 474                      327922 
   3718 fixaOrdem2[9,6,18]
-                                 510                       32763 
+                                 552                      327963 
   3719 fixaOrdem2[9,6,19]
-                               32547                       32720 
+                              327626                      327920 
   3720 fixaOrdem2[9,6,20]
-                                 547                       32746 
+                                 589                      327946 
   3721 fixaOrdem2[9,7,8]
-                                 752                       32726 
+                                 172                      327926 
   3722 fixaOrdem2[9,7,9]
-                                 184                       32794 
+                                 303                      327994 
   3723 fixaOrdem2[9,7,10]
-                                 190                       32792 
+                                 309                      327992 
   3724 fixaOrdem2[9,7,11]
-                               32403                       32793 
+                                 385                      327993 
   3725 fixaOrdem2[9,7,12]
-                                 227                       32775 
+                                 317                      327975 
   3726 fixaOrdem2[9,7,13]
-                                 252                       32738 
+                                 392                      327938 
   3727 fixaOrdem2[9,7,14]
-                                 538                       32709 
+                                 824                      327909 
   3728 fixaOrdem2[9,7,15]
-                                 314                       32745 
+                                 454                      327945 
   3729 fixaOrdem2[9,7,16]
-                               32410                       32726 
+                                 509                      327926 
   3730 fixaOrdem2[9,7,17]
-                                 369                       32722 
+                                 583                      327922 
   3731 fixaOrdem2[9,7,18]
-                                 447                       32763 
+                                 661                      327963 
   3732 fixaOrdem2[9,7,19]
-                               32484                       32720 
+                              327735                      327920 
   3733 fixaOrdem2[9,7,20]
-                                 484                       32746 
+                                 698                      327946 
   3734 fixaOrdem2[9,8,9]
-                               32232                       32794 
+                                 131                      327994 
   3735 fixaOrdem2[9,8,10]
-                               32238                       32792 
+                                 137                      327992 
   3736 fixaOrdem2[9,8,11]
-                               31651                       32793 
+                                 213                      327993 
   3737 fixaOrdem2[9,8,12]
-                               32275                       32775 
+                                 145                      327975 
   3738 fixaOrdem2[9,8,13]
-                               32300                       32738 
+                                 220                      327938 
   3739 fixaOrdem2[9,8,14]
-                               32586                       32709 
+                                 652                      327909 
   3740 fixaOrdem2[9,8,15]
-                               32362                       32745 
+                                 282                      327945 
   3741 fixaOrdem2[9,8,16]
-                               31658                       32726 
+                                 337                      327926 
   3742 fixaOrdem2[9,8,17]
-                               32417                       32722 
+                                 411                      327922 
   3743 fixaOrdem2[9,8,18]
-                               32495                       32763 
+                                 489                      327963 
   3744 fixaOrdem2[9,8,19]
-                               31732                       32720 
+                              327563                      327920 
   3745 fixaOrdem2[9,8,20]
-                               32532                       32746 
+                                 526                      327946 
   3746 fixaOrdem2[9,9,10]
-                                   6                       32792 
+                                   6                      327992 
   3747 fixaOrdem2[9,9,11]
-                               32219                       32793 
+                                  82                      327993 
   3748 fixaOrdem2[9,9,12]
-                                  43                       32775 
+                                  14                      327975 
   3749 fixaOrdem2[9,9,13]
-                                  68                       32738 
+                                  89                      327938 
   3750 fixaOrdem2[9,9,14]
-                                 354                       32709 
+                                 521                      327909 
   3751 fixaOrdem2[9,9,15]
-                                 130                       32745 
+                                 151                      327945 
   3752 fixaOrdem2[9,9,16]
-                               32226                       32726 
+                                 206                      327926 
   3753 fixaOrdem2[9,9,17]
-                                 185                       32722 
+                                 280                      327922 
   3754 fixaOrdem2[9,9,18]
-                                 263                       32763 
+                                 358                      327963 
   3755 fixaOrdem2[9,9,19]
-                               32300                       32720 
+                              327432                      327920 
   3756 fixaOrdem2[9,9,20]
-                                 300                       32746 
+                                 395                      327946 
   3757 fixaOrdem2[9,10,11]
-                               32213                       32793 
+                                  76                      327993 
   3758 fixaOrdem2[9,10,12]
-                                  37                       32775 
+                                   8                      327975 
   3759 fixaOrdem2[9,10,13]
-                                  62                       32738 
+                                  83                      327938 
   3760 fixaOrdem2[9,10,14]
-                                 348                       32709 
+                                 515                      327909 
   3761 fixaOrdem2[9,10,15]
-                                 124                       32745 
+                                 145                      327945 
   3762 fixaOrdem2[9,10,16]
-                               32220                       32726 
+                                 200                      327926 
   3763 fixaOrdem2[9,10,17]
-                                 179                       32722 
+                                 274                      327922 
   3764 fixaOrdem2[9,10,18]
-                                 257                       32763 
+                                 352                      327963 
   3765 fixaOrdem2[9,10,19]
-                               32294                       32720 
+                              327426                      327920 
   3766 fixaOrdem2[9,10,20]
-                                 294                       32746 
+                                 389                      327946 
   3767 fixaOrdem2[9,11,12]
-                                 624                       32775 
+                              327932                      327975 
   3768 fixaOrdem2[9,11,13]
-                                 649                       32738 
+                                   7                      327938 
   3769 fixaOrdem2[9,11,14]
-                                 935                       32709 
+                                 439                      327909 
   3770 fixaOrdem2[9,11,15]
-                                 711                       32745 
+                                  69                      327945 
   3771 fixaOrdem2[9,11,16]
-                                   7                       32726 
+                                 124                      327926 
   3772 fixaOrdem2[9,11,17]
-                                 766                       32722 
+                                 198                      327922 
   3773 fixaOrdem2[9,11,18]
-                                 844                       32763 
+                                 276                      327963 
   3774 fixaOrdem2[9,11,19]
-                                  81                       32720 
+                              327350                      327920 
   3775 fixaOrdem2[9,11,20]
-                                 881                       32746 
+                                 313                      327946 
   3776 fixaOrdem2[9,12,13]
-                                  25                       32738 
+                                  75                      327938 
   3777 fixaOrdem2[9,12,14]
-                                 311                       32709 
+                                 507                      327909 
   3778 fixaOrdem2[9,12,15]
-                                  87                       32745 
+                                 137                      327945 
   3779 fixaOrdem2[9,12,16]
-                               32183                       32726 
+                                 192                      327926 
   3780 fixaOrdem2[9,12,17]
-                                 142                       32722 
+                                 266                      327922 
   3781 fixaOrdem2[9,12,18]
-                                 220                       32763 
+                                 344                      327963 
   3782 fixaOrdem2[9,12,19]
-                               32257                       32720 
+                              327418                      327920 
   3783 fixaOrdem2[9,12,20]
-                                 257                       32746 
+                                 381                      327946 
   3784 fixaOrdem2[9,13,14]
-                                 286                       32709 
+                                 432                      327909 
   3785 fixaOrdem2[9,13,15]
-                                  62                       32745 
+                                  62                      327945 
   3786 fixaOrdem2[9,13,16]
-                               32158                       32726 
+                                 117                      327926 
   3787 fixaOrdem2[9,13,17]
-                                 117                       32722 
+                                 191                      327922 
   3788 fixaOrdem2[9,13,18]
-                                 195                       32763 
+                                 269                      327963 
   3789 fixaOrdem2[9,13,19]
-                               32232                       32720 
+                              327343                      327920 
   3790 fixaOrdem2[9,13,20]
-                                 232                       32746 
+                                 306                      327946 
   3791 fixaOrdem2[9,14,15]
-                               32576                       32745 
+                              327630                      327945 
   3792 fixaOrdem2[9,14,16]
-                               31872                       32726 
+                              327685                      327926 
   3793 fixaOrdem2[9,14,17]
-                               32631                       32722 
+                              327759                      327922 
   3794 fixaOrdem2[9,14,18]
-                               32709                       32763 
+                              327837                      327963 
   3795 fixaOrdem2[9,14,19]
-                               31946                       32720 
+                              326911                      327920 
   3796 fixaOrdem2[9,14,20]
-                               32746                       32746 
+                              327874                      327946 
   3797 fixaOrdem2[9,15,16]
-                               32096                       32726 
+                                  55                      327926 
   3798 fixaOrdem2[9,15,17]
-                                  55                       32722 
+                                 129                      327922 
   3799 fixaOrdem2[9,15,18]
-                                 133                       32763 
+                                 207                      327963 
   3800 fixaOrdem2[9,15,19]
-                               32170                       32720 
+                              327281                      327920 
   3801 fixaOrdem2[9,15,20]
-                                 170                       32746 
+                                 244                      327946 
   3802 fixaOrdem2[9,16,17]
-                                 759                       32722 
+                                  74                      327922 
   3803 fixaOrdem2[9,16,18]
-                                 837                       32763 
+                                 152                      327963 
   3804 fixaOrdem2[9,16,19]
-                                  74                       32720 
+                              327226                      327920 
   3805 fixaOrdem2[9,16,20]
-                                 874                       32746 
+                                 189                      327946 
   3806 fixaOrdem2[9,17,18]
-                                  78                       32763 
+                                  78                      327963 
   3807 fixaOrdem2[9,17,19]
-                               32115                       32720 
+                              327152                      327920 
   3808 fixaOrdem2[9,17,20]
-                                 115                       32746 
+                                 115                      327946 
   3809 fixaOrdem2[9,18,19]
-                               32037                       32720 
+                              327074                      327920 
   3810 fixaOrdem2[9,18,20]
-                                  37                       32746 
+                                  37                      327946 
   3811 fixaOrdem2[9,19,20]
-                                 800                       32746 
+                                 963                      327946 
   3812 fixaOrdem2[10,1,2]
-                               32728                       32781 
+                                  67                      327981 
   3813 fixaOrdem2[10,1,3]
-                                 850                       32747 
+                                 893                      327947 
   3814 fixaOrdem2[10,1,4]
-                                 202                       32701 
+                                 167                      327901 
   3815 fixaOrdem2[10,1,5]
-                               32773                       32773 
+                              327973                      327973 
   3816 fixaOrdem2[10,1,6]
-                                  67                       32746 
+                                 266                      327946 
   3817 fixaOrdem2[10,1,7]
-                                 121                       32719 
+                                  86                      327919 
   3818 fixaOrdem2[10,1,8]
-                                 903                       32775 
+                                 320                      327975 
   3819 fixaOrdem2[10,1,9]
-                                 301                       32740 
+                                 345                      327940 
   3820 fixaOrdem2[10,1,10]
-                                 361                       32715 
+                                 405                      327915 
   3821 fixaOrdem2[10,1,11]
-                               32630                       32745 
+                                 555                      327945 
   3822 fixaOrdem2[10,1,12]
-                                 446                       32735 
+                                 490                      327935 
   3823 fixaOrdem2[10,1,13]
-                                 511                       32780 
+                                 610                      327980 
   3824 fixaOrdem2[10,1,14]
-                                 757                       32707 
+                                 946                      327907 
   3825 fixaOrdem2[10,1,15]
-                                 531                       32765 
+                                 630                      327965 
   3826 fixaOrdem2[10,1,16]
-                               32685                       32763 
+                                 665                      327963 
   3827 fixaOrdem2[10,1,17]
-                                 566                       32705 
+                                 702                      327905 
   3828 fixaOrdem2[10,1,18]
-                                 661                       32717 
+                                 797                      327917 
   3829 fixaOrdem2[10,1,19]
-                               32722                       32794 
+                              327967                      327994 
   3830 fixaOrdem2[10,1,20]
-                                 744                       32787 
+                                 880                      327987 
   3831 fixaOrdem2[10,2,3]
-                                 922                       32747 
+                                 826                      327947 
   3832 fixaOrdem2[10,2,4]
-                                 274                       32701 
+                                 100                      327901 
   3833 fixaOrdem2[10,2,5]
-                                  45                       32773 
+                              327906                      327973 
   3834 fixaOrdem2[10,2,6]
-                                 139                       32746 
+                                 199                      327946 
   3835 fixaOrdem2[10,2,7]
-                                 193                       32719 
+                                  19                      327919 
   3836 fixaOrdem2[10,2,8]
-                                 975                       32775 
+                                 253                      327975 
   3837 fixaOrdem2[10,2,9]
-                                 373                       32740 
+                                 278                      327940 
   3838 fixaOrdem2[10,2,10]
-                                 433                       32715 
+                                 338                      327915 
   3839 fixaOrdem2[10,2,11]
-                               32702                       32745 
+                                 488                      327945 
   3840 fixaOrdem2[10,2,12]
-                                 518                       32735 
+                                 423                      327935 
   3841 fixaOrdem2[10,2,13]
-                                 583                       32780 
+                                 543                      327980 
   3842 fixaOrdem2[10,2,14]
-                                 829                       32707 
+                                 879                      327907 
   3843 fixaOrdem2[10,2,15]
-                                 603                       32765 
+                                 563                      327965 
   3844 fixaOrdem2[10,2,16]
-                               32757                       32763 
+                                 598                      327963 
   3845 fixaOrdem2[10,2,17]
-                                 638                       32705 
+                                 635                      327905 
   3846 fixaOrdem2[10,2,18]
-                                 733                       32717 
+                                 730                      327917 
   3847 fixaOrdem2[10,2,19]
-                               32794                       32794 
+                              327900                      327994 
   3848 fixaOrdem2[10,2,20]
-                                 816                       32787 
+                                 813                      327987 
   3849 fixaOrdem2[10,3,4]
-                               32152                       32701 
+                              327274                      327901 
   3850 fixaOrdem2[10,3,5]
-                               31923                       32773 
+                              327080                      327973 
   3851 fixaOrdem2[10,3,6]
-                               32017                       32746 
+                              327373                      327946 
   3852 fixaOrdem2[10,3,7]
-                               32071                       32719 
+                              327193                      327919 
   3853 fixaOrdem2[10,3,8]
-                                  53                       32775 
+                              327427                      327975 
   3854 fixaOrdem2[10,3,9]
-                               32251                       32740 
+                              327452                      327940 
   3855 fixaOrdem2[10,3,10]
-                               32311                       32715 
+                              327512                      327915 
   3856 fixaOrdem2[10,3,11]
-                               31780                       32745 
+                              327662                      327945 
   3857 fixaOrdem2[10,3,12]
-                               32396                       32735 
+                              327597                      327935 
   3858 fixaOrdem2[10,3,13]
-                               32461                       32780 
+                              327717                      327980 
   3859 fixaOrdem2[10,3,14]
-                               32707                       32707 
+                                  53                      327907 
   3860 fixaOrdem2[10,3,15]
-                               32481                       32765 
+                              327737                      327965 
   3861 fixaOrdem2[10,3,16]
-                               31835                       32763 
+                              327772                      327963 
   3862 fixaOrdem2[10,3,17]
-                               32516                       32705 
+                              327809                      327905 
   3863 fixaOrdem2[10,3,18]
-                               32611                       32717 
+                              327904                      327917 
   3864 fixaOrdem2[10,3,19]
-                               31872                       32794 
+                              327074                      327994 
   3865 fixaOrdem2[10,3,20]
-                               32694                       32787 
+                              327987                      327987 
   3866 fixaOrdem2[10,4,5]
-                               32571                       32773 
+                              327806                      327973 
   3867 fixaOrdem2[10,4,6]
-                               32665                       32746 
+                                  99                      327946 
   3868 fixaOrdem2[10,4,7]
-                               32719                       32719 
+                              327919                      327919 
   3869 fixaOrdem2[10,4,8]
-                                 701                       32775 
+                                 153                      327975 
   3870 fixaOrdem2[10,4,9]
-                                  99                       32740 
+                                 178                      327940 
   3871 fixaOrdem2[10,4,10]
-                                 159                       32715 
+                                 238                      327915 
   3872 fixaOrdem2[10,4,11]
-                               32428                       32745 
+                                 388                      327945 
   3873 fixaOrdem2[10,4,12]
-                                 244                       32735 
+                                 323                      327935 
   3874 fixaOrdem2[10,4,13]
-                                 309                       32780 
+                                 443                      327980 
   3875 fixaOrdem2[10,4,14]
-                                 555                       32707 
+                                 779                      327907 
   3876 fixaOrdem2[10,4,15]
-                                 329                       32765 
+                                 463                      327965 
   3877 fixaOrdem2[10,4,16]
-                               32483                       32763 
+                                 498                      327963 
   3878 fixaOrdem2[10,4,17]
-                                 364                       32705 
+                                 535                      327905 
   3879 fixaOrdem2[10,4,18]
-                                 459                       32717 
+                                 630                      327917 
   3880 fixaOrdem2[10,4,19]
-                               32520                       32794 
+                              327800                      327994 
   3881 fixaOrdem2[10,4,20]
-                                 542                       32787 
+                                 713                      327987 
   3882 fixaOrdem2[10,5,6]
-                                  94                       32746 
+                                 293                      327946 
   3883 fixaOrdem2[10,5,7]
-                                 148                       32719 
+                                 113                      327919 
   3884 fixaOrdem2[10,5,8]
-                                 930                       32775 
+                                 347                      327975 
   3885 fixaOrdem2[10,5,9]
-                                 328                       32740 
+                                 372                      327940 
   3886 fixaOrdem2[10,5,10]
-                                 388                       32715 
+                                 432                      327915 
   3887 fixaOrdem2[10,5,11]
-                               32657                       32745 
+                                 582                      327945 
   3888 fixaOrdem2[10,5,12]
-                                 473                       32735 
+                                 517                      327935 
   3889 fixaOrdem2[10,5,13]
-                                 538                       32780 
+                                 637                      327980 
   3890 fixaOrdem2[10,5,14]
-                                 784                       32707 
+                                 973                      327907 
   3891 fixaOrdem2[10,5,15]
-                                 558                       32765 
+                                 657                      327965 
   3892 fixaOrdem2[10,5,16]
-                               32712                       32763 
+                                 692                      327963 
   3893 fixaOrdem2[10,5,17]
-                                 593                       32705 
+                                 729                      327905 
   3894 fixaOrdem2[10,5,18]
-                                 688                       32717 
+                                 824                      327917 
   3895 fixaOrdem2[10,5,19]
-                               32749                       32794 
+                              327994                      327994 
   3896 fixaOrdem2[10,5,20]
-                                 771                       32787 
+                                 907                      327987 
   3897 fixaOrdem2[10,6,7]
-                                  54                       32719 
+                              327820                      327919 
   3898 fixaOrdem2[10,6,8]
-                                 836                       32775 
+                                  54                      327975 
   3899 fixaOrdem2[10,6,9]
-                                 234                       32740 
+                                  79                      327940 
   3900 fixaOrdem2[10,6,10]
-                                 294                       32715 
+                                 139                      327915 
   3901 fixaOrdem2[10,6,11]
-                               32563                       32745 
+                                 289                      327945 
   3902 fixaOrdem2[10,6,12]
-                                 379                       32735 
+                                 224                      327935 
   3903 fixaOrdem2[10,6,13]
-                                 444                       32780 
+                                 344                      327980 
   3904 fixaOrdem2[10,6,14]
-                                 690                       32707 
+                                 680                      327907 
   3905 fixaOrdem2[10,6,15]
-                                 464                       32765 
+                                 364                      327965 
   3906 fixaOrdem2[10,6,16]
-                               32618                       32763 
+                                 399                      327963 
   3907 fixaOrdem2[10,6,17]
-                                 499                       32705 
+                                 436                      327905 
   3908 fixaOrdem2[10,6,18]
-                                 594                       32717 
+                                 531                      327917 
   3909 fixaOrdem2[10,6,19]
-                               32655                       32794 
+                              327701                      327994 
   3910 fixaOrdem2[10,6,20]
-                                 677                       32787 
+                                 614                      327987 
   3911 fixaOrdem2[10,7,8]
-                                 782                       32775 
+                                 234                      327975 
   3912 fixaOrdem2[10,7,9]
-                                 180                       32740 
+                                 259                      327940 
   3913 fixaOrdem2[10,7,10]
-                                 240                       32715 
+                                 319                      327915 
   3914 fixaOrdem2[10,7,11]
-                               32509                       32745 
+                                 469                      327945 
   3915 fixaOrdem2[10,7,12]
-                                 325                       32735 
+                                 404                      327935 
   3916 fixaOrdem2[10,7,13]
-                                 390                       32780 
+                                 524                      327980 
   3917 fixaOrdem2[10,7,14]
-                                 636                       32707 
+                                 860                      327907 
   3918 fixaOrdem2[10,7,15]
-                                 410                       32765 
+                                 544                      327965 
   3919 fixaOrdem2[10,7,16]
-                               32564                       32763 
+                                 579                      327963 
   3920 fixaOrdem2[10,7,17]
-                                 445                       32705 
+                                 616                      327905 
   3921 fixaOrdem2[10,7,18]
-                                 540                       32717 
+                                 711                      327917 
   3922 fixaOrdem2[10,7,19]
-                               32601                       32794 
+                              327881                      327994 
   3923 fixaOrdem2[10,7,20]
-                                 623                       32787 
+                                 794                      327987 
   3924 fixaOrdem2[10,8,9]
-                               32198                       32740 
+                                  25                      327940 
   3925 fixaOrdem2[10,8,10]
-                               32258                       32715 
+                                  85                      327915 
   3926 fixaOrdem2[10,8,11]
-                               31727                       32745 
+                                 235                      327945 
   3927 fixaOrdem2[10,8,12]
-                               32343                       32735 
+                                 170                      327935 
   3928 fixaOrdem2[10,8,13]
-                               32408                       32780 
+                                 290                      327980 
   3929 fixaOrdem2[10,8,14]
-                               32654                       32707 
+                                 626                      327907 
   3930 fixaOrdem2[10,8,15]
-                               32428                       32765 
+                                 310                      327965 
   3931 fixaOrdem2[10,8,16]
-                               31782                       32763 
+                                 345                      327963 
   3932 fixaOrdem2[10,8,17]
-                               32463                       32705 
+                                 382                      327905 
   3933 fixaOrdem2[10,8,18]
-                               32558                       32717 
+                                 477                      327917 
   3934 fixaOrdem2[10,8,19]
-                               31819                       32794 
+                              327647                      327994 
   3935 fixaOrdem2[10,8,20]
-                               32641                       32787 
+                                 560                      327987 
   3936 fixaOrdem2[10,9,10]
-                                  60                       32715 
+                                  60                      327915 
   3937 fixaOrdem2[10,9,11]
-                               32329                       32745 
+                                 210                      327945 
   3938 fixaOrdem2[10,9,12]
-                                 145                       32735 
+                                 145                      327935 
   3939 fixaOrdem2[10,9,13]
-                                 210                       32780 
+                                 265                      327980 
   3940 fixaOrdem2[10,9,14]
-                                 456                       32707 
+                                 601                      327907 
   3941 fixaOrdem2[10,9,15]
-                                 230                       32765 
+                                 285                      327965 
   3942 fixaOrdem2[10,9,16]
-                               32384                       32763 
+                                 320                      327963 
   3943 fixaOrdem2[10,9,17]
-                                 265                       32705 
+                                 357                      327905 
   3944 fixaOrdem2[10,9,18]
-                                 360                       32717 
+                                 452                      327917 
   3945 fixaOrdem2[10,9,19]
-                               32421                       32794 
+                              327622                      327994 
   3946 fixaOrdem2[10,9,20]
-                                 443                       32787 
+                                 535                      327987 
   3947 fixaOrdem2[10,10,11]
-                               32269                       32745 
+                                 150                      327945 
   3948 fixaOrdem2[10,10,12]
-                                  85                       32735 
+                                  85                      327935 
   3949 fixaOrdem2[10,10,13]
-                                 150                       32780 
+                                 205                      327980 
   3950 fixaOrdem2[10,10,14]
-                                 396                       32707 
+                                 541                      327907 
   3951 fixaOrdem2[10,10,15]
-                                 170                       32765 
+                                 225                      327965 
   3952 fixaOrdem2[10,10,16]
-                               32324                       32763 
+                                 260                      327963 
   3953 fixaOrdem2[10,10,17]
-                                 205                       32705 
+                                 297                      327905 
   3954 fixaOrdem2[10,10,18]
-                                 300                       32717 
+                                 392                      327917 
   3955 fixaOrdem2[10,10,19]
-                               32361                       32794 
+                              327562                      327994 
   3956 fixaOrdem2[10,10,20]
-                                 383                       32787 
+                                 475                      327987 
   3957 fixaOrdem2[10,11,12]
-                                 616                       32735 
+                              327935                      327935 
   3958 fixaOrdem2[10,11,13]
-                                 681                       32780 
+                                  55                      327980 
   3959 fixaOrdem2[10,11,14]
-                                 927                       32707 
+                                 391                      327907 
   3960 fixaOrdem2[10,11,15]
-                                 701                       32765 
+                                  75                      327965 
   3961 fixaOrdem2[10,11,16]
-                                  55                       32763 
+                                 110                      327963 
   3962 fixaOrdem2[10,11,17]
-                                 736                       32705 
+                                 147                      327905 
   3963 fixaOrdem2[10,11,18]
-                                 831                       32717 
+                                 242                      327917 
   3964 fixaOrdem2[10,11,19]
-                                  92                       32794 
+                              327412                      327994 
   3965 fixaOrdem2[10,11,20]
-                                 914                       32787 
+                                 325                      327987 
   3966 fixaOrdem2[10,12,13]
-                                  65                       32780 
+                                 120                      327980 
   3967 fixaOrdem2[10,12,14]
-                                 311                       32707 
+                                 456                      327907 
   3968 fixaOrdem2[10,12,15]
-                                  85                       32765 
+                                 140                      327965 
   3969 fixaOrdem2[10,12,16]
-                               32239                       32763 
+                                 175                      327963 
   3970 fixaOrdem2[10,12,17]
-                                 120                       32705 
+                                 212                      327905 
   3971 fixaOrdem2[10,12,18]
-                                 215                       32717 
+                                 307                      327917 
   3972 fixaOrdem2[10,12,19]
-                               32276                       32794 
+                              327477                      327994 
   3973 fixaOrdem2[10,12,20]
-                                 298                       32787 
+                                 390                      327987 
   3974 fixaOrdem2[10,13,14]
-                                 246                       32707 
+                                 336                      327907 
   3975 fixaOrdem2[10,13,15]
-                                  20                       32765 
+                                  20                      327965 
   3976 fixaOrdem2[10,13,16]
-                               32174                       32763 
+                                  55                      327963 
   3977 fixaOrdem2[10,13,17]
-                                  55                       32705 
+                                  92                      327905 
   3978 fixaOrdem2[10,13,18]
-                                 150                       32717 
+                                 187                      327917 
   3979 fixaOrdem2[10,13,19]
-                               32211                       32794 
+                              327357                      327994 
   3980 fixaOrdem2[10,13,20]
-                                 233                       32787 
+                                 270                      327987 
   3981 fixaOrdem2[10,14,15]
-                               32574                       32765 
+                              327684                      327965 
   3982 fixaOrdem2[10,14,16]
-                               31928                       32763 
+                              327719                      327963 
   3983 fixaOrdem2[10,14,17]
-                               32609                       32705 
+                              327756                      327905 
   3984 fixaOrdem2[10,14,18]
-                               32704                       32717 
+                              327851                      327917 
   3985 fixaOrdem2[10,14,19]
-                               31965                       32794 
+                              327021                      327994 
   3986 fixaOrdem2[10,14,20]
-                               32787                       32787 
+                              327934                      327987 
   3987 fixaOrdem2[10,15,16]
-                               32154                       32763 
+                                  35                      327963 
   3988 fixaOrdem2[10,15,17]
-                                  35                       32705 
+                                  72                      327905 
   3989 fixaOrdem2[10,15,18]
-                                 130                       32717 
+                                 167                      327917 
   3990 fixaOrdem2[10,15,19]
-                               32191                       32794 
+                              327337                      327994 
   3991 fixaOrdem2[10,15,20]
-                                 213                       32787 
+                                 250                      327987 
   3992 fixaOrdem2[10,16,17]
-                                 681                       32705 
+                                  37                      327905 
   3993 fixaOrdem2[10,16,18]
-                                 776                       32717 
+                                 132                      327917 
   3994 fixaOrdem2[10,16,19]
-                                  37                       32794 
+                              327302                      327994 
   3995 fixaOrdem2[10,16,20]
-                                 859                       32787 
+                                 215                      327987 
   3996 fixaOrdem2[10,17,18]
-                                  95                       32717 
+                                  95                      327917 
   3997 fixaOrdem2[10,17,19]
-                               32156                       32794 
+                              327265                      327994 
   3998 fixaOrdem2[10,17,20]
-                                 178                       32787 
+                                 178                      327987 
   3999 fixaOrdem2[10,18,19]
-                               32061                       32794 
+                              327170                      327994 
   4000 fixaOrdem2[10,18,20]
-                                  83                       32787 
+                                  83                      327987 
   4001 fixaOrdem2[10,19,20]
-                                 822                       32787 
-  4002 makespan[1,1]
-                                1107            -0               
-  4003 makespan[1,2]
-                                1071            -0               
-  4004 makespan[1,3]
-                                1786            -0               
-  4005 makespan[1,4]
-                                1319            -0               
-  4006 makespan[1,5]
-                                1104            -0               
-  4007 makespan[1,6]
-                                1195            -0               
-  4008 makespan[1,7]
-                                1222            -0               
-  4009 makespan[1,8]
-                                1791            -0               
-  4010 makespan[1,9]
-                                1326            -0               
-  4011 makespan[1,10]
-                                1380            -0               
-  4012 makespan[1,11]
-                                 905            -0               
-  4013 makespan[1,12]
-                                1429            -0               
-  4014 makespan[1,13]
-                                1432            -0               
-  4015 makespan[1,14]
-                                1766            -0               
-  4016 makespan[1,15]
-                                1492            -0               
-  4017 makespan[1,16]
-                                 907            -0               
-  4018 makespan[1,17]
-                                1581            -0               
-  4019 makespan[1,18]
-                                1656            -0               
-  4020 makespan[1,19]
-                                 973            -0               
-  4021 makespan[1,20]
-                                1728            -0               
-  4022 makespan[2,1]
-                                 994            -0               
-  4023 makespan[2,2]
-                                 939            -0               
-  4024 makespan[2,3]
-                                1679            -0               
-  4025 makespan[2,4]
-                                1207            -0               
-  4026 makespan[2,5]
-                                 978            -0               
-  4027 makespan[2,6]
-                                1095            -0               
-  4028 makespan[2,7]
-                                1187            -0               
-  4029 makespan[2,8]
-                                1767            -0               
-  4030 makespan[2,9]
-                                1304            -0               
-  4031 makespan[2,10]
-                                1337            -0               
-  4032 makespan[2,11]
-                                 757            -0               
-  4033 makespan[2,12]
-                                1351            -0               
-  4034 makespan[2,13]
-                                1410            -0               
-  4035 makespan[2,14]
-                                1630            -0               
-  4036 makespan[2,15]
-                                1422            -0               
-  4037 makespan[2,16]
-                                 847            -0               
-  4038 makespan[2,17]
-                                1486            -0               
-  4039 makespan[2,18]
-                                1581            -0               
-  4040 makespan[2,19]
-                                 907            -0               
-  4041 makespan[2,20]
-                                1613            -0               
-  4042 makespan[3,1]
-                                 868            -0               
-  4043 makespan[3,2]
-                                 754            -0               
-  4044 makespan[3,3]
-                                1587            -0               
-  4045 makespan[3,4]
-                                1020            -0               
-  4046 makespan[3,5]
-                                 812            -0               
-  4047 makespan[3,6]
-                                 918            -0               
-  4048 makespan[3,7]
-                                 930            -0               
-  4049 makespan[3,8]
-                                1679            -0               
-  4050 makespan[3,9]
-                                1109            -0               
-  4051 makespan[3,10]
-                                1174            -0               
-  4052 makespan[3,11]
-                                 526            -0               
-  4053 makespan[3,12]
-                                1183            -0               
-  4054 makespan[3,13]
-                                1257            -0               
-  4055 makespan[3,14]
-                                1519            -0               
-  4056 makespan[3,15]
-                                1348            -0               
-  4057 makespan[3,16]
-                                 603            -0               
-  4058 makespan[3,17]
-                                1382            -0               
-  4059 makespan[3,18]
-                                1462            -0               
-  4060 makespan[3,19]
-                                 668            -0               
-  4061 makespan[3,20]
-                                1515            -0               
-  4062 makespan[4,1]
-                                 745            -0               
-  4063 makespan[4,2]
-                                 639            -0               
-  4064 makespan[4,3]
-                                1485            -0               
-  4065 makespan[4,4]
-                                 980            -0               
-  4066 makespan[4,5]
-                                 727            -0               
-  4067 makespan[4,6]
-                                 824            -0               
-  4068 makespan[4,7]
-                                 901            -0               
-  4069 makespan[4,8]
-                                1582            -0               
-  4070 makespan[4,9]
-                                 985            -0               
-  4071 makespan[4,10]
-                                1067            -0               
-  4072 makespan[4,11]
-                                 447            -0               
-  4073 makespan[4,12]
-                                1084            -0               
-  4074 makespan[4,13]
-                                1183            -0               
-  4075 makespan[4,14]
-                                1458            -0               
-  4076 makespan[4,15]
-                                1257            -0               
-  4077 makespan[4,16]
-                                 526            -0               
-  4078 makespan[4,17]
-                                1279            -0               
-  4079 makespan[4,18]
-                                1377            -0               
-  4080 makespan[4,19]
-                                 603            -0               
-  4081 makespan[4,20]
-                                1448            -0               
-  4082 makespan[5,1]
-                                 685            -0               
-  4083 makespan[5,2]
-                                 543            -0               
-  4084 makespan[5,3]
-                                1393            -0               
-  4085 makespan[5,4]
-                                 900            -0               
-  4086 makespan[5,5]
-                                 616            -0               
-  4087 makespan[5,6]
-                                 776            -0               
-  4088 makespan[5,7]
-                                 824            -0               
-  4089 makespan[5,8]
-                                1498            -0               
-  4090 makespan[5,9]
-                                 902            -0               
-  4091 makespan[5,10]
-                                 985            -0               
-  4092 makespan[5,11]
-                                 353            -0               
-  4093 makespan[5,12]
-                                1037            -0               
-  4094 makespan[5,13]
-                                1160            -0               
-  4095 makespan[5,14]
-                                1359            -0               
-  4096 makespan[5,15]
-                                1169            -0               
-  4097 makespan[5,16]
-                                 509            -0               
-  4098 makespan[5,17]
-                                1223            -0               
-  4099 makespan[5,18]
-                                1289            -0               
-  4100 makespan[5,19]
-                                 526            -0               
-  4101 makespan[5,20]
-                                1334            -0               
-  4102 makespan[6,1]
-                                 616            -0               
-  4103 makespan[6,2]
-                                 425            -0               
-  4104 makespan[6,3]
-                                1316            -0               
-  4105 makespan[6,4]
-                                 824            -0               
-  4106 makespan[6,5]
-                                 595            -0               
-  4107 makespan[6,6]
-                                 635            -0               
-  4108 makespan[6,7]
-                                 726            -0               
-  4109 makespan[6,8]
-                                1469            -0               
-  4110 makespan[6,9]
-                                 898            -0               
-  4111 makespan[6,10]
-                                 902            -0               
-  4112 makespan[6,11]
-                                 270            -0               
-  4113 makespan[6,12]
-                                 938            -0               
-  4114 makespan[6,13]
-                                1066            -0               
-  4115 makespan[6,14]
-                                1236            -0               
-  4116 makespan[6,15]
-                                1160            -0               
-  4117 makespan[6,16]
-                                 353            -0               
-  4118 makespan[6,17]
-                                1169            -0               
-  4119 makespan[6,18]
-                                1181            -0               
-  4120 makespan[6,19]
-                                 355            -0               
-  4121 makespan[6,20]
-                                1213            -0               
-  4122 makespan[7,1]
-                                 502            -0               
-  4123 makespan[7,2]
-                                 399            -0               
-  4124 makespan[7,3]
-                                1275            -0               
-  4125 makespan[7,4]
-                                 735            -0               
-  4126 makespan[7,5]
-                                 423            -0               
-  4127 makespan[7,6]
-                                 584            -0               
-  4128 makespan[7,7]
-                                 635            -0               
-  4129 makespan[7,8]
-                                1374            -0               
-  4130 makespan[7,9]
-                                 824            -0               
-  4131 makespan[7,10]
-                                 888            -0               
-  4132 makespan[7,11]
-                                 189            -0               
-  4133 makespan[7,12]
-                                 902            -0               
-  4134 makespan[7,13]
-                                 938            -0               
-  4135 makespan[7,14]
-                                1185            -0               
-  4136 makespan[7,15]
-                                 992            -0               
-  4137 makespan[7,16]
-                                 256            -0               
-  4138 makespan[7,17]
-                                1084            -0               
-  4139 makespan[7,18]
-                                1110            -0               
-  4140 makespan[7,19]
-                                 273            -0               
-  4141 makespan[7,20]
-                                1182            -0               
-  4142 makespan[8,1]
-                                 419            -0               
-  4143 makespan[8,2]
-                                 338            -0               
-  4144 makespan[8,3]
-                                1185            -0               
-  4145 makespan[8,4]
-                                 635            -0               
-  4146 makespan[8,5]
-                                 378            -0               
-  4147 makespan[8,6]
-                                 502            -0               
-  4148 makespan[8,7]
-                                 626            -0               
-  4149 makespan[8,8]
-                                1308            -0               
-  4150 makespan[8,9]
-                                 672            -0               
-  4151 makespan[8,10]
-                                 702            -0               
-  4152 makespan[8,11]
-                                  92            -0               
-  4153 makespan[8,12]
-                                 793            -0               
-  4154 makespan[8,13]
-                                 859            -0               
-  4155 makespan[8,14]
-                                1111            -0               
-  4156 makespan[8,15]
-                                 938            -0               
-  4157 makespan[8,16]
-                                 166            -0               
-  4158 makespan[8,17]
-                                 989            -0               
-  4159 makespan[8,18]
-                                1017            -0               
-  4160 makespan[8,19]
-                                 246            -0               
-  4161 makespan[8,20]
-                                1093            -0               
-  4162 makespan[9,1]
-                                 329            -0               
-  4163 makespan[9,2]
-                                 246            -0               
-  4164 makespan[9,3]
-                                1113            -0               
-  4165 makespan[9,4]
-                                 533            -0               
-  4166 makespan[9,5]
-                                 318            -0               
-  4167 makespan[9,6]
-                                 419            -0               
-  4168 makespan[9,7]
-                                 482            -0               
-  4169 makespan[9,8]
-                                1234            -0               
-  4170 makespan[9,9]
-                                 666            -0               
-  4171 makespan[9,10]
-                                 672            -0               
-  4172 makespan[9,11]
-                                  85            -0               
-  4173 makespan[9,12]
-                                 709            -0               
-  4174 makespan[9,13]
-                                 734            -0               
-  4175 makespan[9,14]
-                                1020            -0               
-  4176 makespan[9,15]
-                                 796            -0               
-  4177 makespan[9,16]
-                                  92            -0               
-  4178 makespan[9,17]
-                                 851            -0               
-  4179 makespan[9,18]
-                                 929            -0               
-  4180 makespan[9,19]
-                                 166            -0               
-  4181 makespan[9,20]
-                                 966            -0               
-  4182 makespan[10,1]
-                                 170            -0               
-  4183 makespan[10,2]
-                                  98            -0               
-  4184 makespan[10,3]
-                                1020            -0               
-  4185 makespan[10,4]
-                                 372            -0               
-  4186 makespan[10,5]
-                                 143            -0               
-  4187 makespan[10,6]
-                                 237            -0               
-  4188 makespan[10,7]
-                                 291            -0               
-  4189 makespan[10,8]
-                                1073            -0               
-  4190 makespan[10,9]
-                                 471            -0               
-  4191 makespan[10,10]
-                                 531            -0               
-  4192 makespan[10,11]
-                                   0            -0               
-  4193 makespan[10,12]
-                                 616            -0               
-  4194 makespan[10,13]
-                                 681            -0               
-  4195 makespan[10,14]
-                                 927            -0               
-  4196 makespan[10,15]
-                                 701            -0               
-  4197 makespan[10,16]
-                                  55            -0               
-  4198 makespan[10,17]
-                                 736            -0               
-  4199 makespan[10,18]
-                                 831            -0               
-  4200 makespan[10,19]
-                                  92            -0               
-  4201 makespan[10,20]
-                                 914            -0               
+                                 913                      327987 
+  4002 makespan[1]                33            -0               
+  4003 makespan[2]               100            -0               
+  4004 makespan[3]               926            -0               
+  4005 makespan[4]               200            -0               
+  4006 makespan[5]                 6            -0               
+  4007 makespan[6]               299            -0               
+  4008 makespan[7]               119            -0               
+  4009 makespan[8]               353            -0               
+  4010 makespan[9]               378            -0               
+  4011 makespan[10]              438            -0               
+  4012 makespan[11]              588            -0               
+  4013 makespan[12]              523            -0               
+  4014 makespan[13]              643            -0               
+  4015 makespan[14]              979            -0               
+  4016 makespan[15]              663            -0               
+  4017 makespan[16]              698            -0               
+  4018 makespan[17]              735            -0               
+  4019 makespan[18]              830            -0               
+  4020 makespan[19]                0            -0               
+  4021 makespan[20]              913            -0               
 
    No. Column name       Activity     Lower bound   Upper bound
 ------ ------------    ------------- ------------- -------------
-     1 C[1,1]                    699             0               
-     2 C[1,2]                    735             0               
-     3 C[1,3]                     20             0               
-     4 C[1,4]                    487             0               
-     5 C[1,5]                    702             0               
-     6 C[1,6]                    611             0               
-     7 C[1,7]                    584             0               
-     8 C[1,8]                     15             0               
-     9 C[1,9]                    480             0               
-    10 C[1,10]                   426             0               
-    11 C[1,11]                   901             0               
-    12 C[1,12]                   377             0               
-    13 C[1,13]                   374             0               
-    14 C[1,14]                    40             0               
-    15 C[1,15]                   314             0               
-    16 C[1,16]                   899             0               
-    17 C[1,17]                   225             0               
-    18 C[1,18]                   150             0               
-    19 C[1,19]                   833             0               
-    20 C[1,20]                    78             0               
-    21 C[2,1]                    812             0               
-    22 C[2,2]                    867             0               
-    23 C[2,3]                    127             0               
-    24 C[2,4]                    599             0               
-    25 C[2,5]                    828             0               
-    26 C[2,6]                    711             0               
-    27 C[2,7]                    619             0               
-    28 C[2,8]                     39             0               
-    29 C[2,9]                    502             0               
-    30 C[2,10]                   469             0               
-    31 C[2,11]                  1049             0               
-    32 C[2,12]                   455             0               
-    33 C[2,13]                   396             0               
-    34 C[2,14]                   176             0               
-    35 C[2,15]                   384             0               
-    36 C[2,16]                   959             0               
-    37 C[2,17]                   320             0               
-    38 C[2,18]                   225             0               
-    39 C[2,19]                   899             0               
-    40 C[2,20]                   193             0               
-    41 C[3,1]                    938             0               
-    42 C[3,2]                   1052             0               
-    43 C[3,3]                    219             0               
-    44 C[3,4]                    786             0               
-    45 C[3,5]                    994             0               
-    46 C[3,6]                    888             0               
-    47 C[3,7]                    876             0               
-    48 C[3,8]                    127             0               
-    49 C[3,9]                    697             0               
-    50 C[3,10]                   632             0               
-    51 C[3,11]                  1280             0               
-    52 C[3,12]                   623             0               
-    53 C[3,13]                   549             0               
-    54 C[3,14]                   287             0               
-    55 C[3,15]                   458             0               
-    56 C[3,16]                  1203             0               
-    57 C[3,17]                   424             0               
-    58 C[3,18]                   344             0               
-    59 C[3,19]                  1138             0               
-    60 C[3,20]                   291             0               
-    61 C[4,1]                   1061             0               
-    62 C[4,2]                   1167             0               
-    63 C[4,3]                    321             0               
-    64 C[4,4]                    826             0               
-    65 C[4,5]                   1079             0               
-    66 C[4,6]                    982             0               
-    67 C[4,7]                    905             0               
-    68 C[4,8]                    224             0               
-    69 C[4,9]                    821             0               
-    70 C[4,10]                   739             0               
-    71 C[4,11]                  1359             0               
-    72 C[4,12]                   722             0               
-    73 C[4,13]                   623             0               
-    74 C[4,14]                   348             0               
-    75 C[4,15]                   549             0               
-    76 C[4,16]                  1280             0               
-    77 C[4,17]                   527             0               
-    78 C[4,18]                   429             0               
-    79 C[4,19]                  1203             0               
-    80 C[4,20]                   358             0               
-    81 C[5,1]                   1121             0               
-    82 C[5,2]                   1263             0               
-    83 C[5,3]                    413             0               
-    84 C[5,4]                    906             0               
-    85 C[5,5]                   1190             0               
-    86 C[5,6]                   1030             0               
-    87 C[5,7]                    982             0               
-    88 C[5,8]                    308             0               
-    89 C[5,9]                    904             0               
-    90 C[5,10]                   821             0               
-    91 C[5,11]                  1453             0               
-    92 C[5,12]                   769             0               
-    93 C[5,13]                   646             0               
-    94 C[5,14]                   447             0               
-    95 C[5,15]                   637             0               
-    96 C[5,16]                  1297             0               
-    97 C[5,17]                   583             0               
-    98 C[5,18]                   517             0               
-    99 C[5,19]                  1280             0               
-   100 C[5,20]                   472             0               
-   101 C[6,1]                   1190             0               
-   102 C[6,2]                   1381             0               
-   103 C[6,3]                    490             0               
-   104 C[6,4]                    982             0               
-   105 C[6,5]                   1211             0               
-   106 C[6,6]                   1171             0               
-   107 C[6,7]                   1080             0               
-   108 C[6,8]                    337             0               
-   109 C[6,9]                    908             0               
-   110 C[6,10]                   904             0               
-   111 C[6,11]                  1536             0               
-   112 C[6,12]                   868             0               
-   113 C[6,13]                   740             0               
-   114 C[6,14]                   570             0               
-   115 C[6,15]                   646             0               
-   116 C[6,16]                  1453             0               
-   117 C[6,17]                   637             0               
-   118 C[6,18]                   625             0               
-   119 C[6,19]                  1451             0               
-   120 C[6,20]                   593             0               
-   121 C[7,1]                   1304             0               
-   122 C[7,2]                   1407             0               
-   123 C[7,3]                    531             0               
-   124 C[7,4]                   1071             0               
-   125 C[7,5]                   1383             0               
-   126 C[7,6]                   1222             0               
-   127 C[7,7]                   1171             0               
-   128 C[7,8]                    432             0               
-   129 C[7,9]                    982             0               
-   130 C[7,10]                   918             0               
-   131 C[7,11]                  1617             0               
-   132 C[7,12]                   904             0               
-   133 C[7,13]                   868             0               
-   134 C[7,14]                   621             0               
-   135 C[7,15]                   814             0               
-   136 C[7,16]                  1550             0               
-   137 C[7,17]                   722             0               
-   138 C[7,18]                   696             0               
-   139 C[7,19]                  1533             0               
-   140 C[7,20]                   624             0               
-   141 C[8,1]                   1387             0               
-   142 C[8,2]                   1468             0               
-   143 C[8,3]                    621             0               
-   144 C[8,4]                   1171             0               
-   145 C[8,5]                   1428             0               
-   146 C[8,6]                   1304             0               
-   147 C[8,7]                   1180             0               
-   148 C[8,8]                    498             0               
-   149 C[8,9]                   1134             0               
-   150 C[8,10]                  1104             0               
-   151 C[8,11]                  1714             0               
-   152 C[8,12]                  1013             0               
-   153 C[8,13]                   947             0               
-   154 C[8,14]                   695             0               
-   155 C[8,15]                   868             0               
-   156 C[8,16]                  1640             0               
-   157 C[8,17]                   817             0               
-   158 C[8,18]                   789             0               
-   159 C[8,19]                  1560             0               
-   160 C[8,20]                   713             0               
-   161 C[9,1]                   1477             0               
-   162 C[9,2]                   1560             0               
-   163 C[9,3]                    693             0               
-   164 C[9,4]                   1273             0               
-   165 C[9,5]                   1488             0               
-   166 C[9,6]                   1387             0               
-   167 C[9,7]                   1324             0               
-   168 C[9,8]                    572             0               
-   169 C[9,9]                   1140             0               
-   170 C[9,10]                  1134             0               
-   171 C[9,11]                  1721             0               
-   172 C[9,12]                  1097             0               
-   173 C[9,13]                  1072             0               
-   174 C[9,14]                   786             0               
-   175 C[9,15]                  1010             0               
-   176 C[9,16]                  1714             0               
-   177 C[9,17]                   955             0               
-   178 C[9,18]                   877             0               
-   179 C[9,19]                  1640             0               
-   180 C[9,20]                   840             0               
-   181 C[10,1]                  1636             0               
-   182 C[10,2]                  1708             0               
-   183 C[10,3]                   786             0               
-   184 C[10,4]                  1434             0               
-   185 C[10,5]                  1663             0               
-   186 C[10,6]                  1569             0               
-   187 C[10,7]                  1515             0               
-   188 C[10,8]                   733             0               
-   189 C[10,9]                  1335             0               
-   190 C[10,10]                 1275             0               
-   191 C[10,11]                 1806             0               
-   192 C[10,12]                 1190             0               
-   193 C[10,13]                 1125             0               
-   194 C[10,14]                  879             0               
-   195 C[10,15]                 1105             0               
-   196 C[10,16]                 1751             0               
-   197 C[10,17]                 1070             0               
-   198 C[10,18]                  975             0               
-   199 C[10,19]                 1714             0               
-   200 C[10,20]                  892             0               
-   201 D[1,2]       *              1             0             1 
+     1 C[1,1]                    800             0               
+     2 C[1,2]                    712             0               
+     3 C[1,3]                     25             0               
+     4 C[1,4]                    582             0               
+     5 C[1,5]                    803             0               
+     6 C[1,6]                    575             0               
+     7 C[1,7]                    679             0               
+     8 C[1,8]                    548             0               
+     9 C[1,9]                    533             0               
+    10 C[1,10]                   479             0               
+    11 C[1,11]                   427             0               
+    12 C[1,12]                   430             0               
+    13 C[1,13]                   425             0               
+    14 C[1,14]                    20             0               
+    15 C[1,15]                   365             0               
+    16 C[1,16]                   276             0               
+    17 C[1,17]                   210             0               
+    18 C[1,18]                   135             0               
+    19 C[1,19]                   901             0               
+    20 C[1,20]                    63             0               
+    21 C[2,1]                    947             0               
+    22 C[2,2]                    898             0               
+    23 C[2,3]                    131             0               
+    24 C[2,4]                    839             0               
+    25 C[2,5]                    963             0               
+    26 C[2,6]                    742             0               
+    27 C[2,7]                    859             0               
+    28 C[2,8]                    650             0               
+    29 C[2,9]                    626             0               
+    30 C[2,10]                   604             0               
+    31 C[2,11]                   531             0               
+    32 C[2,12]                   590             0               
+    33 C[2,13]                   441             0               
+    34 C[2,14]                    63             0               
+    35 C[2,15]                   429             0               
+    36 C[2,16]                   365             0               
+    37 C[2,17]                   305             0               
+    38 C[2,18]                   210             0               
+    39 C[2,19]                   995             0               
+    40 C[2,20]                   178             0               
+    41 C[3,1]                   1126             0               
+    42 C[3,2]                   1076             0               
+    43 C[3,3]                    223             0               
+    44 C[3,4]                    928             0               
+    45 C[3,5]                   1182             0               
+    46 C[3,6]                    827             0               
+    47 C[3,7]                   1018             0               
+    48 C[3,8]                    815             0               
+    49 C[3,9]                    727             0               
+    50 C[3,10]                   662             0               
+    51 C[3,11]                   611             0               
+    52 C[3,12]                   653             0               
+    53 C[3,13]                   583             0               
+    54 C[3,14]                   131             0               
+    55 C[3,15]                   492             0               
+    56 C[3,16]                   458             0               
+    57 C[3,17]                   393             0               
+    58 C[3,18]                   280             0               
+    59 C[3,19]                  1268             0               
+    60 C[3,20]                   227             0               
+    61 C[4,1]                   1299             0               
+    62 C[4,2]                   1209             0               
+    63 C[4,3]                    320             0               
+    64 C[4,4]                   1151             0               
+    65 C[4,5]                   1317             0               
+    66 C[4,6]                   1108             0               
+    67 C[4,7]                   1165             0               
+    68 C[4,8]                   1031             0               
+    69 C[4,9]                    934             0               
+    70 C[4,10]                   852             0               
+    71 C[4,11]                   736             0               
+    72 C[4,12]                   835             0               
+    73 C[4,13]                   657             0               
+    74 C[4,14]                   223             0               
+    75 C[4,15]                   583             0               
+    76 C[4,16]                   561             0               
+    77 C[4,17]                   484             0               
+    78 C[4,18]                   401             0               
+    79 C[4,19]                  1353             0               
+    80 C[4,20]                   330             0               
+    81 C[5,1]                   1359             0               
+    82 C[5,2]                   1299             0               
+    83 C[5,3]                    412             0               
+    84 C[5,4]                   1165             0               
+    85 C[5,5]                   1428             0               
+    86 C[5,6]                   1163             0               
+    87 C[5,7]                   1241             0               
+    88 C[5,8]                   1115             0               
+    89 C[5,9]                   1031             0               
+    90 C[5,10]                   929             0               
+    91 C[5,11]                   794             0               
+    92 C[5,12]                   877             0               
+    93 C[5,13]                   699             0               
+    94 C[5,14]                   257             0               
+    95 C[5,15]                   691             0               
+    96 C[5,16]                   637             0               
+    97 C[5,17]                   620             0               
+    98 C[5,18]                   574             0               
+    99 C[5,19]                  1445             0               
+   100 C[5,20]                   437             0               
+   101 C[6,1]                   1494             0               
+   102 C[6,2]                   1406             0               
+   103 C[6,3]                    622             0               
+   104 C[6,4]                   1241             0               
+   105 C[6,5]                   1515             0               
+   106 C[6,6]                   1216             0               
+   107 C[6,7]                   1339             0               
+   108 C[6,8]                   1144             0               
+   109 C[6,9]                   1080             0               
+   110 C[6,10]                  1001             0               
+   111 C[6,11]                   877             0               
+   112 C[6,12]                   972             0               
+   113 C[6,13]                   794             0               
+   114 C[6,14]                   337             0               
+   115 C[6,15]                   700             0               
+   116 C[6,16]                   691             0               
+   117 C[6,17]                   689             0               
+   118 C[6,18]                   677             0               
+   119 C[6,19]                  1585             0               
+   120 C[6,20]                   645             0               
+   121 C[7,1]                   1576             0               
+   122 C[7,2]                   1494             0               
+   123 C[7,3]                    664             0               
+   124 C[7,4]                   1379             0               
+   125 C[7,5]                   1655             0               
+   126 C[7,6]                   1290             0               
+   127 C[7,7]                   1470             0               
+   128 C[7,8]                   1239             0               
+   129 C[7,9]                   1144             0               
+   130 C[7,10]                  1051             0               
+   131 C[7,11]                  1001             0               
+   132 C[7,12]                  1037             0               
+   133 C[7,13]                   934             0               
+   134 C[7,14]                   388             0               
+   135 C[7,15]                   883             0               
+   136 C[7,16]                   791             0               
+   137 C[7,17]                   774             0               
+   138 C[7,18]                   748             0               
+   139 C[7,19]                  1737             0               
+   140 C[7,20]                   667             0               
+   141 C[8,1]                   1659             0               
+   142 C[8,2]                   1534             0               
+   143 C[8,3]                    754             0               
+   144 C[8,4]                   1409             0               
+   145 C[8,5]                   1737             0               
+   146 C[8,6]                   1369             0               
+   147 C[8,7]                   1479             0               
+   148 C[8,8]                   1333             0               
+   149 C[8,9]                   1267             0               
+   150 C[8,10]                  1237             0               
+   151 C[8,11]                  1080             0               
+   152 C[8,12]                  1146             0               
+   153 C[8,13]                  1013             0               
+   154 C[8,14]                   462             0               
+   155 C[8,15]                   934             0               
+   156 C[8,16]                   883             0               
+   157 C[8,17]                   876             0               
+   158 C[8,18]                   848             0               
+   159 C[8,19]                  1764             0               
+   160 C[8,20]                   772             0               
+   161 C[9,1]                   1749             0               
+   162 C[9,2]                   1659             0               
+   163 C[9,3]                    827             0               
+   164 C[9,4]                   1528             0               
+   165 C[9,5]                   1760             0               
+   166 C[9,6]                   1470             0               
+   167 C[9,7]                   1579             0               
+   168 C[9,8]                   1407             0               
+   169 C[9,9]                   1276             0               
+   170 C[9,10]                  1270             0               
+   171 C[9,11]                  1194             0               
+   172 C[9,12]                  1262             0               
+   173 C[9,13]                  1187             0               
+   174 C[9,14]                   755             0               
+   175 C[9,15]                  1125             0               
+   176 C[9,16]                  1070             0               
+   177 C[9,17]                   996             0               
+   178 C[9,18]                   918             0               
+   179 C[9,19]                  1844             0               
+   180 C[9,20]                   881             0               
+   181 C[10,1]                  1817             0               
+   182 C[10,2]                  1750             0               
+   183 C[10,3]                   924             0               
+   184 C[10,4]                  1650             0               
+   185 C[10,5]                  1844             0               
+   186 C[10,6]                  1551             0               
+   187 C[10,7]                  1731             0               
+   188 C[10,8]                  1497             0               
+   189 C[10,9]                  1472             0               
+   190 C[10,10]                 1412             0               
+   191 C[10,11]                 1262             0               
+   192 C[10,12]                 1327             0               
+   193 C[10,13]                 1207             0               
+   194 C[10,14]                  871             0               
+   195 C[10,15]                 1187             0               
+   196 C[10,16]                 1152             0               
+   197 C[10,17]                 1115             0               
+   198 C[10,18]                 1020             0               
+   199 C[10,19]                 1850             0               
+   200 C[10,20]                  937             0               
+   201 D[1,2]       *              0             0             1 
    202 D[1,3]       *              0             0             1 
    203 D[1,4]       *              0             0             1 
    204 D[1,5]       *              1             0             1 
@@ -8620,30 +8240,30 @@ Objective:  PFSP = 1806 (MINimum)
    207 D[1,8]       *              0             0             1 
    208 D[1,9]       *              0             0             1 
    209 D[1,10]      *              0             0             1 
-   210 D[1,11]      *              1             0             1 
+   210 D[1,11]      *              0             0             1 
    211 D[1,12]      *              0             0             1 
    212 D[1,13]      *              0             0             1 
    213 D[1,14]      *              0             0             1 
    214 D[1,15]      *              0             0             1 
-   215 D[1,16]      *              1             0             1 
+   215 D[1,16]      *              0             0             1 
    216 D[1,17]      *              0             0             1 
    217 D[1,18]      *              0             0             1 
    218 D[1,19]      *              1             0             1 
    219 D[1,20]      *              0             0             1 
    220 D[2,3]       *              0             0             1 
    221 D[2,4]       *              0             0             1 
-   222 D[2,5]       *              0             0             1 
+   222 D[2,5]       *              1             0             1 
    223 D[2,6]       *              0             0             1 
    224 D[2,7]       *              0             0             1 
    225 D[2,8]       *              0             0             1 
    226 D[2,9]       *              0             0             1 
    227 D[2,10]      *              0             0             1 
-   228 D[2,11]      *              1             0             1 
+   228 D[2,11]      *              0             0             1 
    229 D[2,12]      *              0             0             1 
    230 D[2,13]      *              0             0             1 
    231 D[2,14]      *              0             0             1 
    232 D[2,15]      *              0             0             1 
-   233 D[2,16]      *              1             0             1 
+   233 D[2,16]      *              0             0             1 
    234 D[2,17]      *              0             0             1 
    235 D[2,18]      *              0             0             1 
    236 D[2,19]      *              1             0             1 
@@ -8652,13 +8272,13 @@ Objective:  PFSP = 1806 (MINimum)
    239 D[3,5]       *              1             0             1 
    240 D[3,6]       *              1             0             1 
    241 D[3,7]       *              1             0             1 
-   242 D[3,8]       *              0             0             1 
+   242 D[3,8]       *              1             0             1 
    243 D[3,9]       *              1             0             1 
    244 D[3,10]      *              1             0             1 
    245 D[3,11]      *              1             0             1 
    246 D[3,12]      *              1             0             1 
    247 D[3,13]      *              1             0             1 
-   248 D[3,14]      *              1             0             1 
+   248 D[3,14]      *              0             0             1 
    249 D[3,15]      *              1             0             1 
    250 D[3,16]      *              1             0             1 
    251 D[3,17]      *              1             0             1 
@@ -8666,17 +8286,17 @@ Objective:  PFSP = 1806 (MINimum)
    253 D[3,19]      *              1             0             1 
    254 D[3,20]      *              1             0             1 
    255 D[4,5]       *              1             0             1 
-   256 D[4,6]       *              1             0             1 
+   256 D[4,6]       *              0             0             1 
    257 D[4,7]       *              1             0             1 
    258 D[4,8]       *              0             0             1 
    259 D[4,9]       *              0             0             1 
    260 D[4,10]      *              0             0             1 
-   261 D[4,11]      *              1             0             1 
+   261 D[4,11]      *              0             0             1 
    262 D[4,12]      *              0             0             1 
    263 D[4,13]      *              0             0             1 
    264 D[4,14]      *              0             0             1 
    265 D[4,15]      *              0             0             1 
-   266 D[4,16]      *              1             0             1 
+   266 D[4,16]      *              0             0             1 
    267 D[4,17]      *              0             0             1 
    268 D[4,18]      *              0             0             1 
    269 D[4,19]      *              1             0             1 
@@ -8686,26 +8306,26 @@ Objective:  PFSP = 1806 (MINimum)
    273 D[5,8]       *              0             0             1 
    274 D[5,9]       *              0             0             1 
    275 D[5,10]      *              0             0             1 
-   276 D[5,11]      *              1             0             1 
+   276 D[5,11]      *              0             0             1 
    277 D[5,12]      *              0             0             1 
    278 D[5,13]      *              0             0             1 
    279 D[5,14]      *              0             0             1 
    280 D[5,15]      *              0             0             1 
-   281 D[5,16]      *              1             0             1 
+   281 D[5,16]      *              0             0             1 
    282 D[5,17]      *              0             0             1 
    283 D[5,18]      *              0             0             1 
    284 D[5,19]      *              1             0             1 
    285 D[5,20]      *              0             0             1 
-   286 D[6,7]       *              0             0             1 
+   286 D[6,7]       *              1             0             1 
    287 D[6,8]       *              0             0             1 
    288 D[6,9]       *              0             0             1 
    289 D[6,10]      *              0             0             1 
-   290 D[6,11]      *              1             0             1 
+   290 D[6,11]      *              0             0             1 
    291 D[6,12]      *              0             0             1 
    292 D[6,13]      *              0             0             1 
    293 D[6,14]      *              0             0             1 
    294 D[6,15]      *              0             0             1 
-   295 D[6,16]      *              1             0             1 
+   295 D[6,16]      *              0             0             1 
    296 D[6,17]      *              0             0             1 
    297 D[6,18]      *              0             0             1 
    298 D[6,19]      *              1             0             1 
@@ -8713,69 +8333,69 @@ Objective:  PFSP = 1806 (MINimum)
    300 D[7,8]       *              0             0             1 
    301 D[7,9]       *              0             0             1 
    302 D[7,10]      *              0             0             1 
-   303 D[7,11]      *              1             0             1 
+   303 D[7,11]      *              0             0             1 
    304 D[7,12]      *              0             0             1 
    305 D[7,13]      *              0             0             1 
    306 D[7,14]      *              0             0             1 
    307 D[7,15]      *              0             0             1 
-   308 D[7,16]      *              1             0             1 
+   308 D[7,16]      *              0             0             1 
    309 D[7,17]      *              0             0             1 
    310 D[7,18]      *              0             0             1 
    311 D[7,19]      *              1             0             1 
    312 D[7,20]      *              0             0             1 
-   313 D[8,9]       *              1             0             1 
-   314 D[8,10]      *              1             0             1 
-   315 D[8,11]      *              1             0             1 
-   316 D[8,12]      *              1             0             1 
-   317 D[8,13]      *              1             0             1 
-   318 D[8,14]      *              1             0             1 
-   319 D[8,15]      *              1             0             1 
-   320 D[8,16]      *              1             0             1 
-   321 D[8,17]      *              1             0             1 
-   322 D[8,18]      *              1             0             1 
+   313 D[8,9]       *              0             0             1 
+   314 D[8,10]      *              0             0             1 
+   315 D[8,11]      *              0             0             1 
+   316 D[8,12]      *              0             0             1 
+   317 D[8,13]      *              0             0             1 
+   318 D[8,14]      *              0             0             1 
+   319 D[8,15]      *              0             0             1 
+   320 D[8,16]      *              0             0             1 
+   321 D[8,17]      *              0             0             1 
+   322 D[8,18]      *              0             0             1 
    323 D[8,19]      *              1             0             1 
-   324 D[8,20]      *              1             0             1 
+   324 D[8,20]      *              0             0             1 
    325 D[9,10]      *              0             0             1 
-   326 D[9,11]      *              1             0             1 
+   326 D[9,11]      *              0             0             1 
    327 D[9,12]      *              0             0             1 
    328 D[9,13]      *              0             0             1 
    329 D[9,14]      *              0             0             1 
    330 D[9,15]      *              0             0             1 
-   331 D[9,16]      *              1             0             1 
+   331 D[9,16]      *              0             0             1 
    332 D[9,17]      *              0             0             1 
    333 D[9,18]      *              0             0             1 
    334 D[9,19]      *              1             0             1 
    335 D[9,20]      *              0             0             1 
-   336 D[10,11]     *              1             0             1 
+   336 D[10,11]     *              0             0             1 
    337 D[10,12]     *              0             0             1 
    338 D[10,13]     *              0             0             1 
    339 D[10,14]     *              0             0             1 
    340 D[10,15]     *              0             0             1 
-   341 D[10,16]     *              1             0             1 
+   341 D[10,16]     *              0             0             1 
    342 D[10,17]     *              0             0             1 
    343 D[10,18]     *              0             0             1 
    344 D[10,19]     *              1             0             1 
    345 D[10,20]     *              0             0             1 
-   346 D[11,12]     *              0             0             1 
+   346 D[11,12]     *              1             0             1 
    347 D[11,13]     *              0             0             1 
    348 D[11,14]     *              0             0             1 
    349 D[11,15]     *              0             0             1 
    350 D[11,16]     *              0             0             1 
    351 D[11,17]     *              0             0             1 
    352 D[11,18]     *              0             0             1 
-   353 D[11,19]     *              0             0             1 
+   353 D[11,19]     *              1             0             1 
    354 D[11,20]     *              0             0             1 
    355 D[12,13]     *              0             0             1 
    356 D[12,14]     *              0             0             1 
    357 D[12,15]     *              0             0             1 
-   358 D[12,16]     *              1             0             1 
+   358 D[12,16]     *              0             0             1 
    359 D[12,17]     *              0             0             1 
    360 D[12,18]     *              0             0             1 
    361 D[12,19]     *              1             0             1 
    362 D[12,20]     *              0             0             1 
    363 D[13,14]     *              0             0             1 
    364 D[13,15]     *              0             0             1 
-   365 D[13,16]     *              1             0             1 
+   365 D[13,16]     *              0             0             1 
    366 D[13,17]     *              0             0             1 
    367 D[13,18]     *              0             0             1 
    368 D[13,19]     *              1             0             1 
@@ -8786,14 +8406,14 @@ Objective:  PFSP = 1806 (MINimum)
    373 D[14,18]     *              1             0             1 
    374 D[14,19]     *              1             0             1 
    375 D[14,20]     *              1             0             1 
-   376 D[15,16]     *              1             0             1 
+   376 D[15,16]     *              0             0             1 
    377 D[15,17]     *              0             0             1 
    378 D[15,18]     *              0             0             1 
    379 D[15,19]     *              1             0             1 
    380 D[15,20]     *              0             0             1 
    381 D[16,17]     *              0             0             1 
    382 D[16,18]     *              0             0             1 
-   383 D[16,19]     *              0             0             1 
+   383 D[16,19]     *              1             0             1 
    384 D[16,20]     *              0             0             1 
    385 D[17,18]     *              0             0             1 
    386 D[17,19]     *              1             0             1 
@@ -8801,7 +8421,7 @@ Objective:  PFSP = 1806 (MINimum)
    388 D[18,19]     *              1             0             1 
    389 D[18,20]     *              0             0             1 
    390 D[19,20]     *              0             0             1 
-   391 Cmax                     1806             0               
+   391 Cmax                     1850             0               
 
 Integer feasibility conditions:
 
