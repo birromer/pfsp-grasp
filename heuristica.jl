@@ -2,8 +2,8 @@ using Random
 using Statistics
 
 makespan_table = Dict{Array{Int64},Int64}()
-NUMBER_CANDIDATES = 1000
-STOP_GRASP = 1000
+NUMBER_CANDIDATES = 300
+STOP_GRASP = 1500
 STOP_HILL_CLIMBING = 100
 
 function read_instances(filename::String)
@@ -102,7 +102,6 @@ function generate_neighbour(solution::Array{Int64,1})
     solution[j] = temp
 
     return solution
-
 end
 
 function hill_climbing(solution::Array{Int64,1}, t) # hill climbing will be the local search used to improve the solution
@@ -153,10 +152,11 @@ function GRASP(alpha::Float32, number_jobs::Int64, t::Array{Int64,2})
     initial_solution::Array{Int64,1} = randperm(number_jobs) # random solution for initial one
     s_star::Array{Int64,1} = copy(initial_solution)          # initialized optimal solution with random solution
     s_line = Array{Int64,1}
-    pre = 0
-    pre_1 = randperm(number_jobs)
 
     for k in 1:STOP_GRASP
+        if k % 100 == 0
+            println(k)
+        end
         s_line = randomized_greedy_construct(alpha, number_jobs, t) # gets the best solution given by the greedy construct
 
         s_line = hill_climbing(copy(s_line),t) # tries to improve it with a local search
@@ -186,7 +186,7 @@ function main()
 
     number_jobs, number_machines = size(t)
     
-    for i in 1:1
+    for i in 1:10
         Random.seed!(parse(Int64,ARGS[3])*i)
         execution_time  = @elapsed initial_solution, s_star  = GRASP(alpha, number_jobs, t)
         
@@ -195,6 +195,10 @@ function main()
         push!(s_stars_makespan          , makespan(s_star,t))
         push!(initial_solutions         , initial_solution)
         push!(initial_solutions_makespan, makespan(initial_solution,t))
+
+        # println("execution time = ", execution_time)
+        # println("initial solution makespan = ", makespan(initial_solution,t))
+        # println("s star makespan = ", makespan(s_star,t))
     end
 
     mean_initial_solution = mean(initial_solutions_makespan)
