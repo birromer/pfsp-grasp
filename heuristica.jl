@@ -49,7 +49,7 @@ function makespan(sch::Array{Int64}, t, save_to_dict::Bool=true, use_last_line::
         for m in 2:number_machines          # the last job at the current machine starts when both 
             top = previous_last_line[m-1]   # the same job has finished on the previous machine
             side = current_last_line[m-1]   # and the previous job has finished on the same machine
-            current_last_line[m] = max(top,side) + current_last_line[m] the previous has
+            current_last_line[m] = max(top,side) + current_last_line[m] 
         end
 
         last_line_table[sch] = current_last_line # stores the value for reuse
@@ -166,8 +166,8 @@ function initialize_candidate_set(number_jobs::Int64) # simple start for the can
 end
 
 # ============================================================================================ #
-#      Método orignal para a construção da colução inicial, não é mais utilizado
-#                   código preservado para demonstração da implementação
+#      Método orignal para a construção da colução inicial, não é mais utilizado               #
+#                   código preservado para demonstração da implementação                       #
 
 function compute_c_max(candidate::Array{Int64,1}, job_position::Int64, t::Array{Int64,2})
     number_jobs, number_machines = size(t)
@@ -198,7 +198,7 @@ function randomized_greedy_construct(alpha::Float32, number_jobs::Int64, t::Arra
 
     return candidate
 end
-
+#                                                                                              #
 # ============================================================================================ #
 
 function modified_randomized_greedy_construct(alpha::Float32, number_jobs::Int64, t::Array{Int64,2})
@@ -251,7 +251,7 @@ function main()
 
     number_jobs, number_machines = size(t)
     
-    for i in 1:10
+    for i in 1:1
         Random.seed!(parse(Int64,ARGS[3])*i)
         execution_time  = @elapsed initial_solution, s_star  = GRASP(alpha, number_jobs, t)
         
@@ -261,21 +261,11 @@ function main()
         push!(initial_solutions         , initial_solution)
         push!(initial_solutions_makespan, makespan(initial_solution,t))
 
-        println("execution time = ", execution_time)
-        println("initial solution makespan = ", makespan(initial_solution,t))
         println(s_star)
+        println("initial solution makespan = ", makespan(initial_solution,t))
         println("s star makespan = ", makespan(s_star,t))
+        println("execution time = ", execution_time)
     end
-
-    mean_initial_solution = mean(initial_solutions_makespan)
-    mean_s_star           = mean(s_stars_makespan)
-    std_dev_s_star        = std(s_stars_makespan)
-    mean_execution_time   = mean(time_elapsed)
-
-    println("mean initial solution = ", mean_initial_solution)
-    println("mean best solution = ", mean_s_star)
-    println("std dev best solution = ", std_dev_s_star)
-    println("mean execution time = ", mean_execution_time)
 end
 
 main()
