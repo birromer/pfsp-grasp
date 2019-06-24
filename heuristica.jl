@@ -4,7 +4,7 @@ using Statistics
 makespan_table = Dict{Array{Int64},Int64}()
 last_line_table = Dict{Array{Int64},Array{Int64}}()
 
-NUMBER_CANDIDATES = 300
+NUMBER_CANDIDATES = 270
 STOP_GRASP = 1500
 STOP_HILL_CLIMBING = 50
 
