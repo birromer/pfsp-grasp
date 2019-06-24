@@ -4,7 +4,7 @@ In order to run the meta-heuristic you'll need the Julia programming language in
 as well the libraries Random and Statistics
 
 You can install those libraries with the following commands:
-* Open the julia consile by typing `julia` in a terminal
+* Open the julia console by typing `julia` in a terminal
 * Press `]` and write the command `add Random Statistics`
 * After that you can close the REPL by typing a backspace followed by `exit()`
 
