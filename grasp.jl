@@ -4,10 +4,6 @@ using Statistics
 makespan_table = Dict{Array{Int64},Int64}()
 last_line_table = Dict{Array{Int64},Array{Int64}}()
 
-NUMBER_CANDIDATES = 270
-STOP_GRASP = 1500
-STOP_HILL_CLIMBING = 50
-
 function read_instances(filename::String)
     sch = Array{Int64,1}
 
@@ -19,7 +15,7 @@ function read_instances(filename::String)
     number_machines::Int64 = parse(Int64,first_line[2]) 
 
     t   = zeros(Int64, number_jobs, number_machines)
-    sch = [x for x in 1:number_jobs] # sets base schedule array with machine jobs in order
+    # sch = [x for x in 1:number_jobs] # sets base schedule array with machine jobs in order
 
     # creation of the t matrix from the file
     for i in 1:number_jobs
@@ -30,7 +26,7 @@ function read_instances(filename::String)
         end
     end
 
-    return sch, t
+    return t
 end
 
 function makespan(sch::Array{Int64}, t, save_to_dict::Bool=true, use_last_line::Bool=false, previous_solution=nothing) # computes the makespan of a certain solution
@@ -134,12 +130,12 @@ function generate_neighbour(solution::Array{Int64,1})
     return solution
 end
 
-function hill_climbing(solution::Array{Int64,1}, t) # hill climbing will be the local search used to improve the solution
+function hill_climbing(solution::Array{Int64,1}, stop_hill_climbing::Int64, t) # hill climbing will be the local search used to improve the solution
     no_improvement_rounds::Int32 = 0 # counter for steps without improvement, will be used as stopping condition
     current_solution::Array{Int64,1} = copy(solution) 
     current_makespan = makespan(solution,t) # precomputes the makespan for reuse 
 
-    while no_improvement_rounds <= STOP_HILL_CLIMBING
+    while no_improvement_rounds <= stop_hill_climbing
         neighbour_solution = generate_neighbour(copy(current_solution)) # generates a new neighbour
         neighbour_makespan = makespan(copy(neighbour_solution),t)       # and computes its makespan for reuse in case of a good one
 
@@ -154,10 +150,10 @@ function hill_climbing(solution::Array{Int64,1}, t) # hill climbing will be the 
     return current_solution
 end
 
-function initialize_candidate_set(number_jobs::Int64) # simple start for the candidate set
+function initialize_candidate_set(number_jobs::Int64, number_candidates::Int64) # simple start for the candidate set
     p_solutions = Array{Int64}[]
 
-    for i in 1:NUMBER_CANDIDATES
+    for i in 1:number_candidates
         new_candidate = randperm(number_jobs) # each candidate is a random permutation of the jobs
         push!(p_solutions, new_candidate)
     end
@@ -201,8 +197,8 @@ end
 #                                                                                              #
 # ============================================================================================ #
 
-function modified_randomized_greedy_construct(alpha::Float32, number_jobs::Int64, t::Array{Int64,2})
-    solutions = initialize_candidate_set(number_jobs) # initializes candidate set
+function modified_randomized_greedy_construct(alpha::Float32, number_jobs::Int64, number_candidates::Int64, t::Array{Int64,2})
+    solutions = initialize_candidate_set(number_jobs, number_candidates) # initializes candidate set
     solutions = qsort!(copy(solutions), 1, length(solutions), t) # orders set by makespan
 
     top_alpha = solutions[1:trunc(Int,alpha*length(solutions))] # takes the top alpha percentage of the results
@@ -213,18 +209,18 @@ function modified_randomized_greedy_construct(alpha::Float32, number_jobs::Int64
 end
 
 
-function GRASP(alpha::Float32, number_jobs::Int64, t::Array{Int64,2})
+function GRASP(alpha::Float32, number_jobs::Int64, stop_grasp::Int64, number_candidates::Int64, stop_hill_climbing::Int64, t::Array{Int64,2})
     initial_solution::Array{Int64,1} = randperm(number_jobs) # random solution for initial one
     s_star::Array{Int64,1} = copy(initial_solution)          # initialized optimal solution with random solution
     s_line = Array{Int64,1}
 
-    for k in 1:STOP_GRASP
+    for k in 1:stop_grasp
         if k % 100 == 0
-            println(k)
+            println(k, " iterations passed")
         end
-        s_line = modified_randomized_greedy_construct(alpha, number_jobs, t) # gets the best solution given by the greedy construct
+        s_line = modified_randomized_greedy_construct(alpha, number_jobs,number_candidates, t) # gets the best solution given by the greedy construct
 
-        s_line = hill_climbing(copy(s_line),t) # tries to improve it with a local search
+        s_line = hill_climbing(copy(s_line), stop_hill_climbing, t) # tries to improve it with a local search
 
         if makespan(s_line,t) < makespan(s_star,t) # if the new solution is better swaps it 
             s_star = copy(s_line)
@@ -236,36 +232,23 @@ end
 
 
 function main()
-    filename::String = ARGS[1]               # first parameter is the data file name 
-    alpha::Float32 = parse(Float32, ARGS[2]) # second parameter is the alpha to be used in the construct
-    Random.seed!(parse(Int64,ARGS[3]))       # third parameter is the randomness seed
+    filename::String = ARGS[1]                 # 1st parameter is the data file name 
+    alpha::Float32 = parse(Float32, ARGS[2])   # 2nd parameter is the alpha to be used in the construct
+    number_candidates = parse(Int64, ARGS[3])  # 3rd parameter is the number of candidates to be generated on construct
+    stop_grasp = parse(Int64, ARGS[4])         # 4th parameter is the number of iterations to run on grasp
+    stop_hill_climbing = parse(Int64, ARGS[5]) # 5th parameter is the number of iterations to run without improvement on the hill climbing
+    Random.seed!(parse(Int64, ARGS[6]))        # 6th parameter is the randomness seed
     
-    s_stars           = Array{Int64}[]
-    initial_solutions = Array{Int64}[]
-
-    time_elapsed              ::Array{Float64} = [] 
-    initial_solutions_makespan::Array{Float64} = []
-    s_stars_makespan          ::Array{Float64} = []
-    
-    sch::Array{Int64,1}, t::Array{Int64,2} = read_instances(filename) # reads the instance from the file and loads initial schedule solution and t matrix
+    t::Array{Int64,2} = read_instances(filename) # reads the instance from the file and loads initial schedule solution and t matrix
 
     number_jobs, number_machines = size(t)
     
-    for i in 1:1
-        Random.seed!(parse(Int64,ARGS[3])*i)
-        execution_time  = @elapsed initial_solution, s_star  = GRASP(alpha, number_jobs, t)
-        
-        push!(time_elapsed              , execution_time)
-        push!(s_stars                   , s_star)
-        push!(s_stars_makespan          , makespan(s_star,t))
-        push!(initial_solutions         , initial_solution)
-        push!(initial_solutions_makespan, makespan(initial_solution,t))
+    execution_time  = @elapsed initial_solution, s_star  = GRASP(alpha, number_jobs, stop_grasp, number_candidates, stop_hill_climbing, t)
 
-        println(s_star)
-        println("initial solution makespan = ", makespan(initial_solution,t))
-        println("s star makespan = ", makespan(s_star,t))
-        println("execution time = ", execution_time)
-    end
+    println(s_star)
+    println("initial solution makespan = ", makespan(initial_solution,t))
+    println("s star makespan = ", makespan(s_star,t))
+    println("execution time = ", execution_time)
 end
 
 main()
